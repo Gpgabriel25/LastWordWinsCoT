@@ -1,0 +1,70 @@
+{
+  "study_name": "gsm8k_stripped_phi3mini",
+  "model": "microsoft/Phi-3-mini-4k-instruct",
+  "example_count": 100,
+  "bootstrap_samples": 5000,
+  "seed": 0,
+  "baseline": {
+    "accuracy": 0.41,
+    "ci95": [
+      0.32,
+      0.51
+    ]
+  },
+  "targets": {
+    "middle": {
+      "accuracy": 0.45,
+      "ci95": [
+        0.35,
+        0.55
+      ],
+      "accuracy_minus_baseline": 0.040000000000000036,
+      "accuracy_minus_baseline_ci95": [
+        -0.010000000000000009,
+        0.09999999999999998
+      ],
+      "paired_sign_test": {
+        "improve_count": 6,
+        "worsen_count": 2,
+        "discordant_count": 8,
+        "two_sided_pvalue": 0.2890625
+      }
+    },
+    "prefix": {
+      "accuracy": 0.43,
+      "ci95": [
+        0.33,
+        0.52
+      ],
+      "accuracy_minus_baseline": 0.020000000000000018,
+      "accuracy_minus_baseline_ci95": [
+        -0.02999999999999997,
+        0.07
+      ],
+      "paired_sign_test": {
+        "improve_count": 4,
+        "worsen_count": 2,
+        "discordant_count": 6,
+        "two_sided_pvalue": 0.6875
+      }
+    },
+    "suffix": {
+      "accuracy": 0.53,
+      "ci95": [
+        0.43,
+        0.63
+      ],
+      "accuracy_minus_baseline": 0.12000000000000005,
+      "accuracy_minus_baseline_ci95": [
+        0.03999999999999998,
+        0.20999999999999996
+      ],
+      "paired_sign_test": {
+        "improve_count": 16,
+        "worsen_count": 4,
+        "discordant_count": 20,
+        "two_sided_pvalue": 0.01181793212890625
+      }
+    }
+  }
+}

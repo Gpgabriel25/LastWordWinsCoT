@@ -1,0 +1,4043 @@
+{
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "data_file": "data/phase0_position_control_gsm8k_stripped_neutral_v1.jsonl",
+  "corruption_mode": "semantic",
+  "corruption_fraction": 1.0,
+  "protected_prefix_steps": 1,
+  "protected_suffix_steps": 1,
+  "summary": {
+    "n_examples": 100,
+    "baseline_accuracy": 0.88,
+    "corrupted_accuracy": {
+      "middle": 0.87,
+      "prefix": 0.87,
+      "suffix": 0.88
+    },
+    "corruption_delta": {
+      "middle": -0.01,
+      "prefix": -0.01,
+      "suffix": 0.0
+    },
+    "note": "Phase C: Same as Phase B but uses Phase A matched instruction format ('Read the reasoning and give the final answer.'). Baseline should match Phase A arm3 (~0.880)."
+  },
+  "results": {
+    "baseline": [
+      {
+        "id": "gsm8k-neutral-stripped-test-00002",
+        "gold": "70000",
+        "pred_text": "Josh made a profit of $70,000.",
+        "pred_int": 70,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00005",
+        "gold": "64",
+        "pred_text": "Kylar needs to pay $64 for the glasses he wants to buy",
+        "pred_int": 64,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00006",
+        "gold": "260",
+        "pred_text": "Toulouse, Charleston, and Seattle have 260 sheep together.",
+        "pred_int": 260,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00007",
+        "gold": "160",
+        "pred_text": "It takes 160 minutes to download the file.",
+        "pred_int": 160,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00008",
+        "gold": "45",
+        "pred_text": "John is 45 miles away from home at the end of those 4",
+        "pred_int": 45,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00009",
+        "gold": "460",
+        "pred_text": "Eliza's earnings for this week are $460. \n\nTherefore,",
+        "pred_int": 460,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00010",
+        "gold": "366",
+        "pred_text": "The program had a total of 366 downloads over the three months.",
+        "pred_int": 366,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00011",
+        "gold": "694",
+        "pred_text": "The total cost Toula paid for the pastries was $694.",
+        "pred_int": 694,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00012",
+        "gold": "13",
+        "pred_text": "It will take 13 years for Carlos to start earning money on the lemon",
+        "pred_int": 13,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00013",
+        "gold": "18",
+        "pred_text": "Melanie started with 18 vacuum cleaners. The final answer is 18",
+        "pred_int": 18,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00014",
+        "gold": "60",
+        "pred_text": "60% of the entire students enrolled in hip-hop dance. The final",
+        "pred_int": 60,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00015",
+        "gold": "125",
+        "pred_text": "The merchant would make a profit of $125 if he chooses to purchase",
+        "pred_int": 125,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00016",
+        "gold": "230",
+        "pred_text": "The distance covered by each train in the two days is 230 miles",
+        "pred_int": 230,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00017",
+        "gold": "57500",
+        "pred_text": "Jill's annual salary is $57,500.",
+        "pred_int": 57,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00018",
+        "gold": "7",
+        "pred_text": "Claire will eat 7 dozen eggs in 4 weeks.",
+        "pred_int": 7,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00019",
+        "gold": "6",
+        "pred_text": "Marissa needs to walk the remaining 6 miles at a speed of 6",
+        "pred_int": 6,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00020",
+        "gold": "15",
+        "pred_text": "There are 15 liters of water in the remaining 24 liters of",
+        "pred_int": 15,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00022",
+        "gold": "7",
+        "pred_text": "Billy sold 7 DVDs on Tuesday.",
+        "pred_int": 7,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00024",
+        "gold": "26",
+        "pred_text": "The original price of the book was $26.00. The final",
+        "pred_int": 26,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00025",
+        "gold": "2",
+        "pred_text": "Marie ordered 2 boxes of pizza. The final answer is 2 boxes of",
+        "pred_int": 2,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00029",
+        "gold": "104",
+        "pred_text": "The boots cost $104. The final answer is $104",
+        "pred_int": 104,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00030",
+        "gold": "109",
+        "pred_text": "Allen's age 10 years from now will be 109 years",
+        "pred_int": 10,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00031",
+        "gold": "80",
+        "pred_text": "The average guess of the three friends is 80. \n\nNote: There",
+        "pred_int": 80,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00033",
+        "gold": "70",
+        "pred_text": "Gretchen has 70 gold coins.",
+        "pred_int": 70,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00034",
+        "gold": "23",
+        "pred_text": "Siobhan has 23 jewels.",
+        "pred_int": 23,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00035",
+        "gold": "9",
+        "pred_text": "Mike scored a total of 9 points in the 40 minutes.",
+        "pred_int": 9,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00036",
+        "gold": "75",
+        "pred_text": "Terry spends $75.00 on yogurt over 30 days.",
+        "pred_int": 75,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00037",
+        "gold": "2",
+        "pred_text": "John still has 2 lego sets left.",
+        "pred_int": 2,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00038",
+        "gold": "10",
+        "pred_text": "John runs at a speed of 10 mph.",
+        "pred_int": 10,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00039",
+        "gold": "18",
+        "pred_text": "Dana can travel 18 miles in six hours under the given conditions. The",
+        "pred_int": 18,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00043",
+        "gold": "48",
+        "pred_text": "You can eat 48 grams of chips. \n\nNote: The final answer",
+        "pred_int": 48,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00044",
+        "gold": "20",
+        "pred_text": "Charlie's net profit from selling 20 candles is $20.0",
+        "pred_int": 20,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00045",
+        "gold": "104",
+        "pred_text": "Meredith spent a total of 104 hours writing articles over the three days",
+        "pred_int": 104,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00046",
+        "gold": "163",
+        "pred_text": "The package that Candice purchased contained 163 Post-it notes.",
+        "pred_int": 163,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00047",
+        "gold": "800",
+        "pred_text": "John spent $800 on ties.",
+        "pred_int": 800,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00049",
+        "gold": "30",
+        "pred_text": "The total number of unoccupied units in the building is 30 units.",
+        "pred_int": 30,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00050",
+        "gold": "294",
+        "pred_text": "Lloyd makes $294 on eggs per week.",
+        "pred_int": 294,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00051",
+        "gold": "5",
+        "pred_text": "It takes Tom 5 hours to get back.",
+        "pred_int": 5,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00052",
+        "gold": "15",
+        "pred_text": "He needs to remove 15 toys.",
+        "pred_int": 15,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00053",
+        "gold": "40",
+        "pred_text": "The mechanic earned $40 more revenue on Thursday compared to Friday. The final",
+        "pred_int": 40,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00054",
+        "gold": "40",
+        "pred_text": "The Doubtfire family now has 40 kittens. The final answer is",
+        "pred_int": 40,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00058",
+        "gold": "57",
+        "pred_text": "The final price of Stephen's groceries, including all fees, is $57",
+        "pred_int": 57,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00060",
+        "gold": "17",
+        "pred_text": "There are 17 good oranges in the basket. The final answer is",
+        "pred_int": 17,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00061",
+        "gold": "1430",
+        "pred_text": "Janet paid $1430 for the brooch.",
+        "pred_int": 1430,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00062",
+        "gold": "25000",
+        "pred_text": "If Marcy quits after 30 years, her annual pension will be $",
+        "pred_int": 30,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00063",
+        "gold": "1596",
+        "pred_text": "Aleena paid a total of $1596 for the streaming service by",
+        "pred_int": 1596,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00065",
+        "gold": "36",
+        "pred_text": "Jim spends 36 hours on TV and reading in 4 weeks.",
+        "pred_int": 36,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00066",
+        "gold": "48",
+        "pred_text": "48 people have all of the schools sent. The reasoning provided is correct",
+        "pred_int": 48,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00067",
+        "gold": "595",
+        "pred_text": "There were 595 gems in the treasure chest.",
+        "pred_int": 595,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00068",
+        "gold": "36",
+        "pred_text": "There are 36 teachers at Dr. Wertz's school. The final",
+        "pred_int": 36,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00070",
+        "gold": "7425",
+        "pred_text": "Judy makes $7,425 in 1 week.",
+        "pred_int": 7,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00072",
+        "gold": "221",
+        "pred_text": "Tommy raised a total of $221 from selling brownies and cheesec",
+        "pred_int": 221,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00073",
+        "gold": "255",
+        "pred_text": "Shiela will pay $255 each month for 3 months. Therefore",
+        "pred_int": 255,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00074",
+        "gold": "88",
+        "pred_text": "Artie will make $88.00.",
+        "pred_int": 88,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00075",
+        "gold": "60",
+        "pred_text": "The average square footage of a level is 60. The final answer is",
+        "pred_int": 60,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00076",
+        "gold": "5",
+        "pred_text": "Cecilia will use 5 bags of dog food in the first year.",
+        "pred_int": 5,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00077",
+        "gold": "100",
+        "pred_text": "The difference in the amount of laundry Raymond and David do is 100",
+        "pred_int": 100,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00078",
+        "gold": "6",
+        "pred_text": "Vincent saves $6 by buying 18 flowers at the better price. Vincent",
+        "pred_int": 6,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00080",
+        "gold": "10",
+        "pred_text": "10 liters of water were left. The final answer is 10",
+        "pred_int": 10,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00081",
+        "gold": "17",
+        "pred_text": "Charlie has 17 stickers left.",
+        "pred_int": 17,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00084",
+        "gold": "15",
+        "pred_text": "The football team won 15 games. The reasoning provided is correct and follows",
+        "pred_int": 15,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00085",
+        "gold": "44",
+        "pred_text": "Gene has 44 quilt blocks in total.",
+        "pred_int": 44,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00086",
+        "gold": "22",
+        "pred_text": "Greg\u2019s alarm rang 22 times in all. The final answer is",
+        "pred_int": 22,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00087",
+        "gold": "9360",
+        "pred_text": "After three more years of service, Sylvie's annual salary will be $9",
+        "pred_int": 9,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00088",
+        "gold": "8000",
+        "pred_text": "Harald sold 8,000 copies. \n\nThe reasoning provided is",
+        "pred_int": 8,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00090",
+        "gold": "225",
+        "pred_text": "Ted needs to bring 225 pounds of potato salad to the picnic.",
+        "pred_int": 225,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00091",
+        "gold": "28",
+        "pred_text": "The three have a total of 28 pets.",
+        "pred_int": 28,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00092",
+        "gold": "4",
+        "pred_text": "Jackson is 4 years old. Jackson is 4 years old.",
+        "pred_int": 4,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00093",
+        "gold": "36",
+        "pred_text": "Gerald can now run the 400-meter hurdles in 36 seconds",
+        "pred_int": 400,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00094",
+        "gold": "348",
+        "pred_text": "There are 348 pets in total in the neighborhood.",
+        "pred_int": 348,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00095",
+        "gold": "40",
+        "pred_text": "40 girls are not in the girl scout. The final answer is:",
+        "pred_int": 40,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00097",
+        "gold": "12",
+        "pred_text": "Freda used 12 tomatoes.",
+        "pred_int": 12,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00099",
+        "gold": "58",
+        "pred_text": "Mary will remain with 58 potted plants.",
+        "pred_int": 58,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00100",
+        "gold": "175",
+        "pred_text": "The doorbell made 175 rings before Jerome could open the door.",
+        "pred_int": 175,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00101",
+        "gold": "6",
+        "pred_text": "Solo needs to read 6 pages on average in one day to complete his reading",
+        "pred_int": 6,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00102",
+        "gold": "26",
+        "pred_text": "John drinks 26 glasses of water in a week.",
+        "pred_int": 26,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00104",
+        "gold": "500",
+        "pred_text": "There are 500 jigsaw pieces left to be placed. The final",
+        "pred_int": 500,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00106",
+        "gold": "72",
+        "pred_text": "The total inner volume of all 3 boxes is 72 cubic inches.",
+        "pred_int": 3,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00107",
+        "gold": "3",
+        "pred_text": "Frankie watched 3 episodes of the 30-minute show on Wednesday. The",
+        "pred_int": 3,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00108",
+        "gold": "50",
+        "pred_text": "Henry baked 50 cookies last year. Henry baked 50 cookies last",
+        "pred_int": 50,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00109",
+        "gold": "28",
+        "pred_text": "If someone buys 10 gallons of gas, after the cashback rewards,",
+        "pred_int": 10,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00110",
+        "gold": "45",
+        "pred_text": "They ate an average of 45 fruit roll-ups.",
+        "pred_int": 45,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00111",
+        "gold": "16",
+        "pred_text": "The boat had taken on 16 liters of water by the time Julia reached",
+        "pred_int": 16,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00115",
+        "gold": "90",
+        "pred_text": "Sasha made a profit of $90 by selling the leftover lumber. The final",
+        "pred_int": 90,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00118",
+        "gold": "4",
+        "pred_text": "4 containers were imported on the second day. The final answer is 4",
+        "pred_int": 4,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00119",
+        "gold": "95200",
+        "pred_text": "The total salary the two were receiving four years later was $9520",
+        "pred_int": 9520,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00121",
+        "gold": "27",
+        "pred_text": "They have 27 fruits in total.",
+        "pred_int": 27,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00122",
+        "gold": "48",
+        "pred_text": "Sadie slept a total of 48 hours throughout the week. \n\nTherefore",
+        "pred_int": 48,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00123",
+        "gold": "50",
+        "pred_text": "Rosie can run 50 miles in 7 hours. The final answer is",
+        "pred_int": 50,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00128",
+        "gold": "880",
+        "pred_text": "Dillon will spend a total of $880.00. The final",
+        "pred_int": 880,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00129",
+        "gold": "10000",
+        "pred_text": "The hospital makes a profit of $10000 a day from patient",
+        "pred_int": 10000,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00130",
+        "gold": "30",
+        "pred_text": "30 elves are left. The final answer is 30 elves are",
+        "pred_int": 30,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00132",
+        "gold": "60",
+        "pred_text": "Pam and Fred used 60 tickets that day. The reasoning provided is correct",
+        "pred_int": 60,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00133",
+        "gold": "13",
+        "pred_text": "Walt walked 13 miles on Wednesday. The final answer is 13",
+        "pred_int": 13,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00135",
+        "gold": "40",
+        "pred_text": "Bobby has 40 video games.",
+        "pred_int": 40,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00137",
+        "gold": "29",
+        "pred_text": "The total cost of Rory's delivery order, including the 20% delivery",
+        "pred_int": 20,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00138",
+        "gold": "105",
+        "pred_text": "Mark left 105 questions incomplete. The final answer is 10",
+        "pred_int": 105,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00140",
+        "gold": "20",
+        "pred_text": "20% of the cars are semi-automatic.",
+        "pred_int": 20,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00141",
+        "gold": "400",
+        "pred_text": "There are 400 worker bees in the hive.",
+        "pred_int": 400,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00143",
+        "gold": "16",
+        "pred_text": "The total cost of everything is $16.00. The final answer",
+        "pred_int": 16,
+        "correct": true,
+        "corrupted_indices": []
+      }
+    ],
+    "middle": [
+      {
+        "id": "gsm8k-neutral-stripped-test-00002",
+        "gold": "70000",
+        "pred_text": "Josh made a profit of $70,000.",
+        "pred_int": 70,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00005",
+        "gold": "64",
+        "pred_text": "Kylar needs to pay $64 for the glasses he wants to buy",
+        "pred_int": 64,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00006",
+        "gold": "260",
+        "pred_text": "Toulouse, Charleston, and Seattle have a total of 260 sheep",
+        "pred_int": 260,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00007",
+        "gold": "160",
+        "pred_text": "160 minutes. The total time to download the file, including the",
+        "pred_int": 160,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00008",
+        "gold": "45",
+        "pred_text": "John is 45 miles away from home at the end of those 4",
+        "pred_int": 45,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00009",
+        "gold": "460",
+        "pred_text": "Eliza's earnings for this week are $460. \n\nNote:",
+        "pred_int": 460,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00010",
+        "gold": "366",
+        "pred_text": "The program had a total of 366 downloads over the three months.",
+        "pred_int": 366,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00011",
+        "gold": "694",
+        "pred_text": "The total cost Toula paid for the pastries was $694.",
+        "pred_int": 694,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00012",
+        "gold": "13",
+        "pred_text": "Carlos will start earning money on the lemon tree in year 13. The",
+        "pred_int": 13,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00013",
+        "gold": "18",
+        "pred_text": "Melanie started with 18 vacuum cleaners. The final answer is 18",
+        "pred_int": 18,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00014",
+        "gold": "60",
+        "pred_text": "60% of the entire students enrolled in hip-hop dance. The final",
+        "pred_int": 60,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00015",
+        "gold": "125",
+        "pred_text": "The merchant would make a profit of $125 if he chooses to purchase",
+        "pred_int": 125,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00016",
+        "gold": "230",
+        "pred_text": "The distance covered by each train in the two days is 230 miles",
+        "pred_int": 230,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00017",
+        "gold": "57500",
+        "pred_text": "Jill's annual salary is $57,500.",
+        "pred_int": 57,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00018",
+        "gold": "7",
+        "pred_text": "Claire will eat 7 dozen eggs in 4 weeks.",
+        "pred_int": 7,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00019",
+        "gold": "6",
+        "pred_text": "Marissa needs to walk the remaining distance at a speed of 6 miles per",
+        "pred_int": 6,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00020",
+        "gold": "15",
+        "pred_text": "There are 15 liters of water in the remaining 24 liters of",
+        "pred_int": 15,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00022",
+        "gold": "7",
+        "pred_text": "Billy sold 7 DVDs on Tuesday. \n\nNote: There was a mistake in",
+        "pred_int": 7,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00024",
+        "gold": "26",
+        "pred_text": "The original price of the book was $26.00.\nYou are",
+        "pred_int": 26,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00025",
+        "gold": "2",
+        "pred_text": "Marie ordered 2 boxes of pizza. The reasoning provided contains several errors and mis",
+        "pred_int": 2,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00029",
+        "gold": "104",
+        "pred_text": "The boots cost $104. The final answer is $104",
+        "pred_int": 104,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00030",
+        "gold": "109",
+        "pred_text": "Allen's age 10 years from now will be 109 years",
+        "pred_int": 10,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00031",
+        "gold": "80",
+        "pred_text": "The average guess of the three friends is 80. \n\nNote: The",
+        "pred_int": 80,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00033",
+        "gold": "70",
+        "pred_text": "Gretchen has 70 gold coins. The reasoning provided contains an error in",
+        "pred_int": 70,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00034",
+        "gold": "23",
+        "pred_text": "Siobhan has 23 jewels. The reasoning provided contains a few errors",
+        "pred_int": 23,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00035",
+        "gold": "9",
+        "pred_text": "Mike scored a total of 9 points in the 40 minutes.",
+        "pred_int": 9,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00036",
+        "gold": "75",
+        "pred_text": "Terry spends $75.00 on yogurt over 30 days.",
+        "pred_int": 75,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00037",
+        "gold": "2",
+        "pred_text": "John has 2 lego sets left. \n\nNote: There is a mistake",
+        "pred_int": 2,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00038",
+        "gold": "10",
+        "pred_text": "John runs at a speed of 10 mph.",
+        "pred_int": 10,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00039",
+        "gold": "18",
+        "pred_text": "Dana can travel 18 miles in six hours under the given conditions. The",
+        "pred_int": 18,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00043",
+        "gold": "48",
+        "pred_text": "48 grams. The final answer is 48 grams. \n\nThis",
+        "pred_int": 48,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00044",
+        "gold": "20",
+        "pred_text": "Charlie's net profit from selling 20 candles is $20.0",
+        "pred_int": 20,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00045",
+        "gold": "104",
+        "pred_text": "Meredith spent a total of 104 hours writing articles over the three days",
+        "pred_int": 104,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00046",
+        "gold": "163",
+        "pred_text": "The package that Candice purchased contained 163 Post-it notes.",
+        "pred_int": 163,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00047",
+        "gold": "800",
+        "pred_text": "He spent $800 on ties. The previous calculation had an error.",
+        "pred_int": 800,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00049",
+        "gold": "30",
+        "pred_text": "The total number of unoccupied units in the building is 30 units.",
+        "pred_int": 30,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00050",
+        "gold": "294",
+        "pred_text": "Lloyd makes $294 on eggs per week. The correct number of dozens",
+        "pred_int": 294,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00051",
+        "gold": "5",
+        "pred_text": "It takes Tom 5 hours to get back.",
+        "pred_int": 5,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00052",
+        "gold": "15",
+        "pred_text": "He needs to remove 15 toys.",
+        "pred_int": 15,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00053",
+        "gold": "40",
+        "pred_text": "The mechanic earned $40 more on Thursday compared to Friday. The final answer",
+        "pred_int": 40,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00054",
+        "gold": "40",
+        "pred_text": "The Doubtfire family now has 40 kittens. The final answer is",
+        "pred_int": 40,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00058",
+        "gold": "57",
+        "pred_text": "The final price of Stephen's groceries, after all the extra fees, is $",
+        "pred_int": null,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00060",
+        "gold": "17",
+        "pred_text": "There are 17 good oranges in the basket. The final answer is",
+        "pred_int": 17,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00061",
+        "gold": "1430",
+        "pred_text": "Janet paid $1430 for the brooch.",
+        "pred_int": 1430,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00062",
+        "gold": "25000",
+        "pred_text": "Marcy's annual pension after 30 years will be $25,",
+        "pred_int": 30,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00063",
+        "gold": "1596",
+        "pred_text": "Aleena paid a total of $1596 for the streaming service by",
+        "pred_int": 1596,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00065",
+        "gold": "36",
+        "pred_text": "Jim spends 36 hours on TV and reading in 4 weeks.",
+        "pred_int": 36,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00066",
+        "gold": "48",
+        "pred_text": "48 people have all of the schools sent. The reasoning provided is correct",
+        "pred_int": 48,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00067",
+        "gold": "595",
+        "pred_text": "There were 595 gems in the treasure chest. The final answer is",
+        "pred_int": 595,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00068",
+        "gold": "36",
+        "pred_text": "There are 36 teachers at Dr. Wertz's school. The final",
+        "pred_int": 36,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00070",
+        "gold": "7425",
+        "pred_text": "$7,425.00. \nNote: There seems to",
+        "pred_int": 7,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00072",
+        "gold": "221",
+        "pred_text": "Tommy raised a total of $221 from selling brownies and cheesec",
+        "pred_int": 221,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00073",
+        "gold": "255",
+        "pred_text": "Shiela will pay $255 each month for 3 months. Therefore",
+        "pred_int": 255,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00074",
+        "gold": "88",
+        "pred_text": "Artie will make $88.00. \n\nNote: There was",
+        "pred_int": 88,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00075",
+        "gold": "60",
+        "pred_text": "The average square footage of a level is 60. The reasoning provided is",
+        "pred_int": 60,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00076",
+        "gold": "5",
+        "pred_text": "Cecilia will use 5 bags of dog food in the first year.",
+        "pred_int": 5,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00077",
+        "gold": "100",
+        "pred_text": "The difference in the amount of laundry Raymond and David do is 100",
+        "pred_int": 100,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00078",
+        "gold": "6",
+        "pred_text": "Vincent would save $6 by buying 18 flowers at the better price.",
+        "pred_int": 6,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00080",
+        "gold": "10",
+        "pred_text": "10 liters of water were left. The reasoning provided contains several errors and",
+        "pred_int": 10,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00081",
+        "gold": "17",
+        "pred_text": "Charlie has 17 stickers left. The final answer is 17.",
+        "pred_int": 17,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00084",
+        "gold": "15",
+        "pred_text": "The football team won 15 games. The reasoning provided contains several errors and",
+        "pred_int": 15,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00085",
+        "gold": "44",
+        "pred_text": "Gene has 44 quilt blocks in total.",
+        "pred_int": 44,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00086",
+        "gold": "22",
+        "pred_text": "Greg\u2019s alarm rang 22 times in all. The final answer is",
+        "pred_int": 22,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00087",
+        "gold": "9360",
+        "pred_text": "After three more years of service, Sylvie's annual salary will be $9",
+        "pred_int": 9,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00088",
+        "gold": "8000",
+        "pred_text": "Harald sold 8,000 copies. The reasoning provided is correct",
+        "pred_int": 8,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00090",
+        "gold": "225",
+        "pred_text": "Ted needs to bring 225 pounds of potato salad to the picnic.",
+        "pred_int": 225,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00091",
+        "gold": "28",
+        "pred_text": "The three have a total of 28 pets. The reasoning provided in the",
+        "pred_int": 28,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00092",
+        "gold": "4",
+        "pred_text": "Jackson is 4 years old. Jackson is 4 years old.",
+        "pred_int": 4,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00093",
+        "gold": "36",
+        "pred_text": "Gerald can now run the 400-meter hurdles in 36 seconds",
+        "pred_int": 400,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00094",
+        "gold": "348",
+        "pred_text": "There are 348 pets in total in the neighborhood. The reasoning provided",
+        "pred_int": 348,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00095",
+        "gold": "40",
+        "pred_text": "40 girls are not in the girl scout. The final answer is:",
+        "pred_int": 40,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00097",
+        "gold": "12",
+        "pred_text": "Freda used 12 tomatoes.",
+        "pred_int": 12,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00099",
+        "gold": "58",
+        "pred_text": "Mary will remain with 58 potted plants. Mary will remain with",
+        "pred_int": 58,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00100",
+        "gold": "175",
+        "pred_text": "175.\nThe final answer is 175. However,",
+        "pred_int": 175,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00101",
+        "gold": "6",
+        "pred_text": "Solo needs to read 6 pages on average in one day to complete his reading",
+        "pred_int": 6,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00102",
+        "gold": "26",
+        "pred_text": "John drinks 26 glasses of water in a week.",
+        "pred_int": 26,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00104",
+        "gold": "500",
+        "pred_text": "There are 500 jigsaw pieces left to be placed. The final",
+        "pred_int": 500,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00106",
+        "gold": "72",
+        "pred_text": "The total inner volume of all 3 boxes is 72 cubic inches.",
+        "pred_int": 3,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00107",
+        "gold": "3",
+        "pred_text": "Frankie watched 3 episodes of the 30-minute show on Wednesday. The",
+        "pred_int": 3,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00108",
+        "gold": "50",
+        "pred_text": "Henry baked 50 cookies last year. Henry baked 50 cookies last",
+        "pred_int": 50,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00109",
+        "gold": "28",
+        "pred_text": "If someone buys 10 gallons of gas, after the cashback rewards,",
+        "pred_int": 10,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00110",
+        "gold": "45",
+        "pred_text": "They ate an average of 45 fruit roll-ups. \n\nNote: There",
+        "pred_int": 45,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00111",
+        "gold": "16",
+        "pred_text": "The boat had taken on 16 liters of water by the time Julia reached",
+        "pred_int": 16,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00115",
+        "gold": "90",
+        "pred_text": "Sasha made a profit of $90 by selling the leftover lumber. The final",
+        "pred_int": 90,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00118",
+        "gold": "4",
+        "pred_text": "4 containers were imported on the second day. The final answer is 4",
+        "pred_int": 4,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00119",
+        "gold": "95200",
+        "pred_text": "The total salary the two were receiving four years later is $9520",
+        "pred_int": 9520,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00121",
+        "gold": "27",
+        "pred_text": "They have 27 fruits in total.",
+        "pred_int": 27,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00122",
+        "gold": "48",
+        "pred_text": "Sadie slept a total of 48 hours throughout the week. \n\nTherefore",
+        "pred_int": 48,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00123",
+        "gold": "50",
+        "pred_text": "Rosie can run 50 miles in 7 hours. The final answer is",
+        "pred_int": 50,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00128",
+        "gold": "880",
+        "pred_text": "Dillon will spend a total of $880.00. The final",
+        "pred_int": 880,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00129",
+        "gold": "10000",
+        "pred_text": "The hospital makes a profit of $10000 a day from patient",
+        "pred_int": 10000,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00130",
+        "gold": "30",
+        "pred_text": "30 elves are left. The final answer is 30 elves are",
+        "pred_int": 30,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00132",
+        "gold": "60",
+        "pred_text": "Pam and Fred used 60 tickets that day. The reasoning provided is correct",
+        "pred_int": 60,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00133",
+        "gold": "13",
+        "pred_text": "Walt walked 13 miles on Wednesday. The final answer is 13",
+        "pred_int": 13,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00135",
+        "gold": "40",
+        "pred_text": "Bobby has 40 video games. The final answer is 40.",
+        "pred_int": 40,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00137",
+        "gold": "29",
+        "pred_text": "The total cost of Rory's delivery order, including the delivery fee and tip,",
+        "pred_int": null,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00138",
+        "gold": "105",
+        "pred_text": "Mark left 105 questions incomplete in total. The final answer is",
+        "pred_int": 105,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00140",
+        "gold": "20",
+        "pred_text": "20% of the cars are semi-automatic. \n\nNote: There was",
+        "pred_int": 20,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00141",
+        "gold": "400",
+        "pred_text": "There are 400 worker bees in the hive.",
+        "pred_int": 400,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00143",
+        "gold": "16",
+        "pred_text": "The total cost of everything is $16.00. The reasoning provided",
+        "pred_int": 16,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "prefix": [
+      {
+        "id": "gsm8k-neutral-stripped-test-00002",
+        "gold": "70000",
+        "pred_text": "Josh made a profit of $70,000.",
+        "pred_int": 70,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00005",
+        "gold": "64",
+        "pred_text": "Kylar needs to pay $64 for the glasses he wants to buy",
+        "pred_int": 64,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00006",
+        "gold": "260",
+        "pred_text": "Toulouse, Charleston, and Seattle have a total of 260 sheep",
+        "pred_int": 260,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00007",
+        "gold": "160",
+        "pred_text": "It takes 160 minutes to download the file.",
+        "pred_int": 160,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00008",
+        "gold": "45",
+        "pred_text": "John is 45 miles away from home at the end of those 4",
+        "pred_int": 45,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00009",
+        "gold": "460",
+        "pred_text": "Eliza's earnings for this week are $460. \n\nTherefore,",
+        "pred_int": 460,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00010",
+        "gold": "366",
+        "pred_text": "The program had a total of 366 downloads over the three months.",
+        "pred_int": 366,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00011",
+        "gold": "694",
+        "pred_text": "The total cost Toula paid for the pastries was $694.",
+        "pred_int": 694,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00012",
+        "gold": "13",
+        "pred_text": "It will take 12 years for Carlos to start earning money on the lemon",
+        "pred_int": 12,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00013",
+        "gold": "18",
+        "pred_text": "Melanie started with 18 vacuum cleaners. The final answer is 18",
+        "pred_int": 18,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00014",
+        "gold": "60",
+        "pred_text": "60% of the entire students enrolled in hip-hop dance. The final",
+        "pred_int": 60,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00015",
+        "gold": "125",
+        "pred_text": "The merchant would make a profit of $125 if he chooses to purchase",
+        "pred_int": 125,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00016",
+        "gold": "230",
+        "pred_text": "The distance covered by each train in the two days is 230 miles",
+        "pred_int": 230,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00017",
+        "gold": "57500",
+        "pred_text": "Jill's annual salary is $57,500.",
+        "pred_int": 57,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00018",
+        "gold": "7",
+        "pred_text": "Claire will eat 7 dozen eggs in 4 weeks.",
+        "pred_int": 7,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00019",
+        "gold": "6",
+        "pred_text": "Marissa needs to walk the remaining 6 miles at a speed of 6",
+        "pred_int": 6,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00020",
+        "gold": "15",
+        "pred_text": "There are 15 liters of water out of the 24 liters.",
+        "pred_int": 15,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00022",
+        "gold": "7",
+        "pred_text": "Billy sold 7 DVDs on Tuesday. \n\nThe final answer is 7 DVDs",
+        "pred_int": 7,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00024",
+        "gold": "26",
+        "pred_text": "The original price of the book was $26.\nYou're correct in your",
+        "pred_int": 26,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00025",
+        "gold": "2",
+        "pred_text": "Marie ordered 2 boxes of pizza. The final answer is 2 boxes of",
+        "pred_int": 2,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00029",
+        "gold": "104",
+        "pred_text": "The boots cost $104. The final answer is $104",
+        "pred_int": 104,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00030",
+        "gold": "109",
+        "pred_text": "Allen's age 10 years from now will be 109 years",
+        "pred_int": 10,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00031",
+        "gold": "80",
+        "pred_text": "The average guess of the three friends is 80. \n\nNote: There",
+        "pred_int": 80,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00033",
+        "gold": "70",
+        "pred_text": "Gretchen has 70 gold coins. The reasoning provided contains an error in",
+        "pred_int": 70,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00034",
+        "gold": "23",
+        "pred_text": "Siobhan has 23 jewels.",
+        "pred_int": 23,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00035",
+        "gold": "9",
+        "pred_text": "Mike scored a total of 9 points in the 40 minutes.",
+        "pred_int": 9,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00036",
+        "gold": "75",
+        "pred_text": "Terry spends $75.00 on yogurt over 30 days.",
+        "pred_int": 75,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00037",
+        "gold": "2",
+        "pred_text": "John still has 2 lego sets left.",
+        "pred_int": 2,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00038",
+        "gold": "10",
+        "pred_text": "John runs at a speed of 10 mph.",
+        "pred_int": 10,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00039",
+        "gold": "18",
+        "pred_text": "Dana can travel 18 miles in six hours under the given conditions. Therefore",
+        "pred_int": 18,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00043",
+        "gold": "48",
+        "pred_text": "You can eat 48 grams of chips. \n\nNote: The initial calorie",
+        "pred_int": 48,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00044",
+        "gold": "20",
+        "pred_text": "Charlie's net profit from selling 20 candles is $20.0",
+        "pred_int": 20,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00045",
+        "gold": "104",
+        "pred_text": "Meredith spent a total of 104 hours writing articles over the three days",
+        "pred_int": 104,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00046",
+        "gold": "163",
+        "pred_text": "Candice purchased a package of 163 Post-it notes. The reasoning",
+        "pred_int": 163,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00047",
+        "gold": "800",
+        "pred_text": "John spent $800 on ties.",
+        "pred_int": 800,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00049",
+        "gold": "30",
+        "pred_text": "The total number of unoccupied units in the building is 30 units.",
+        "pred_int": 30,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00050",
+        "gold": "294",
+        "pred_text": "Lloyd makes $294 on eggs per week.",
+        "pred_int": 294,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00051",
+        "gold": "5",
+        "pred_text": "It takes Tom 5 hours to get back.",
+        "pred_int": 5,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00052",
+        "gold": "15",
+        "pred_text": "He needs to remove 15 toys.",
+        "pred_int": 15,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00053",
+        "gold": "40",
+        "pred_text": "The mechanic earned $40 more in revenue on Thursday compared to Friday. The",
+        "pred_int": 40,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00054",
+        "gold": "40",
+        "pred_text": "The Doubtfire family now has 40 kittens. The final answer is",
+        "pred_int": 40,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00058",
+        "gold": "57",
+        "pred_text": "The final price of Stephen's groceries, including all fees, is $57",
+        "pred_int": 57,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00060",
+        "gold": "17",
+        "pred_text": "There are 17 good oranges in the basket. The final answer is",
+        "pred_int": 17,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00061",
+        "gold": "1430",
+        "pred_text": "Janet paid $1430 for the brooch.",
+        "pred_int": 1430,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00062",
+        "gold": "25000",
+        "pred_text": "If Marcy quits after 30 years, her annual pension will be $",
+        "pred_int": 30,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00063",
+        "gold": "1596",
+        "pred_text": "Aleena paid a total of $1596 for the streaming service by",
+        "pred_int": 1596,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00065",
+        "gold": "36",
+        "pred_text": "Jim spends 36 hours on TV and reading in 4 weeks.",
+        "pred_int": 36,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00066",
+        "gold": "48",
+        "pred_text": "48 people have all of the schools sent. The reasoning provided is correct",
+        "pred_int": 48,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00067",
+        "gold": "595",
+        "pred_text": "There were 595 gems in the treasure chest. The final answer is",
+        "pred_int": 595,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00068",
+        "gold": "36",
+        "pred_text": "There are 36 teachers at Dr. Wertz's school. The final",
+        "pred_int": 36,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00070",
+        "gold": "7425",
+        "pred_text": "Judy makes $7,425 in 1 week.",
+        "pred_int": 7,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00072",
+        "gold": "221",
+        "pred_text": "Tommy raised a total of $221 from selling brownies and cheesec",
+        "pred_int": 221,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00073",
+        "gold": "255",
+        "pred_text": "Shiela will pay $255 each month for 3 months. Therefore",
+        "pred_int": 255,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00074",
+        "gold": "88",
+        "pred_text": "Artie will make $88.00. \n\nNote: The final",
+        "pred_int": 88,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00075",
+        "gold": "60",
+        "pred_text": "The average square footage of a level is 60. The final answer is",
+        "pred_int": 60,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00076",
+        "gold": "5",
+        "pred_text": "Cecilia will use 5 bags of dog food in the first year.",
+        "pred_int": 5,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00077",
+        "gold": "100",
+        "pred_text": "The difference in the amount of laundry Raymond and David do is 100",
+        "pred_int": 100,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00078",
+        "gold": "6",
+        "pred_text": "Vincent saves $6 by buying 18 flowers at the better price. The",
+        "pred_int": 6,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00080",
+        "gold": "10",
+        "pred_text": "10 liters of water were left. The reasoning provided is correct, and",
+        "pred_int": 10,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00081",
+        "gold": "17",
+        "pred_text": "Charlie has 17 stickers left.",
+        "pred_int": 17,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00084",
+        "gold": "15",
+        "pred_text": "The football team won 15 games. The reasoning provided is mostly correct,",
+        "pred_int": 15,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00085",
+        "gold": "44",
+        "pred_text": "Gene has 44 quilt blocks in total.",
+        "pred_int": 44,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00086",
+        "gold": "22",
+        "pred_text": "Greg\u2019s alarm rang 22 times in all. The final answer is",
+        "pred_int": 22,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00087",
+        "gold": "9360",
+        "pred_text": "After three more years of service, Sylvie's annual salary will be $9",
+        "pred_int": 9,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00088",
+        "gold": "8000",
+        "pred_text": "Harald sold 8,000 copies. The reasoning provided is correct",
+        "pred_int": 8,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00090",
+        "gold": "225",
+        "pred_text": "Ted needs to bring 225 pounds of potato salad to the picnic.",
+        "pred_int": 225,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00091",
+        "gold": "28",
+        "pred_text": "The three have a total of 28 pets.",
+        "pred_int": 28,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00092",
+        "gold": "4",
+        "pred_text": "Jackson is 4 years old. Jackson is 4 years old.",
+        "pred_int": 4,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00093",
+        "gold": "36",
+        "pred_text": "Gerald can now run the 400-meter hurdles in 36 seconds",
+        "pred_int": 400,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00094",
+        "gold": "348",
+        "pred_text": "There are 348 pets in total in the neighborhood.",
+        "pred_int": 348,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00095",
+        "gold": "40",
+        "pred_text": "40 girls are not in the girl scout. The final answer is:",
+        "pred_int": 40,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00097",
+        "gold": "12",
+        "pred_text": "Freda used 12 tomatoes.",
+        "pred_int": 12,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00099",
+        "gold": "58",
+        "pred_text": "Mary will remain with 58 potted plants. Mary will remain with",
+        "pred_int": 58,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00100",
+        "gold": "175",
+        "pred_text": "The doorbell made 175 rings. The final answer is 1",
+        "pred_int": 175,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00101",
+        "gold": "6",
+        "pred_text": "Solo needs to read 6 pages on average in one day to complete his reading",
+        "pred_int": 6,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00102",
+        "gold": "26",
+        "pred_text": "John drinks 26 glasses of water in a week.",
+        "pred_int": 26,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00104",
+        "gold": "500",
+        "pred_text": "There are 500 jigsaw pieces left to be placed. The final",
+        "pred_int": 500,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00106",
+        "gold": "72",
+        "pred_text": "The total inner volume of all 3 boxes is 72 cubic inches.",
+        "pred_int": 3,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00107",
+        "gold": "3",
+        "pred_text": "Frankie watched 3 episodes of the 30-minute show on Wednesday. The",
+        "pred_int": 3,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00108",
+        "gold": "50",
+        "pred_text": "Henry baked 50 cookies last year. Henry baked 50 cookies last",
+        "pred_int": 50,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00109",
+        "gold": "28",
+        "pred_text": "If someone buys 10 gallons of gas, their total cost after the cash",
+        "pred_int": 10,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00110",
+        "gold": "45",
+        "pred_text": "They ate an average of 45 fruit roll-ups.",
+        "pred_int": 45,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00111",
+        "gold": "16",
+        "pred_text": "The boat had taken on 16 liters of water by the time Julia reached",
+        "pred_int": 16,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00115",
+        "gold": "90",
+        "pred_text": "Sasha made a profit of $90 from selling her leftover lumber. The correct",
+        "pred_int": 90,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00118",
+        "gold": "4",
+        "pred_text": "4 containers were imported on the second day. The final answer is 4",
+        "pred_int": 4,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00119",
+        "gold": "95200",
+        "pred_text": "The total salary the two were receiving four years later was $9520",
+        "pred_int": 9520,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00121",
+        "gold": "27",
+        "pred_text": "Kael and Morisette brought 27 fruits in total. The final",
+        "pred_int": 27,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00122",
+        "gold": "48",
+        "pred_text": "Sadie slept a total of 48 hours throughout the week. \n\nNote",
+        "pred_int": 48,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00123",
+        "gold": "50",
+        "pred_text": "Rosie can run 50 miles in 7 hours. The final answer is",
+        "pred_int": 50,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00128",
+        "gold": "880",
+        "pred_text": "Dillon will spend a total of $880. \n\nNote: The initial",
+        "pred_int": 880,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00129",
+        "gold": "10000",
+        "pred_text": "The hospital makes a profit of $10000 a day from patient",
+        "pred_int": 10000,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00130",
+        "gold": "30",
+        "pred_text": "30 elves are left. The final answer is 30 elves are",
+        "pred_int": 30,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00132",
+        "gold": "60",
+        "pred_text": "Pam and Fred used 60 tickets that day. The reasoning provided is correct",
+        "pred_int": 60,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00133",
+        "gold": "13",
+        "pred_text": "Walt walked 13 miles on Wednesday. The final answer is 13",
+        "pred_int": 13,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00135",
+        "gold": "40",
+        "pred_text": "Bobby has 40 video games.",
+        "pred_int": 40,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00137",
+        "gold": "29",
+        "pred_text": "The total cost of Rory's delivery order, including the 20% delivery",
+        "pred_int": 20,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00138",
+        "gold": "105",
+        "pred_text": "Mark left 105 questions incomplete. However, since the maximum number of",
+        "pred_int": 105,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00140",
+        "gold": "20",
+        "pred_text": "20% of the cars are semi-automatic.",
+        "pred_int": 20,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00141",
+        "gold": "400",
+        "pred_text": "There are 400 worker bees in the hive. The final answer is",
+        "pred_int": 400,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00143",
+        "gold": "16",
+        "pred_text": "The total cost of everything is $16.00. The final answer",
+        "pred_int": 16,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      }
+    ],
+    "suffix": [
+      {
+        "id": "gsm8k-neutral-stripped-test-00002",
+        "gold": "70000",
+        "pred_text": "Josh made a profit of $70,000.",
+        "pred_int": 70,
+        "correct": false,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00005",
+        "gold": "64",
+        "pred_text": "Kylar needs to pay $64 for the glasses he wants to buy",
+        "pred_int": 64,
+        "correct": true,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00006",
+        "gold": "260",
+        "pred_text": "Toulouse, Charleston, and Seattle have a total of 260 sheep",
+        "pred_int": 260,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00007",
+        "gold": "160",
+        "pred_text": "160 minutes.\nThe reasoning provided is correct, and the final answer",
+        "pred_int": 160,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00008",
+        "gold": "45",
+        "pred_text": "John is 45 miles away from home at the end of those 4",
+        "pred_int": 45,
+        "correct": true,
+        "corrupted_indices": [
+          7
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00009",
+        "gold": "460",
+        "pred_text": "Eliza's earnings for this week are $460. \n\nTherefore,",
+        "pred_int": 460,
+        "correct": true,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00010",
+        "gold": "366",
+        "pred_text": "The program had a total of 366 downloads over the three months.",
+        "pred_int": 366,
+        "correct": true,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00011",
+        "gold": "694",
+        "pred_text": "The total cost Toula paid for the pastries was $694.",
+        "pred_int": 694,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00012",
+        "gold": "13",
+        "pred_text": "It will take 12 years for Carlos to start earning money on the lemon",
+        "pred_int": 12,
+        "correct": false,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00013",
+        "gold": "18",
+        "pred_text": "Melanie started with 18 vacuum cleaners. The reasoning provided contains a few errors",
+        "pred_int": 18,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00014",
+        "gold": "60",
+        "pred_text": "60% of the entire students enrolled in hip-hop dance. The final",
+        "pred_int": 60,
+        "correct": true,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00015",
+        "gold": "125",
+        "pred_text": "The merchant would make a profit of $125 if he chooses to purchase",
+        "pred_int": 125,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00016",
+        "gold": "230",
+        "pred_text": "The distance covered by each train in the two days is 230 miles",
+        "pred_int": 230,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00017",
+        "gold": "57500",
+        "pred_text": "Jill's annual salary is $57,500. The reasoning and",
+        "pred_int": 57,
+        "correct": false,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00018",
+        "gold": "7",
+        "pred_text": "Claire will eat 7 dozen eggs in 4 weeks. The reasoning provided contains",
+        "pred_int": 7,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00019",
+        "gold": "6",
+        "pred_text": "Marissa needs to walk the remaining 6 miles at a speed of 6",
+        "pred_int": 6,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00020",
+        "gold": "15",
+        "pred_text": "There are 15 liters of water in the remaining 24 liters of",
+        "pred_int": 15,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00022",
+        "gold": "7",
+        "pred_text": "Billy sold 7 DVDs on Tuesday.",
+        "pred_int": 7,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00024",
+        "gold": "26",
+        "pred_text": "The original price of the book was $26.\nThe final answer is that",
+        "pred_int": 26,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00025",
+        "gold": "2",
+        "pred_text": "Marie ordered 2 boxes of pizza. The reasoning provided is correct, and the",
+        "pred_int": 2,
+        "correct": true,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00029",
+        "gold": "104",
+        "pred_text": "The boots cost $104. The reasoning provided is correct, and the",
+        "pred_int": 104,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00030",
+        "gold": "109",
+        "pred_text": "Allen will be 109 years old 10 years from now.",
+        "pred_int": 109,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00031",
+        "gold": "80",
+        "pred_text": "The average guess of the number of jelly beans in the jar is 80",
+        "pred_int": 80,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00033",
+        "gold": "70",
+        "pred_text": "Gretchen has 70 gold coins.",
+        "pred_int": 70,
+        "correct": true,
+        "corrupted_indices": [
+          6
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00034",
+        "gold": "23",
+        "pred_text": "Siobhan has 23 jewels.",
+        "pred_int": 23,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00035",
+        "gold": "9",
+        "pred_text": "Mike scored a total of 9 points in the 40 minutes.",
+        "pred_int": 9,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00036",
+        "gold": "75",
+        "pred_text": "Terry spends $75.00 on yogurt over 30 days.",
+        "pred_int": 75,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00037",
+        "gold": "2",
+        "pred_text": "John still has 2 lego sets. \n\nNote: The reasoning provided contains",
+        "pred_int": 2,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00038",
+        "gold": "10",
+        "pred_text": "John runs at a speed of 10 mph.",
+        "pred_int": 10,
+        "correct": true,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00039",
+        "gold": "18",
+        "pred_text": "Dana can travel 18 miles in six hours under the given conditions. The",
+        "pred_int": 18,
+        "correct": true,
+        "corrupted_indices": [
+          7
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00043",
+        "gold": "48",
+        "pred_text": "You can eat 48 grams of chips. However, the final answer should",
+        "pred_int": 48,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00044",
+        "gold": "20",
+        "pred_text": "Charlie's net profit from selling 20 candles is $20.0",
+        "pred_int": 20,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00045",
+        "gold": "104",
+        "pred_text": "Meredith spent a total of 104 hours writing articles over the three days",
+        "pred_int": 104,
+        "correct": true,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00046",
+        "gold": "163",
+        "pred_text": "The package that Candice purchased contained 163 Post-it notes.",
+        "pred_int": 163,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00047",
+        "gold": "800",
+        "pred_text": "John spent $800 on ties. The reasoning provided contains a few errors",
+        "pred_int": 800,
+        "correct": true,
+        "corrupted_indices": [
+          6
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00049",
+        "gold": "30",
+        "pred_text": "The total number of unoccupied units in the building is 30 units.",
+        "pred_int": 30,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00050",
+        "gold": "294",
+        "pred_text": "Lloyd makes $294 on eggs per week.",
+        "pred_int": 294,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00051",
+        "gold": "5",
+        "pred_text": "It takes Tom 5 hours to get back.",
+        "pred_int": 5,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00052",
+        "gold": "15",
+        "pred_text": "Uriah needs to remove 15 toys. However, the reasoning provided contains",
+        "pred_int": 15,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00053",
+        "gold": "40",
+        "pred_text": "The mechanic earned $40 more in revenue on Thursday compared to Friday. Therefore",
+        "pred_int": 40,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00054",
+        "gold": "40",
+        "pred_text": "The Doubtfire family now has 40 kittens. The reasoning provided contains",
+        "pred_int": 40,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00058",
+        "gold": "57",
+        "pred_text": "The final price of Stephen's groceries, after all the extra fees, is $",
+        "pred_int": null,
+        "correct": false,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00060",
+        "gold": "17",
+        "pred_text": "There are 17 good oranges in the basket. The final answer is",
+        "pred_int": 17,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00061",
+        "gold": "1430",
+        "pred_text": "Janet paid $1430 for the brooch.",
+        "pred_int": 1430,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00062",
+        "gold": "25000",
+        "pred_text": "Marcy's annual pension after 30 years will be $25,",
+        "pred_int": 30,
+        "correct": false,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00063",
+        "gold": "1596",
+        "pred_text": "Aleena paid a total of $1596 for the streaming service by",
+        "pred_int": 1596,
+        "correct": true,
+        "corrupted_indices": [
+          6
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00065",
+        "gold": "36",
+        "pred_text": "Jim spends 36 hours on TV and reading in 4 weeks. The",
+        "pred_int": 36,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00066",
+        "gold": "48",
+        "pred_text": "48 people have all of the schools sent. The reasoning provided contains a",
+        "pred_int": 48,
+        "correct": true,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00067",
+        "gold": "595",
+        "pred_text": "There were 595 gems in the treasure chest.",
+        "pred_int": 595,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00068",
+        "gold": "36",
+        "pred_text": "There are 36 teachers at Dr. Wertz's school. The reasoning",
+        "pred_int": 36,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00070",
+        "gold": "7425",
+        "pred_text": "Judy makes $7,425 in 1 week. However, the",
+        "pred_int": 7,
+        "correct": false,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00072",
+        "gold": "221",
+        "pred_text": "Tommy raised a total of $221 from selling brownies and cheesec",
+        "pred_int": 221,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00073",
+        "gold": "255",
+        "pred_text": "Shiela will pay $255 each month for 3 months. Therefore",
+        "pred_int": 255,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00074",
+        "gold": "88",
+        "pred_text": "Artie will make $88.00. The final answer is calculated",
+        "pred_int": 88,
+        "correct": true,
+        "corrupted_indices": [
+          7
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00075",
+        "gold": "60",
+        "pred_text": "The average square footage of a level is 60. The reasoning provided contains",
+        "pred_int": 60,
+        "correct": true,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00076",
+        "gold": "5",
+        "pred_text": "Cecilia will use 5 bags of dog food in the first year. The",
+        "pred_int": 5,
+        "correct": true,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00077",
+        "gold": "100",
+        "pred_text": "The difference in the amount of laundry Raymond and David do is 100",
+        "pred_int": 100,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00078",
+        "gold": "6",
+        "pred_text": "Vincent saves $6 by buying 18 flowers at the better price. The",
+        "pred_int": 6,
+        "correct": true,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00080",
+        "gold": "10",
+        "pred_text": "10 liters of water were left. The reasoning provided is correct, and",
+        "pred_int": 10,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00081",
+        "gold": "17",
+        "pred_text": "Charlie has 17 stickers left.",
+        "pred_int": 17,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00084",
+        "gold": "15",
+        "pred_text": "The football team won 15 games. The reasoning provided is correct, and",
+        "pred_int": 15,
+        "correct": true,
+        "corrupted_indices": [
+          6
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00085",
+        "gold": "44",
+        "pred_text": "Gene has 44 quilt blocks in total. The reasoning provided in the steps",
+        "pred_int": 44,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00086",
+        "gold": "22",
+        "pred_text": "Greg\u2019s alarm rang 22 times in all. The final answer is",
+        "pred_int": 22,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00087",
+        "gold": "9360",
+        "pred_text": "After three more years of service, Sylvie's annual salary will be $9",
+        "pred_int": 9,
+        "correct": false,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00088",
+        "gold": "8000",
+        "pred_text": "Harald sold 8,000 copies. The reasoning provided contains a",
+        "pred_int": 8,
+        "correct": false,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00090",
+        "gold": "225",
+        "pred_text": "Ted needs to bring 225 pounds of potato salad to the picnic.",
+        "pred_int": 225,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00091",
+        "gold": "28",
+        "pred_text": "The three have a total of 28 pets. The reasoning provided in the",
+        "pred_int": 28,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00092",
+        "gold": "4",
+        "pred_text": "Jackson is 4 years old. Jackson is 4 years old.",
+        "pred_int": 4,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00093",
+        "gold": "36",
+        "pred_text": "Gerald can now run the 400-meter hurdles in 36 seconds",
+        "pred_int": 400,
+        "correct": false,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00094",
+        "gold": "348",
+        "pred_text": "There are 348 pets in total in the neighborhood. The reasoning provided",
+        "pred_int": 348,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00095",
+        "gold": "40",
+        "pred_text": "40 girls are not in the girl scout. The reasoning provided is correct",
+        "pred_int": 40,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00097",
+        "gold": "12",
+        "pred_text": "Freda used 12 tomatoes.",
+        "pred_int": 12,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00099",
+        "gold": "58",
+        "pred_text": "Mary will remain with 58 potted plants.",
+        "pred_int": 58,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00100",
+        "gold": "175",
+        "pred_text": "The doorbell made 175 doorbell rings before Jerome could open the",
+        "pred_int": 175,
+        "correct": true,
+        "corrupted_indices": [
+          6
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00101",
+        "gold": "6",
+        "pred_text": "Solo needs to read 6 pages on average each day for the remaining 4",
+        "pred_int": 6,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00102",
+        "gold": "26",
+        "pred_text": "John drinks 26 glasses of water in a week. The reasoning provided in",
+        "pred_int": 26,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00104",
+        "gold": "500",
+        "pred_text": "There are 500 jigsaw pieces left to be placed. The final",
+        "pred_int": 500,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00106",
+        "gold": "72",
+        "pred_text": "The total inner volume of all 3 boxes is 72 cubic inches.",
+        "pred_int": 3,
+        "correct": false,
+        "corrupted_indices": [
+          6
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00107",
+        "gold": "3",
+        "pred_text": "Frankie watched 3 episodes of the 30-minute show on Wednesday. The",
+        "pred_int": 3,
+        "correct": true,
+        "corrupted_indices": [
+          7
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00108",
+        "gold": "50",
+        "pred_text": "Henry baked 50 cookies last year. Henry baked 50 cookies last",
+        "pred_int": 50,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00109",
+        "gold": "28",
+        "pred_text": "The person will spend $28.00 per gallon after the cashback",
+        "pred_int": 28,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00110",
+        "gold": "45",
+        "pred_text": "On average, Marcell and Beatrice ate 45 fruit roll-ups.",
+        "pred_int": 45,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00111",
+        "gold": "16",
+        "pred_text": "The boat had taken on 16 liters of water by the time Julia reached",
+        "pred_int": 16,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00115",
+        "gold": "90",
+        "pred_text": "Sasha made a profit of $90 by selling the leftover lumber. The correct",
+        "pred_int": 90,
+        "correct": true,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00118",
+        "gold": "4",
+        "pred_text": "4 containers were imported on the second day. The final answer is 4",
+        "pred_int": 4,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00119",
+        "gold": "95200",
+        "pred_text": "The total salary that Adrien and Lylah were receiving four years",
+        "pred_int": null,
+        "correct": false,
+        "corrupted_indices": [
+          7
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00121",
+        "gold": "27",
+        "pred_text": "Kael and Morisette brought 27 fruits in total. The reasoning",
+        "pred_int": 27,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00122",
+        "gold": "48",
+        "pred_text": "Sadie slept a total of 48 hours throughout the week. The final",
+        "pred_int": 48,
+        "correct": true,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00123",
+        "gold": "50",
+        "pred_text": "Rosie can run 50 miles in 7 hours. The reasoning provided contains",
+        "pred_int": 50,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00128",
+        "gold": "880",
+        "pred_text": "Dillon will spend a total of $880.00. The final",
+        "pred_int": 880,
+        "correct": true,
+        "corrupted_indices": [
+          6
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00129",
+        "gold": "10000",
+        "pred_text": "The hospital makes a profit of $10000 a day from patient",
+        "pred_int": 10000,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00130",
+        "gold": "30",
+        "pred_text": "30 elves are left. The reasoning provided contains a few errors in the",
+        "pred_int": 30,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00132",
+        "gold": "60",
+        "pred_text": "Pam and Fred used 60 tickets that day. The reasoning provided is correct",
+        "pred_int": 60,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00133",
+        "gold": "13",
+        "pred_text": "Walt walked 13 miles on Wednesday. The reasoning provided is correct, and",
+        "pred_int": 13,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00135",
+        "gold": "40",
+        "pred_text": "Bobby has 40 video games. The reasoning provided contains a few errors,",
+        "pred_int": 40,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00137",
+        "gold": "29",
+        "pred_text": "The total cost of Rory's delivery order, including the 20% delivery",
+        "pred_int": 20,
+        "correct": false,
+        "corrupted_indices": [
+          6
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00138",
+        "gold": "105",
+        "pred_text": "Mark left 105 questions incomplete. However, this number is incorrect because",
+        "pred_int": 105,
+        "correct": true,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00140",
+        "gold": "20",
+        "pred_text": "20% of the cars are semi-automatic. \n\nThe final answer is",
+        "pred_int": 20,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00141",
+        "gold": "400",
+        "pred_text": "There are 400 worker bees in the hive. The reasoning provided is",
+        "pred_int": 400,
+        "correct": true,
+        "corrupted_indices": [
+          7
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00143",
+        "gold": "16",
+        "pred_text": "The total cost of everything is $16.00. The reasoning provided",
+        "pred_int": 16,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      }
+    ]
+  }
+}

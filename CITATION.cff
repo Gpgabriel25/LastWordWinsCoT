@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the paper below."
+title: "The Last Word Often Wins: A Format Confound in Chain-of-Thought Corruption Studies"
+authors:
+  - family-names: Garcia
+    given-names: Gabriel
+    email: gpgabriel25@gmail.com
+    affiliation: Independent Researcher
+abstract: >
+  Corruption studies, the primary tool for evaluating chain-of-thought (CoT)
+  faithfulness, identify which chain positions are "computationally important"
+  by measuring accuracy when steps are replaced with errors. We identify a
+  systematic confound: for chains with explicit terminal answer statements
+  (the dominant format in standard benchmarks like GSM8K and MATH), corruption
+  studies detect where the answer text appears, not where computation occurs.
+  A within-dataset format ablation collapses suffix-corruption sensitivity
+  approximately 19x at 3B, and conflicting-answer experiments confirm a causal
+  answer-text override across five architecture families at 7B that attenuates
+  at larger scales. We propose a three-prerequisite protocol (question-only
+  control, format characterization, all-position sweep) as a minimum standard
+  for corruption-based faithfulness studies.
+keywords:
+  - chain-of-thought
+  - faithfulness
+  - corruption studies
+  - large language models
+  - GSM8K
+  - mechanistic interpretability
+license: CC-BY-4.0
+license-url: https://creativecommons.org/licenses/by/4.0/
+year: 2026
+type: article
+url: "https://arxiv.org/abs/2605.10799"
+identifiers:
+  - type: other
+    value: "arXiv:2605.10799"
+    description: arXiv preprint
+preferred-citation:
+  type: article
+  title: "The Last Word Often Wins: A Format Confound in Chain-of-Thought Corruption Studies"
+  authors:
+    - family-names: Garcia
+      given-names: Gabriel
+      email: gpgabriel25@gmail.com
+      affiliation: Independent Researcher
+  year: 2026
+  url: "https://arxiv.org/abs/2605.10799"
+  identifiers:
+    - type: other
+      value: "arXiv:2605.10799"
+      description: arXiv preprint

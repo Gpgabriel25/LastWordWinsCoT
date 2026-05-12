@@ -1,0 +1,70 @@
+{
+  "study_name": "gsm8k_stripped.qwen3b_chain",
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "example_count": 100,
+  "bootstrap_samples": 5000,
+  "seed": 0,
+  "baseline": {
+    "accuracy": 1.0,
+    "ci95": [
+      1.0,
+      1.0
+    ]
+  },
+  "targets": {
+    "middle": {
+      "accuracy": 0.93,
+      "ci95": [
+        0.88,
+        0.97
+      ],
+      "accuracy_minus_baseline": -0.06999999999999995,
+      "accuracy_minus_baseline_ci95": [
+        -0.12,
+        -0.030000000000000027
+      ],
+      "paired_sign_test": {
+        "improve_count": 0,
+        "worsen_count": 7,
+        "discordant_count": 7,
+        "two_sided_pvalue": 0.015625
+      }
+    },
+    "prefix": {
+      "accuracy": 0.96,
+      "ci95": [
+        0.92,
+        0.99
+      ],
+      "accuracy_minus_baseline": -0.040000000000000036,
+      "accuracy_minus_baseline_ci95": [
+        -0.07999999999999996,
+        -0.010000000000000009
+      ],
+      "paired_sign_test": {
+        "improve_count": 0,
+        "worsen_count": 4,
+        "discordant_count": 4,
+        "two_sided_pvalue": 0.125
+      }
+    },
+    "suffix": {
+      "accuracy": 0.95,
+      "ci95": [
+        0.9,
+        0.99
+      ],
+      "accuracy_minus_baseline": -0.050000000000000044,
+      "accuracy_minus_baseline_ci95": [
+        -0.09999999999999998,
+        -0.010000000000000009
+      ],
+      "paired_sign_test": {
+        "improve_count": 0,
+        "worsen_count": 5,
+        "discordant_count": 5,
+        "two_sided_pvalue": 0.0625
+      }
+    }
+  }
+}

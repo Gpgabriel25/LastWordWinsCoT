@@ -1,0 +1,32 @@
+# Core JAX/TPU stack used by all run_*_tpu.py scripts
+jax>=0.9.1
+jaxlib>=0.9.1
+flax>=0.10.0
+# libtpu is installed via the TPU image; pin only if you build from source
+
+# EasyDeL serving stack (pinned versions from the paper's runs)
+easydel==0.2.0.2
+eformer==0.0.85
+ejkernel==0.0.50
+
+# Model weight conversion (CPU-only torch is sufficient)
+torch>=2.4.0
+transformers>=4.45.0
+sentencepiece>=0.2.0
+accelerate>=0.34.0
+huggingface-hub>=0.25.0
+
+# Dataset processing and statistics
+datasets>=2.20.0
+numpy>=1.26.0
+scipy>=1.13.0
+pandas>=2.2.0
+scikit-learn>=1.5.0
+
+# Figure generation
+matplotlib>=3.9.0
+seaborn>=0.13.0
+
+# Utilities
+tqdm>=4.66.0
+pyyaml>=6.0.0

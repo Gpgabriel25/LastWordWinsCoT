@@ -1,0 +1,70 @@
+{
+  "study_name": "hard_v3.phi3mini_chain",
+  "model": "microsoft/Phi-3-mini-4k-instruct",
+  "example_count": 60,
+  "bootstrap_samples": 5000,
+  "seed": 0,
+  "baseline": {
+    "accuracy": 0.8,
+    "ci95": [
+      0.7,
+      0.9
+    ]
+  },
+  "targets": {
+    "middle": {
+      "accuracy": 0.7166666666666667,
+      "ci95": [
+        0.6,
+        0.8333333333333334
+      ],
+      "accuracy_minus_baseline": -0.08333333333333337,
+      "accuracy_minus_baseline_ci95": [
+        -0.20000000000000007,
+        0.033333333333333326
+      ],
+      "paired_sign_test": {
+        "improve_count": 4,
+        "worsen_count": 9,
+        "discordant_count": 13,
+        "two_sided_pvalue": 0.266845703125
+      }
+    },
+    "prefix": {
+      "accuracy": 0.03333333333333333,
+      "ci95": [
+        0.0,
+        0.08333333333333333
+      ],
+      "accuracy_minus_baseline": -0.7666666666666667,
+      "accuracy_minus_baseline_ci95": [
+        -0.8666666666666667,
+        -0.65
+      ],
+      "paired_sign_test": {
+        "improve_count": 0,
+        "worsen_count": 46,
+        "discordant_count": 46,
+        "two_sided_pvalue": 2.842170943040401e-14
+      }
+    },
+    "suffix": {
+      "accuracy": 0.7,
+      "ci95": [
+        0.5833333333333334,
+        0.8166666666666667
+      ],
+      "accuracy_minus_baseline": -0.10000000000000009,
+      "accuracy_minus_baseline_ci95": [
+        -0.21666666666666667,
+        0.0
+      ],
+      "paired_sign_test": {
+        "improve_count": 3,
+        "worsen_count": 9,
+        "discordant_count": 12,
+        "two_sided_pvalue": 0.14599609375
+      }
+    }
+  }
+}

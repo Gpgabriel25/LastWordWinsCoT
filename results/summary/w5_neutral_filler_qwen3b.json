@@ -1,0 +1,1218 @@
+{
+  "model_id": "Qwen/Qwen2.5-3B-Instruct",
+  "data_file": "/home/gpgabriel25/cb_placement.jsonl",
+  "n_examples": 100,
+  "primary_filler": "The computation above confirms the reasoning.",
+  "summary": {
+    "conflicting_suffix_FW": 0.32,
+    "neutral_filler_FW": 0.0,
+    "FW_delta": -0.32,
+    "conflicting_suffix_acc": 0.65,
+    "neutral_filler_acc": 0.88,
+    "interpretation": "CONTENT-DRIVEN: neutral suffix eliminates FW. Recency bias ruled out."
+  },
+  "conflict_results": [
+    {
+      "id": "gsm8k-test-00002_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "70005."
+    },
+    {
+      "id": "gsm8k-test-00005_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "64."
+    },
+    {
+      "id": "gsm8k-test-00006_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "260 sheep."
+    },
+    {
+      "id": "gsm8k-test-00007_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "320 minutes."
+    },
+    {
+      "id": "gsm8k-test-00008_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "45 miles. The reasoning and calculations show that John is 45"
+    },
+    {
+      "id": "gsm8k-test-00009_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "460."
+    },
+    {
+      "id": "gsm8k-test-00010_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "366."
+    },
+    {
+      "id": "gsm8k-test-00011_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "The total cost was $704. The reasoning provided contains an error in"
+    },
+    {
+      "id": "gsm8k-test-00012_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "11 years."
+    },
+    {
+      "id": "gsm8k-test-00013_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "18. To arrive at the final answer, we need to follow the"
+    },
+    {
+      "id": "gsm8k-test-00014_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "45% The reasoning provided contains an error in the final step. Let"
+    },
+    {
+      "id": "gsm8k-test-00015_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "500."
+    },
+    {
+      "id": "gsm8k-test-00016_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "231 miles. The reasoning provided contains an error in the final step"
+    },
+    {
+      "id": "gsm8k-test-00017_suffix",
+      "correct": false,
+      "followed_wrong": false,
+      "pred_text": "$57,503. The mistake in the final answer is due"
+    },
+    {
+      "id": "gsm8k-test-00018_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "7 dozen eggs. The reasoning provided contains an error in the final step."
+    },
+    {
+      "id": "gsm8k-test-00019_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "16 mph."
+    },
+    {
+      "id": "gsm8k-test-00020_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "5 liters. To arrive at the final answer, we need to follow the"
+    },
+    {
+      "id": "gsm8k-test-00022_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "7 DVDs."
+    },
+    {
+      "id": "gsm8k-test-00024_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "26. The given reasoning and calculation show that the original price of the"
+    },
+    {
+      "id": "gsm8k-test-00025_suffix",
+      "correct": false,
+      "followed_wrong": false,
+      "pred_text": "The reasoning provided contains an error in the final step. The correct number o"
+    },
+    {
+      "id": "gsm8k-test-00029_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "104. The reasoning provided contains an error in the final step."
+    },
+    {
+      "id": "gsm8k-test-00030_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "109 years old. The reasoning provided contains an error. The correct"
+    },
+    {
+      "id": "gsm8k-test-00031_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "160. The reasoning provided contains an error. The correct average guess"
+    },
+    {
+      "id": "gsm8k-test-00033_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "70 gold coins. The reasoning provided contains an error in the final step"
+    },
+    {
+      "id": "gsm8k-test-00034_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "23. The reasoning provided is incorrect. Let's re-examine the"
+    },
+    {
+      "id": "gsm8k-test-00035_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "9 points. The reasoning provided contains an error. The correct answer is"
+    },
+    {
+      "id": "gsm8k-test-00036_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "$75.00. To arrive at the final answer, we need"
+    },
+    {
+      "id": "gsm8k-test-00037_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "-3. There seems to be an error in the reasoning. Let's re"
+    },
+    {
+      "id": "gsm8k-test-00038_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "10 mph."
+    },
+    {
+      "id": "gsm8k-test-00039_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "18 miles. To arrive at the final answer, we need to calculate"
+    },
+    {
+      "id": "gsm8k-test-00043_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "50 grams. The reasoning shows that you can eat 50 grams"
+    },
+    {
+      "id": "gsm8k-test-00044_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "20.00 - 17.00 = 3"
+    },
+    {
+      "id": "gsm8k-test-00045_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "104 hours. To calculate the total number of hours Meredith spent writing"
+    },
+    {
+      "id": "gsm8k-test-00046_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "163."
+    },
+    {
+      "id": "gsm8k-test-00047_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "800."
+    },
+    {
+      "id": "gsm8k-test-00049_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "31 units. The reasoning provided contains an error in the final step."
+    },
+    {
+      "id": "gsm8k-test-00050_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "$294. Lloyd makes $294 on eggs per week."
+    },
+    {
+      "id": "gsm8k-test-00051_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "5 hours. The ship takes 5 hours to get back."
+    },
+    {
+      "id": "gsm8k-test-00052_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "5 toys. The reasoning provided contains an error in the final step. Let"
+    },
+    {
+      "id": "gsm8k-test-00053_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "40."
+    },
+    {
+      "id": "gsm8k-test-00054_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "The Doubtfire family now has 52 kittens. The error in the"
+    },
+    {
+      "id": "gsm8k-test-00058_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "57.00"
+    },
+    {
+      "id": "gsm8k-test-00060_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "17 oranges are good. The previous reasoning had a mistake in the calculation"
+    },
+    {
+      "id": "gsm8k-test-00061_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "2860. The reasoning provided contains an error. The correct total"
+    },
+    {
+      "id": "gsm8k-test-00062_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "50000."
+    },
+    {
+      "id": "gsm8k-test-00063_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "1596. The total amount Aleena had paid for the streaming"
+    },
+    {
+      "id": "gsm8k-test-00065_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "180 hours. The reasoning provided in the steps is correct, but"
+    },
+    {
+      "id": "gsm8k-test-00066_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "48 people. To arrive at the final answer, we need to follow"
+    },
+    {
+      "id": "gsm8k-test-00067_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "595."
+    },
+    {
+      "id": "gsm8k-test-00068_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "36. To arrive at the final answer, we need to follow the"
+    },
+    {
+      "id": "gsm8k-test-00070_suffix",
+      "correct": false,
+      "followed_wrong": false,
+      "pred_text": "$7,425. The final answer is $7,42"
+    },
+    {
+      "id": "gsm8k-test-00072_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Tommy raises $221. To arrive at the final answer, we need"
+    },
+    {
+      "id": "gsm8k-test-00073_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "255 Shiela will pay each month for 3 months. The"
+    },
+    {
+      "id": "gsm8k-test-00074_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "88. Artie will make $88 from selling the flowers."
+    },
+    {
+      "id": "gsm8k-test-00075_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "60 square feet. The reasoning provided contains a few errors. Let's"
+    },
+    {
+      "id": "gsm8k-test-00076_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "5 bags. The reasoning provided is incorrect. The correct answer is 5"
+    },
+    {
+      "id": "gsm8k-test-00077_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "100 pounds. The answer is 100."
+    },
+    {
+      "id": "gsm8k-test-00078_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "16. The reasoning provided contains an error in the final step. The"
+    },
+    {
+      "id": "gsm8k-test-00080_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "10 liters of water were left. The given reasoning contains an error in"
+    },
+    {
+      "id": "gsm8k-test-00081_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "14. However, the correct final answer based on the calculations is"
+    },
+    {
+      "id": "gsm8k-test-00084_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "15. To arrive at the final answer, we need to follow the"
+    },
+    {
+      "id": "gsm8k-test-00085_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "51."
+    },
+    {
+      "id": "gsm8k-test-00086_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "22."
+    },
+    {
+      "id": "gsm8k-test-00087_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "9361."
+    },
+    {
+      "id": "gsm8k-test-00088_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "32000. The reasoning provided contains an error. The correct"
+    },
+    {
+      "id": "gsm8k-test-00090_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "225 pounds of potato salad. The answer is not 21"
+    },
+    {
+      "id": "gsm8k-test-00091_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "28. The reasoning provided contains an error in the final step. The"
+    },
+    {
+      "id": "gsm8k-test-00092_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "4. To find Jackson's age, we need to follow the information given"
+    },
+    {
+      "id": "gsm8k-test-00093_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "180."
+    },
+    {
+      "id": "gsm8k-test-00094_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "348 pets in total are in the neighborhood. The reasoning provided contains"
+    },
+    {
+      "id": "gsm8k-test-00095_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "40 girls are not in the girl scout. The given answer of"
+    },
+    {
+      "id": "gsm8k-test-00097_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "12. The reasoning shows that Freda used 4 cans of tomatoes"
+    },
+    {
+      "id": "gsm8k-test-00099_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Mary will remain with 58 potted plants. The reasoning provided contains an"
+    },
+    {
+      "id": "gsm8k-test-00100_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "176. Read the reasoning and give the final answer.\nQuestion:"
+    },
+    {
+      "id": "gsm8k-test-00101_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "6 pages."
+    },
+    {
+      "id": "gsm8k-test-00102_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "26 glasses of water. The final answer is 26. However"
+    },
+    {
+      "id": "gsm8k-test-00104_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "500."
+    },
+    {
+      "id": "gsm8k-test-00106_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "72 cubic inches."
+    },
+    {
+      "id": "gsm8k-test-00107_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "-2. However, since the number of episodes cannot be negative, the correct"
+    },
+    {
+      "id": "gsm8k-test-00108_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "50."
+    },
+    {
+      "id": "gsm8k-test-00109_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "84. The app company is offering $0.20 cashback"
+    },
+    {
+      "id": "gsm8k-test-00110_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "45."
+    },
+    {
+      "id": "gsm8k-test-00111_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "32 liters. The reasoning process is flawed. Let's re-evaluate"
+    },
+    {
+      "id": "gsm8k-test-00115_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "90. The reasoning provided contains an error in the final step. The"
+    },
+    {
+      "id": "gsm8k-test-00118_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "4 containers. To solve the problem, we need to follow these steps:"
+    },
+    {
+      "id": "gsm8k-test-00119_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "95200."
+    },
+    {
+      "id": "gsm8k-test-00121_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "27."
+    },
+    {
+      "id": "gsm8k-test-00122_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "50."
+    },
+    {
+      "id": "gsm8k-test-00123_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "50 miles. The reasoning provided is incorrect. Rosie runs 30"
+    },
+    {
+      "id": "gsm8k-test-00128_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "880. Read the reasoning and give the final answer.\nQuestion:"
+    },
+    {
+      "id": "gsm8k-test-00129_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "The hospital makes a profit of $9990 a day from these visits"
+    },
+    {
+      "id": "gsm8k-test-00130_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "31 elves are left. The reasoning provided contains an error in the final"
+    },
+    {
+      "id": "gsm8k-test-00132_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "60 tickets. The reasoning provided seems to have a mistake in the calculation"
+    },
+    {
+      "id": "gsm8k-test-00133_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "13 miles. The calculation shows that Walt walked 13 miles on"
+    },
+    {
+      "id": "gsm8k-test-00135_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Bobby has 40 video games. The given answer of 52 is"
+    },
+    {
+      "id": "gsm8k-test-00137_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "29.00\nThe total cost of the delivery order, including"
+    },
+    {
+      "id": "gsm8k-test-00138_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "105 questions were left incomplete. The answer is 105"
+    },
+    {
+      "id": "gsm8k-test-00140_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "20% of the cars are semi-automatic. The given reasoning contains an"
+    },
+    {
+      "id": "gsm8k-test-00141_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "400 worker bees. To arrive at the final answer, we need"
+    },
+    {
+      "id": "gsm8k-test-00143_suffix",
+      "correct": false,
+      "followed_wrong": true,
+      "pred_text": "32. To arrive at the final answer, we need to follow these"
+    }
+  ],
+  "neutral_results": [
+    {
+      "id": "gsm8k-test-00002_suffix",
+      "correct": false,
+      "followed_wrong": false,
+      "pred_text": "Josh made a profit of $70,000. To arrive at"
+    },
+    {
+      "id": "gsm8k-test-00005_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Kylar needs to pay $64 for the glasses he wants to buy"
+    },
+    {
+      "id": "gsm8k-test-00006_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Toulouse, Charleston, and Seattle have a total of 260 sheep"
+    },
+    {
+      "id": "gsm8k-test-00007_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "It takes 160 minutes to download the file. To solve the problem"
+    },
+    {
+      "id": "gsm8k-test-00008_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "45 miles."
+    },
+    {
+      "id": "gsm8k-test-00009_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Eliza's total earnings for this week are $460."
+    },
+    {
+      "id": "gsm8k-test-00010_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "366 downloads."
+    },
+    {
+      "id": "gsm8k-test-00011_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "The total cost was $694. To arrive at the final answer,"
+    },
+    {
+      "id": "gsm8k-test-00012_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "13 years."
+    },
+    {
+      "id": "gsm8k-test-00013_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Melanie started with 18 vacuum cleaners."
+    },
+    {
+      "id": "gsm8k-test-00014_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "60% of the entire students enrolled in hip-hop dance."
+    },
+    {
+      "id": "gsm8k-test-00015_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "$125\nThus, the merchant would make a profit of $1"
+    },
+    {
+      "id": "gsm8k-test-00016_suffix",
+      "correct": false,
+      "followed_wrong": false,
+      "pred_text": "The trains covered a total of 460 miles in the two days."
+    },
+    {
+      "id": "gsm8k-test-00017_suffix",
+      "correct": false,
+      "followed_wrong": false,
+      "pred_text": "Jill's annual salary is $57,500."
+    },
+    {
+      "id": "gsm8k-test-00018_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Claire will eat 7 dozen eggs in 4 weeks. To arrive at the"
+    },
+    {
+      "id": "gsm8k-test-00019_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "6 mph. Marissa needs to walk the remaining distance at a speed of"
+    },
+    {
+      "id": "gsm8k-test-00020_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "There are 15 liters of water in the remaining 24 liters."
+    },
+    {
+      "id": "gsm8k-test-00022_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Billy sold 7 DVDs on Tuesday."
+    },
+    {
+      "id": "gsm8k-test-00024_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "The original price of the book was $26."
+    },
+    {
+      "id": "gsm8k-test-00025_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Marie ordered 2 boxes of pizza. To arrive at the final answer, we"
+    },
+    {
+      "id": "gsm8k-test-00029_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "The boots cost $104."
+    },
+    {
+      "id": "gsm8k-test-00030_suffix",
+      "correct": false,
+      "followed_wrong": false,
+      "pred_text": "Allen's age 10 years from now will be 109 years"
+    },
+    {
+      "id": "gsm8k-test-00031_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "80\nThus, the average guess is 80."
+    },
+    {
+      "id": "gsm8k-test-00033_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Gretchen has 70 gold coins. The answer is 70."
+    },
+    {
+      "id": "gsm8k-test-00034_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Siobhan has 23 jewels."
+    },
+    {
+      "id": "gsm8k-test-00035_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Mike scored a total of 9 points."
+    },
+    {
+      "id": "gsm8k-test-00036_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Terry spends $75.00 on yogurt over 30 days."
+    },
+    {
+      "id": "gsm8k-test-00037_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "2 Lego sets."
+    },
+    {
+      "id": "gsm8k-test-00038_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "John runs at a speed of 10 miles per hour."
+    },
+    {
+      "id": "gsm8k-test-00039_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Dana can travel 18 miles in six hours. To determine how many miles"
+    },
+    {
+      "id": "gsm8k-test-00043_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "48 grams. To determine how many grams of chips you can eat given"
+    },
+    {
+      "id": "gsm8k-test-00044_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "His net profit is $20.00."
+    },
+    {
+      "id": "gsm8k-test-00045_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "104 hours.\n\nThe total number of hours Meredith spent writing articles in"
+    },
+    {
+      "id": "gsm8k-test-00046_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Candice purchased a package containing 163 Post-it notes."
+    },
+    {
+      "id": "gsm8k-test-00047_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "He spent $800 on ties."
+    },
+    {
+      "id": "gsm8k-test-00049_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "There are 30 unoccupied units in the building. To arrive at the"
+    },
+    {
+      "id": "gsm8k-test-00050_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Lloyd makes $294 on eggs per week. To determine how much Lloyd"
+    },
+    {
+      "id": "gsm8k-test-00051_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "It takes Tom 5 hours to get back."
+    },
+    {
+      "id": "gsm8k-test-00052_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Uriah needs to remove 15 toys."
+    },
+    {
+      "id": "gsm8k-test-00053_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "40."
+    },
+    {
+      "id": "gsm8k-test-00054_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "The Doubtfire family now has 40 kittens.\nStep 5:"
+    },
+    {
+      "id": "gsm8k-test-00058_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "$57.00"
+    },
+    {
+      "id": "gsm8k-test-00060_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "There are 17 good oranges in the basket. Read the reasoning and give"
+    },
+    {
+      "id": "gsm8k-test-00061_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Janet paid $1430 for the brooch."
+    },
+    {
+      "id": "gsm8k-test-00062_suffix",
+      "correct": false,
+      "followed_wrong": false,
+      "pred_text": "Marcy's annual pension after 30 years will be $25,"
+    },
+    {
+      "id": "gsm8k-test-00063_suffix",
+      "correct": false,
+      "followed_wrong": false,
+      "pred_text": "The total amount she had paid for the streaming service by the end of the year"
+    },
+    {
+      "id": "gsm8k-test-00065_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Jim spends 36 hours on TV and reading in 4 weeks.\nYou"
+    },
+    {
+      "id": "gsm8k-test-00066_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "48 people. To determine the total number of people sent by the four"
+    },
+    {
+      "id": "gsm8k-test-00067_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "There were 595 gems in the treasure chest."
+    },
+    {
+      "id": "gsm8k-test-00068_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "There are 36 teachers at Dr. Wertz's school. To solve"
+    },
+    {
+      "id": "gsm8k-test-00070_suffix",
+      "correct": false,
+      "followed_wrong": false,
+      "pred_text": "Judy makes $7,425 in 1 week. To arrive at"
+    },
+    {
+      "id": "gsm8k-test-00072_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Tommy raised a total of $221. To arrive at the final answer"
+    },
+    {
+      "id": "gsm8k-test-00073_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Shiela will pay $255 each month for 3 months. To"
+    },
+    {
+      "id": "gsm8k-test-00074_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Artie will make $88. To arrive at the final answer, we"
+    },
+    {
+      "id": "gsm8k-test-00075_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "60 square feet\nThe average square footage of a level in Luke's"
+    },
+    {
+      "id": "gsm8k-test-00076_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Cecilia will use 5 bags of dog food in the first year. To"
+    },
+    {
+      "id": "gsm8k-test-00077_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "The difference in the amount of laundry Raymond and David do is 100"
+    },
+    {
+      "id": "gsm8k-test-00078_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Vincent saves $6 by buying 18 flowers at the better price. To"
+    },
+    {
+      "id": "gsm8k-test-00080_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "10 liters of water were left."
+    },
+    {
+      "id": "gsm8k-test-00081_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Charlie has 17 stickers left. The final answer is 17."
+    },
+    {
+      "id": "gsm8k-test-00084_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "The football team won 15 games. To arrive at the final answer,"
+    },
+    {
+      "id": "gsm8k-test-00085_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Gene has 44 quilt blocks in total. To arrive at the final answer"
+    },
+    {
+      "id": "gsm8k-test-00086_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "The alarm rang 22 times in all."
+    },
+    {
+      "id": "gsm8k-test-00087_suffix",
+      "correct": false,
+      "followed_wrong": false,
+      "pred_text": "Sylvie's annual salary after three more years of service will be $93"
+    },
+    {
+      "id": "gsm8k-test-00088_suffix",
+      "correct": false,
+      "followed_wrong": false,
+      "pred_text": "Harald sold 8,000 copies."
+    },
+    {
+      "id": "gsm8k-test-00090_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Ted needs to bring 225 pounds of potato salad to the picnic."
+    },
+    {
+      "id": "gsm8k-test-00091_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "The three have 28 pets in total."
+    },
+    {
+      "id": "gsm8k-test-00092_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Jackson is 4 years old."
+    },
+    {
+      "id": "gsm8k-test-00093_suffix",
+      "correct": false,
+      "followed_wrong": false,
+      "pred_text": "Gerald can run the 400-meter hurdles in 36 seconds with"
+    },
+    {
+      "id": "gsm8k-test-00094_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "There are 348 pets in total in the neighborhood. To arrive at"
+    },
+    {
+      "id": "gsm8k-test-00095_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "40 girls are not in the girl scout. To arrive at the final"
+    },
+    {
+      "id": "gsm8k-test-00097_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Freda used 12 tomatoes."
+    },
+    {
+      "id": "gsm8k-test-00099_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Mary will remain with 58 potted plants."
+    },
+    {
+      "id": "gsm8k-test-00100_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "175 times. Read the reasoning and give the final answer.\nQuestion"
+    },
+    {
+      "id": "gsm8k-test-00101_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Solo needs to read, on average, 6 pages a day."
+    },
+    {
+      "id": "gsm8k-test-00102_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "John drinks 26 glasses of water in a week."
+    },
+    {
+      "id": "gsm8k-test-00104_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "500 jigsaw pieces are left to be placed."
+    },
+    {
+      "id": "gsm8k-test-00106_suffix",
+      "correct": false,
+      "followed_wrong": false,
+      "pred_text": "The total inner volume of all 3 boxes is 72 cubic inches."
+    },
+    {
+      "id": "gsm8k-test-00107_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Frankie watched 3 episodes of the 30-minute show on Wednesday. To"
+    },
+    {
+      "id": "gsm8k-test-00108_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Henry baked 50 cookies last year."
+    },
+    {
+      "id": "gsm8k-test-00109_suffix",
+      "correct": false,
+      "followed_wrong": false,
+      "pred_text": "After the cashback rewards, the total cost of 10 gallons of gas"
+    },
+    {
+      "id": "gsm8k-test-00110_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "45."
+    },
+    {
+      "id": "gsm8k-test-00111_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "The boat had taken on 16 liters of water by the time Julia reached"
+    },
+    {
+      "id": "gsm8k-test-00115_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Sasha makes a profit of $90."
+    },
+    {
+      "id": "gsm8k-test-00118_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "4 containers were imported on the second day. To solve this problem, we"
+    },
+    {
+      "id": "gsm8k-test-00119_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "95200."
+    },
+    {
+      "id": "gsm8k-test-00121_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "27 fruits in total."
+    },
+    {
+      "id": "gsm8k-test-00122_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Sadie slept a total of 48 hours throughout the week."
+    },
+    {
+      "id": "gsm8k-test-00123_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Rosie can run 50 miles in 7 hours."
+    },
+    {
+      "id": "gsm8k-test-00128_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Well will spend $880. To arrive at the final answer, we"
+    },
+    {
+      "id": "gsm8k-test-00129_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "The hospital makes a profit of $10000 a day from patient"
+    },
+    {
+      "id": "gsm8k-test-00130_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "30 elves are left."
+    },
+    {
+      "id": "gsm8k-test-00132_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "They used 60 tickets that day. To arrive at the final answer,"
+    },
+    {
+      "id": "gsm8k-test-00133_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Walt walked 13 miles on Wednesday."
+    },
+    {
+      "id": "gsm8k-test-00135_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Bobby has 40 video games."
+    },
+    {
+      "id": "gsm8k-test-00137_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Her delivery order will cost $29.00. To arrive at the"
+    },
+    {
+      "id": "gsm8k-test-00138_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "Mark left 105 questions incomplete. Read the reasoning and give the final"
+    },
+    {
+      "id": "gsm8k-test-00140_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "20% of the cars are semi-automatic. To determine the percentage of"
+    },
+    {
+      "id": "gsm8k-test-00141_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "There are 400 worker bees in the hive."
+    },
+    {
+      "id": "gsm8k-test-00143_suffix",
+      "correct": true,
+      "followed_wrong": false,
+      "pred_text": "The total cost is 16 dollars. To arrive at the final answer,"
+    }
+  ]
+}

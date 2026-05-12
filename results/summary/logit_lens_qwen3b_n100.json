@@ -1,0 +1,623 @@
+{
+  "model_id": "Qwen/Qwen2.5-3B-Instruct",
+  "elapsed_s": 1640.9,
+  "summary": {
+    "n_matched": 100,
+    "n_completed": 100,
+    "standard": {
+      "n": 100,
+      "mean_logprob": -16.9434
+    },
+    "stripped": {
+      "n": 100,
+      "mean_logprob": -15.5391
+    },
+    "delta_std_minus_stripped": {
+      "n": 100,
+      "mean": -1.4042,
+      "positive_frac": 0.34
+    }
+  },
+  "per_example": [
+    {
+      "id": "gsm8k-test-00002",
+      "std_logprob": -16.1014,
+      "str_logprob": -23.0446,
+      "delta": 6.9432
+    },
+    {
+      "id": "gsm8k-test-00005",
+      "std_logprob": -22.2834,
+      "str_logprob": -18.3154,
+      "delta": -3.968
+    },
+    {
+      "id": "gsm8k-test-00006",
+      "std_logprob": -20.9463,
+      "str_logprob": -13.2624,
+      "delta": -7.6839
+    },
+    {
+      "id": "gsm8k-test-00007",
+      "std_logprob": -15.8613,
+      "str_logprob": -12.2566,
+      "delta": -3.6047
+    },
+    {
+      "id": "gsm8k-test-00008",
+      "std_logprob": -15.6591,
+      "str_logprob": -13.7989,
+      "delta": -1.8602
+    },
+    {
+      "id": "gsm8k-test-00009",
+      "std_logprob": -19.9571,
+      "str_logprob": -26.6888,
+      "delta": 6.7317
+    },
+    {
+      "id": "gsm8k-test-00010",
+      "std_logprob": -20.6307,
+      "str_logprob": -8.7614,
+      "delta": -11.8692
+    },
+    {
+      "id": "gsm8k-test-00011",
+      "std_logprob": -22.9391,
+      "str_logprob": -23.8865,
+      "delta": 0.9474
+    },
+    {
+      "id": "gsm8k-test-00012",
+      "std_logprob": -10.743,
+      "str_logprob": -12.1375,
+      "delta": 1.3945
+    },
+    {
+      "id": "gsm8k-test-00013",
+      "std_logprob": -22.0464,
+      "str_logprob": -12.1986,
+      "delta": -9.8478
+    },
+    {
+      "id": "gsm8k-test-00014",
+      "std_logprob": -17.5029,
+      "str_logprob": -15.0455,
+      "delta": -2.4574
+    },
+    {
+      "id": "gsm8k-test-00015",
+      "std_logprob": -13.4086,
+      "str_logprob": -12.7584,
+      "delta": -0.6502
+    },
+    {
+      "id": "gsm8k-test-00016",
+      "std_logprob": -19.1857,
+      "str_logprob": -10.9446,
+      "delta": -8.2411
+    },
+    {
+      "id": "gsm8k-test-00017",
+      "std_logprob": -19.2688,
+      "str_logprob": -20.8264,
+      "delta": 1.5576
+    },
+    {
+      "id": "gsm8k-test-00018",
+      "std_logprob": -13.4897,
+      "str_logprob": -13.7774,
+      "delta": 0.2877
+    },
+    {
+      "id": "gsm8k-test-00019",
+      "std_logprob": -16.5871,
+      "str_logprob": -10.7017,
+      "delta": -5.8854
+    },
+    {
+      "id": "gsm8k-test-00020",
+      "std_logprob": -20.7859,
+      "str_logprob": -12.4082,
+      "delta": -8.3777
+    },
+    {
+      "id": "gsm8k-test-00022",
+      "std_logprob": -17.505,
+      "str_logprob": -14.1337,
+      "delta": -3.3713
+    },
+    {
+      "id": "gsm8k-test-00024",
+      "std_logprob": -10.7074,
+      "str_logprob": -11.0041,
+      "delta": 0.2967
+    },
+    {
+      "id": "gsm8k-test-00025",
+      "std_logprob": -27.5318,
+      "str_logprob": -16.819,
+      "delta": -10.7127
+    },
+    {
+      "id": "gsm8k-test-00029",
+      "std_logprob": -18.3976,
+      "str_logprob": -17.8138,
+      "delta": -0.5838
+    },
+    {
+      "id": "gsm8k-test-00030",
+      "std_logprob": -17.7835,
+      "str_logprob": -19.5088,
+      "delta": 1.7253
+    },
+    {
+      "id": "gsm8k-test-00031",
+      "std_logprob": -14.1198,
+      "str_logprob": -18.5744,
+      "delta": 4.4546
+    },
+    {
+      "id": "gsm8k-test-00033",
+      "std_logprob": -19.6584,
+      "str_logprob": -13.5925,
+      "delta": -6.0659
+    },
+    {
+      "id": "gsm8k-test-00034",
+      "std_logprob": -18.886,
+      "str_logprob": -16.2747,
+      "delta": -2.6113
+    },
+    {
+      "id": "gsm8k-test-00035",
+      "std_logprob": -15.6178,
+      "str_logprob": -16.2175,
+      "delta": 0.5997
+    },
+    {
+      "id": "gsm8k-test-00036",
+      "std_logprob": -14.0884,
+      "str_logprob": -24.3218,
+      "delta": 10.2334
+    },
+    {
+      "id": "gsm8k-test-00037",
+      "std_logprob": -9.7951,
+      "str_logprob": -14.9323,
+      "delta": 5.1372
+    },
+    {
+      "id": "gsm8k-test-00038",
+      "std_logprob": -16.8715,
+      "str_logprob": -15.1119,
+      "delta": -1.7596
+    },
+    {
+      "id": "gsm8k-test-00039",
+      "std_logprob": -20.1035,
+      "str_logprob": -16.0239,
+      "delta": -4.0797
+    },
+    {
+      "id": "gsm8k-test-00043",
+      "std_logprob": -7.5154,
+      "str_logprob": -11.2668,
+      "delta": 3.7514
+    },
+    {
+      "id": "gsm8k-test-00044",
+      "std_logprob": -14.8524,
+      "str_logprob": -20.2875,
+      "delta": 5.435
+    },
+    {
+      "id": "gsm8k-test-00045",
+      "std_logprob": -14.7505,
+      "str_logprob": -13.4792,
+      "delta": -1.2713
+    },
+    {
+      "id": "gsm8k-test-00046",
+      "std_logprob": -20.4879,
+      "str_logprob": -18.0471,
+      "delta": -2.4408
+    },
+    {
+      "id": "gsm8k-test-00047",
+      "std_logprob": -16.3974,
+      "str_logprob": -16.6092,
+      "delta": 0.2118
+    },
+    {
+      "id": "gsm8k-test-00049",
+      "std_logprob": -16.5316,
+      "str_logprob": -7.0028,
+      "delta": -9.5288
+    },
+    {
+      "id": "gsm8k-test-00050",
+      "std_logprob": -19.6196,
+      "str_logprob": -21.1023,
+      "delta": 1.4827
+    },
+    {
+      "id": "gsm8k-test-00051",
+      "std_logprob": -15.836,
+      "str_logprob": -13.7453,
+      "delta": -2.0907
+    },
+    {
+      "id": "gsm8k-test-00052",
+      "std_logprob": -14.271,
+      "str_logprob": -18.05,
+      "delta": 3.7791
+    },
+    {
+      "id": "gsm8k-test-00053",
+      "std_logprob": -13.9281,
+      "str_logprob": -14.091,
+      "delta": 0.1629
+    },
+    {
+      "id": "gsm8k-test-00054",
+      "std_logprob": -17.6591,
+      "str_logprob": -16.515,
+      "delta": -1.1441
+    },
+    {
+      "id": "gsm8k-test-00058",
+      "std_logprob": -14.589,
+      "str_logprob": -21.1906,
+      "delta": 6.6016
+    },
+    {
+      "id": "gsm8k-test-00060",
+      "std_logprob": -11.4023,
+      "str_logprob": -9.9551,
+      "delta": -1.4472
+    },
+    {
+      "id": "gsm8k-test-00061",
+      "std_logprob": -21.0035,
+      "str_logprob": -17.192,
+      "delta": -3.8115
+    },
+    {
+      "id": "gsm8k-test-00062",
+      "std_logprob": -15.7202,
+      "str_logprob": -11.431,
+      "delta": -4.2892
+    },
+    {
+      "id": "gsm8k-test-00063",
+      "std_logprob": -15.4693,
+      "str_logprob": -14.5546,
+      "delta": -0.9147
+    },
+    {
+      "id": "gsm8k-test-00065",
+      "std_logprob": -17.1281,
+      "str_logprob": -15.4135,
+      "delta": -1.7146
+    },
+    {
+      "id": "gsm8k-test-00066",
+      "std_logprob": -20.5364,
+      "str_logprob": -15.1094,
+      "delta": -5.427
+    },
+    {
+      "id": "gsm8k-test-00067",
+      "std_logprob": -17.4838,
+      "str_logprob": -13.849,
+      "delta": -3.6348
+    },
+    {
+      "id": "gsm8k-test-00068",
+      "std_logprob": -18.0462,
+      "str_logprob": -10.4514,
+      "delta": -7.5948
+    },
+    {
+      "id": "gsm8k-test-00070",
+      "std_logprob": -17.5367,
+      "str_logprob": -25.019,
+      "delta": 7.4823
+    },
+    {
+      "id": "gsm8k-test-00072",
+      "std_logprob": -17.2075,
+      "str_logprob": -17.0067,
+      "delta": -0.2008
+    },
+    {
+      "id": "gsm8k-test-00073",
+      "std_logprob": -22.1002,
+      "str_logprob": -20.5812,
+      "delta": -1.519
+    },
+    {
+      "id": "gsm8k-test-00074",
+      "std_logprob": -18.1851,
+      "str_logprob": -23.6295,
+      "delta": 5.4444
+    },
+    {
+      "id": "gsm8k-test-00075",
+      "std_logprob": -11.4337,
+      "str_logprob": -24.254,
+      "delta": 12.8203
+    },
+    {
+      "id": "gsm8k-test-00076",
+      "std_logprob": -17.0802,
+      "str_logprob": -13.3596,
+      "delta": -3.7206
+    },
+    {
+      "id": "gsm8k-test-00077",
+      "std_logprob": -16.9407,
+      "str_logprob": -16.1404,
+      "delta": -0.8003
+    },
+    {
+      "id": "gsm8k-test-00078",
+      "std_logprob": -17.2554,
+      "str_logprob": -15.5558,
+      "delta": -1.6996
+    },
+    {
+      "id": "gsm8k-test-00080",
+      "std_logprob": -15.6273,
+      "str_logprob": -13.6789,
+      "delta": -1.9484
+    },
+    {
+      "id": "gsm8k-test-00081",
+      "std_logprob": -18.658,
+      "str_logprob": -16.0473,
+      "delta": -2.6108
+    },
+    {
+      "id": "gsm8k-test-00084",
+      "std_logprob": -12.9012,
+      "str_logprob": -15.8999,
+      "delta": 2.9987
+    },
+    {
+      "id": "gsm8k-test-00085",
+      "std_logprob": -18.2308,
+      "str_logprob": -14.1486,
+      "delta": -4.0822
+    },
+    {
+      "id": "gsm8k-test-00086",
+      "std_logprob": -20.9405,
+      "str_logprob": -13.2546,
+      "delta": -7.6859
+    },
+    {
+      "id": "gsm8k-test-00087",
+      "std_logprob": -15.9629,
+      "str_logprob": -13.2651,
+      "delta": -2.6977
+    },
+    {
+      "id": "gsm8k-test-00088",
+      "std_logprob": -19.0731,
+      "str_logprob": -17.9902,
+      "delta": -1.083
+    },
+    {
+      "id": "gsm8k-test-00090",
+      "std_logprob": -14.5481,
+      "str_logprob": -13.8822,
+      "delta": -0.6659
+    },
+    {
+      "id": "gsm8k-test-00091",
+      "std_logprob": -24.063,
+      "str_logprob": -15.0584,
+      "delta": -9.0046
+    },
+    {
+      "id": "gsm8k-test-00092",
+      "std_logprob": -20.8078,
+      "str_logprob": -12.8575,
+      "delta": -7.9503
+    },
+    {
+      "id": "gsm8k-test-00093",
+      "std_logprob": -25.5111,
+      "str_logprob": -21.6139,
+      "delta": -3.8972
+    },
+    {
+      "id": "gsm8k-test-00094",
+      "std_logprob": -19.5642,
+      "str_logprob": -7.5977,
+      "delta": -11.9666
+    },
+    {
+      "id": "gsm8k-test-00095",
+      "std_logprob": -19.6452,
+      "str_logprob": -18.7245,
+      "delta": -0.9207
+    },
+    {
+      "id": "gsm8k-test-00097",
+      "std_logprob": -18.0013,
+      "str_logprob": -11.5542,
+      "delta": -6.4471
+    },
+    {
+      "id": "gsm8k-test-00099",
+      "std_logprob": -12.031,
+      "str_logprob": -15.1908,
+      "delta": 3.1598
+    },
+    {
+      "id": "gsm8k-test-00100",
+      "std_logprob": -20.3191,
+      "str_logprob": -19.2512,
+      "delta": -1.068
+    },
+    {
+      "id": "gsm8k-test-00101",
+      "std_logprob": -17.2148,
+      "str_logprob": -12.5653,
+      "delta": -4.6495
+    },
+    {
+      "id": "gsm8k-test-00102",
+      "std_logprob": -14.142,
+      "str_logprob": -6.5394,
+      "delta": -7.6027
+    },
+    {
+      "id": "gsm8k-test-00104",
+      "std_logprob": -14.3311,
+      "str_logprob": -13.0794,
+      "delta": -1.2517
+    },
+    {
+      "id": "gsm8k-test-00106",
+      "std_logprob": -14.606,
+      "str_logprob": -20.5633,
+      "delta": 5.9574
+    },
+    {
+      "id": "gsm8k-test-00107",
+      "std_logprob": -17.4357,
+      "str_logprob": -13.891,
+      "delta": -3.5447
+    },
+    {
+      "id": "gsm8k-test-00108",
+      "std_logprob": -16.8923,
+      "str_logprob": -13.1465,
+      "delta": -3.7457
+    },
+    {
+      "id": "gsm8k-test-00109",
+      "std_logprob": -10.997,
+      "str_logprob": -17.5106,
+      "delta": 6.5137
+    },
+    {
+      "id": "gsm8k-test-00110",
+      "std_logprob": -12.1444,
+      "str_logprob": -19.9318,
+      "delta": 7.7874
+    },
+    {
+      "id": "gsm8k-test-00111",
+      "std_logprob": -16.3498,
+      "str_logprob": -16.7804,
+      "delta": 0.4306
+    },
+    {
+      "id": "gsm8k-test-00115",
+      "std_logprob": -16.9069,
+      "str_logprob": -26.4868,
+      "delta": 9.5799
+    },
+    {
+      "id": "gsm8k-test-00118",
+      "std_logprob": -6.6694,
+      "str_logprob": -2.1183,
+      "delta": -4.5511
+    },
+    {
+      "id": "gsm8k-test-00119",
+      "std_logprob": -14.0791,
+      "str_logprob": -22.8829,
+      "delta": 8.8039
+    },
+    {
+      "id": "gsm8k-test-00121",
+      "std_logprob": -17.9502,
+      "str_logprob": -14.4737,
+      "delta": -3.4766
+    },
+    {
+      "id": "gsm8k-test-00122",
+      "std_logprob": -18.057,
+      "str_logprob": -13.8556,
+      "delta": -4.2014
+    },
+    {
+      "id": "gsm8k-test-00123",
+      "std_logprob": -20.7617,
+      "str_logprob": -13.0971,
+      "delta": -7.6646
+    },
+    {
+      "id": "gsm8k-test-00128",
+      "std_logprob": -14.5572,
+      "str_logprob": -13.5124,
+      "delta": -1.0448
+    },
+    {
+      "id": "gsm8k-test-00129",
+      "std_logprob": -17.6533,
+      "str_logprob": -18.0656,
+      "delta": 0.4123
+    },
+    {
+      "id": "gsm8k-test-00130",
+      "std_logprob": -20.1838,
+      "str_logprob": -9.9502,
+      "delta": -10.2336
+    },
+    {
+      "id": "gsm8k-test-00132",
+      "std_logprob": -21.6059,
+      "str_logprob": -11.815,
+      "delta": -9.7909
+    },
+    {
+      "id": "gsm8k-test-00133",
+      "std_logprob": -20.4547,
+      "str_logprob": -9.9311,
+      "delta": -10.5236
+    },
+    {
+      "id": "gsm8k-test-00135",
+      "std_logprob": -20.1892,
+      "str_logprob": -13.921,
+      "delta": -6.2682
+    },
+    {
+      "id": "gsm8k-test-00137",
+      "std_logprob": -13.3944,
+      "str_logprob": -25.9082,
+      "delta": 12.5139
+    },
+    {
+      "id": "gsm8k-test-00138",
+      "std_logprob": -15.6412,
+      "str_logprob": -10.5401,
+      "delta": -5.1011
+    },
+    {
+      "id": "gsm8k-test-00140",
+      "std_logprob": -17.7742,
+      "str_logprob": -16.3947,
+      "delta": -1.3796
+    },
+    {
+      "id": "gsm8k-test-00141",
+      "std_logprob": -8.2938,
+      "str_logprob": -11.7648,
+      "delta": 3.4711
+    },
+    {
+      "id": "gsm8k-test-00143",
+      "std_logprob": -10.7358,
+      "str_logprob": -15.1441,
+      "delta": 4.4083
+    }
+  ]
+}

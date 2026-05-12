@@ -1,0 +1,70 @@
+{
+  "study_name": "gsm8k_v1.qwen3b_chain",
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "example_count": 100,
+  "bootstrap_samples": 5000,
+  "seed": 0,
+  "baseline": {
+    "accuracy": 0.97,
+    "ci95": [
+      0.93,
+      1.0
+    ]
+  },
+  "targets": {
+    "middle": {
+      "accuracy": 0.97,
+      "ci95": [
+        0.93,
+        1.0
+      ],
+      "accuracy_minus_baseline": 0.0,
+      "accuracy_minus_baseline_ci95": [
+        -0.030000000000000027,
+        0.030000000000000027
+      ],
+      "paired_sign_test": {
+        "improve_count": 1,
+        "worsen_count": 1,
+        "discordant_count": 2,
+        "two_sided_pvalue": 1.0
+      }
+    },
+    "prefix": {
+      "accuracy": 0.98,
+      "ci95": [
+        0.95,
+        1.0
+      ],
+      "accuracy_minus_baseline": 0.010000000000000009,
+      "accuracy_minus_baseline_ci95": [
+        0.0,
+        0.030000000000000027
+      ],
+      "paired_sign_test": {
+        "improve_count": 1,
+        "worsen_count": 0,
+        "discordant_count": 1,
+        "two_sided_pvalue": 1.0
+      }
+    },
+    "suffix": {
+      "accuracy": 0.21,
+      "ci95": [
+        0.14,
+        0.29
+      ],
+      "accuracy_minus_baseline": -0.76,
+      "accuracy_minus_baseline_ci95": [
+        -0.84,
+        -0.6699999999999999
+      ],
+      "paired_sign_test": {
+        "improve_count": 1,
+        "worsen_count": 77,
+        "discordant_count": 78,
+        "two_sided_pvalue": 5.227781471335135e-22
+      }
+    }
+  }
+}

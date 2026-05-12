@@ -1,0 +1,2213 @@
+{
+  "summary": {
+    "label": "neutral_stripped_gsm8k_v1",
+    "n": 100,
+    "baseline_acc": 0.96,
+    "qo_acc": 0.12,
+    "middle_acc": 0.97,
+    "prefix_acc": 0.96,
+    "suffix_acc": 0.93
+  },
+  "results": [
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00144",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "20",
+          "is_correct": true,
+          "raw_output": "20\n20\n\n20\n\n20\n\n20\n\n20\n\n20\n\n20"
+        },
+        "prefix": {
+          "predicted": "20",
+          "is_correct": true,
+          "raw_output": "20\n20\n\n20\n20\n\n20\n20\n\n20\n20"
+        },
+        "suffix": {
+          "predicted": "20",
+          "is_correct": true,
+          "raw_output": "20\n-20\n\nThe final answer is 20, not -20. The negative sign"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00145",
+      "baseline_correct": false,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "4000",
+          "is_correct": true,
+          "raw_output": "4000\n4000\n\nThe correct answer is 4000. The previous answer"
+        },
+        "prefix": {
+          "predicted": "400",
+          "is_correct": false,
+          "raw_output": "4000 4000 4000 4000 400"
+        },
+        "suffix": {
+          "predicted": "400",
+          "is_correct": false,
+          "raw_output": "4000 4000 4000 4000 400"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00146",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "2125",
+          "is_correct": true,
+          "raw_output": "2125\n2125\n\nThe provided solution contains an error in the calculation of the second set"
+        },
+        "prefix": {
+          "predicted": "2125",
+          "is_correct": true,
+          "raw_output": "2125\n-2125\n\nThe provided answer includes an unnecessary leading minus sign. The correct"
+        },
+        "suffix": {
+          "predicted": "2125",
+          "is_correct": true,
+          "raw_output": "2125\n-2125\n\nThe provided answer includes an unnecessary leading minus sign. The correct"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00147",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "75",
+          "is_correct": true,
+          "raw_output": "75\n\nAnswer:\n75"
+        },
+        "prefix": {
+          "predicted": "75",
+          "is_correct": true,
+          "raw_output": "75\n75\n\nThe provided reasoning is correct. The final answer is:\n\n75\n\nSince the instruction"
+        },
+        "suffix": {
+          "predicted": "75",
+          "is_correct": true,
+          "raw_output": "75\n75\n\nThe final answer is 75. However, as per the instruction, I will"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00150",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "4",
+          "is_correct": true,
+          "raw_output": "4\n4"
+        },
+        "prefix": {
+          "predicted": "4",
+          "is_correct": true,
+          "raw_output": "4\n4"
+        },
+        "suffix": {
+          "predicted": "4",
+          "is_correct": true,
+          "raw_output": "4\n4\n\nThe correct answer based on the provided reasoning is 4. Therefore, the final answer is:"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00151",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "5",
+          "is_correct": true,
+          "raw_output": "5\n\n-5\n\n5\n\n-5\n\n5\n\n-5\n\n5\n\n-5\n\n5\n\n-"
+        },
+        "prefix": {
+          "predicted": "5",
+          "is_correct": true,
+          "raw_output": "5\n\n-5\n\n5\n\n-5\n\n5\n\n-5\n\n5\n\n-5\n\n5\n\n-"
+        },
+        "suffix": {
+          "predicted": "5",
+          "is_correct": true,
+          "raw_output": "5\n\nThe provided reasoning contains an error in the final calculation. The correct calculation should be:\n\n20 tires *"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00152",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "4",
+          "is_correct": true,
+          "raw_output": "4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4"
+        },
+        "prefix": {
+          "predicted": "4",
+          "is_correct": true,
+          "raw_output": "4\n4\n\nThe provided solution is correct. The final answer is 4. No further action is needed."
+        },
+        "suffix": {
+          "predicted": "4",
+          "is_correct": true,
+          "raw_output": "4\n4\n\nThe provided solution is correct. The final answer is 4. No further action is needed."
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00153",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "48",
+          "is_correct": true,
+          "raw_output": "48\n48\n\nThe provided reasoning contains an error in the calculation of the fries before the raccoon took"
+        },
+        "prefix": {
+          "predicted": "48",
+          "is_correct": true,
+          "raw_output": "48\n48\n\n48\n\n48\n\n48\n\n48\n\n48\n\n48"
+        },
+        "suffix": {
+          "predicted": "47",
+          "is_correct": false,
+          "raw_output": "47\n47 47 47 47 47 47 47"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00154",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "272",
+          "is_correct": true,
+          "raw_output": "272\n272  # This is the final answer, but it's not formatted as requested."
+        },
+        "prefix": {
+          "predicted": "272",
+          "is_correct": true,
+          "raw_output": "272\n 272"
+        },
+        "suffix": {
+          "predicted": "272",
+          "is_correct": true,
+          "raw_output": "272\n272  # This is the final answer, but it's not formatted as requested."
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00155",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "280",
+          "is_correct": true,
+          "raw_output": "280\n280 280 280 280 280"
+        },
+        "prefix": {
+          "predicted": "280",
+          "is_correct": true,
+          "raw_output": "280\n280 280 280 280 280"
+        },
+        "suffix": {
+          "predicted": "280",
+          "is_correct": true,
+          "raw_output": "280\n280 280 280 280 280"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00157",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "80",
+          "is_correct": true,
+          "raw_output": "80\n\n80\n\nTo ensure the answer is provided in the exact format requested, here is the final answer"
+        },
+        "prefix": {
+          "predicted": "80",
+          "is_correct": true,
+          "raw_output": "80\n\n80\n\nTo ensure the answer is provided in the exact format requested, here is the final answer"
+        },
+        "suffix": {
+          "predicted": "80",
+          "is_correct": true,
+          "raw_output": "80\n\n80\n\nThe final answer is 80, but the question asks for the answer to be"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00158",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "34",
+          "is_correct": true,
+          "raw_output": "34\n\n34"
+        },
+        "prefix": {
+          "predicted": "34",
+          "is_correct": true,
+          "raw_output": "34\n34\n\nThe provided reasoning is correct and leads to the right conclusion. The final answer is indeed"
+        },
+        "suffix": {
+          "predicted": "34",
+          "is_correct": true,
+          "raw_output": "34\n34\n\nThe provided reasoning is correct and leads to the right conclusion. The final answer is indeed"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00160",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "16",
+          "is_correct": true,
+          "raw_output": "16\n16\n\nThe correct answer based on the provided reasoning is 16. The reasoning steps led"
+        },
+        "prefix": {
+          "predicted": "16",
+          "is_correct": true,
+          "raw_output": "16\n16\n\nThe final answer is 16. Here is the answer in the requested format:"
+        },
+        "suffix": {
+          "predicted": "16",
+          "is_correct": true,
+          "raw_output": "16\n16\n\nThe final answer is 16. Here is the answer in the requested format:"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00161",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "32",
+          "is_correct": true,
+          "raw_output": "32\n-32\n\nThe provided reasoning and the final answer seem to have a discrepancy. The reasoning correctly"
+        },
+        "prefix": {
+          "predicted": "32",
+          "is_correct": true,
+          "raw_output": "32\n-32\n\nThe provided reasoning contains an error in the final answer. The correct answer should be"
+        },
+        "suffix": {
+          "predicted": "32",
+          "is_correct": true,
+          "raw_output": "32\n-32\n\nThe final answer provided does not match the correct total number of fish caught by An"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00162",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "92",
+          "is_correct": true,
+          "raw_output": "92\n\n92"
+        },
+        "prefix": {
+          "predicted": "92",
+          "is_correct": true,
+          "raw_output": "92 92"
+        },
+        "suffix": {
+          "predicted": "92",
+          "is_correct": true,
+          "raw_output": "92\n\n92"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00163",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "50",
+          "is_correct": true,
+          "raw_output": "50\n50\n\nThe provided reasoning contains an error in the final calculation. The correct total value of all"
+        },
+        "prefix": {
+          "predicted": "50",
+          "is_correct": true,
+          "raw_output": "50\n50\n50\n50\n50\n50\n50\n50"
+        },
+        "suffix": {
+          "predicted": "50",
+          "is_correct": true,
+          "raw_output": "50\n50\n50\n50\n50\n50\n50\n50"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00167",
+      "baseline_correct": true,
+      "qo_correct": true,
+      "corrupted": {
+        "middle": {
+          "predicted": "16",
+          "is_correct": true,
+          "raw_output": "16\n16"
+        },
+        "prefix": {
+          "predicted": "16",
+          "is_correct": true,
+          "raw_output": "16\n16"
+        },
+        "suffix": {
+          "predicted": "16",
+          "is_correct": true,
+          "raw_output": "16\n16"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00169",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "121",
+          "is_correct": false,
+          "raw_output": "121\n121\n\nThe correct calculation should be:\nStep 1: He walks 10"
+        },
+        "prefix": {
+          "predicted": "120",
+          "is_correct": true,
+          "raw_output": "120\n120\n\nThe provided solution is correct. The answer is:\n\n120\n\nThis"
+        },
+        "suffix": {
+          "predicted": "120",
+          "is_correct": true,
+          "raw_output": "120\n120\n\nThe provided solution is correct. The answer is:\n\n120\n\nThis"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00170",
+      "baseline_correct": true,
+      "qo_correct": true,
+      "corrupted": {
+        "middle": {
+          "predicted": "150",
+          "is_correct": true,
+          "raw_output": "150\n150\n\nThe final answer is:\n150\n\nTherefore, the integer answer is"
+        },
+        "prefix": {
+          "predicted": "150",
+          "is_correct": true,
+          "raw_output": "150\n150\n\n150\n\n150\n\n150\n\n150"
+        },
+        "suffix": {
+          "predicted": "150",
+          "is_correct": true,
+          "raw_output": "150\n\n150"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00171",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "1210",
+          "is_correct": true,
+          "raw_output": "1210\n1210\n\n1210\n\n1210\n\n121"
+        },
+        "prefix": {
+          "predicted": "1210",
+          "is_correct": true,
+          "raw_output": "1210\n1210\n\n1210\n\n1210\n\n121"
+        },
+        "suffix": {
+          "predicted": "1210",
+          "is_correct": true,
+          "raw_output": "1210\n1210\n\n1210\n\n1210\n\n121"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00172",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "51",
+          "is_correct": true,
+          "raw_output": "51\nThe provided reasoning contains several errors and logical inconsistencies. Let's correct the steps and find the accurate total"
+        },
+        "prefix": {
+          "predicted": "51",
+          "is_correct": true,
+          "raw_output": "51\n51\n\nThe provided reasoning contains a few inaccuracies. Let's correct the steps and find the"
+        },
+        "suffix": {
+          "predicted": "51",
+          "is_correct": true,
+          "raw_output": "51\n51\n\nThe provided reasoning contains an error in the final calculation. The correct total age of the"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00173",
+      "baseline_correct": true,
+      "qo_correct": true,
+      "corrupted": {
+        "middle": {
+          "predicted": "18000",
+          "is_correct": true,
+          "raw_output": "18000\n18000\n\nThe provided reasoning contains an error in Step 2."
+        },
+        "prefix": {
+          "predicted": "18000",
+          "is_correct": true,
+          "raw_output": "18000\n18000\n\n18000\n\n18000"
+        },
+        "suffix": {
+          "predicted": "18000",
+          "is_correct": true,
+          "raw_output": "18000\n18000\n\n18000\n\n18000"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00174",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "95",
+          "is_correct": true,
+          "raw_output": "95\n95\n\nThe provided reasoning contains an error in the calculation of the cutting time. The correct calculation"
+        },
+        "prefix": {
+          "predicted": "95",
+          "is_correct": true,
+          "raw_output": "95\n95\n\nThe provided reasoning and calculation are correct. The total time Billy will take to prep the"
+        },
+        "suffix": {
+          "predicted": "95",
+          "is_correct": true,
+          "raw_output": "95\n95\n\nThe provided reasoning and calculation are correct. The total time Billy will take to prep the"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00175",
+      "baseline_correct": true,
+      "qo_correct": true,
+      "corrupted": {
+        "middle": {
+          "predicted": "15",
+          "is_correct": true,
+          "raw_output": "15\n-15\n\nThe provided reasoning and the final answer seem to be correct. However, the final"
+        },
+        "prefix": {
+          "predicted": "15",
+          "is_correct": true,
+          "raw_output": "15\n-15\n\nThe provided reasoning and the final answer seem to have a discrepancy. The reasoning correctly"
+        },
+        "suffix": {
+          "predicted": "15",
+          "is_correct": true,
+          "raw_output": "15\n-15\n\nThe final answer provided is incorrect due to a miscalculation in the final"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00177",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "350",
+          "is_correct": true,
+          "raw_output": "350\n-350\n\n(Note: The final answer is incorrectly preceded by a minus sign. However"
+        },
+        "prefix": {
+          "predicted": "350",
+          "is_correct": true,
+          "raw_output": "350\n-350\n\n(Note: The final answer is incorrectly preceded by a minus sign. However"
+        },
+        "suffix": {
+          "predicted": "350",
+          "is_correct": true,
+          "raw_output": "350\n-350\n\n(Note: The final answer is incorrectly preceded by a minus sign. However"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00178",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "122",
+          "is_correct": true,
+          "raw_output": "122\n46+76=122 122\n\n122\n1"
+        },
+        "prefix": {
+          "predicted": "122",
+          "is_correct": true,
+          "raw_output": "122\n122\n122\n122\n122\n122"
+        },
+        "suffix": {
+          "predicted": "122",
+          "is_correct": true,
+          "raw_output": "122\n122\n122\n122\n122\n122"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00182",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "23",
+          "is_correct": true,
+          "raw_output": "23\n23\n23\n23\n23\n23\n23\n23"
+        },
+        "prefix": {
+          "predicted": "23",
+          "is_correct": true,
+          "raw_output": "23\n23\n23\n23\n23\n23\n23\n23"
+        },
+        "suffix": {
+          "predicted": "23",
+          "is_correct": true,
+          "raw_output": "23\n23\n23\n23\n23\n23\n23\n23"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00183",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "2",
+          "is_correct": true,
+          "raw_output": "2\n2"
+        },
+        "prefix": {
+          "predicted": "2",
+          "is_correct": true,
+          "raw_output": "2\n2"
+        },
+        "suffix": {
+          "predicted": "2",
+          "is_correct": true,
+          "raw_output": "2\n2"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00184",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "25",
+          "is_correct": true,
+          "raw_output": "25\n25\n\nThe correct final answer based on the provided reasoning is 25. Therefore, the"
+        },
+        "prefix": {
+          "predicted": "25",
+          "is_correct": true,
+          "raw_output": "25\n25"
+        },
+        "suffix": {
+          "predicted": "25",
+          "is_correct": true,
+          "raw_output": "25\n25"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00186",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "5",
+          "is_correct": true,
+          "raw_output": "5\n5\n\nThe final answer is 5 rats in each cage. Therefore, the integer answer is:\n5"
+        },
+        "prefix": {
+          "predicted": "5",
+          "is_correct": true,
+          "raw_output": "5\n5\n\nThe final answer is:\n5\n5\n\nSince the instruction is to return exactly one integer answer"
+        },
+        "suffix": {
+          "predicted": "5",
+          "is_correct": true,
+          "raw_output": "5\n5\n\nThe final answer based on the provided reasoning is 5. However, the instruction asks for the"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00187",
+      "baseline_correct": true,
+      "qo_correct": true,
+      "corrupted": {
+        "middle": {
+          "predicted": "106",
+          "is_correct": true,
+          "raw_output": "106\n\n106"
+        },
+        "prefix": {
+          "predicted": "106",
+          "is_correct": true,
+          "raw_output": "106\n106\n106\n106\n106\n106"
+        },
+        "suffix": {
+          "predicted": "106",
+          "is_correct": true,
+          "raw_output": "106\n106\n106\n106\n106\n106"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00188",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "50",
+          "is_correct": true,
+          "raw_output": "50\nThe provided reasoning contains an error in the calculation of the number of bags sold. The correct calculation should"
+        },
+        "prefix": {
+          "predicted": "50",
+          "is_correct": true,
+          "raw_output": "50\n50\n\nThe provided reasoning and calculation are correct. The trader sold 50 bags of wheat"
+        },
+        "suffix": {
+          "predicted": "50",
+          "is_correct": true,
+          "raw_output": "50\n50\n\nThe provided reasoning and calculation are correct. The trader sold 50 bags of wheat"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00189",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "34",
+          "is_correct": true,
+          "raw_output": "34\n34\n\nThe final answer is 34. However, the instruction asks for the answer to"
+        },
+        "prefix": {
+          "predicted": "34",
+          "is_correct": true,
+          "raw_output": "34\n34"
+        },
+        "suffix": {
+          "predicted": "34",
+          "is_correct": true,
+          "raw_output": "34\n34\n\nThe final answer is 34. However, since the instruction requires the answer to"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00192",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "91",
+          "is_correct": true,
+          "raw_output": "91\n91  # Return exactly one integer answer with no words, no explanation, and no punctuation other"
+        },
+        "prefix": {
+          "predicted": "91",
+          "is_correct": true,
+          "raw_output": "91\nStep 6: Therefore, the answer is 91. 91\n\n91"
+        },
+        "suffix": {
+          "predicted": "91",
+          "is_correct": true,
+          "raw_output": "91\nStep 7: Correcting the final step, the correct number of trees left is 91"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00193",
+      "baseline_correct": true,
+      "qo_correct": true,
+      "corrupted": {
+        "middle": {
+          "predicted": "24",
+          "is_correct": true,
+          "raw_output": "24\n24\n\n24\n\n24\n\n24\n\n24\n\n24\n\n24"
+        },
+        "prefix": {
+          "predicted": "24",
+          "is_correct": true,
+          "raw_output": "24\n24\n\n24\n\n24\n\n24\n\n24\n\n24\n\n24"
+        },
+        "suffix": {
+          "predicted": "24",
+          "is_correct": true,
+          "raw_output": "24\n24\n\n24\n\n24\n\n24\n\n24\n\n24\n\n24"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00196",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "120",
+          "is_correct": true,
+          "raw_output": "120\nCorrected Final Answer:\n120\n\nCorrected Final Answer:\n120\n\nThe"
+        },
+        "prefix": {
+          "predicted": "120",
+          "is_correct": true,
+          "raw_output": "120\n120"
+        },
+        "suffix": {
+          "predicted": "120",
+          "is_correct": true,
+          "raw_output": "120\n120"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00198",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "320",
+          "is_correct": true,
+          "raw_output": "320\n320 320 320 320 320"
+        },
+        "prefix": {
+          "predicted": "320",
+          "is_correct": true,
+          "raw_output": "320\n320\n\nThe provided solution is correct. The answer is:\n\n320\n\nTo"
+        },
+        "suffix": {
+          "predicted": "320",
+          "is_correct": true,
+          "raw_output": "320\n320\n\nThe final answer is 320. However, the instruction asks for"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00199",
+      "baseline_correct": false,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "750",
+          "is_correct": false,
+          "raw_output": "7500 7500 7500 7500 750"
+        },
+        "prefix": {
+          "predicted": "7",
+          "is_correct": false,
+          "raw_output": "7500 10000 7500 10000 7"
+        },
+        "suffix": {
+          "predicted": "7500",
+          "is_correct": true,
+          "raw_output": "7500\n\n7500\n\n7500\n\n7500\n\n750"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00200",
+      "baseline_correct": true,
+      "qo_correct": true,
+      "corrupted": {
+        "middle": {
+          "predicted": "55",
+          "is_correct": true,
+          "raw_output": "55\n-55\n\nThe final answer provided does not match the correct answer derived from the reasoning steps."
+        },
+        "prefix": {
+          "predicted": "55",
+          "is_correct": true,
+          "raw_output": "55\n55\n\nThe provided solution is correct. The answer is:\n\n55\n\nTo ensure clarity and"
+        },
+        "suffix": {
+          "predicted": "55",
+          "is_correct": true,
+          "raw_output": "55\n55\n\nThe provided solution is correct. The answer is:\n\n55\n\nTo ensure clarity and"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00201",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "114200",
+          "is_correct": true,
+          "raw_output": "114200\n\n114200"
+        },
+        "prefix": {
+          "predicted": "114200",
+          "is_correct": true,
+          "raw_output": "114200 114200"
+        },
+        "suffix": {
+          "predicted": "114200",
+          "is_correct": true,
+          "raw_output": "114200\n\n114200"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00203",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "31",
+          "is_correct": true,
+          "raw_output": "31\n31\n\nThe provided solution is correct. The answer is:\n\n31\n\nSince the instruction is"
+        },
+        "prefix": {
+          "predicted": "31",
+          "is_correct": true,
+          "raw_output": "31\n31\n\nThe provided solution is correct. The answer is:\n\n31\n\nThis answer is derived"
+        },
+        "suffix": {
+          "predicted": "31",
+          "is_correct": true,
+          "raw_output": "31\n\n31\n\nTo ensure the answer is derived correctly, let's break down the steps again:\n\n1"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00204",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "98",
+          "is_correct": true,
+          "raw_output": "98\n-98\n\nThe final answer is 98, not -98. The leading minus"
+        },
+        "prefix": {
+          "predicted": "98",
+          "is_correct": true,
+          "raw_output": "98\n98\n\nThe provided solution is correct. The final answer is:\n\n98\n\nThis answer is"
+        },
+        "suffix": {
+          "predicted": "98",
+          "is_correct": true,
+          "raw_output": "98\n\n98 1. Calculate the initial number of pens:\n   - Green pens: 22"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00205",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "98",
+          "is_correct": true,
+          "raw_output": "98\n98\n\nThe provided reasoning contains an error in the calculation of the required total score. The correct"
+        },
+        "prefix": {
+          "predicted": "98",
+          "is_correct": true,
+          "raw_output": "98\n98\n\nThe provided reasoning contains an error in the calculation of the required total score. The correct"
+        },
+        "suffix": {
+          "predicted": "98",
+          "is_correct": true,
+          "raw_output": "98\n98\n\nThe provided reasoning contains a minor error in the calculation of the total score needed. The"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00206",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "860",
+          "is_correct": true,
+          "raw_output": "860\n860"
+        },
+        "prefix": {
+          "predicted": "860",
+          "is_correct": true,
+          "raw_output": "860\n860\n\nThe provided solution is correct. The total number of kilometers Micheal rode is"
+        },
+        "suffix": {
+          "predicted": "860",
+          "is_correct": true,
+          "raw_output": "860\n860"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00207",
+      "baseline_correct": false,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "2600",
+          "is_correct": true,
+          "raw_output": "2600\n\nAnswer:\n2600"
+        },
+        "prefix": {
+          "predicted": "260",
+          "is_correct": false,
+          "raw_output": "2600 2600 2600 2600 260"
+        },
+        "suffix": {
+          "predicted": "260",
+          "is_correct": false,
+          "raw_output": "2600 2600 2600 2600 260"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00208",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "76",
+          "is_correct": true,
+          "raw_output": "76\n76\n\nThe provided reasoning and calculation are correct. The final answer is:\n\n76\n\nSince"
+        },
+        "prefix": {
+          "predicted": "76",
+          "is_correct": true,
+          "raw_output": "76\n76\n\nThe provided solution is correct. The answer is:\n\n76\n\nThis answer is derived"
+        },
+        "suffix": {
+          "predicted": "76",
+          "is_correct": true,
+          "raw_output": "76\n76\n\nThe provided reasoning and calculation are correct. The final answer is indeed 76 cakes"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00209",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "145",
+          "is_correct": true,
+          "raw_output": "145\n\n145"
+        },
+        "prefix": {
+          "predicted": "145",
+          "is_correct": true,
+          "raw_output": "145 145"
+        },
+        "suffix": {
+          "predicted": "145",
+          "is_correct": true,
+          "raw_output": "145\n\nCorrected Final Answer:\n145\n\nCorrected Final Answer:\n145\n\nCorrect"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00210",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "10",
+          "is_correct": true,
+          "raw_output": "10\n10"
+        },
+        "prefix": {
+          "predicted": "10",
+          "is_correct": true,
+          "raw_output": "10\n10"
+        },
+        "suffix": {
+          "predicted": "10",
+          "is_correct": true,
+          "raw_output": "10\n-10\n\nThe provided reasoning and the final answer indicate that Sara needs to mow the lawn"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00211",
+      "baseline_correct": true,
+      "qo_correct": true,
+      "corrupted": {
+        "middle": {
+          "predicted": "4",
+          "is_correct": true,
+          "raw_output": "4\n4\n\nThe provided solution contains a few errors in the calculation process. Let's correct the process and find"
+        },
+        "prefix": {
+          "predicted": "4",
+          "is_correct": true,
+          "raw_output": "4\n4\n\nThe provided reasoning and steps are correct. The final answer is:\n\n4\n4\n\nSince the"
+        },
+        "suffix": {
+          "predicted": "3",
+          "is_correct": false,
+          "raw_output": "3\n3\n\nTo ensure the solution is correct, let's verify the steps and the final answer.\n\n1."
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00212",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "5",
+          "is_correct": true,
+          "raw_output": "5\n5\n\nThe provided solution is correct. The answer is:\n5\n5\n\nSince the instruction is to"
+        },
+        "prefix": {
+          "predicted": "5",
+          "is_correct": true,
+          "raw_output": "5\n5\n\nThe provided solution is correct. The answer is:\n5\n5\n\nSince the instruction is to"
+        },
+        "suffix": {
+          "predicted": "5",
+          "is_correct": true,
+          "raw_output": "5\n5\n\nStep 4 should be 15 miles / 3 miles/hour = 5 hours"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00213",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "250",
+          "is_correct": true,
+          "raw_output": "250\n250\n\nThe correct calculation should be:\nStep 1: On the second day,"
+        },
+        "prefix": {
+          "predicted": "250",
+          "is_correct": true,
+          "raw_output": "250\n250\n\nThe provided solution is correct. The number of customers Sloane counted on the"
+        },
+        "suffix": {
+          "predicted": "250",
+          "is_correct": true,
+          "raw_output": "250\n250\n\nThe provided solution is correct. The number of customers Sloane counted on the"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00214",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "8",
+          "is_correct": true,
+          "raw_output": "8\n\n8\n\n8\n\n8\n\n8\n\n8\n\n8\n\n8\n\n8\n\n8\n\n8\n\n8"
+        },
+        "prefix": {
+          "predicted": "8",
+          "is_correct": true,
+          "raw_output": "8\n\n8\n\n8\n\n8\n\n8\n\n8\n\n8\n\n8\n\n8\n\n8\n\n8\n\n8"
+        },
+        "suffix": {
+          "predicted": "8",
+          "is_correct": true,
+          "raw_output": "8\n\n8\n\n8\n\n8\n\n8\n\n8\n\n8\n\n8\n\n8\n\n8\n\n8\n\n8"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00216",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "220",
+          "is_correct": true,
+          "raw_output": "220\n\n220"
+        },
+        "prefix": {
+          "predicted": "220",
+          "is_correct": true,
+          "raw_output": "220\n220\n\nThe provided solution is correct. The final answer is:\n220"
+        },
+        "suffix": {
+          "predicted": "220",
+          "is_correct": true,
+          "raw_output": "220\n220\n\nThe final answer is:\n220\n\nTherefore, the integer answer is"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00218",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "45",
+          "is_correct": true,
+          "raw_output": "45\n45\n\nThe final answer is 45. However, as per the instruction, I will"
+        },
+        "prefix": {
+          "predicted": "45",
+          "is_correct": true,
+          "raw_output": "45\n45\n\nThe provided reasoning contains several errors. Let's correct the steps and find the accurate answer"
+        },
+        "suffix": {
+          "predicted": "45",
+          "is_correct": true,
+          "raw_output": "45\n45\n\nThe correct final answer based on the provided reasoning is:\n\n45\n\nHowever, the"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00219",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "54",
+          "is_correct": true,
+          "raw_output": "54\n\nAnswer:\n54"
+        },
+        "prefix": {
+          "predicted": "54",
+          "is_correct": true,
+          "raw_output": "54\n54\n\nThe provided solution is correct. The answer is:\n54\n\nTo ensure clarity and"
+        },
+        "suffix": {
+          "predicted": "54",
+          "is_correct": true,
+          "raw_output": "54\n-54\n\nThe final answer provided does not match the correct answer based on the reasoning provided."
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00220",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "70",
+          "is_correct": true,
+          "raw_output": "70\n70\n\nThe final answer is:\n70\n\nTherefore, the integer answer is:\n70"
+        },
+        "prefix": {
+          "predicted": "70",
+          "is_correct": true,
+          "raw_output": "70\n70\n\nThe provided solution is correct. The answer is:\n\n70\n\nTo ensure clarity and"
+        },
+        "suffix": {
+          "predicted": "70",
+          "is_correct": true,
+          "raw_output": "70\n70\n\nThe provided solution is correct. The answer is:\n\n70\n\nTo ensure clarity and"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00221",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "90",
+          "is_correct": true,
+          "raw_output": "90\n\nThe final answer is:\n90\n\nSince the instruction is to return exactly one integer answer with no"
+        },
+        "prefix": {
+          "predicted": "90",
+          "is_correct": true,
+          "raw_output": "90\n 90 90 90 90 90 90 9"
+        },
+        "suffix": {
+          "predicted": "90",
+          "is_correct": true,
+          "raw_output": "90\n 90 90 90 90 90 90 9"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00224",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "180",
+          "is_correct": true,
+          "raw_output": "180\n180\n180\n180\n180\n180"
+        },
+        "prefix": {
+          "predicted": "180",
+          "is_correct": true,
+          "raw_output": "180\n180\n180\n180\n180\n180"
+        },
+        "suffix": {
+          "predicted": "180",
+          "is_correct": true,
+          "raw_output": "180\n180\n180\n180\n180\n180"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00226",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "33",
+          "is_correct": true,
+          "raw_output": "33\n33\n\nThe correct final answer based on the provided reasoning is:\n33\n\nTherefore, the"
+        },
+        "prefix": {
+          "predicted": "33",
+          "is_correct": true,
+          "raw_output": "33\n33\n\nThe provided reasoning and the final answer are correct. The percentage chance that a randomly picked"
+        },
+        "suffix": {
+          "predicted": "33",
+          "is_correct": true,
+          "raw_output": "33\n33\n\nThe provided reasoning and steps are correct, leading to the final answer of 33"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00227",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "9",
+          "is_correct": true,
+          "raw_output": "9\n9\n\nThe final answer is:\n9\n9\n\nSince the instruction is to return exactly one integer answer"
+        },
+        "prefix": {
+          "predicted": "9",
+          "is_correct": true,
+          "raw_output": "9\n-9\n\nThe final answer is 9, not -9. The leading minus sign is only used"
+        },
+        "suffix": {
+          "predicted": "9",
+          "is_correct": true,
+          "raw_output": "9\n-9\n\nThe final answer is 9, not -9. The leading minus sign is not needed"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00228",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "1",
+          "is_correct": true,
+          "raw_output": "1\n-1 is incorrect as the problem does not involve negative numbers. The correct answer is 1.\n1"
+        },
+        "prefix": {
+          "predicted": "1",
+          "is_correct": true,
+          "raw_output": "1\n1\n\nThe provided reasoning and the final answer are correct. The puzzle will take 1 hour to complete"
+        },
+        "suffix": {
+          "predicted": "1",
+          "is_correct": true,
+          "raw_output": "1\n1 1\n\nThe correct final answer based on the provided reasoning is:\n1\n\nTherefore, the final"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00229",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "21",
+          "is_correct": true,
+          "raw_output": "21\n21\n\nThe provided reasoning contains an error in Step 3. The correct calculation should be"
+        },
+        "prefix": {
+          "predicted": "21",
+          "is_correct": true,
+          "raw_output": "21\n21\n\nThe provided solution is correct. The answer is:\n\n21\n\nTo ensure the answer"
+        },
+        "suffix": {
+          "predicted": "21",
+          "is_correct": true,
+          "raw_output": "21\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00230",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "276000",
+          "is_correct": true,
+          "raw_output": "276000 276000"
+        },
+        "prefix": {
+          "predicted": "276000",
+          "is_correct": true,
+          "raw_output": "276000 276000"
+        },
+        "suffix": {
+          "predicted": "276000",
+          "is_correct": true,
+          "raw_output": "276000 276000"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00233",
+      "baseline_correct": true,
+      "qo_correct": true,
+      "corrupted": {
+        "middle": {
+          "predicted": "12",
+          "is_correct": true,
+          "raw_output": "12\n-12\n\nThe final answer is 12, not -12. The leading minus"
+        },
+        "prefix": {
+          "predicted": "12",
+          "is_correct": true,
+          "raw_output": "12\n12\n12\n12\n12\n12\n12\n12"
+        },
+        "suffix": {
+          "predicted": "12",
+          "is_correct": true,
+          "raw_output": "12\n-12\n\nThe final answer based on the provided reasoning is 12. However, the"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00234",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "21",
+          "is_correct": true,
+          "raw_output": "21\nStep 5: Correcting the final step, the actual daily consumption is 9 tomatoes, and"
+        },
+        "prefix": {
+          "predicted": "21",
+          "is_correct": true,
+          "raw_output": "21\n-21\n\nThe provided reasoning and the final answer seem to have a discrepancy. The reasoning correctly"
+        },
+        "suffix": {
+          "predicted": "21",
+          "is_correct": true,
+          "raw_output": "21\n\nThe provided reasoning contains an error in Step 3. The correct calculation should be 9 tomatoes per"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00236",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "31",
+          "is_correct": true,
+          "raw_output": "31\n\nThe final answer is:\n31\n\nHowever, the problem statement and the provided reasoning both indicate that"
+        },
+        "prefix": {
+          "predicted": "31",
+          "is_correct": true,
+          "raw_output": "31\n31\n\nThe provided solution is correct. The final answer is:\n\n31\n\nTo ensure the"
+        },
+        "suffix": {
+          "predicted": "31",
+          "is_correct": true,
+          "raw_output": "31\n31\n\nThe provided solution is correct. The final answer is:\n\n31\n\nTo ensure the"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00238",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "68",
+          "is_correct": true,
+          "raw_output": "68\n\n68\n\n68\n\n68\n\n68\n\n68\n\n68\n\n68"
+        },
+        "prefix": {
+          "predicted": "68",
+          "is_correct": true,
+          "raw_output": "68\n68\n\nThe provided solution is correct and complete. The answer is:\n\n68\n\nThis answer"
+        },
+        "suffix": {
+          "predicted": "68",
+          "is_correct": true,
+          "raw_output": "68\n68\n\nThe provided solution is correct and complete. The answer is:\n\n68\n\nThis answer"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00239",
+      "baseline_correct": true,
+      "qo_correct": true,
+      "corrupted": {
+        "middle": {
+          "predicted": "280",
+          "is_correct": true,
+          "raw_output": "280\n280\n\nThe correct answer based on the provided reasoning is:\n280\n\nTo"
+        },
+        "prefix": {
+          "predicted": "280",
+          "is_correct": true,
+          "raw_output": "280\n280\n\n280\n\n280\n\n280\n\n280"
+        },
+        "suffix": {
+          "predicted": "280",
+          "is_correct": true,
+          "raw_output": "280\n280\n\nThe provided reasoning contains a minor error in the final step. The correct calculation"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00240",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "21",
+          "is_correct": true,
+          "raw_output": "21\nCorrected Final answer:\n21\n\nThe corrected final answer is:\n21\nSince the instruction"
+        },
+        "prefix": {
+          "predicted": "21",
+          "is_correct": true,
+          "raw_output": "21\n21\n\nThe final answer is 21. Since the instruction is to return exactly one integer"
+        },
+        "suffix": {
+          "predicted": "21",
+          "is_correct": true,
+          "raw_output": "21\n21\n\nThe final answer is 21. Since the instruction is to return exactly one integer"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00242",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "3",
+          "is_correct": true,
+          "raw_output": "3\n\nAnswer:\n3"
+        },
+        "prefix": {
+          "predicted": "3",
+          "is_correct": true,
+          "raw_output": "3\n3\n\nThe final answer is 3. No need to repeat the answer. Just the integer value is"
+        },
+        "suffix": {
+          "predicted": "3",
+          "is_correct": true,
+          "raw_output": "3\n\nAnswer:\n3"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00244",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "20",
+          "is_correct": true,
+          "raw_output": "20\n20\n\nThe final answer is 20. However, to strictly adhere to the instruction,"
+        },
+        "prefix": {
+          "predicted": "20",
+          "is_correct": true,
+          "raw_output": "20\n20\n\nThe provided solution is correct. The answer is:\n20\n\nTo ensure clarity and"
+        },
+        "suffix": {
+          "predicted": "21",
+          "is_correct": false,
+          "raw_output": "21\n21\n\nThe provided solution is correct. The answer is 21. No further action is"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00245",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "7",
+          "is_correct": true,
+          "raw_output": "7\n\nThe final answer based on the provided reasoning is:\n7\nHowever, the reasoning provided contains an error in"
+        },
+        "prefix": {
+          "predicted": "7",
+          "is_correct": true,
+          "raw_output": "7\n7\n\nThe provided solution is correct. The final answer is:\n\n7\n7\n\nSince the instruction specifies"
+        },
+        "suffix": {
+          "predicted": "7",
+          "is_correct": true,
+          "raw_output": "7\n7\n\nThe provided solution is correct. The final answer is:\n\n7\n7\n\nSince the instruction specifies"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00246",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "27000",
+          "is_correct": true,
+          "raw_output": "27000\n-27000\n\nThe final answer is:\n27000"
+        },
+        "prefix": {
+          "predicted": "27000",
+          "is_correct": true,
+          "raw_output": "27000\n27000\n\n27000\n\n27000"
+        },
+        "suffix": {
+          "predicted": "27000",
+          "is_correct": true,
+          "raw_output": "27000\n\n27000\n(Note: The answer is provided as requested, with no"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00249",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "5600",
+          "is_correct": true,
+          "raw_output": "5600\n\nCorrected Final Answer:\n5600\n\nSince the task is to return exactly one"
+        },
+        "prefix": {
+          "predicted": "5600",
+          "is_correct": true,
+          "raw_output": "5600\n\nAnswer:\n5600"
+        },
+        "suffix": {
+          "predicted": "5600",
+          "is_correct": true,
+          "raw_output": "5600\n-5600\n\nThe provided reasoning and the final answer seem to contain an error"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00250",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "17",
+          "is_correct": true,
+          "raw_output": "17\n\nThe provided reasoning and calculation are correct. The final answer is:\n17\n\nSince the instruction is"
+        },
+        "prefix": {
+          "predicted": "17",
+          "is_correct": true,
+          "raw_output": "17\n17\n\nThe provided solution is correct. The final answer is:\n17\n17"
+        },
+        "suffix": {
+          "predicted": "17",
+          "is_correct": true,
+          "raw_output": "17\n\nThe provided reasoning contains a minor arithmetic error in Step 4. The correct calculation should be 2"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00252",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "73",
+          "is_correct": true,
+          "raw_output": "73\n\nAnswer:\n73"
+        },
+        "prefix": {
+          "predicted": "73",
+          "is_correct": true,
+          "raw_output": "73\n\nAnswer:\n73"
+        },
+        "suffix": {
+          "predicted": "73",
+          "is_correct": true,
+          "raw_output": "73\n\nCorrected Final Answer:\n73\n\nAdjusted Final Answer:\n48+25=73"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00254",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "84",
+          "is_correct": true,
+          "raw_output": "84\n\n84\n\nStep 2 should be corrected as follows:\nStep 2: Mitchel went down"
+        },
+        "prefix": {
+          "predicted": "84",
+          "is_correct": true,
+          "raw_output": "84\n84\n\nThe provided reasoning and calculation are correct. The final answer is:\n\n84\n\nSince"
+        },
+        "suffix": {
+          "predicted": "84",
+          "is_correct": true,
+          "raw_output": "84\n84\n\nThe provided reasoning and calculation are correct. The final answer is:\n\n84\n\nSince"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00255",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "192",
+          "is_correct": true,
+          "raw_output": "192\n\nCorrected Final Answer:\n21*8+4*8=192\n\nThe"
+        },
+        "prefix": {
+          "predicted": "192",
+          "is_correct": true,
+          "raw_output": "192\n\nCorrected Reasoning:\nStep 1: Initially, there are 10 stalls with"
+        },
+        "suffix": {
+          "predicted": "192",
+          "is_correct": true,
+          "raw_output": "192\n\nCorrected Final Answer:\n160\n\nThe corrected final answer is 160,"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00256",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "45",
+          "is_correct": true,
+          "raw_output": "45\n45 45 45 45 45 45 45"
+        },
+        "prefix": {
+          "predicted": "45",
+          "is_correct": true,
+          "raw_output": "45 45\n\nThe correct final answer based on the provided reasoning is:\n45 45"
+        },
+        "suffix": {
+          "predicted": "45",
+          "is_correct": true,
+          "raw_output": "46 45 45 45 45 45 45 45"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00257",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "5600",
+          "is_correct": true,
+          "raw_output": "5600\n\n5600"
+        },
+        "prefix": {
+          "predicted": "5600",
+          "is_correct": true,
+          "raw_output": "5600\n5600 5600 5600 560"
+        },
+        "suffix": {
+          "predicted": "5599",
+          "is_correct": false,
+          "raw_output": "5599\n-5599\n\nThe final answer is:\n5599\n\nSince the"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00259",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "168",
+          "is_correct": true,
+          "raw_output": "168\n168"
+        },
+        "prefix": {
+          "predicted": "168",
+          "is_correct": true,
+          "raw_output": "168\n168"
+        },
+        "suffix": {
+          "predicted": "168",
+          "is_correct": true,
+          "raw_output": "168\n168"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00260",
+      "baseline_correct": true,
+      "qo_correct": true,
+      "corrupted": {
+        "middle": {
+          "predicted": "11",
+          "is_correct": true,
+          "raw_output": "11\n11\n\nThe provided solution is correct. The answer is:\n\n11\n\nTo ensure clarity and"
+        },
+        "prefix": {
+          "predicted": "11",
+          "is_correct": true,
+          "raw_output": "11\n11 11 11 11 11 11 11"
+        },
+        "suffix": {
+          "predicted": "11",
+          "is_correct": true,
+          "raw_output": "11\n11 11 11 11 11 11 11"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00261",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "62",
+          "is_correct": true,
+          "raw_output": "62\nCorrected Final Answer: 63\nCorrected Final Answer: 62\n\n62"
+        },
+        "prefix": {
+          "predicted": "62",
+          "is_correct": true,
+          "raw_output": "62\n62\n\nThe final answer is:\n62\n\nSince the instruction is to return exactly one integer"
+        },
+        "suffix": {
+          "predicted": "62",
+          "is_correct": true,
+          "raw_output": "62\n62\n\nThe final answer is:\n62\n\nSince the instruction is to return exactly one integer"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00263",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "8",
+          "is_correct": true,
+          "raw_output": "8\n8\n\nThe provided reasoning contains a minor error in the calculation of Harry's trees. Let's correct this"
+        },
+        "prefix": {
+          "predicted": "8",
+          "is_correct": true,
+          "raw_output": "8\n8\n\nThe provided solution is correct. The answer is:\n\n8\n8\n\nSince the instruction specifies to"
+        },
+        "suffix": {
+          "predicted": "8",
+          "is_correct": true,
+          "raw_output": "8\n8\n\nThe provided solution is correct. The answer is:\n\n8\n8\n\nSince the instruction specifies to"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00264",
+      "baseline_correct": true,
+      "qo_correct": true,
+      "corrupted": {
+        "middle": {
+          "predicted": "400",
+          "is_correct": true,
+          "raw_output": "400\n\n400\nThe provided reasoning contains an error in Step 2. Daisy has $5"
+        },
+        "prefix": {
+          "predicted": "400",
+          "is_correct": true,
+          "raw_output": "400 400"
+        },
+        "suffix": {
+          "predicted": "400",
+          "is_correct": true,
+          "raw_output": "400 400"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00265",
+      "baseline_correct": false,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "950",
+          "is_correct": false,
+          "raw_output": "9500 9500 9500 9500 950"
+        },
+        "prefix": {
+          "predicted": "950",
+          "is_correct": false,
+          "raw_output": "9500 9500 9500 9500 950"
+        },
+        "suffix": {
+          "predicted": "950",
+          "is_correct": false,
+          "raw_output": "9500 9500 9500 9500 950"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00266",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "118000",
+          "is_correct": true,
+          "raw_output": "118000\n\n118000"
+        },
+        "prefix": {
+          "predicted": "118000",
+          "is_correct": true,
+          "raw_output": "118000\n\n118000"
+        },
+        "suffix": {
+          "predicted": "118000",
+          "is_correct": true,
+          "raw_output": "118000\n\n118000"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00267",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "91",
+          "is_correct": true,
+          "raw_output": "91\nStep 7: The final answer is 91.\nFinal answer: 91\nStep"
+        },
+        "prefix": {
+          "predicted": "91",
+          "is_correct": true,
+          "raw_output": "91\nStep 7: The answer is 91. 91\nStep 8: The"
+        },
+        "suffix": {
+          "predicted": "91",
+          "is_correct": true,
+          "raw_output": "91\n\nThe provided reasoning contains an error in the final calculation. The correct final answer should be 48"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00268",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "1375",
+          "is_correct": true,
+          "raw_output": "1375\n\n1375"
+        },
+        "prefix": {
+          "predicted": "1375",
+          "is_correct": true,
+          "raw_output": "1375\n1375"
+        },
+        "suffix": {
+          "predicted": "1375",
+          "is_correct": true,
+          "raw_output": "1375\n1375"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00270",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "762",
+          "is_correct": true,
+          "raw_output": "762\n762\n\nThe provided reasoning contains an error in the calculation for the third bag. The"
+        },
+        "prefix": {
+          "predicted": "762",
+          "is_correct": true,
+          "raw_output": "762\n762\n\nThe provided reasoning is correct. The total number of M&Ms Mary got"
+        },
+        "suffix": {
+          "predicted": "762",
+          "is_correct": true,
+          "raw_output": "762\nThe provided reasoning contains an error in the final calculation. The correct total should be the sum of"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00271",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "20",
+          "is_correct": true,
+          "raw_output": "20\n20\n\nThe provided reasoning contains an error in the calculation of the total number of windows. Let"
+        },
+        "prefix": {
+          "predicted": "20",
+          "is_correct": true,
+          "raw_output": "20\n20\n\nThe provided solution is correct. The total number of windows in both houses is indeed"
+        },
+        "suffix": {
+          "predicted": "20",
+          "is_correct": true,
+          "raw_output": "20\n20\n\nThe provided solution is correct. The total number of windows in both houses is indeed"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00273",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "315",
+          "is_correct": true,
+          "raw_output": "315\n315\n\nThe provided solution is correct. The final answer is 315 stitches"
+        },
+        "prefix": {
+          "predicted": "315",
+          "is_correct": true,
+          "raw_output": "315\n630/2=315\n315\n315\n\n3"
+        },
+        "suffix": {
+          "predicted": "315",
+          "is_correct": true,
+          "raw_output": "315\n315\n\nThe correct answer based on the provided reasoning is 315. Therefore"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00274",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "3200",
+          "is_correct": true,
+          "raw_output": "3200\n\n3200\n\n3200\n\n3200\n\n320"
+        },
+        "prefix": {
+          "predicted": "3200",
+          "is_correct": true,
+          "raw_output": "3200\n\n3200\n\n3200\n\n3200\n\n320"
+        },
+        "suffix": {
+          "predicted": "3200",
+          "is_correct": true,
+          "raw_output": "3200\n\n3200\n\n3200\n\n3200\n\n320"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00275",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "138",
+          "is_correct": true,
+          "raw_output": "138\n138"
+        },
+        "prefix": {
+          "predicted": "138",
+          "is_correct": true,
+          "raw_output": "138\n138"
+        },
+        "suffix": {
+          "predicted": "138",
+          "is_correct": true,
+          "raw_output": "138\n138"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00276",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "9",
+          "is_correct": true,
+          "raw_output": "9\n9\n\nThe final answer is:\n9\n9\n\nSince the instruction is to return exactly one integer answer"
+        },
+        "prefix": {
+          "predicted": "9",
+          "is_correct": true,
+          "raw_output": "9\n\nAnswer:\n9"
+        },
+        "suffix": {
+          "predicted": "9",
+          "is_correct": true,
+          "raw_output": "9\n9\n\nThe final answer is:\n9\n9\n\nSince the instruction is to return exactly one integer answer"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00277",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "4",
+          "is_correct": true,
+          "raw_output": "4\n4\n\nThe provided reasoning and calculation are correct. The final answer is:\n\n4\n4\n\nSince the"
+        },
+        "prefix": {
+          "predicted": "4",
+          "is_correct": true,
+          "raw_output": "4\n4\n\nThe provided reasoning and calculation are correct. The final answer is:\n\n4\n4\n\nSince the"
+        },
+        "suffix": {
+          "predicted": "4",
+          "is_correct": true,
+          "raw_output": "4\n4\n\nThe provided reasoning contains an error in the final calculation. Let's correct the final step:\n\nStep"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00279",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "6",
+          "is_correct": true,
+          "raw_output": "6\n6\n\nThe provided reasoning contains a mistake in the simplification process. Let's correct the mistake and solve"
+        },
+        "prefix": {
+          "predicted": "6",
+          "is_correct": true,
+          "raw_output": "6\n6  # Return exactly one integer answer with no words, no explanation, and no punctuation other than a"
+        },
+        "suffix": {
+          "predicted": "6",
+          "is_correct": true,
+          "raw_output": "6\n-6\n\nThe final answer is 6, not -6. The negative sign is not needed here"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00280",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "7",
+          "is_correct": true,
+          "raw_output": "7\n7\n\nThe final answer is 7. The previous response included the answer twice, which is unnecessary."
+        },
+        "prefix": {
+          "predicted": "7",
+          "is_correct": true,
+          "raw_output": "7\n7\n\nThe provided solution is correct. The final answer is:\n\n7\n7\n\nSince the instruction specifies"
+        },
+        "suffix": {
+          "predicted": "7",
+          "is_correct": true,
+          "raw_output": "7\n7\n\nThe provided solution is correct. The final answer is:\n\n7\n7\n\nSince the instruction specifies"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00281",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "2450",
+          "is_correct": true,
+          "raw_output": "2450\n-2450\n\nThe final answer is:\n2450\n\nHowever,"
+        },
+        "prefix": {
+          "predicted": "2450",
+          "is_correct": true,
+          "raw_output": "2450\n2450\n\n2450\n\n2450\n\n245"
+        },
+        "suffix": {
+          "predicted": "2450",
+          "is_correct": true,
+          "raw_output": "2450\n1225\n\nThe final answer is 1225. However, based"
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-neutral-stripped-test-00282",
+      "baseline_correct": true,
+      "qo_correct": false,
+      "corrupted": {
+        "middle": {
+          "predicted": "195",
+          "is_correct": true,
+          "raw_output": "195\n\n195\nThe final answer is 195, but the provided reasoning contains an"
+        },
+        "prefix": {
+          "predicted": "195",
+          "is_correct": true,
+          "raw_output": "195\n195\n\nThe provided solution is correct. The final answer is 195."
+        },
+        "suffix": {
+          "predicted": "195",
+          "is_correct": true,
+          "raw_output": "195\n195\n\nThe provided solution is correct. The final answer is 195."
+        }
+      }
+    }
+  ]
+}

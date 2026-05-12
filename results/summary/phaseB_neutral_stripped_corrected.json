@@ -1,0 +1,4043 @@
+{
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "data_file": "/home/gpgabriel25/data/phase0_position_control_gsm8k_stripped_neutral_v1.jsonl",
+  "corruption_mode": "semantic",
+  "corruption_fraction": 1.0,
+  "protected_prefix_steps": 1,
+  "protected_suffix_steps": 1,
+  "summary": {
+    "n_examples": 100,
+    "baseline_accuracy": 0.38,
+    "corrupted_accuracy": {
+      "middle": 0.3,
+      "prefix": 0.36,
+      "suffix": 0.47
+    },
+    "corruption_delta": {
+      "middle": -0.08,
+      "prefix": -0.02,
+      "suffix": 0.09
+    },
+    "note": "Phase B corrected run. Sign-flip bug in original EasyDeL runner was fixed via del logits; jax.effects_barrier() each decode step."
+  },
+  "results": {
+    "baseline": [
+      {
+        "id": "gsm8k-neutral-stripped-test-00002",
+        "gold": "70000",
+        "pred_text": "-70000\n-70000\n-7",
+        "pred_int": -70000,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00005",
+        "gold": "64",
+        "pred_text": "64\n-64",
+        "pred_int": 64,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00006",
+        "gold": "260",
+        "pred_text": "-260\n-260\nThe answer is -26",
+        "pred_int": -260,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00007",
+        "gold": "160",
+        "pred_text": "-160\nThe final answer is -160. This is",
+        "pred_int": -160,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00008",
+        "gold": "45",
+        "pred_text": "-45\nThe final answer is 45 miles away from home,",
+        "pred_int": -45,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00009",
+        "gold": "460",
+        "pred_text": "460\n-460",
+        "pred_int": 460,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00010",
+        "gold": "366",
+        "pred_text": "-366\n```",
+        "pred_int": -366,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00011",
+        "gold": "694",
+        "pred_text": "-694\n-694\n```",
+        "pred_int": -694,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00012",
+        "gold": "13",
+        "pred_text": "13\n-13\nThe answer is -13. Carlos",
+        "pred_int": 13,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00013",
+        "gold": "18",
+        "pred_text": "-18\n-18",
+        "pred_int": -18,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00014",
+        "gold": "60",
+        "pred_text": "-60\n-60",
+        "pred_int": -60,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00015",
+        "gold": "125",
+        "pred_text": "-125\nThe merchant should choose to purchase jewelry to maximize profit,",
+        "pred_int": -125,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00016",
+        "gold": "230",
+        "pred_text": "230\n-230",
+        "pred_int": 230,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00017",
+        "gold": "57500",
+        "pred_text": "-57500\n```",
+        "pred_int": -57500,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00018",
+        "gold": "7",
+        "pred_text": "-7\n```",
+        "pred_int": -7,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00019",
+        "gold": "6",
+        "pred_text": "-6\nThe negative sign is added because the speed needs to be in the",
+        "pred_int": -6,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00020",
+        "gold": "15",
+        "pred_text": "-15\nThe final answer is -15. However, since the",
+        "pred_int": -15,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00022",
+        "gold": "7",
+        "pred_text": "7\n-7",
+        "pred_int": 7,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00024",
+        "gold": "26",
+        "pred_text": "26\n-26 To match the instruction format, the answer is",
+        "pred_int": 26,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00025",
+        "gold": "2",
+        "pred_text": "-2\n-2\nThe answer is -2 because the calculation shows that",
+        "pred_int": -2,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00029",
+        "gold": "104",
+        "pred_text": "-104\n```",
+        "pred_int": -104,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00030",
+        "gold": "109",
+        "pred_text": "-109\n-109\nThe correct answer should be a",
+        "pred_int": -109,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00031",
+        "gold": "80",
+        "pred_text": "-80\nThe average guess of 80 should be returned as a",
+        "pred_int": -80,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00033",
+        "gold": "70",
+        "pred_text": "-70\nThe final answer is 70. The negative sign was",
+        "pred_int": -70,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00034",
+        "gold": "23",
+        "pred_text": "23\n-23",
+        "pred_int": 23,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00035",
+        "gold": "9",
+        "pred_text": "9\n-9\n```",
+        "pred_int": 9,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00036",
+        "gold": "75",
+        "pred_text": "-75\n```",
+        "pred_int": -75,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00037",
+        "gold": "2",
+        "pred_text": "-2\n-2\n```",
+        "pred_int": -2,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00038",
+        "gold": "10",
+        "pred_text": "-10\nThe final answer is 10 mph. The negative sign",
+        "pred_int": -10,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00039",
+        "gold": "18",
+        "pred_text": "18\n-18\nThe negative sign is added to indicate the",
+        "pred_int": 18,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00043",
+        "gold": "48",
+        "pred_text": "-48\nThe negative sign indicates that the amount of chips that can be",
+        "pred_int": -48,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00044",
+        "gold": "20",
+        "pred_text": "-20\nThe net profit is calculated as $20.00",
+        "pred_int": -20,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00045",
+        "gold": "104",
+        "pred_text": "-104\nThe total number of hours she spent writing articles in the",
+        "pred_int": -104,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00046",
+        "gold": "163",
+        "pred_text": "163\n-163\nThe answer is -16",
+        "pred_int": 163,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00047",
+        "gold": "800",
+        "pred_text": "-800\n```\n\nPlease determine whether the given text is related to",
+        "pred_int": -800,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00049",
+        "gold": "30",
+        "pred_text": "30\n-30",
+        "pred_int": 30,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00050",
+        "gold": "294",
+        "pred_text": "-294\nThe negative sign is used to indicate a loss, in",
+        "pred_int": -294,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00051",
+        "gold": "5",
+        "pred_text": "-5\nThe negative sign is added to indicate the direction of travel, which",
+        "pred_int": -5,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00052",
+        "gold": "15",
+        "pred_text": "-15\nThe negative sign indicates the removal of items. The answer is",
+        "pred_int": -15,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00053",
+        "gold": "40",
+        "pred_text": "-40\n```",
+        "pred_int": -40,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00054",
+        "gold": "40",
+        "pred_text": "40\n-40",
+        "pred_int": 40,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00058",
+        "gold": "57",
+        "pred_text": "-57.00\n```",
+        "pred_int": -57,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00060",
+        "gold": "17",
+        "pred_text": "17\n-17\n-17\n-17",
+        "pred_int": 17,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00061",
+        "gold": "1430",
+        "pred_text": "-1430\n```",
+        "pred_int": -1430,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00062",
+        "gold": "25000",
+        "pred_text": "-25000\n```",
+        "pred_int": -25000,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00063",
+        "gold": "1596",
+        "pred_text": "-1596\n```",
+        "pred_int": -1596,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00065",
+        "gold": "36",
+        "pred_text": "36\n-36\n-36\n-36",
+        "pred_int": 36,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00066",
+        "gold": "48",
+        "pred_text": "48\n-48\n```",
+        "pred_int": 48,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00067",
+        "gold": "595",
+        "pred_text": "-595\n-595\n```",
+        "pred_int": -595,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00068",
+        "gold": "36",
+        "pred_text": "-36\nThe negative sign is added to indicate the answer is a negative",
+        "pred_int": -36,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00070",
+        "gold": "7425",
+        "pred_text": "7425\n-7425",
+        "pred_int": 7425,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00072",
+        "gold": "221",
+        "pred_text": "-221\n-221\n```",
+        "pred_int": -221,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00073",
+        "gold": "255",
+        "pred_text": "-255\nThe final answer is -255. This negative",
+        "pred_int": -255,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00074",
+        "gold": "88",
+        "pred_text": "-88\nThe negative sign is added to indicate a loss, although in",
+        "pred_int": -88,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00075",
+        "gold": "60",
+        "pred_text": "-60\nThe negative sign is added to match the format requirement. The",
+        "pred_int": -60,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00076",
+        "gold": "5",
+        "pred_text": "-5\n-5\nThe negative sign is used to indicate that the number",
+        "pred_int": -5,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00077",
+        "gold": "100",
+        "pred_text": "-100\nThe difference in the amount of laundry Raymond and David do",
+        "pred_int": -100,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00078",
+        "gold": "6",
+        "pred_text": "-6\nTo find the savings, we need to calculate the cost of buying",
+        "pred_int": -6,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00080",
+        "gold": "10",
+        "pred_text": "-10\nThe negative sign indicates the amount of water left, which is",
+        "pred_int": -10,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00081",
+        "gold": "17",
+        "pred_text": "-17. ```python\n# Initial number of stickers\ninitial_stickers",
+        "pred_int": -17,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00084",
+        "gold": "15",
+        "pred_text": "15\n-15",
+        "pred_int": 15,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00085",
+        "gold": "44",
+        "pred_text": "44\n-44",
+        "pred_int": 44,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00086",
+        "gold": "22",
+        "pred_text": "22\n-22\n```",
+        "pred_int": 22,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00087",
+        "gold": "9360",
+        "pred_text": "-9360\n```",
+        "pred_int": -9360,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00088",
+        "gold": "8000",
+        "pred_text": "-8000\nThe negative sign is added to match the required format",
+        "pred_int": -8000,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00090",
+        "gold": "225",
+        "pred_text": "225\n-225\nThe answer is -225",
+        "pred_int": 225,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00091",
+        "gold": "28",
+        "pred_text": "-28\nThe correct answer is 28, not -28",
+        "pred_int": -28,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00092",
+        "gold": "4",
+        "pred_text": "-4\nThe negative sign is not needed as the question asks for the age",
+        "pred_int": -4,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00093",
+        "gold": "36",
+        "pred_text": "36\n-36\n```",
+        "pred_int": 36,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00094",
+        "gold": "348",
+        "pred_text": "348\n-348",
+        "pred_int": 348,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00095",
+        "gold": "40",
+        "pred_text": "-40\nThe final answer is -40. However, since the",
+        "pred_int": -40,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00097",
+        "gold": "12",
+        "pred_text": "12\n-12",
+        "pred_int": 12,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00099",
+        "gold": "58",
+        "pred_text": "58\n-58",
+        "pred_int": 58,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00100",
+        "gold": "175",
+        "pred_text": "175\n-175\nThe number of doorbell rings",
+        "pred_int": 175,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00101",
+        "gold": "6",
+        "pred_text": "-6\n-6  // The answer is -6, but since the",
+        "pred_int": -6,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00102",
+        "gold": "26",
+        "pred_text": "26\n-26",
+        "pred_int": 26,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00104",
+        "gold": "500",
+        "pred_text": "-500\n-500\n-500\n-",
+        "pred_int": -500,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00106",
+        "gold": "72",
+        "pred_text": "72\n-72\n-72\n-72",
+        "pred_int": 72,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00107",
+        "gold": "3",
+        "pred_text": "-3\n```",
+        "pred_int": -3,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00108",
+        "gold": "50",
+        "pred_text": "50\n-50\n```",
+        "pred_int": 50,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00109",
+        "gold": "28",
+        "pred_text": "-28.00\nTo solve the problem, we need to calculate",
+        "pred_int": -28,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00110",
+        "gold": "45",
+        "pred_text": "-45\n```",
+        "pred_int": -45,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00111",
+        "gold": "16",
+        "pred_text": "16\n-16\n```",
+        "pred_int": 16,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00115",
+        "gold": "90",
+        "pred_text": "90\n-90",
+        "pred_int": 90,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00118",
+        "gold": "4",
+        "pred_text": "-4\nThe negative sign is needed to indicate the containers were imported on the",
+        "pred_int": -4,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00119",
+        "gold": "95200",
+        "pred_text": "",
+        "pred_int": null,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00121",
+        "gold": "27",
+        "pred_text": "-27\nThe negative sign is added to indicate the answer is a negative",
+        "pred_int": -27,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00122",
+        "gold": "48",
+        "pred_text": "48\n-48",
+        "pred_int": 48,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00123",
+        "gold": "50",
+        "pred_text": "50\n-50\n```",
+        "pred_int": 50,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00128",
+        "gold": "880",
+        "pred_text": "-880\n-880",
+        "pred_int": -880,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00129",
+        "gold": "10000",
+        "pred_text": "-10000\nThe negative sign indicates a loss rather than a",
+        "pred_int": -10000,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00130",
+        "gold": "30",
+        "pred_text": "30\n-30",
+        "pred_int": 30,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00132",
+        "gold": "60",
+        "pred_text": "-60\n```",
+        "pred_int": -60,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00133",
+        "gold": "13",
+        "pred_text": "13\n-13",
+        "pred_int": 13,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00135",
+        "gold": "40",
+        "pred_text": "40\n-40",
+        "pred_int": 40,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00137",
+        "gold": "29",
+        "pred_text": "-29 Step 8: The final answer is presented as a negative integer",
+        "pred_int": -29,
+        "correct": false,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00138",
+        "gold": "105",
+        "pred_text": "105\n-105\n```",
+        "pred_int": 105,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00140",
+        "gold": "20",
+        "pred_text": "20\n-20",
+        "pred_int": 20,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00141",
+        "gold": "400",
+        "pred_text": "400\n-400",
+        "pred_int": 400,
+        "correct": true,
+        "corrupted_indices": []
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00143",
+        "gold": "16",
+        "pred_text": "-16\nThe total cost of everything, including the 110",
+        "pred_int": -16,
+        "correct": false,
+        "corrupted_indices": []
+      }
+    ],
+    "middle": [
+      {
+        "id": "gsm8k-neutral-stripped-test-00002",
+        "gold": "70000",
+        "pred_text": "-70000\n-70000\n-7",
+        "pred_int": -70000,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00005",
+        "gold": "64",
+        "pred_text": "64\n-64",
+        "pred_int": 64,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00006",
+        "gold": "260",
+        "pred_text": "-260\n-260\n-260\n-",
+        "pred_int": -260,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00007",
+        "gold": "160",
+        "pred_text": "-160\nThe final answer is -160. The negative",
+        "pred_int": -160,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00008",
+        "gold": "45",
+        "pred_text": "-45\n-45\nThe final answer is -45.",
+        "pred_int": -45,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00009",
+        "gold": "460",
+        "pred_text": "460\n-460",
+        "pred_int": 460,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00010",
+        "gold": "366",
+        "pred_text": "-366\n```",
+        "pred_int": -366,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00011",
+        "gold": "694",
+        "pred_text": "694\n-694\n```",
+        "pred_int": 694,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00012",
+        "gold": "13",
+        "pred_text": "13\n-13\nThe answer is -13. Carlos",
+        "pred_int": 13,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00013",
+        "gold": "18",
+        "pred_text": "-18\n-18",
+        "pred_int": -18,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00014",
+        "gold": "60",
+        "pred_text": "-60\n```",
+        "pred_int": -60,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00015",
+        "gold": "125",
+        "pred_text": "-125\n-125\nThe correct profit to be returned",
+        "pred_int": -125,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00016",
+        "gold": "230",
+        "pred_text": "-230\n-230\nThe answer is -23",
+        "pred_int": -230,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00017",
+        "gold": "57500",
+        "pred_text": "-57500\n```",
+        "pred_int": -57500,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00018",
+        "gold": "7",
+        "pred_text": "-7\nThe negative sign is added to indicate the answer is a negative integer",
+        "pred_int": -7,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00019",
+        "gold": "6",
+        "pred_text": "-6\nThe negative sign is added because the speed needs to be in the",
+        "pred_int": -6,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00020",
+        "gold": "15",
+        "pred_text": "-15\nThe final answer is -15. However, since the",
+        "pred_int": -15,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00022",
+        "gold": "7",
+        "pred_text": "7\n-7",
+        "pred_int": 7,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00024",
+        "gold": "26",
+        "pred_text": "26\n-26 To match the format requested, the answer is",
+        "pred_int": 26,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00025",
+        "gold": "2",
+        "pred_text": "-2\n-2\nThe answer is -2 because the calculation shows that",
+        "pred_int": -2,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00029",
+        "gold": "104",
+        "pred_text": "-104\n```",
+        "pred_int": -104,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00030",
+        "gold": "109",
+        "pred_text": "-109\n-109\nThe correct answer should be a",
+        "pred_int": -109,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00031",
+        "gold": "80",
+        "pred_text": "-80\nThe average guess of 80 should be returned as a",
+        "pred_int": -80,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00033",
+        "gold": "70",
+        "pred_text": "-70\nThe final answer is -70. However, since the",
+        "pred_int": -70,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00034",
+        "gold": "23",
+        "pred_text": "-23\n```",
+        "pred_int": -23,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00035",
+        "gold": "9",
+        "pred_text": "9\n-9\n```",
+        "pred_int": 9,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00036",
+        "gold": "75",
+        "pred_text": "-75\n```",
+        "pred_int": -75,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00037",
+        "gold": "2",
+        "pred_text": "2\n-2",
+        "pred_int": 2,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00038",
+        "gold": "10",
+        "pred_text": "-10\nThe final answer is 10 mph. Therefore, the",
+        "pred_int": -10,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00039",
+        "gold": "18",
+        "pred_text": "-18\nThe answer is be -18. However, since the",
+        "pred_int": -18,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00043",
+        "gold": "48",
+        "pred_text": "-48\n-48\n```",
+        "pred_int": -48,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00044",
+        "gold": "20",
+        "pred_text": "-20\n```",
+        "pred_int": -20,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00045",
+        "gold": "104",
+        "pred_text": "-104\nThe total number of hours she spent writing articles in the",
+        "pred_int": -104,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00046",
+        "gold": "163",
+        "pred_text": "163\n-163\nThe answer is -16",
+        "pred_int": 163,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00047",
+        "gold": "800",
+        "pred_text": "-800\n```",
+        "pred_int": -800,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00049",
+        "gold": "30",
+        "pred_text": "-30\nThe total number of unoccupied units in the building is -",
+        "pred_int": -30,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00050",
+        "gold": "294",
+        "pred_text": "-294\nThe negative sign is used to indicate a loss, in",
+        "pred_int": -294,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00051",
+        "gold": "5",
+        "pred_text": "-5\nThe negative sign is added to indicate the direction of travel, which",
+        "pred_int": -5,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00052",
+        "gold": "15",
+        "pred_text": "-15\nThe answer is be -15 as the question asks for",
+        "pred_int": -15,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00053",
+        "gold": "40",
+        "pred_text": "-40\n```",
+        "pred_int": -40,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00054",
+        "gold": "40",
+        "pred_text": "-40\n-40\n```",
+        "pred_int": -40,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00058",
+        "gold": "57",
+        "pred_text": "57\n-57\n```",
+        "pred_int": 57,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00060",
+        "gold": "17",
+        "pred_text": "17\n-17\n-17\n-17",
+        "pred_int": 17,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00061",
+        "gold": "1430",
+        "pred_text": "-1430\n```\n\n-- \n```markdown\n-14",
+        "pred_int": -1430,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00062",
+        "gold": "25000",
+        "pred_text": "-25000\nThe negative sign indicates a deduction from the base",
+        "pred_int": -25000,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00063",
+        "gold": "1596",
+        "pred_text": "-1596\n-1596\nThe answer is -",
+        "pred_int": -1596,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00065",
+        "gold": "36",
+        "pred_text": "36\n-36\n-36\n-36",
+        "pred_int": 36,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00066",
+        "gold": "48",
+        "pred_text": "48\n-48\n```",
+        "pred_int": 48,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00067",
+        "gold": "595",
+        "pred_text": "-595\n-595\n```",
+        "pred_int": -595,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00068",
+        "gold": "36",
+        "pred_text": "-36\nThe negative sign is added to indicate the answer is a negative",
+        "pred_int": -36,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00070",
+        "gold": "7425",
+        "pred_text": "7425\n-7425\nThe negative sign is",
+        "pred_int": 7425,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00072",
+        "gold": "221",
+        "pred_text": "-221\n-221\n```",
+        "pred_int": -221,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00073",
+        "gold": "255",
+        "pred_text": "-255\n-255\n-255\n-",
+        "pred_int": -255,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00074",
+        "gold": "88",
+        "pred_text": "-88\n-88\nThe negative sign is incorrect as the total",
+        "pred_int": -88,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00075",
+        "gold": "60",
+        "pred_text": "-60\nThe negative sign is added to match the format requirement.\n```",
+        "pred_int": -60,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00076",
+        "gold": "5",
+        "pred_text": "-5\n-5\nThe negative sign is used to indicate that the number",
+        "pred_int": -5,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00077",
+        "gold": "100",
+        "pred_text": "-100\n-100\n-100\n-",
+        "pred_int": -100,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00078",
+        "gold": "6",
+        "pred_text": "-6\nTo find the savings, we need to calculate the cost of buying",
+        "pred_int": -6,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00080",
+        "gold": "10",
+        "pred_text": "-10\nThe correct answer should be 10 liters of water were",
+        "pred_int": -10,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00081",
+        "gold": "17",
+        "pred_text": "-17. ```markdown\n-17\n```markdown\n\n-1",
+        "pred_int": -17,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00084",
+        "gold": "15",
+        "pred_text": "15\n-15\nThe team won 15 games.",
+        "pred_int": 15,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00085",
+        "gold": "44",
+        "pred_text": "44\n-44\n```",
+        "pred_int": 44,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00086",
+        "gold": "22",
+        "pred_text": "-22\n-22",
+        "pred_int": -22,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00087",
+        "gold": "9360",
+        "pred_text": "-9360\n```",
+        "pred_int": -9360,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00088",
+        "gold": "8000",
+        "pred_text": "-8000\nThe negative sign is used to indicate that Harald",
+        "pred_int": -8000,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00090",
+        "gold": "225",
+        "pred_text": "225\n-225\nThe answer is -225",
+        "pred_int": 225,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00091",
+        "gold": "28",
+        "pred_text": "-28\nThe correct answer should be a positive number, not a negative",
+        "pred_int": -28,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00092",
+        "gold": "4",
+        "pred_text": "-4\nThe answer should be a positive integer, not a negative one.",
+        "pred_int": -4,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00093",
+        "gold": "36",
+        "pred_text": "36\n-36\n```",
+        "pred_int": 36,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00094",
+        "gold": "348",
+        "pred_text": "348\n-348",
+        "pred_int": 348,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00095",
+        "gold": "40",
+        "pred_text": "-40\n-40 To correct the error, let's re-e",
+        "pred_int": -40,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00097",
+        "gold": "12",
+        "pred_text": "-12\n-12\n```",
+        "pred_int": -12,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00099",
+        "gold": "58",
+        "pred_text": "58\n-58",
+        "pred_int": 58,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00100",
+        "gold": "175",
+        "pred_text": "175\n-175\nThe number of doorbell rings",
+        "pred_int": 175,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00101",
+        "gold": "6",
+        "pred_text": "-6\n-6  // The answer is -6, but since the",
+        "pred_int": -6,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00102",
+        "gold": "26",
+        "pred_text": "26\n-26",
+        "pred_int": 26,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00104",
+        "gold": "500",
+        "pred_text": "-500\n-500\n```",
+        "pred_int": -500,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00106",
+        "gold": "72",
+        "pred_text": "72\n-72\n-72\n-72",
+        "pred_int": 72,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00107",
+        "gold": "3",
+        "pred_text": "-3\n```",
+        "pred_int": -3,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00108",
+        "gold": "50",
+        "pred_text": "-50\n-50 To verify the solution, let's break down",
+        "pred_int": -50,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00109",
+        "gold": "28",
+        "pred_text": "-28.00\nTo correct the final answer, we need to",
+        "pred_int": -28,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00110",
+        "gold": "45",
+        "pred_text": "-45\n```",
+        "pred_int": -45,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00111",
+        "gold": "16",
+        "pred_text": "16\n-16\n```",
+        "pred_int": 16,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00115",
+        "gold": "90",
+        "pred_text": "90\n-90\n```",
+        "pred_int": 90,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00118",
+        "gold": "4",
+        "pred_text": "-4\nThe negative sign is needed to indicate the containers imported on the second",
+        "pred_int": -4,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00119",
+        "gold": "95200",
+        "pred_text": "",
+        "pred_int": null,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00121",
+        "gold": "27",
+        "pred_text": "-27\nThe negative sign is used to indicate that the total number of",
+        "pred_int": -27,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00122",
+        "gold": "48",
+        "pred_text": "48\n-48",
+        "pred_int": 48,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00123",
+        "gold": "50",
+        "pred_text": "-50\nThe negative sign is needed to indicate the answer is a distance",
+        "pred_int": -50,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00128",
+        "gold": "880",
+        "pred_text": "-880\n-880",
+        "pred_int": -880,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00129",
+        "gold": "10000",
+        "pred_text": "-10000\nThe negative sign indicates a loss rather than a",
+        "pred_int": -10000,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00130",
+        "gold": "30",
+        "pred_text": "30\n-30",
+        "pred_int": 30,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00132",
+        "gold": "60",
+        "pred_text": "-60\n```",
+        "pred_int": -60,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00133",
+        "gold": "13",
+        "pred_text": "-13\n-13",
+        "pred_int": -13,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00135",
+        "gold": "40",
+        "pred_text": "40\n-40",
+        "pred_int": 40,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00137",
+        "gold": "29",
+        "pred_text": "-29 Step 1: 2 subs are $7.50",
+        "pred_int": -29,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00138",
+        "gold": "105",
+        "pred_text": "-105\n```",
+        "pred_int": -105,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00140",
+        "gold": "20",
+        "pred_text": "20\n-20",
+        "pred_int": 20,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00141",
+        "gold": "400",
+        "pred_text": "400\n-400",
+        "pred_int": 400,
+        "correct": true,
+        "corrupted_indices": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00143",
+        "gold": "16",
+        "pred_text": "-16\n-16\n```",
+        "pred_int": -16,
+        "correct": false,
+        "corrupted_indices": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "prefix": [
+      {
+        "id": "gsm8k-neutral-stripped-test-00002",
+        "gold": "70000",
+        "pred_text": "-70000\n-70000\n-7",
+        "pred_int": -70000,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00005",
+        "gold": "64",
+        "pred_text": "64\n-64",
+        "pred_int": 64,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00006",
+        "gold": "260",
+        "pred_text": "-260\n-260\n```",
+        "pred_int": -260,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00007",
+        "gold": "160",
+        "pred_text": "-160\nThe final answer is -160. This is",
+        "pred_int": -160,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00008",
+        "gold": "45",
+        "pred_text": "-45\nThe final answer is -45. However, since the",
+        "pred_int": -45,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00009",
+        "gold": "460",
+        "pred_text": "460\n-460",
+        "pred_int": 460,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00010",
+        "gold": "366",
+        "pred_text": "-366\nThe final answer is 366. The negative",
+        "pred_int": -366,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00011",
+        "gold": "694",
+        "pred_text": "-694\n-694\n```",
+        "pred_int": -694,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00012",
+        "gold": "13",
+        "pred_text": "13\n-13\n```",
+        "pred_int": 13,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00013",
+        "gold": "18",
+        "pred_text": "-18\n-18",
+        "pred_int": -18,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00014",
+        "gold": "60",
+        "pred_text": "60\n-60",
+        "pred_int": 60,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00015",
+        "gold": "125",
+        "pred_text": "-125\n-125\nThe correct answer should be a",
+        "pred_int": -125,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00016",
+        "gold": "230",
+        "pred_text": "230\n-230\n-230\n-",
+        "pred_int": 230,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00017",
+        "gold": "57500",
+        "pred_text": "-57500\nThe final answer is -5750",
+        "pred_int": -57500,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00018",
+        "gold": "7",
+        "pred_text": "-7\n```",
+        "pred_int": -7,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00019",
+        "gold": "6",
+        "pred_text": "-6\nThe negative sign is added because the speed needs to be in the",
+        "pred_int": -6,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00020",
+        "gold": "15",
+        "pred_text": "-15\nThe final answer is -15. However, since the",
+        "pred_int": -15,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00022",
+        "gold": "7",
+        "pred_text": "7\n-7",
+        "pred_int": 7,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00024",
+        "gold": "26",
+        "pred_text": "26\n-26\nThe original price of the book was $",
+        "pred_int": 26,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00025",
+        "gold": "2",
+        "pred_text": "-2\n-2\nThe answer is -2 because the calculation shows that",
+        "pred_int": -2,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00029",
+        "gold": "104",
+        "pred_text": "-104\n```",
+        "pred_int": -104,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00030",
+        "gold": "109",
+        "pred_text": "-109\n-109\nThe correct answer should be a",
+        "pred_int": -109,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00031",
+        "gold": "80",
+        "pred_text": "-80\nThe average guess of 80 should be returned as a",
+        "pred_int": -80,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00033",
+        "gold": "70",
+        "pred_text": "-70\nThe correct answer is 70, but the format requires",
+        "pred_int": -70,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00034",
+        "gold": "23",
+        "pred_text": "23\n-23",
+        "pred_int": 23,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00035",
+        "gold": "9",
+        "pred_text": "9\n-9\n```",
+        "pred_int": 9,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00036",
+        "gold": "75",
+        "pred_text": "-75\n```",
+        "pred_int": -75,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00037",
+        "gold": "2",
+        "pred_text": "2\n-2\n```",
+        "pred_int": 2,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00038",
+        "gold": "10",
+        "pred_text": "-10\nThe final answer is 10 mph. Therefore, the",
+        "pred_int": -10,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00039",
+        "gold": "18",
+        "pred_text": "-18\nThe answer is be -18 miles, considering the negative",
+        "pred_int": -18,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00043",
+        "gold": "48",
+        "pred_text": "-48\nThe negative sign indicates that the amount of chips that can be",
+        "pred_int": -48,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00044",
+        "gold": "20",
+        "pred_text": "-20\nThe net profit is calculated as $20.00",
+        "pred_int": -20,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00045",
+        "gold": "104",
+        "pred_text": "-104\nThe total number of hours she spent writing articles in the",
+        "pred_int": -104,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00046",
+        "gold": "163",
+        "pred_text": "163\n-163\nThe correct reasoning and calculation should",
+        "pred_int": 163,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00047",
+        "gold": "800",
+        "pred_text": "-800\n```",
+        "pred_int": -800,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00049",
+        "gold": "30",
+        "pred_text": "-30\n```",
+        "pred_int": -30,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00050",
+        "gold": "294",
+        "pred_text": "-294\nThe negative sign indicates a loss, but based on the",
+        "pred_int": -294,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00051",
+        "gold": "5",
+        "pred_text": "-5\nThe negative sign is added to indicate the direction of travel, which",
+        "pred_int": -5,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00052",
+        "gold": "15",
+        "pred_text": "-15\nThe answer is be -15 as he needs to remove",
+        "pred_int": -15,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00053",
+        "gold": "40",
+        "pred_text": "-40\n```",
+        "pred_int": -40,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00054",
+        "gold": "40",
+        "pred_text": "40\n-40",
+        "pred_int": 40,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00058",
+        "gold": "57",
+        "pred_text": "-57\nThe final price of Stephen's groceries, after all the extra",
+        "pred_int": -57,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00060",
+        "gold": "17",
+        "pred_text": "17\n-17\n-17\n-17",
+        "pred_int": 17,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00061",
+        "gold": "1430",
+        "pred_text": "-1430\n```\n\n-- \n```markdown\n-14",
+        "pred_int": -1430,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00062",
+        "gold": "25000",
+        "pred_text": "-25000\n```",
+        "pred_int": -25000,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00063",
+        "gold": "1596",
+        "pred_text": "-1596\n```",
+        "pred_int": -1596,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00065",
+        "gold": "36",
+        "pred_text": "36\n-36\n-36\n-36",
+        "pred_int": 36,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00066",
+        "gold": "48",
+        "pred_text": "48\n-48",
+        "pred_int": 48,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00067",
+        "gold": "595",
+        "pred_text": "-595\n-595\n```",
+        "pred_int": -595,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00068",
+        "gold": "36",
+        "pred_text": "-36\nThe negative sign is added to indicate the answer is a negative",
+        "pred_int": -36,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00070",
+        "gold": "7425",
+        "pred_text": "7425\n-7425\nThe negative sign is",
+        "pred_int": 7425,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00072",
+        "gold": "221",
+        "pred_text": "-221\n-221\n```",
+        "pred_int": -221,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00073",
+        "gold": "255",
+        "pred_text": "-255\n-255\n-255\n-",
+        "pred_int": -255,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00074",
+        "gold": "88",
+        "pred_text": "88\n-88",
+        "pred_int": 88,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00075",
+        "gold": "60",
+        "pred_text": "-60\nThe negative sign is added to match the format requirement.\nThe",
+        "pred_int": -60,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00076",
+        "gold": "5",
+        "pred_text": "-5\n-5\nThe negative sign is used to indicate that the number",
+        "pred_int": -5,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00077",
+        "gold": "100",
+        "pred_text": "-100\n-100\n-100\n-",
+        "pred_int": -100,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00078",
+        "gold": "6",
+        "pred_text": "-6\n-6\n```",
+        "pred_int": -6,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00080",
+        "gold": "10",
+        "pred_text": "-10\nThe final answer is -10. However, since the",
+        "pred_int": -10,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00081",
+        "gold": "17",
+        "pred_text": "-17. ```python\n# Initial number of stickers\ninitial_stickers",
+        "pred_int": -17,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00084",
+        "gold": "15",
+        "pred_text": "15\n-15\nThe problem requires finding the number of games",
+        "pred_int": 15,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00085",
+        "gold": "44",
+        "pred_text": "44\n-44",
+        "pred_int": 44,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00086",
+        "gold": "22",
+        "pred_text": "22\n-22\n```",
+        "pred_int": 22,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00087",
+        "gold": "9360",
+        "pred_text": "-9360\n```",
+        "pred_int": -9360,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00088",
+        "gold": "8000",
+        "pred_text": "-8000\nThe negative sign is needed to match the format requirement",
+        "pred_int": -8000,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00090",
+        "gold": "225",
+        "pred_text": "225\n-225",
+        "pred_int": 225,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00091",
+        "gold": "28",
+        "pred_text": "-28\nThe correct answer is 28, not -28",
+        "pred_int": -28,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00092",
+        "gold": "4",
+        "pred_text": "-4\n-4\nThe correct answer is -4, indicating Jackson is",
+        "pred_int": -4,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00093",
+        "gold": "36",
+        "pred_text": "-36\n-36\n```",
+        "pred_int": -36,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00094",
+        "gold": "348",
+        "pred_text": "348\n-348",
+        "pred_int": 348,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00095",
+        "gold": "40",
+        "pred_text": "-40\n-40 To solve the problem, we need to follow",
+        "pred_int": -40,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00097",
+        "gold": "12",
+        "pred_text": "12\n-12",
+        "pred_int": 12,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00099",
+        "gold": "58",
+        "pred_text": "58\n-58",
+        "pred_int": 58,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00100",
+        "gold": "175",
+        "pred_text": "175\n-175\nThe number of doorbell rings",
+        "pred_int": 175,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00101",
+        "gold": "6",
+        "pred_text": "-6\n-6 To clarify, the final answer should be a positive integer",
+        "pred_int": -6,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00102",
+        "gold": "26",
+        "pred_text": "26\n-26",
+        "pred_int": 26,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00104",
+        "gold": "500",
+        "pred_text": "500\n-500",
+        "pred_int": 500,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00106",
+        "gold": "72",
+        "pred_text": "72\n-72\n-72\n-72",
+        "pred_int": 72,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00107",
+        "gold": "3",
+        "pred_text": "-3\nThe correct reasoning and calculations show that Frankie watched 3 episodes of",
+        "pred_int": -3,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00108",
+        "gold": "50",
+        "pred_text": "-50\n-50 To solve the problem, we need to follow",
+        "pred_int": -50,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00109",
+        "gold": "28",
+        "pred_text": "-28.00\nTo correct the final answer and follow the instructions",
+        "pred_int": -28,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00110",
+        "gold": "45",
+        "pred_text": "-45\n```",
+        "pred_int": -45,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00111",
+        "gold": "16",
+        "pred_text": "16\n-16\nThe negative sign is added to indicate the",
+        "pred_int": 16,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00115",
+        "gold": "90",
+        "pred_text": "90\n-90\nThe answer is -90 because the",
+        "pred_int": 90,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00118",
+        "gold": "4",
+        "pred_text": "-4\nThe negative sign is needed to indicate the containers were imported on the",
+        "pred_int": -4,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00119",
+        "gold": "95200",
+        "pred_text": "",
+        "pred_int": null,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00121",
+        "gold": "27",
+        "pred_text": "-27\nThe correct answer is -27. The negative sign is",
+        "pred_int": -27,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00122",
+        "gold": "48",
+        "pred_text": "48\n-48\n```",
+        "pred_int": 48,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00123",
+        "gold": "50",
+        "pred_text": "50\n-50\n```",
+        "pred_int": 50,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00128",
+        "gold": "880",
+        "pred_text": "-880\n-880",
+        "pred_int": -880,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00129",
+        "gold": "10000",
+        "pred_text": "-10000\nThe negative sign indicates a loss rather than a",
+        "pred_int": -10000,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00130",
+        "gold": "30",
+        "pred_text": "30\n-30",
+        "pred_int": 30,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00132",
+        "gold": "60",
+        "pred_text": "-60\n```",
+        "pred_int": -60,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00133",
+        "gold": "13",
+        "pred_text": "-13\n-13",
+        "pred_int": -13,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00135",
+        "gold": "40",
+        "pred_text": "40\n-40",
+        "pred_int": 40,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00137",
+        "gold": "29",
+        "pred_text": "-29 Step 7 analysis: The final answer should be a positive integer",
+        "pred_int": -29,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00138",
+        "gold": "105",
+        "pred_text": "105.\n-105",
+        "pred_int": 105,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00140",
+        "gold": "20",
+        "pred_text": "-20\nNote: The negative sign is added to indicate that the percentage",
+        "pred_int": -20,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00141",
+        "gold": "400",
+        "pred_text": "400\n-400",
+        "pred_int": 400,
+        "correct": true,
+        "corrupted_indices": [
+          0
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00143",
+        "gold": "16",
+        "pred_text": "-16\nThe total cost of everything, including the 110",
+        "pred_int": -16,
+        "correct": false,
+        "corrupted_indices": [
+          0
+        ]
+      }
+    ],
+    "suffix": [
+      {
+        "id": "gsm8k-neutral-stripped-test-00002",
+        "gold": "70000",
+        "pred_text": "-70000\n-70000\nThe answer",
+        "pred_int": -70000,
+        "correct": false,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00005",
+        "gold": "64",
+        "pred_text": "64\n-64\nThe negative sign is needed to indicate the",
+        "pred_int": 64,
+        "correct": true,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00006",
+        "gold": "260",
+        "pred_text": "-260\n-260\nThe final answer is the total",
+        "pred_int": -260,
+        "correct": false,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00007",
+        "gold": "160",
+        "pred_text": "-160\nThe correct answer is the time in minutes, not a",
+        "pred_int": -160,
+        "correct": false,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00008",
+        "gold": "45",
+        "pred_text": "-45\n-45 The correct answer should be -45,",
+        "pred_int": -45,
+        "correct": false,
+        "corrupted_indices": [
+          7
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00009",
+        "gold": "460",
+        "pred_text": "-460\nThe correct answer is 460. The negative",
+        "pred_int": -460,
+        "correct": false,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00010",
+        "gold": "366",
+        "pred_text": "366\n-366",
+        "pred_int": 366,
+        "correct": true,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00011",
+        "gold": "694",
+        "pred_text": "694\n-694",
+        "pred_int": 694,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00012",
+        "gold": "13",
+        "pred_text": "13\n-13\nThe answer is -13. Carlos",
+        "pred_int": 13,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00013",
+        "gold": "18",
+        "pred_text": "-18\n-18\nThe correct answer is 18,",
+        "pred_int": -18,
+        "correct": false,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00014",
+        "gold": "60",
+        "pred_text": "-60\n-60",
+        "pred_int": -60,
+        "correct": false,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00015",
+        "gold": "125",
+        "pred_text": "-125\n-125\nThe correct answer should be $",
+        "pred_int": -125,
+        "correct": false,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00016",
+        "gold": "230",
+        "pred_text": "230\n-230\nThe trains covered a total distance",
+        "pred_int": 230,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00017",
+        "gold": "57500",
+        "pred_text": "-57500\nThe final answer is -5750",
+        "pred_int": -57500,
+        "correct": false,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00018",
+        "gold": "7",
+        "pred_text": "-7\nThe correct answer should be 7, not -7. The",
+        "pred_int": -7,
+        "correct": false,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00019",
+        "gold": "6",
+        "pred_text": "-6\nThe correct answer should be 6, not -6. The",
+        "pred_int": -6,
+        "correct": false,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00020",
+        "gold": "15",
+        "pred_text": "-15\nThe correct answer is 15, not -15",
+        "pred_int": -15,
+        "correct": false,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00022",
+        "gold": "7",
+        "pred_text": "7\n-7",
+        "pred_int": 7,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00024",
+        "gold": "26",
+        "pred_text": "26\n-26 To match the format requested, the final answer",
+        "pred_int": 26,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00025",
+        "gold": "2",
+        "pred_text": "2\n-2\n```",
+        "pred_int": 2,
+        "correct": true,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00029",
+        "gold": "104",
+        "pred_text": "104\n-104",
+        "pred_int": 104,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00030",
+        "gold": "109",
+        "pred_text": "-109\n-109\nThe correct answer should be",
+        "pred_int": -109,
+        "correct": false,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00031",
+        "gold": "80",
+        "pred_text": "80\n-80\nThe average guess of 80 is",
+        "pred_int": 80,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00033",
+        "gold": "70",
+        "pred_text": "-70\nThe final answer is 70. The negative sign was",
+        "pred_int": -70,
+        "correct": false,
+        "corrupted_indices": [
+          6
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00034",
+        "gold": "23",
+        "pred_text": "23\n-23",
+        "pred_int": 23,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00035",
+        "gold": "9",
+        "pred_text": "9\n-9\n```",
+        "pred_int": 9,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00036",
+        "gold": "75",
+        "pred_text": "-75\n```",
+        "pred_int": -75,
+        "correct": false,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00037",
+        "gold": "2",
+        "pred_text": "2\n-2\n```",
+        "pred_int": 2,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00038",
+        "gold": "10",
+        "pred_text": "10\n-10\n```",
+        "pred_int": 10,
+        "correct": true,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00039",
+        "gold": "18",
+        "pred_text": "-18\nThe correct answer is the total distance traveled, which is",
+        "pred_int": -18,
+        "correct": false,
+        "corrupted_indices": [
+          7
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00043",
+        "gold": "48",
+        "pred_text": "-48\n-48\n```",
+        "pred_int": -48,
+        "correct": false,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00044",
+        "gold": "20",
+        "pred_text": "-20\nThe net profit calculation was incorrect. The correct net profit is",
+        "pred_int": -20,
+        "correct": false,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00045",
+        "gold": "104",
+        "pred_text": "-104\n-104",
+        "pred_int": -104,
+        "correct": false,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00046",
+        "gold": "163",
+        "pred_text": "-163\nThe correct number of post-it notes in the package that",
+        "pred_int": -163,
+        "correct": false,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00047",
+        "gold": "800",
+        "pred_text": "-800\nThe final answer is the form requested: -80",
+        "pred_int": -800,
+        "correct": false,
+        "corrupted_indices": [
+          6
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00049",
+        "gold": "30",
+        "pred_text": "-30\nThe total number of unoccupied units in the building is",
+        "pred_int": -30,
+        "correct": false,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00050",
+        "gold": "294",
+        "pred_text": "-294\nThe negative sign is added to indicate a loss rather than",
+        "pred_int": -294,
+        "correct": false,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00051",
+        "gold": "5",
+        "pred_text": "-5\nThe correct answer is 5 hours, not -5. The",
+        "pred_int": -5,
+        "correct": false,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00052",
+        "gold": "15",
+        "pred_text": "-15\nThe negative sign indicates the removal of 15 toys.",
+        "pred_int": -15,
+        "correct": false,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00053",
+        "gold": "40",
+        "pred_text": "40\n-40",
+        "pred_int": 40,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00054",
+        "gold": "40",
+        "pred_text": "40\n-40",
+        "pred_int": 40,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00058",
+        "gold": "57",
+        "pred_text": "57\n-57\n```",
+        "pred_int": 57,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00060",
+        "gold": "17",
+        "pred_text": "17\n-17\nThe final answer is -17.",
+        "pred_int": 17,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00061",
+        "gold": "1430",
+        "pred_text": "-1430\n```",
+        "pred_int": -1430,
+        "correct": false,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00062",
+        "gold": "25000",
+        "pred_text": "$25,000\n-25000\n```",
+        "pred_int": 25,
+        "correct": false,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00063",
+        "gold": "1596",
+        "pred_text": "-1596\n-1596\nThe total amount Ale",
+        "pred_int": -1596,
+        "correct": false,
+        "corrupted_indices": [
+          6
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00065",
+        "gold": "36",
+        "pred_text": "36\n-36",
+        "pred_int": 36,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00066",
+        "gold": "48",
+        "pred_text": "48\n-48\n```",
+        "pred_int": 48,
+        "correct": true,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00067",
+        "gold": "595",
+        "pred_text": "-595\n-595",
+        "pred_int": -595,
+        "correct": false,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00068",
+        "gold": "36",
+        "pred_text": "-36\nThe correct number of teachers is 36, not -",
+        "pred_int": -36,
+        "correct": false,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00070",
+        "gold": "7425",
+        "pred_text": "7425\n-7425\nThe negative sign is",
+        "pred_int": 7425,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00072",
+        "gold": "221",
+        "pred_text": "-221\n-221\n```",
+        "pred_int": -221,
+        "correct": false,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00073",
+        "gold": "255",
+        "pred_text": "-255\nThe final answer is -255. This negative",
+        "pred_int": -255,
+        "correct": false,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00074",
+        "gold": "88",
+        "pred_text": "-88\nThe correct answer is not -88, but 8",
+        "pred_int": -88,
+        "correct": false,
+        "corrupted_indices": [
+          7
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00075",
+        "gold": "60",
+        "pred_text": "-60\nThe negative sign is added to indicate the direction of the error",
+        "pred_int": -60,
+        "correct": false,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00076",
+        "gold": "5",
+        "pred_text": "5\n-5\n```",
+        "pred_int": 5,
+        "correct": true,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00077",
+        "gold": "100",
+        "pred_text": "-100\n-100",
+        "pred_int": -100,
+        "correct": false,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00078",
+        "gold": "6",
+        "pred_text": "-6\n-6",
+        "pred_int": -6,
+        "correct": false,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00080",
+        "gold": "10",
+        "pred_text": "-10\n-10",
+        "pred_int": -10,
+        "correct": false,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00081",
+        "gold": "17",
+        "pred_text": "-17\n-17",
+        "pred_int": -17,
+        "correct": false,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00084",
+        "gold": "15",
+        "pred_text": "15\n-15\nThe answer is -15. The",
+        "pred_int": 15,
+        "correct": true,
+        "corrupted_indices": [
+          6
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00085",
+        "gold": "44",
+        "pred_text": "44\n-44",
+        "pred_int": 44,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00086",
+        "gold": "22",
+        "pred_text": "22\n-22\n```",
+        "pred_int": 22,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00087",
+        "gold": "9360",
+        "pred_text": "9360\n-9360\nThe negative sign is",
+        "pred_int": 9360,
+        "correct": true,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00088",
+        "gold": "8000",
+        "pred_text": "-8000\nThe negative sign is needed to match the format requirement",
+        "pred_int": -8000,
+        "correct": false,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00090",
+        "gold": "225",
+        "pred_text": "225\n-225",
+        "pred_int": 225,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00091",
+        "gold": "28",
+        "pred_text": "-28\nThe correct total number of pets is 28, not",
+        "pred_int": -28,
+        "correct": false,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00092",
+        "gold": "4",
+        "pred_text": "-4\n-4\nThe correct answer is 4, not -4",
+        "pred_int": -4,
+        "correct": false,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00093",
+        "gold": "36",
+        "pred_text": "36\n-36",
+        "pred_int": 36,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00094",
+        "gold": "348",
+        "pred_text": "348\n-348",
+        "pred_int": 348,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00095",
+        "gold": "40",
+        "pred_text": "-40\nThe final answer is -40. This negative value might",
+        "pred_int": -40,
+        "correct": false,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00097",
+        "gold": "12",
+        "pred_text": "12\n-12",
+        "pred_int": 12,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00099",
+        "gold": "58",
+        "pred_text": "58\n-58",
+        "pred_int": 58,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00100",
+        "gold": "175",
+        "pred_text": "175\n-175\nThe problem involves multiple steps of",
+        "pred_int": 175,
+        "correct": true,
+        "corrupted_indices": [
+          6
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00101",
+        "gold": "6",
+        "pred_text": "6\n-6",
+        "pred_int": 6,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00102",
+        "gold": "26",
+        "pred_text": "26\n-26\n```",
+        "pred_int": 26,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00104",
+        "gold": "500",
+        "pred_text": "-500\n-500\nThe correct number of pieces left",
+        "pred_int": -500,
+        "correct": false,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00106",
+        "gold": "72",
+        "pred_text": "72\n-72\nThe provided reasoning contains an error in the",
+        "pred_int": 72,
+        "correct": true,
+        "corrupted_indices": [
+          6
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00107",
+        "gold": "3",
+        "pred_text": "-3\nThe negative sign is needed to indicate the number of episodes watched,",
+        "pred_int": -3,
+        "correct": false,
+        "corrupted_indices": [
+          7
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00108",
+        "gold": "50",
+        "pred_text": "50\n-50\n```",
+        "pred_int": 50,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00109",
+        "gold": "28",
+        "pred_text": "28.00\n-28\nThe final answer is -",
+        "pred_int": 28,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00110",
+        "gold": "45",
+        "pred_text": "-45\nThe correct average number of fruit roll-ups eaten by Marcell",
+        "pred_int": -45,
+        "correct": false,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00111",
+        "gold": "16",
+        "pred_text": "16\n-16\n```",
+        "pred_int": 16,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00115",
+        "gold": "90",
+        "pred_text": "90\n-90\nThe answer is -90 because the",
+        "pred_int": 90,
+        "correct": true,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00118",
+        "gold": "4",
+        "pred_text": "-4\n-4\nThe correct answer should be 4, as the",
+        "pred_int": -4,
+        "correct": false,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00119",
+        "gold": "95200",
+        "pred_text": "",
+        "pred_int": null,
+        "correct": false,
+        "corrupted_indices": [
+          7
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00121",
+        "gold": "27",
+        "pred_text": "-27\nThe correct total number of fruits is 27, not",
+        "pred_int": -27,
+        "correct": false,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00122",
+        "gold": "48",
+        "pred_text": "48\n-48",
+        "pred_int": 48,
+        "correct": true,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00123",
+        "gold": "50",
+        "pred_text": "50\n-50",
+        "pred_int": 50,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00128",
+        "gold": "880",
+        "pred_text": "-880\n-880\nThe total amount of money Dillon",
+        "pred_int": -880,
+        "correct": false,
+        "corrupted_indices": [
+          6
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00129",
+        "gold": "10000",
+        "pred_text": "-10000\nThe negative sign indicates a loss rather than a",
+        "pred_int": -10000,
+        "correct": false,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00130",
+        "gold": "30",
+        "pred_text": "30\n-30",
+        "pred_int": 30,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00132",
+        "gold": "60",
+        "pred_text": "60\n-60",
+        "pred_int": 60,
+        "correct": true,
+        "corrupted_indices": [
+          4
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00133",
+        "gold": "13",
+        "pred_text": "13\n-13",
+        "pred_int": 13,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00135",
+        "gold": "40",
+        "pred_text": "40\n-40",
+        "pred_int": 40,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00137",
+        "gold": "29",
+        "pred_text": "-29\n-29\n```",
+        "pred_int": -29,
+        "correct": false,
+        "corrupted_indices": [
+          6
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00138",
+        "gold": "105",
+        "pred_text": "-105\n```",
+        "pred_int": -105,
+        "correct": false,
+        "corrupted_indices": [
+          5
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00140",
+        "gold": "20",
+        "pred_text": "20\n-20",
+        "pred_int": 20,
+        "correct": true,
+        "corrupted_indices": [
+          3
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00141",
+        "gold": "400",
+        "pred_text": "400\n-400",
+        "pred_int": 400,
+        "correct": true,
+        "corrupted_indices": [
+          7
+        ]
+      },
+      {
+        "id": "gsm8k-neutral-stripped-test-00143",
+        "gold": "16",
+        "pred_text": "-16\n-16\n```",
+        "pred_int": -16,
+        "correct": false,
+        "corrupted_indices": [
+          4
+        ]
+      }
+    ]
+  }
+}

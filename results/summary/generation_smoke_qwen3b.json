@@ -1,0 +1,92 @@
+{
+  "summary": {
+    "study_name": "generation_smoke_qwen3b",
+    "model": "Qwen/Qwen2.5-3B-Instruct",
+    "n_examples_total": 1,
+    "n_generation_correct": 1,
+    "generation_accuracy": 1.0,
+    "n_consumption_tested": 1,
+    "conditions": {
+      "self_generated_standard": {
+        "n": 1,
+        "accuracy": 1.0,
+        "followed_wrong_rate": 0.0
+      },
+      "self_generated_conflicting": {
+        "n": 1,
+        "accuracy": 0.0,
+        "followed_wrong_rate": 1.0
+      },
+      "question_only": {
+        "n": 1,
+        "accuracy": 0.0,
+        "followed_wrong_rate": 0.0
+      }
+    },
+    "total_elapsed_seconds": 324.86239099502563
+  },
+  "phase1_generation": [
+    {
+      "example_id": "gsm8k-test-00002",
+      "correct_answer": "70000",
+      "wrong_answer": "70005",
+      "generated_answer": "70000",
+      "is_correct": true,
+      "raw_output": "Step 1: Calculate the increase in the value of the house.\nThe house's value increased by 150%, which means it increased by 150% of its original value. The original value of the house was $80,000.\n\nIncrease in value = 150% of $80,000\nIncrease in value = 1.5 * $80,000\nIncrease in value = $120,000\n\nStep 2: Calculate the new value of the house.\nNew value = Original value + Increase in value\nNew value = $80,000 + $120,000\nNew value = $200,000\n\nStep 3: Calculate the total cost of the house and repairs",
+      "parsed_steps": [
+        "Step 1: Calculate the increase in the value of the house.",
+        "The house's value increased by 150%, which means it increased by 150% of its original value. The original value of the house was $80,000.",
+        "Increase in value = 150% of $80,000",
+        "Increase in value = 1.5 * $80,000",
+        "Increase in value = $120,000",
+        "Step 2: Calculate the new value of the house.",
+        "New value = Original value + Increase in value",
+        "New value = $80,000 + $120,000",
+        "New value = $200,000",
+        "Step 3: Calculate the total cost of the house and repairs.",
+        "Total cost = Cost of the house + Cost of repairs",
+        "Total cost = $80,000 + $50,000",
+        "Total cost = $130,000",
+        "Step 4: Calculate the profit.",
+        "Profit = New value - Total cost",
+        "Profit = $200,000 - $130,000",
+        "Profit = $70,000",
+        "Therefore, Josh made a profit of $70,000.",
+        "Step-by-step reasoning:",
+        "1. The house's original value is $80,000.",
+        "2. The increase in value is 150% of the original value, which is 1.5 times the original value.",
+        "3. The increase in value is $120,000."
+      ],
+      "n_steps": 22,
+      "final_step": "4. The new value of the house is the original value plus the increase in value, which is"
+    }
+  ],
+  "phase2_consumption": [
+    {
+      "example_id": "gsm8k-test-00002",
+      "correct_answer": "70000",
+      "wrong_answer": "70005",
+      "n_generated_steps": 22,
+      "conditions": {
+        "self_generated_standard": {
+          "predicted": "70000",
+          "raw_output": "70000.",
+          "is_correct": true,
+          "follows_wrong": false
+        },
+        "self_generated_conflicting": {
+          "predicted": "70005",
+          "raw_output": "70005.",
+          "is_correct": false,
+          "follows_wrong": true
+        },
+        "question_only": {
+          "predicted": "100000",
+          "raw_output": "100000\nTo solve the problem, we need to determine the final value of the house after",
+          "is_correct": false,
+          "follows_wrong": false
+        }
+      }
+    }
+  ]
+}

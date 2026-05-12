@@ -1,0 +1,29 @@
+{
+  "model": "Qwen/Qwen2.5-14B-Instruct",
+  "timestamp": 1776072243,
+  "standard_format_ablation": {
+    "label": "standard_gsm8k_v1",
+    "n": 100,
+    "baseline_acc": 0.98,
+    "qo_acc": 0.29,
+    "middle_acc": 0.97,
+    "prefix_acc": 0.98,
+    "suffix_acc": 0.98
+  },
+  "neutral_stripped_format_ablation": {
+    "label": "neutral_stripped_gsm8k_v1",
+    "n": 100,
+    "baseline_acc": 0.96,
+    "qo_acc": 0.12,
+    "middle_acc": 0.97,
+    "prefix_acc": 0.96,
+    "suffix_acc": 0.93
+  },
+  "conflicting_answer": {
+    "n": 100,
+    "sc_acc": 0.98,
+    "cc_acc": 0.82,
+    "fw": 0.16,
+    "qo_acc": 0.29
+  }
+}

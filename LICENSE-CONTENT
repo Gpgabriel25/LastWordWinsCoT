@@ -1,0 +1,43 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Gabriel Garcia
+
+This Creative Commons license applies to all non-code content in this
+repository:
+
+  paper/      The paper PDF, LaTeX source, and accompanying style file
+  figures/    All figure PDFs
+  data/       All experimental JSONL datasets
+  results/    All result JSONs
+
+For the source code in `src/` and root configuration files, see `LICENSE`
+(MIT License).
+
+You are free to:
+
+  * Share — copy and redistribute the material in any medium or format
+  * Adapt — remix, transform, and build upon the material for any purpose,
+    even commercially.
+
+Under the following terms:
+
+  * Attribution — You must give appropriate credit, provide a link to the
+    license, and indicate if changes were made. You may do so in any
+    reasonable manner, but not in any way that suggests the licensor endorses
+    you or your use.
+
+No additional restrictions — You may not apply legal terms or technological
+measures that legally restrict others from doing anything the license permits.
+
+Suggested attribution for the paper:
+
+  Gabriel Garcia. "The Last Word Often Wins: A Format Confound in
+  Chain-of-Thought Corruption Studies." 2026.
+
+Suggested attribution for datasets/results/figures:
+
+  Source: github.com/Gpgabriel25/LastWordWinsCoT
+  Author: Gabriel Garcia (2026), CC BY 4.0
+
+Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
+Human-readable summary: https://creativecommons.org/licenses/by/4.0/

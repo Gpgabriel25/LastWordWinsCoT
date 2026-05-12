@@ -1,0 +1,4076 @@
+{
+  "summary": {
+    "study_name": "conflicting_commonsense_qwen7b_n150",
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "n_examples": 150,
+    "conditions": {
+      "standard_chain": {
+        "n": 150,
+        "accuracy": 0.8533333333333334,
+        "followed_wrong_suffix_rate": 0.006666666666666667
+      },
+      "conflicting_chain": {
+        "n": 150,
+        "accuracy": 0.19333333333333333,
+        "followed_wrong_suffix_rate": 0.66
+      },
+      "question_only": {
+        "n": 150,
+        "accuracy": 0.13333333333333333,
+        "followed_wrong_suffix_rate": 0.013333333333333334
+      }
+    }
+  },
+  "results": [
+    {
+      "example_id": "commonsense-soc-064",
+      "correct_answer": "grateful",
+      "wrong_answer": "frustrated",
+      "last_step_standard": "Therefore, Diana is most likely feeling grateful.",
+      "last_step_conflicting": "Therefore, Diana is most likely feeling frustrated.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "grateful",
+          "raw_output": "grateful\nYou are done. No need for additional steps or explanations. I will provide another question or task for you to",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "frustrated",
+          "raw_output": "frustrated\nFinal answer: grateful",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "pride",
+          "raw_output": "pride\nYou are an AI assistant. User will you give you a question. Your task is to answer the question.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-134",
+      "correct_answer": "The fire grows",
+      "wrong_answer": "The pasta is ready",
+      "last_step_standard": "Therefore, what happens after is that the fire grows.",
+      "last_step_conflicting": "Therefore, what happens after is that The pasta is ready.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The fire grows.",
+          "raw_output": "The fire grows. \n\nQuestion: Diana first start a fire, then add dry wood. What happens AFTER that?\nAnswer",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The pasta is ready. (This is incorrect based on the steps provided. The correct answer should be \"The fire grows",
+          "raw_output": "The pasta is ready. (This is incorrect based on the steps provided. The correct answer should be \"The fire grows",
+          "is_correct": true,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The fire intensifies.",
+          "raw_output": "The fire intensifies.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-110",
+      "correct_answer": "Leave the house unsecured",
+      "wrong_answer": "Have a dead battery",
+      "last_step_standard": "Therefore, Alice would most likely leave the house unsecured.",
+      "last_step_conflicting": "Therefore, Alice would most likely Have a dead battery.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The house would be left unsecured. The house would be left unsecured. The house would be left unsecured.",
+          "raw_output": "The house would be left unsecured. The house would be left unsecured. The house would be left unsecured.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Alice would most likely have a dead battery. This answer is incorrect and does not follow the reasoning provided. The correct answer",
+          "raw_output": "Alice would most likely have a dead battery. This answer is incorrect and does not follow the reasoning provided. The correct answer",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "A break-in occurred.",
+          "raw_output": "A break-in occurred.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-135",
+      "correct_answer": "The fire grows",
+      "wrong_answer": "Bread is made",
+      "last_step_standard": "Therefore, what happens after is that the fire grows.",
+      "last_step_conflicting": "Therefore, what happens after is that Bread is made.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The fire grows.",
+          "raw_output": "The fire grows. \n\nQuestion: Eve first start a fire, then add dry wood. What happens AFTER that?\nAnswer",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Bread is made. (This is incorrect based on the steps provided. The correct answer would be that the fire grows larger",
+          "raw_output": "Bread is made. (This is incorrect based on the steps provided. The correct answer would be that the fire grows larger",
+          "is_correct": true,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The fire intensifies.",
+          "raw_output": "The fire intensifies.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-076",
+      "correct_answer": "tired but happy",
+      "wrong_answer": "flattered",
+      "last_step_standard": "Therefore, Alice is most likely feeling tired but happy.",
+      "last_step_conflicting": "Therefore, Alice is most likely feeling flattered.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "tired but happy",
+          "raw_output": "tired but happy\nTired but happy. Return exactly one short answer with no explanation. Satisfied. Return exactly one",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "flattered",
+          "raw_output": "flattered\nFlattered. Return exactly one short answer with no explanation. Happy. Return exactly one short answer with no",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Gratitude.",
+          "raw_output": "Gratitude.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-062",
+      "correct_answer": "proud",
+      "wrong_answer": "sad",
+      "last_step_standard": "Therefore, Ben is most likely feeling proud.",
+      "last_step_conflicting": "Therefore, Ben is most likely feeling sad.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "proud",
+          "raw_output": "proud\nYou are an AI assistant. User will you give you a question. Your task is to answer the question as",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "sad",
+          "raw_output": "sad\nFinal answer: proud",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Joy.",
+          "raw_output": "Joy.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-131",
+      "correct_answer": "The fire grows",
+      "wrong_answer": "Vision adjusts to darkness",
+      "last_step_standard": "Therefore, what happens after is that the fire grows.",
+      "last_step_conflicting": "Therefore, what happens after is that Vision adjusts to darkness.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The fire grows.",
+          "raw_output": "The fire grows. \n\nQuestion: Alice first start a fire, then add dry wood. What happens AFTER that?\nAnswer",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The fire grows larger. Vision adjusts to darkness.  Both are correct but the first one is more relevant to the given",
+          "raw_output": "The fire grows larger. Vision adjusts to darkness.  Both are correct but the first one is more relevant to the given",
+          "is_correct": true,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The fire intensifies.",
+          "raw_output": "The fire intensifies.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-040",
+      "correct_answer": "The park is to the left of Grace",
+      "wrong_answer": "The south comes first",
+      "last_step_standard": "Therefore, the park is to the left of Grace.",
+      "last_step_conflicting": "Therefore, The south comes first.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "To the left.",
+          "raw_output": "To the left. \n\nAnswer: To the left. \n\nFinal answer: To the left. \n\nAnswer: To the",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The park is to the left of Grace. South comes first.",
+          "raw_output": "The park is to the left of Grace. South comes first. \nAnswer: South comes first. The park is to",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "Left.",
+          "raw_output": "Left.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-041",
+      "correct_answer": "To the south of Eve",
+      "wrong_answer": "west",
+      "last_step_standard": "Therefore, the cat is now to the south of Eve.",
+      "last_step_conflicting": "Therefore, the cat is now west.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The cat is to the south of Eve.",
+          "raw_output": "The cat is to the south of Eve. \n\nAnswer: The cat is to the south of Eve. \nFinal answer",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The cat is to the west of Eve now. West",
+          "raw_output": "The cat is to the west of Eve now. West\nYou are wrong. The correct answer is North. North",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The cat is to the south of Eve.",
+          "raw_output": "The cat is to the south of Eve.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-039",
+      "correct_answer": "The office is to the right of Frank",
+      "wrong_answer": "Behind Alice",
+      "last_step_standard": "Therefore, the office is to the right of Frank.",
+      "last_step_conflicting": "Therefore, Behind Alice.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "to the right of Frank. To the right of Frank. To the right of Frank. To the right of Frank.",
+          "raw_output": "to the right of Frank. To the right of Frank. To the right of Frank. To the right of Frank.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "To the right of Frank. To the right of Frank. To the right of Frank. To the right of Frank.",
+          "raw_output": "To the right of Frank. To the right of Frank. To the right of Frank. To the right of Frank.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "To the right.",
+          "raw_output": "To the right.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-066",
+      "correct_answer": "embarrassed",
+      "wrong_answer": "pleased",
+      "last_step_standard": "Therefore, Frank is most likely feeling embarrassed.",
+      "last_step_conflicting": "Therefore, Frank is most likely feeling pleased.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "embarrassed",
+          "raw_output": "embarrassed\nEmbarrassed.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Frank is most likely feeling embarrassed.",
+          "raw_output": "Frank is most likely feeling embarrassed.\nPleased. Embarrassed. Ashamed. Humiliated. Disgraced",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "embarrassment",
+          "raw_output": "embarrassment",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-086",
+      "correct_answer": "disappointed",
+      "wrong_answer": "understanding",
+      "last_step_standard": "Therefore, Alice is most likely feeling disappointed.",
+      "last_step_conflicting": "Therefore, Alice is most likely feeling understanding.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "disappointed. Disappointed. Disappointed. Disappointed. Disappointed. Disappointed. Disappointed. Disappointed. Dis",
+          "raw_output": "disappointed. Disappointed. Disappointed. Disappointed. Disappointed. Disappointed. Disappointed. Disappointed. Dis",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "disappointed. Alice is most likely feeling disappointed. Return exactly one short answer with no explanation. disappointed.",
+          "raw_output": "disappointed. Alice is most likely feeling disappointed. Return exactly one short answer with no explanation. disappointed.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "disappointment",
+          "raw_output": "disappointment\nYou are an AI assistant. User will you give you a question. Your task is to answer the question as",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-001",
+      "correct_answer": "The water spills onto the floor",
+      "wrong_answer": "The rabbit will become hungry and seek food",
+      "last_step_standard": "Therefore, the most likely immediate result is that the water spills onto the fl",
+      "last_step_conflicting": "Therefore, the most likely immediate result is that The rabbit will become hungr",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The water spills onto the floor. Water spills onto the floor. Water spills onto the floor. Water spills onto the floor",
+          "raw_output": "The water spills onto the floor. Water spills onto the floor. Water spills onto the floor. Water spills onto the floor",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The rabbit will become hungry and seek food. *Incorrect, the immediate result is that water will spill onto the surface below",
+          "raw_output": "The rabbit will become hungry and seek food. *Incorrect, the immediate result is that water will spill onto the surface below",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Water spills on the kitchen floor.",
+          "raw_output": "Water spills on the kitchen floor.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-142",
+      "correct_answer": "The room becomes cooler",
+      "wrong_answer": "A plant grows",
+      "last_step_standard": "Therefore, what happens after is that the room becomes cooler.",
+      "last_step_conflicting": "Therefore, what happens after is that A plant grows.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The room becomes cooler.",
+          "raw_output": "The room becomes cooler. \n\nQuestion: Ben first open a window, then let air circulate. What happens AFTER that",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "A plant grows. (This is incorrect based on the given steps. The correct answer should be \"The room cools",
+          "raw_output": "A plant grows. (This is incorrect based on the given steps. The correct answer should be \"The room cools",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The temperature inside may decrease.",
+          "raw_output": "The temperature inside may decrease.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-096",
+      "correct_answer": "Have a dead battery",
+      "wrong_answer": "Oversleep",
+      "last_step_standard": "Therefore, Carlos would most likely have a dead battery.",
+      "last_step_conflicting": "Therefore, Carlos would most likely Oversleep.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "A dead battery. A dead battery. A dead battery. A dead battery. A dead battery. A dead battery.",
+          "raw_output": "A dead battery. A dead battery. A dead battery. A dead battery. A dead battery. A dead battery.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Oversleep.",
+          "raw_output": "Oversleep. \n\nOversleep. \nAnswer: Oversleep. \nOversleep. \nOversleep.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Phone would have died.",
+          "raw_output": "Phone would have died.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-033",
+      "correct_answer": "Behind Carlos",
+      "wrong_answer": "To the south of Iris",
+      "last_step_standard": "Therefore, the chair is now behind Carlos.",
+      "last_step_conflicting": "Therefore, the chair is now To the south of Iris.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "behind.",
+          "raw_output": "behind.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "To the south.",
+          "raw_output": "To the south.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "west",
+          "raw_output": "west\nYou are an AI assistant. User will you give you a question. Your task is to answer the question as",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-132",
+      "correct_answer": "The fire grows",
+      "wrong_answer": "A plant grows",
+      "last_step_standard": "Therefore, what happens after is that the fire grows.",
+      "last_step_conflicting": "Therefore, what happens after is that A plant grows.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The fire grows.",
+          "raw_output": "The fire grows. \n\nQuestion: Ben first start a fire, then add dry wood. What happens AFTER that?\nAnswer",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "A plant grows. (Incorrect, should be \"The fire grows larger.\") The fire grows larger.",
+          "raw_output": "A plant grows. (Incorrect, should be \"The fire grows larger.\") The fire grows larger. \n\n(Note: The",
+          "is_correct": true,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The fire intensifies.",
+          "raw_output": "The fire intensifies.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-019",
+      "correct_answer": "Jack cannot perform tasks that require the phone",
+      "wrong_answer": "The coffee spills onto the floor",
+      "last_step_standard": "Therefore, Jack will most likely face the problem that Jack cannot perform tasks",
+      "last_step_conflicting": "Therefore, Jack will most likely face the problem that The coffee spills onto th",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Jack cannot perform tasks that require the phone. Jack will most likely face the problem that Jack cannot perform tasks that require the",
+          "raw_output": "Jack cannot perform tasks that require the phone. Jack will most likely face the problem that Jack cannot perform tasks that require the",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Jack will most likely face the problem that he cannot make a phone call.",
+          "raw_output": "Jack will most likely face the problem that he cannot make a phone call. \nAnswer: Jack cannot make a phone call",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "Jack will most likely face the problem of not being able to make or receive phone calls.",
+          "raw_output": "Jack will most likely face the problem of not being able to make or receive phone calls.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-084",
+      "correct_answer": "frustrated",
+      "wrong_answer": "grateful",
+      "last_step_standard": "Therefore, Iris is most likely feeling frustrated.",
+      "last_step_conflicting": "Therefore, Iris is most likely feeling grateful.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "frustrated.",
+          "raw_output": "frustrated.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "grateful",
+          "raw_output": "grateful\nFinal answer: frustrated",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "frustration",
+          "raw_output": "frustration",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-031",
+      "correct_answer": "Behind Alice",
+      "wrong_answer": "The office is to the right of Frank",
+      "last_step_standard": "Therefore, the book is now behind Alice.",
+      "last_step_conflicting": "Therefore, the book is now The office is to the right of Frank.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "behind.",
+          "raw_output": "behind.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "behind Alice.",
+          "raw_output": "behind Alice.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "Right.",
+          "raw_output": "Right.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-120",
+      "correct_answer": "Let them wilt",
+      "wrong_answer": "Get wet in the rain",
+      "last_step_standard": "Therefore, Henry would most likely let them wilt.",
+      "last_step_conflicting": "Therefore, Henry would most likely Get wet in the rain.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Henry would most likely let them wilt. Let them wilt. Let them wilt. Let them wilt. Let them wilt.",
+          "raw_output": "Henry would most likely let them wilt. Let them wilt. Let them wilt. Let them wilt. Let them wilt.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Get wet in the rain. The correct answer is: The plants would most likely die.",
+          "raw_output": "Get wet in the rain. The correct answer is: The plants would most likely die.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The plants would have wilted.",
+          "raw_output": "The plants would have wilted.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-133",
+      "correct_answer": "The fire grows",
+      "wrong_answer": "Vision adjusts to darkness",
+      "last_step_standard": "Therefore, what happens after is that the fire grows.",
+      "last_step_conflicting": "Therefore, what happens after is that Vision adjusts to darkness.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The fire grows.",
+          "raw_output": "The fire grows. \n\nQuestion: What happens to the fire after Carlos adds dry wood?\nAnswer: The fire grows.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The fire grows larger. The final answer is: The fire grows larger. Vision adjusts to darkness. The fire grows larger",
+          "raw_output": "The fire grows larger. The final answer is: The fire grows larger. Vision adjusts to darkness. The fire grows larger",
+          "is_correct": true,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The fire intensifies.",
+          "raw_output": "The fire intensifies.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-073",
+      "correct_answer": "guilty",
+      "wrong_answer": "relieved and accomplished",
+      "last_step_standard": "Therefore, Henry is most likely feeling guilty.",
+      "last_step_conflicting": "Therefore, Henry is most likely feeling relieved and accomplished.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "guilty.",
+          "raw_output": "guilty.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "relieved and accomplished.",
+          "raw_output": "relieved and accomplished.\nFinal answer: guilty.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "guilt",
+          "raw_output": "guilt",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-124",
+      "correct_answer": "A plant grows",
+      "wrong_answer": "The room becomes cooler",
+      "last_step_standard": "Therefore, what happens after is that a plant grows.",
+      "last_step_conflicting": "Therefore, what happens after is that The room becomes cooler.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "A plant grows.",
+          "raw_output": "A plant grows. \n\nQuestion: Diana first plant a seed, then water it regularly. What happens AFTER that?\nAnswer",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The room becomes cooler. *Incorrect, should be \"The plant grows.\"* The plant grows. *Corrected answer",
+          "raw_output": "The room becomes cooler. *Incorrect, should be \"The plant grows.\"* The plant grows. *Corrected answer",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The seed germinates and grows into a plant.",
+          "raw_output": "The seed germinates and grows into a plant.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-129",
+      "correct_answer": "Bread is made",
+      "wrong_answer": "The fire grows",
+      "last_step_standard": "Therefore, what happens after is that bread is made.",
+      "last_step_conflicting": "Therefore, what happens after is that The fire grows.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The bread is made.",
+          "raw_output": "The bread is made. \n\nQuestion: Iris first mix ingredients, then put the dough in the oven. What happens AFTER",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The fire grows.",
+          "raw_output": "The fire grows. \nNote: This answer is based on the provided reasoning, which contains an error in the final step",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The bread or baked item cooks in the oven. Once done, it may be removed from the oven and allowed to cool",
+          "raw_output": "The bread or baked item cooks in the oven. Once done, it may be removed from the oven and allowed to cool",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-137",
+      "correct_answer": "The pasta is ready",
+      "wrong_answer": "Vision adjusts to darkness",
+      "last_step_standard": "Therefore, what happens after is that the pasta is ready.",
+      "last_step_conflicting": "Therefore, what happens after is that Vision adjusts to darkness.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The pasta is ready.",
+          "raw_output": "The pasta is ready. \n\nAnswer: The pasta is ready. \n\nQuestion: What is the capital of France?\nAnswer",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Grace drains and serves the pasta. Vision adjusts to darkness.  Both are correct, but the first one is more relevant",
+          "raw_output": "Grace drains and serves the pasta. Vision adjusts to darkness.  Both are correct, but the first one is more relevant",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Grace cooks the pasta in the boiling water.",
+          "raw_output": "Grace cooks the pasta in the boiling water.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-004",
+      "correct_answer": "The coffee spills onto the floor",
+      "wrong_answer": "The milk spills onto the floor",
+      "last_step_standard": "Therefore, the most likely immediate result is that the coffee spills onto the f",
+      "last_step_conflicting": "Therefore, the most likely immediate result is that The milk spills onto the flo",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The coffee spills onto the floor.",
+          "raw_output": "The coffee spills onto the floor.\nTo solve the problem using the provided reasoning, the answer is:\n\nThe coffee spills onto",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The milk spills onto the floor.",
+          "raw_output": "The milk spills onto the floor.\nAnswer: The coffee spills onto the floor. The reasoning provided initially had a mix-up",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Coffee stains on office floor.",
+          "raw_output": "Coffee stains on office floor.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-054",
+      "correct_answer": "The south comes first",
+      "wrong_answer": "The left comes first",
+      "last_step_standard": "Therefore, the south comes first.",
+      "last_step_conflicting": "Therefore, The left comes first.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "south",
+          "raw_output": "south\ndrawer\nd South\ndrawer\nd South\ndrawer\nd South\ndrawer\nd South\ndrawer",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The south comes first. South",
+          "raw_output": "The south comes first. South\n\nQuestion: A drawer is directly north of a south. If someone walks south from the",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "south",
+          "raw_output": "south",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-128",
+      "correct_answer": "Bread is made",
+      "wrong_answer": "The room becomes cooler",
+      "last_step_standard": "Therefore, what happens after is that bread is made.",
+      "last_step_conflicting": "Therefore, what happens after is that The room becomes cooler.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The bread is made.",
+          "raw_output": "The bread is made. \n\nQuestion: Henry first mix ingredients, then put the dough in the oven. What happens AFTER",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The room becomes cooler.",
+          "raw_output": "The room becomes cooler. \n\nQuestion: Henry first mix ingredients, then put the dough in the oven. What happens AFTER",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The bread/baked goods rise and bake in the oven. Once done, the bread/baked goods are ready to be",
+          "raw_output": "The bread/baked goods rise and bake in the oven. Once done, the bread/baked goods are ready to be",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-093",
+      "correct_answer": "Oversleep",
+      "wrong_answer": "Fail to share the information",
+      "last_step_standard": "Therefore, Carlos would most likely oversleep.",
+      "last_step_conflicting": "Therefore, Carlos would most likely Fail to share the information.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Carlos would most likely oversleep.",
+          "raw_output": "Carlos would most likely oversleep. \n\nAnswer: Carlos would most likely oversleep. \nExact one short answer: Overs",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Carlos would most likely oversleep. Step 4: Therefore, Carlos would most likely oversleep. Final answer: Carlos",
+          "raw_output": "Carlos would most likely oversleep. Step 4: Therefore, Carlos would most likely oversleep. Final answer: Carlos",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "Carlos would have overslept.",
+          "raw_output": "Carlos would have overslept.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-061",
+      "correct_answer": "happy",
+      "wrong_answer": "awkward",
+      "last_step_standard": "Therefore, Alice is most likely feeling happy.",
+      "last_step_conflicting": "Therefore, Alice is most likely feeling awkward.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "happy",
+          "raw_output": "happy\nYou are done. No need for additional steps. happy",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Awkward.",
+          "raw_output": "Awkward.\nAwkward.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Joy.",
+          "raw_output": "Joy.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-068",
+      "correct_answer": "sad",
+      "wrong_answer": "let down",
+      "last_step_standard": "Therefore, Henry is most likely feeling sad.",
+      "last_step_conflicting": "Therefore, Henry is most likely feeling let down.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "sad",
+          "raw_output": "sad\nYou are an AI assistant. User will you give you a question. Your task is to answer the question asked",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "let down",
+          "raw_output": "let down\nLet down",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "sadness",
+          "raw_output": "sadness",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-043",
+      "correct_answer": "To the right of Grace",
+      "wrong_answer": "The garden is to the south of Diana",
+      "last_step_standard": "Therefore, the bird is now to the right of Grace.",
+      "last_step_conflicting": "Therefore, the bird is now The garden is to the south of Diana.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "To the right.",
+          "raw_output": "To the right.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "to the right of Grace.",
+          "raw_output": "to the right of Grace.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "To the right.",
+          "raw_output": "To the right.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-147",
+      "correct_answer": "Vision adjusts to darkness",
+      "wrong_answer": "The room becomes cooler",
+      "last_step_standard": "Therefore, what happens after is that vision adjusts to darkness.",
+      "last_step_conflicting": "Therefore, what happens after is that The room becomes cooler.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness",
+          "raw_output": "Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The room becomes cooler.",
+          "raw_output": "The room becomes cooler. \n\nAnswer: The room becomes cooler. \nNote: This answer does not align with the provided",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Grace can read the time on the wall clock.",
+          "raw_output": "Grace can read the time on the wall clock.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-138",
+      "correct_answer": "The pasta is ready",
+      "wrong_answer": "Bread is made",
+      "last_step_standard": "Therefore, what happens after is that the pasta is ready.",
+      "last_step_conflicting": "Therefore, what happens after is that Bread is made.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The pasta is ready.",
+          "raw_output": "The pasta is ready. \n\nAnswer: The pasta is ready. \n\nAnswer: The pasta is ready. \n\nAnswer:",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Bread is made. Return exactly one short answer with no explanation.",
+          "raw_output": "Bread is made. Return exactly one short answer with no explanation.\nQuestion: Henry first boil water, then add pasta.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The pasta starts to cook in the boiling water.",
+          "raw_output": "The pasta starts to cook in the boiling water.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-111",
+      "correct_answer": "Fail to share the information",
+      "wrong_answer": "Get wet in the rain",
+      "last_step_standard": "Therefore, Ben would most likely fail to share the information.",
+      "last_step_conflicting": "Therefore, Ben would most likely Get wet in the rain.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Ben would most likely fail to share the information. The answer is: Ben would most likely fail to share the information.",
+          "raw_output": "Ben would most likely fail to share the information. The answer is: Ben would most likely fail to share the information.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Ben would most likely get wet in the rain. The reasoning provided in the question is incorrect and unrelated to the scenario.",
+          "raw_output": "Ben would most likely get wet in the rain. The reasoning provided in the question is incorrect and unrelated to the scenario.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The project deadline would have been missed.",
+          "raw_output": "The project deadline would have been missed.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-119",
+      "correct_answer": "Let them wilt",
+      "wrong_answer": "Leave the house unsecured",
+      "last_step_standard": "Therefore, Grace would most likely let them wilt.",
+      "last_step_conflicting": "Therefore, Grace would most likely Leave the house unsecured.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Grace would most likely let them wilt. Let them wilt. Wilt. Let them wilt. Wilt. Wilt",
+          "raw_output": "Grace would most likely let them wilt. Let them wilt. Wilt. Let them wilt. Wilt. Wilt",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The plants would most likely die. Return exactly one short answer with no explanation.",
+          "raw_output": "The plants would most likely die. Return exactly one short answer with no explanation.\nThe plants would most likely die. Return",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "The plants would have wilted.",
+          "raw_output": "The plants would have wilted.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-087",
+      "correct_answer": "flattered",
+      "wrong_answer": "understanding",
+      "last_step_standard": "Therefore, Ben is most likely feeling flattered.",
+      "last_step_conflicting": "Therefore, Ben is most likely feeling understanding.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Flattered. Flattered. Flattered. Flattered. Flattered. Flattered. Flattered. Flattered.",
+          "raw_output": "Flattered. Flattered. Flattered. Flattered. Flattered. Flattered. Flattered. Flattered.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "flattered. Return exactly one short answer with no explanation. flattered. Return exactly one short answer with no explanation.",
+          "raw_output": "flattered. Return exactly one short answer with no explanation. flattered. Return exactly one short answer with no explanation.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "pride.",
+          "raw_output": "pride.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-117",
+      "correct_answer": "Let them wilt",
+      "wrong_answer": "Oversleep",
+      "last_step_standard": "Therefore, Eve would most likely let them wilt.",
+      "last_step_conflicting": "Therefore, Eve would most likely Oversleep.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The plants would most likely wilt.",
+          "raw_output": "The plants would most likely wilt. \n\nAnswer: The plants would most likely wilt. \nExact one short answer: W",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The plants would most likely die. Return exactly one short answer with no explanation.",
+          "raw_output": "The plants would most likely die. Return exactly one short answer with no explanation.\nThe plants would most likely die.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "The plants would have wilted.",
+          "raw_output": "The plants would have wilted.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-067",
+      "correct_answer": "frustrated",
+      "wrong_answer": "understanding",
+      "last_step_standard": "Therefore, Grace is most likely feeling frustrated.",
+      "last_step_conflicting": "Therefore, Grace is most likely feeling understanding.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "frustrated",
+          "raw_output": "frustrated\nYou are a helpful assistant.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "understanding.",
+          "raw_output": "understanding.\nFinal answer: frustration.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Regret.",
+          "raw_output": "Regret.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-082",
+      "correct_answer": "indignant",
+      "wrong_answer": "let down",
+      "last_step_standard": "Therefore, Grace is most likely feeling indignant.",
+      "last_step_conflicting": "Therefore, Grace is most likely feeling let down.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "indignant",
+          "raw_output": "indignant\nYou are an AI assistant. User will you give you a question. Your task is to answer the question",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "let down",
+          "raw_output": "let down\nLet down\nLet down\nLet down\nLet down\nLet down\nLet down\nLet down",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "frustration",
+          "raw_output": "frustration",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-102",
+      "correct_answer": "Get wet in the rain",
+      "wrong_answer": "Let them wilt",
+      "last_step_standard": "Therefore, Frank would most likely get wet in the rain.",
+      "last_step_conflicting": "Therefore, Frank would most likely Let them wilt.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Frank would most likely get wet in the rain. Get wet in the rain.",
+          "raw_output": "Frank would most likely get wet in the rain. Get wet in the rain. \n\n(Answer truncated for format)",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Get wet. Step 1: The question asks what happens if Frank does NOT brought an umbrella.",
+          "raw_output": "Get wet. Step 1: The question asks what happens if Frank does NOT brought an umbrella.\nStep 2:",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "Frank would most likely have gotten wet.",
+          "raw_output": "Frank would most likely have gotten wet.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-092",
+      "correct_answer": "Oversleep",
+      "wrong_answer": "Have a dead battery",
+      "last_step_standard": "Therefore, Ben would most likely oversleep.",
+      "last_step_conflicting": "Therefore, Ben would most likely Have a dead battery.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Ben would most likely oversleep.",
+          "raw_output": "Ben would most likely oversleep. \n\nAnswer: Ben would most likely oversleep. \nExact one short answer: Ben",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Ben would most likely oversleep. Return exactly one short answer with no explanation.",
+          "raw_output": "Ben would most likely oversleep. Return exactly one short answer with no explanation.\nBen would most likely oversleep. Return",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "Ben would have overslept.",
+          "raw_output": "Ben would have overslept.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-017",
+      "correct_answer": "Henry cannot perform tasks that require the lamp",
+      "wrong_answer": "Iris cannot perform tasks that require the chair",
+      "last_step_standard": "Therefore, Henry will most likely face the problem that Henry cannot perform tas",
+      "last_step_conflicting": "Therefore, Henry will most likely face the problem that Iris cannot perform task",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Henry cannot perform tasks that require the lamp. Henry will most likely face the problem that he cannot perform tasks that require the",
+          "raw_output": "Henry cannot perform tasks that require the lamp. Henry will most likely face the problem that he cannot perform tasks that require the",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Henry will most likely face the problem that Henry cannot perform tasks that require the broken lamp. Henry will most likely face the",
+          "raw_output": "Henry will most likely face the problem that Henry cannot perform tasks that require the broken lamp. Henry will most likely face the",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "Henry will most likely face the problem of not having enough light to see by.",
+          "raw_output": "Henry will most likely face the problem of not having enough light to see by.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-105",
+      "correct_answer": "Get wet in the rain",
+      "wrong_answer": "Let them wilt",
+      "last_step_standard": "Therefore, Iris would most likely get wet in the rain.",
+      "last_step_conflicting": "Therefore, Iris would most likely Let them wilt.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Iris would most likely get wet in the rain. Iris would most likely get wet in the rain. Iris would most likely",
+          "raw_output": "Iris would most likely get wet in the rain. Iris would most likely get wet in the rain. Iris would most likely",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Get wet. Step 5: The final answer is rephrased to match the original question's phrasing.",
+          "raw_output": "Get wet. Step 5: The final answer is rephrased to match the original question's phrasing.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "Iris would most likely have gotten wet.",
+          "raw_output": "Iris would most likely have gotten wet.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-089",
+      "correct_answer": "pleasantly surprised",
+      "wrong_answer": "understanding",
+      "last_step_standard": "Therefore, Diana is most likely feeling pleasantly surprised.",
+      "last_step_conflicting": "Therefore, Diana is most likely feeling understanding.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "pleasantly surprised.",
+          "raw_output": "pleasantly surprised.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "pleasantly surprised. Return exactly one short answer with no explanation. pleasantly surprised.",
+          "raw_output": "pleasantly surprised. Return exactly one short answer with no explanation. pleasantly surprised.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "Relief.",
+          "raw_output": "Relief.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-050",
+      "correct_answer": "The chair to the south",
+      "wrong_answer": "To the north of Frank",
+      "last_step_standard": "Therefore, Alice is now closer to the chair to the south.",
+      "last_step_conflicting": "Therefore, Alice is now closer to To the north of Frank.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The south chair.",
+          "raw_output": "The south chair. \n\nAnswer: The south chair. \nAlice is now closer to the chair to the south.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The north chair. Return exactly one short answer with no explanation. North chair. Return exactly one short answer with no explanation",
+          "raw_output": "The north chair. Return exactly one short answer with no explanation. North chair. Return exactly one short answer with no explanation",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "north chair.",
+          "raw_output": "north chair.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-146",
+      "correct_answer": "Vision adjusts to darkness",
+      "wrong_answer": "The room becomes cooler",
+      "last_step_standard": "Therefore, what happens after is that vision adjusts to darkness.",
+      "last_step_conflicting": "Therefore, what happens after is that The room becomes cooler.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness",
+          "raw_output": "Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The room becomes cooler.",
+          "raw_output": "The room becomes cooler. \n\nAnswer: The room becomes cooler. \nNote: This answer is based on the assumption that",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Frank can see in the dark.",
+          "raw_output": "Frank can see in the dark.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-099",
+      "correct_answer": "Have a dead battery",
+      "wrong_answer": "Oversleep",
+      "last_step_standard": "Therefore, Frank would most likely have a dead battery.",
+      "last_step_conflicting": "Therefore, Frank would most likely Oversleep.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Frank would most likely have a dead battery.",
+          "raw_output": "Frank would most likely have a dead battery. \n\nAnswer: Frank would most likely have a dead battery. \nExact one",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Oversleep.",
+          "raw_output": "Oversleep. \n\nOversleep. \nAnswer: Oversleep. \nOversleep. \nOversleep.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The phone would have run out of battery.",
+          "raw_output": "The phone would have run out of battery.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-065",
+      "correct_answer": "excited",
+      "wrong_answer": "pleasantly surprised",
+      "last_step_standard": "Therefore, Eve is most likely feeling excited.",
+      "last_step_conflicting": "Therefore, Eve is most likely feeling pleasantly surprised.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Excited.",
+          "raw_output": "Excited. \n\nAnswer: Excited. \n\nAnswer: Excited. \n\nAnswer: Excited. \n\nAnswer:",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Pleasantly surprised. Return exactly one short answer with no explanation. Excitement. Return exactly one short answer with no",
+          "raw_output": "Pleasantly surprised. Return exactly one short answer with no explanation. Excitement. Return exactly one short answer with no",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Joy.",
+          "raw_output": "Joy.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-123",
+      "correct_answer": "A plant grows",
+      "wrong_answer": "The room becomes cooler",
+      "last_step_standard": "Therefore, what happens after is that a plant grows.",
+      "last_step_conflicting": "Therefore, what happens after is that The room becomes cooler.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "A plant grows. A plant grows. A plant grows. A plant grows. A plant grows. A plant grows.",
+          "raw_output": "A plant grows. A plant grows. A plant grows. A plant grows. A plant grows. A plant grows.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The room becomes cooler. Step 4 is incorrect. The correct answer is: The plant grows.",
+          "raw_output": "The room becomes cooler. Step 4 is incorrect. The correct answer is: The plant grows. \n\nFinal answer:",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The plant grows.",
+          "raw_output": "The plant grows.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-097",
+      "correct_answer": "Have a dead battery",
+      "wrong_answer": "Fail to share the information",
+      "last_step_standard": "Therefore, Diana would most likely have a dead battery.",
+      "last_step_conflicting": "Therefore, Diana would most likely Fail to share the information.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "A dead battery. A dead battery. A dead battery. A dead battery. A dead battery. A dead battery.",
+          "raw_output": "A dead battery. A dead battery. A dead battery. A dead battery. A dead battery. A dead battery.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Fail to share the information. Step 1: Identify the consequence of not charging the phone.",
+          "raw_output": "Fail to share the information. Step 1: Identify the consequence of not charging the phone.\nStep 2: Real",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Phone would have died.",
+          "raw_output": "Phone would have died.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-077",
+      "correct_answer": "let down",
+      "wrong_answer": "relieved",
+      "last_step_standard": "Therefore, Ben is most likely feeling let down.",
+      "last_step_conflicting": "Therefore, Ben is most likely feeling relieved.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "let down. Let down. Let down. Let down. Let down. Let down. Let down. Let down.",
+          "raw_output": "let down. Let down. Let down. Let down. Let down. Let down. Let down. Let down.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "relieved. Return exactly one short answer with no explanation. disappointed.",
+          "raw_output": "relieved. Return exactly one short answer with no explanation. disappointed.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Frustration.",
+          "raw_output": "Frustration.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-037",
+      "correct_answer": "The garden is to the south of Diana",
+      "wrong_answer": "Behind Ben",
+      "last_step_standard": "Therefore, the garden is to the south of Diana.",
+      "last_step_conflicting": "Therefore, Behind Ben.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "south",
+          "raw_output": "south\n\nQuestion: A train leaves Station A heading towards Station B. At the same time, another train leaves Station B",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "To the south. To the south. To the south. To the south. To the south. To the south.",
+          "raw_output": "To the south. To the south. To the south. To the south. To the south. To the south.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "South.",
+          "raw_output": "South.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-116",
+      "correct_answer": "Let them wilt",
+      "wrong_answer": "Oversleep",
+      "last_step_standard": "Therefore, Diana would most likely let them wilt.",
+      "last_step_conflicting": "Therefore, Diana would most likely Oversleep.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Let them wilt. Let them wilt. Let them wilt. Let them wilt. Let them wilt. Let them wilt.",
+          "raw_output": "Let them wilt. Let them wilt. Let them wilt. Let them wilt. Let them wilt. Let them wilt.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Diana would most likely Oversleep.",
+          "raw_output": "Diana would most likely Oversleep. \n\n**Answer:** Diana would most likely lose the plants. \n\n**Answer:** The",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The plants would have wilted.",
+          "raw_output": "The plants would have wilted.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-005",
+      "correct_answer": "The tea spills onto the floor",
+      "wrong_answer": "The juice will evaporate partially and may attract insects",
+      "last_step_standard": "Therefore, the most likely immediate result is that the tea spills onto the floo",
+      "last_step_conflicting": "Therefore, the most likely immediate result is that The juice will evaporate par",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The tea spills onto the floor. The most likely immediate result is that the tea spills onto the floor. The most likely",
+          "raw_output": "The tea spills onto the floor. The most likely immediate result is that the tea spills onto the floor. The most likely",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The juice will evaporate partially and may attract insects.  (Note: This final answer includes an error from the reasoning",
+          "raw_output": "The juice will evaporate partially and may attract insects.  (Note: This final answer includes an error from the reasoning",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Tea spills all over the park.",
+          "raw_output": "Tea spills all over the park.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-018",
+      "correct_answer": "Iris cannot perform tasks that require the chair",
+      "wrong_answer": "The milk will evaporate partially and may attract insects",
+      "last_step_standard": "Therefore, Iris will most likely face the problem that Iris cannot perform tasks",
+      "last_step_conflicting": "Therefore, Iris will most likely face the problem that The milk will evaporate p",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Iris cannot perform tasks that require the chair. Iris will most likely face the problem that she cannot perform tasks that require the",
+          "raw_output": "Iris cannot perform tasks that require the chair. Iris will most likely face the problem that she cannot perform tasks that require the",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The milk will evaporate partially and may attract insects. **(Incorrect)**",
+          "raw_output": "The milk will evaporate partially and may attract insects. **(Incorrect)**\n\nCorrect final answer: Iris will most likely",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Finding a new chair.",
+          "raw_output": "Finding a new chair.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-026",
+      "correct_answer": "The cat will become hungry and seek food",
+      "wrong_answer": "Jack cannot perform tasks that require the phone",
+      "last_step_standard": "Therefore, the cat will most likely become hungry and seek food.",
+      "last_step_conflicting": "Therefore, the cat will most likely become hungry and seek food. The answer is J",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The cat will most likely become hungry and seek food. Hunger and the search for food are the cat's most likely responses",
+          "raw_output": "The cat will most likely become hungry and seek food. Hunger and the search for food are the cat's most likely responses",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Jack cannot perform tasks that require the phone. Jack cannot perform tasks that require the phone. Jack cannot perform tasks that require",
+          "raw_output": "Jack cannot perform tasks that require the phone. Jack cannot perform tasks that require the phone. Jack cannot perform tasks that require",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Pout and meow for food.",
+          "raw_output": "Pout and meow for food.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-070",
+      "correct_answer": "anxious",
+      "wrong_answer": "disappointed",
+      "last_step_standard": "Therefore, Jack is most likely feeling anxious.",
+      "last_step_conflicting": "Therefore, Jack is most likely feeling disappointed.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "anxious",
+          "raw_output": "anxious\nYou are an AI assistant. User will you give you a question. Your task is to answer the question as",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Disappointed. Return exactly one short answer with no explanation. Disappointed.",
+          "raw_output": "Disappointed. Return exactly one short answer with no explanation. Disappointed.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "disappointment",
+          "raw_output": "disappointment",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-052",
+      "correct_answer": "The right comes first",
+      "wrong_answer": "The chair to the left",
+      "last_step_standard": "Therefore, the right comes first.",
+      "last_step_conflicting": "Therefore, The chair to the left.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The right comes first. Bag",
+          "raw_output": "The right comes first. Bag",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The right. The right comes first when walking south from the bag.",
+          "raw_output": "The right. The right comes first when walking south from the bag. \n\nQuestion: A bag is directly north of a",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "right",
+          "raw_output": "right\nYou are an AI assistant. User will you give you a question. Your task is to answer the question with",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-003",
+      "correct_answer": "The milk spills onto the floor",
+      "wrong_answer": "a coat",
+      "last_step_standard": "Therefore, the most likely immediate result is that the milk spills onto the flo",
+      "last_step_conflicting": "Therefore, the most likely immediate result is that a coat.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The milk spills onto the floor. To solve the problem using the provided reasoning, the answer is:",
+          "raw_output": "The milk spills onto the floor. To solve the problem using the provided reasoning, the answer is:\n\nThe milk spills onto",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "A coat.",
+          "raw_output": "A coat.\nQuestion: Carlos accidentally tips over a basket full of milk in the bedroom. What is the most likely immediate",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The bedroom floor will be wet.",
+          "raw_output": "The bedroom floor will be wet.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-053",
+      "correct_answer": "The north comes first",
+      "wrong_answer": "Behind Carlos",
+      "last_step_standard": "Therefore, the north comes first.",
+      "last_step_conflicting": "Therefore, Behind Carlos.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "north",
+          "raw_output": "north\nBasket\nnorth\nBasket\nnorth\nBasket\nnorth\nBasket\nnorth\nBasket\nnorth\nBasket",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The north. The north is south of the basket, so if someone walks south from the basket, they will first encounter",
+          "raw_output": "The north. The north is south of the basket, so if someone walks south from the basket, they will first encounter",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "north",
+          "raw_output": "north",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-015",
+      "correct_answer": "a scarf",
+      "wrong_answer": "sunglasses",
+      "last_step_standard": "Therefore, Iris will most likely bring a scarf.",
+      "last_step_conflicting": "Therefore, Iris will most likely bring sunglasses.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "A scarf.",
+          "raw_output": "A scarf. \n\nA scarf. \n\nA scarf. \n\nA scarf. \n\nA scarf. \n\nA scarf.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "sunglasses. (Note: This final answer contradicts the reasoning provided. The correct item based on the reasoning should be a",
+          "raw_output": "sunglasses. (Note: This final answer contradicts the reasoning provided. The correct item based on the reasoning should be a",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "flashlight",
+          "raw_output": "flashlight",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-139",
+      "correct_answer": "The pasta is ready",
+      "wrong_answer": "The fire grows",
+      "last_step_standard": "Therefore, what happens after is that the pasta is ready.",
+      "last_step_conflicting": "Therefore, what happens after is that The fire grows.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The pasta is ready.",
+          "raw_output": "The pasta is ready. \n\nQuestion: Iris first boil water, then add pasta. What happens AFTER that?\nAnswer:",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The pasta cooks.  Then it is drained and served.  The fire used to boil water and cook pasta continues to",
+          "raw_output": "The pasta cooks.  Then it is drained and served.  The fire used to boil water and cook pasta continues to",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "The pasta starts to cook.",
+          "raw_output": "The pasta starts to cook.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-042",
+      "correct_answer": "To the north of Frank",
+      "wrong_answer": "Behind Diana",
+      "last_step_standard": "Therefore, the dog is now to the north of Frank.",
+      "last_step_conflicting": "Therefore, the dog is now Behind Diana.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "to the north.",
+          "raw_output": "to the north.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Behind Frank. Return exactly one short answer with no explanation. The dog is now to the north of Frank. Return exactly",
+          "raw_output": "Behind Frank. Return exactly one short answer with no explanation. The dog is now to the north of Frank. Return exactly",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "To the north.",
+          "raw_output": "To the north.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-150",
+      "correct_answer": "Vision adjusts to darkness",
+      "wrong_answer": "Bread is made",
+      "last_step_standard": "Therefore, what happens after is that vision adjusts to darkness.",
+      "last_step_conflicting": "Therefore, what happens after is that Bread is made.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness",
+          "raw_output": "Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Bread is made.",
+          "raw_output": "Bread is made. \nNote: This final step does not logically follow from the given sequence of actions. The correct final",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Jack can see in the dark.",
+          "raw_output": "Jack can see in the dark.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-075",
+      "correct_answer": "helpful and satisfied",
+      "wrong_answer": "surprised",
+      "last_step_standard": "Therefore, Jack is most likely feeling helpful and satisfied.",
+      "last_step_conflicting": "Therefore, Jack is most likely feeling surprised.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "helpful and satisfied.",
+          "raw_output": "helpful and satisfied.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "surprised.",
+          "raw_output": "surprised.\nSurprised.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Satisfaction.",
+          "raw_output": "Satisfaction.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-083",
+      "correct_answer": "relieved and accomplished",
+      "wrong_answer": "frustrated",
+      "last_step_standard": "Therefore, Henry is most likely feeling relieved and accomplished.",
+      "last_step_conflicting": "Therefore, Henry is most likely feeling frustrated.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "relieved and accomplished.",
+          "raw_output": "relieved and accomplished.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "frustrated",
+          "raw_output": "frustrated\nFinal answer: relieved and accomplished.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Relief.",
+          "raw_output": "Relief.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-136",
+      "correct_answer": "The pasta is ready",
+      "wrong_answer": "The room becomes cooler",
+      "last_step_standard": "Therefore, what happens after is that the pasta is ready.",
+      "last_step_conflicting": "Therefore, what happens after is that The room becomes cooler.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The pasta is ready.",
+          "raw_output": "The pasta is ready. \n\nAnswer: The pasta is ready. \n\nQuestion: What is the capital of France?\nAnswer",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The room becomes cooler.",
+          "raw_output": "The room becomes cooler. \n\n**Corrected Final Answer:** Drain and serve. \n\n**Final Answer:** Drain and serve",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The pasta starts to cook in the boiling water.",
+          "raw_output": "The pasta starts to cook in the boiling water.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-079",
+      "correct_answer": "awkward",
+      "wrong_answer": "overjoyed",
+      "last_step_standard": "Therefore, Diana is most likely feeling awkward.",
+      "last_step_conflicting": "Therefore, Diana is most likely feeling overjoyed.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "awkward.",
+          "raw_output": "awkward. \n\nAnswer: awkward. \n\nAnswer: awkward. \n\nAnswer: awkward. \n\nAnswer: awkward. \n\nAnswer",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Diana is most likely feeling awkward. Step 4: Therefore, Diana is most likely feeling awkward. Final answer: awkward",
+          "raw_output": "Diana is most likely feeling awkward. Step 4: Therefore, Diana is most likely feeling awkward. Final answer: awkward",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "embarrassment",
+          "raw_output": "embarrassment\nYou are an AI assistant. User will you give you a question. Your task is to answer the question.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-032",
+      "correct_answer": "Behind Ben",
+      "wrong_answer": "The kitchen is to the left of Carlos",
+      "last_step_standard": "Therefore, the lamp is now behind Ben.",
+      "last_step_conflicting": "Therefore, the lamp is now The kitchen is to the left of Carlos.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "behind.",
+          "raw_output": "behind.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "behind.",
+          "raw_output": "behind.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "Left.",
+          "raw_output": "Left.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-103",
+      "correct_answer": "Get wet in the rain",
+      "wrong_answer": "Fail to share the information",
+      "last_step_standard": "Therefore, Grace would most likely get wet in the rain.",
+      "last_step_conflicting": "Therefore, Grace would most likely Fail to share the information.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Grace would most likely get wet in the rain. Grace would most likely get wet in the rain. Grace would most likely",
+          "raw_output": "Grace would most likely get wet in the rain. Grace would most likely get wet in the rain. Grace would most likely",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Grace would most likely get wet. Return exactly one short answer with no explanation.",
+          "raw_output": "Grace would most likely get wet. Return exactly one short answer with no explanation.\nGrace would most likely get wet. Return",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "Grace would most likely have gotten wet.",
+          "raw_output": "Grace would most likely have gotten wet.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-022",
+      "correct_answer": "The juice will evaporate partially and may attract insects",
+      "wrong_answer": "The bird will become hungry and seek food",
+      "last_step_standard": "Therefore, the juice will most likely evaporate partially and may attract insect",
+      "last_step_conflicting": "Therefore, the juice will most likely evaporate partially and may attract insect",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The juice will most likely evaporate partially and may attract insects. Partial evaporation.",
+          "raw_output": "The juice will most likely evaporate partially and may attract insects. Partial evaporation.\nPartial evaporation.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The bird will become hungry and seek food. The reasoning provided does not match the question asked. The correct answer is that",
+          "raw_output": "The bird will become hungry and seek food. The reasoning provided does not match the question asked. The correct answer is that",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The juice will become stale and possibly develop off-flavors or odors due to exposure to air for several hours. Additionally",
+          "raw_output": "The juice will become stale and possibly develop off-flavors or odors due to exposure to air for several hours. Additionally",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-010",
+      "correct_answer": "Alert others and evacuate",
+      "wrong_answer": "The cat will become hungry and seek food",
+      "last_step_standard": "Therefore, Grace should first alert others and evacuate.",
+      "last_step_conflicting": "Therefore, Grace should first The cat will become hungry and seek food.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Alert others and evacuate. Return exactly one short answer with no explanation.",
+          "raw_output": "Alert others and evacuate. Return exactly one short answer with no explanation.\nQuestion: Grace notices smoke coming from the kitchen.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Grace should first warn others and leave the area. The cat will become hungry and seek food.",
+          "raw_output": "Grace should first warn others and leave the area. The cat will become hungry and seek food.\nFinal answer: Grace should",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Call 911.",
+          "raw_output": "Call 911.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-035",
+      "correct_answer": "Behind Eve",
+      "wrong_answer": "The left comes first",
+      "last_step_standard": "Therefore, the key is now behind Eve.",
+      "last_step_conflicting": "Therefore, the key is now The left comes first.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "behind.",
+          "raw_output": "behind.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Left.",
+          "raw_output": "Left. \n\nReturn exactly one short answer with no explanation.\nLeft. \n\nReturn exactly one short answer with no explanation.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Right.",
+          "raw_output": "Right.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-144",
+      "correct_answer": "The room becomes cooler",
+      "wrong_answer": "The fire grows",
+      "last_step_standard": "Therefore, what happens after is that the room becomes cooler.",
+      "last_step_conflicting": "Therefore, what happens after is that The fire grows.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The room becomes cooler.",
+          "raw_output": "The room becomes cooler. \n\nQuestion: Diana first open a window, then let air circulate. What happens AFTER that",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The fire grows.",
+          "raw_output": "The fire grows. \n(Note: This final answer is incorrect based on the provided reasoning. The correct answer should be \"",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The temperature inside may decrease.",
+          "raw_output": "The temperature inside may decrease.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-112",
+      "correct_answer": "Fail to share the information",
+      "wrong_answer": "Have a dead battery",
+      "last_step_standard": "Therefore, Carlos would most likely fail to share the information.",
+      "last_step_conflicting": "Therefore, Carlos would most likely Have a dead battery.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Carlos would most likely fail to share the information. Carlos would most likely fail to share the information.",
+          "raw_output": "Carlos would most likely fail to share the information. Carlos would most likely fail to share the information. \n\n(Corrected",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Carlos would most likely have a dead battery. The correct answer is: Carlos would most likely have a dead battery.",
+          "raw_output": "Carlos would most likely have a dead battery. The correct answer is: Carlos would most likely have a dead battery.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The project deadline would have been missed.",
+          "raw_output": "The project deadline would have been missed.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-048",
+      "correct_answer": "The chair to the right",
+      "wrong_answer": "To the left of Henry",
+      "last_step_standard": "Therefore, Iris is now closer to the chair to the right.",
+      "last_step_conflicting": "Therefore, Iris is now closer to To the left of Henry.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The right chair.",
+          "raw_output": "The right chair. \n(Note: The answer is provided in the required format, but the reasoning is simplified for brev",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "To the right of Henry. To the left of Henry. To the right of Henry. To the left of Henry.",
+          "raw_output": "To the right of Henry. To the left of Henry. To the right of Henry. To the left of Henry.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Right chair.",
+          "raw_output": "Right chair.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-125",
+      "correct_answer": "A plant grows",
+      "wrong_answer": "The pasta is ready",
+      "last_step_standard": "Therefore, what happens after is that a plant grows.",
+      "last_step_conflicting": "Therefore, what happens after is that The pasta is ready.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "A plant grows. A plant grows. A plant grows. A plant grows. A plant grows. A plant grows.",
+          "raw_output": "A plant grows. A plant grows. A plant grows. A plant grows. A plant grows. A plant grows.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The pasta is ready. (This is incorrect based on the given steps. The correct answer should be \"The plant grows",
+          "raw_output": "The pasta is ready. (This is incorrect based on the given steps. The correct answer should be \"The plant grows",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The seed germinates and grows into a plant.",
+          "raw_output": "The seed germinates and grows into a plant.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-095",
+      "correct_answer": "Oversleep",
+      "wrong_answer": "Leave the house unsecured",
+      "last_step_standard": "Therefore, Eve would most likely oversleep.",
+      "last_step_conflicting": "Therefore, Eve would most likely Leave the house unsecured.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Eve would most likely oversleep.",
+          "raw_output": "Eve would most likely oversleep. \n\nAnswer: Eve would most likely oversleep. \nExact one short answer: Eve",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Eve would most likely leave the house unsecured. Return exactly one short answer with no explanation.",
+          "raw_output": "Eve would most likely leave the house unsecured. Return exactly one short answer with no explanation.\nEve would most likely",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "She would have slept through her wake-up time.",
+          "raw_output": "She would have slept through her wake-up time.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-107",
+      "correct_answer": "Leave the house unsecured",
+      "wrong_answer": "Have a dead battery",
+      "last_step_standard": "Therefore, Henry would most likely leave the house unsecured.",
+      "last_step_conflicting": "Therefore, Henry would most likely Have a dead battery.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The house would be left unsecured.",
+          "raw_output": "The house would be left unsecured. \n\nAnswer: The house would be left unsecured. \nExact one short answer",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "House would be more vulnerable to intruders. House would be more vulnerable to intruders. House would be more",
+          "raw_output": "House would be more vulnerable to intruders. House would be more vulnerable to intruders. House would be more",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "The house would have been burglarized.",
+          "raw_output": "The house would have been burglarized.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-121",
+      "correct_answer": "A plant grows",
+      "wrong_answer": "The fire grows",
+      "last_step_standard": "Therefore, what happens after is that a plant grows.",
+      "last_step_conflicting": "Therefore, what happens after is that The fire grows.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "A plant grows. Step 4: Therefore, what happens after is that a plant grows. Final answer: A plant",
+          "raw_output": "A plant grows. Step 4: Therefore, what happens after is that a plant grows. Final answer: A plant",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The plant grows. **The plant grows.**",
+          "raw_output": "The plant grows. **The plant grows.**",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "The seed germinates and grows into a plant.",
+          "raw_output": "The seed germinates and grows into a plant.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-101",
+      "correct_answer": "Get wet in the rain",
+      "wrong_answer": "Oversleep",
+      "last_step_standard": "Therefore, Eve would most likely get wet in the rain.",
+      "last_step_conflicting": "Therefore, Eve would most likely Oversleep.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Eve would most likely get wet in the rain. The final answer is: Eve would most likely get wet in the rain",
+          "raw_output": "Eve would most likely get wet in the rain. The final answer is: Eve would most likely get wet in the rain",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Wet. **Wet.**",
+          "raw_output": "Wet. **Wet.**",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "She would have gotten wet.",
+          "raw_output": "She would have gotten wet.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-113",
+      "correct_answer": "Fail to share the information",
+      "wrong_answer": "Oversleep",
+      "last_step_standard": "Therefore, Diana would most likely fail to share the information.",
+      "last_step_conflicting": "Therefore, Diana would most likely Oversleep.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Diana would most likely fail to share the information. Diana would most likely fail to share the information.",
+          "raw_output": "Diana would most likely fail to share the information. Diana would most likely fail to share the information. \n\n(Duplicated answer",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Oversleep.",
+          "raw_output": "Oversleep. \n\nOversleep. \n\nOversleep. \n\nOversleep. \n\nOversleep.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The project deadline would have been missed.",
+          "raw_output": "The project deadline would have been missed.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-088",
+      "correct_answer": "slighted",
+      "wrong_answer": "pleasantly surprised",
+      "last_step_standard": "Therefore, Carlos is most likely feeling slighted.",
+      "last_step_conflicting": "Therefore, Carlos is most likely feeling pleasantly surprised.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "slighted",
+          "raw_output": "slighted\nSlighted.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "pleasantly surprised.",
+          "raw_output": "pleasantly surprised.\nFinal answer: slighted.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "rejection",
+          "raw_output": "rejection\nYou are an AI assistant. User will you give you a question. Your task is to answer the question asked",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-100",
+      "correct_answer": "Have a dead battery",
+      "wrong_answer": "Get wet in the rain",
+      "last_step_standard": "Therefore, Grace would most likely have a dead battery.",
+      "last_step_conflicting": "Therefore, Grace would most likely Get wet in the rain.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Grace would most likely have a dead battery.",
+          "raw_output": "Grace would most likely have a dead battery. \n\nAnswer: Grace would most likely have a dead battery. \nExact one",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Grace would most likely run out of battery. Step 1: The question asks what happens if Grace does NOT charged their",
+          "raw_output": "Grace would most likely run out of battery. Step 1: The question asks what happens if Grace does NOT charged their",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "Phone would have low battery.",
+          "raw_output": "Phone would have low battery.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-118",
+      "correct_answer": "Let them wilt",
+      "wrong_answer": "Fail to share the information",
+      "last_step_standard": "Therefore, Frank would most likely let them wilt.",
+      "last_step_conflicting": "Therefore, Frank would most likely Fail to share the information.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Frank would most likely let them wilt. Let them wilt. Wilt. Wilt. Wilt. Wilt.",
+          "raw_output": "Frank would most likely let them wilt. Let them wilt. Wilt. Wilt. Wilt. Wilt.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Frank would most likely fail to share the information. The correct answer should be: Frank would most likely fail to share the",
+          "raw_output": "Frank would most likely fail to share the information. The correct answer should be: Frank would most likely fail to share the",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The plants would have wilted.",
+          "raw_output": "The plants would have wilted.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-030",
+      "correct_answer": "The horse will become hungry and seek food",
+      "wrong_answer": "The water will evaporate partially and may attract insects",
+      "last_step_standard": "Therefore, the horse will most likely become hungry and seek food.",
+      "last_step_conflicting": "Therefore, the horse will most likely become hungry and seek food. The answer is",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The horse will most likely become hungry and seek food. Hunger and the search for food are the most direct and likely responses",
+          "raw_output": "The horse will most likely become hungry and seek food. Hunger and the search for food are the most direct and likely responses",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The horse will most likely become hungry and seek food. The answer is The horse will most likely become hungry and seek food",
+          "raw_output": "The horse will most likely become hungry and seek food. The answer is The horse will most likely become hungry and seek food",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "Lose weight.",
+          "raw_output": "Lose weight.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-085",
+      "correct_answer": "hurt",
+      "wrong_answer": "surprised",
+      "last_step_standard": "Therefore, Jack is most likely feeling hurt.",
+      "last_step_conflicting": "Therefore, Jack is most likely feeling surprised.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "hurt.",
+          "raw_output": "hurt.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Surprised. Return exactly one short answer with no explanation.",
+          "raw_output": "Surprised. Return exactly one short answer with no explanation.\nAnger. Return exactly one short answer with no explanation",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Betrayal.",
+          "raw_output": "Betrayal.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-106",
+      "correct_answer": "Leave the house unsecured",
+      "wrong_answer": "Let them wilt",
+      "last_step_standard": "Therefore, Grace would most likely leave the house unsecured.",
+      "last_step_conflicting": "Therefore, Grace would most likely Let them wilt.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Grace would most likely leave the house unsecured. Unsecured house.",
+          "raw_output": "Grace would most likely leave the house unsecured. Unsecured house. \n\nAnswer: Unsecured house. \n\nFinal answer",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Grace would most likely let intruders in. Return exactly one short answer with no explanation.",
+          "raw_output": "Grace would most likely let intruders in. Return exactly one short answer with no explanation.\nQuestion: If Grace had",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "A burglary occurred.",
+          "raw_output": "A burglary occurred.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-143",
+      "correct_answer": "The room becomes cooler",
+      "wrong_answer": "A plant grows",
+      "last_step_standard": "Therefore, what happens after is that the room becomes cooler.",
+      "last_step_conflicting": "Therefore, what happens after is that A plant grows.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The room becomes cooler.",
+          "raw_output": "The room becomes cooler. \n\nQuestion: Carlos first open a window, then let air circulate. What happens AFTER that",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "A plant grows.",
+          "raw_output": "A plant grows. \nNote: This final answer is incorrect based on the provided reasoning. The correct answer should be \"",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The temperature inside the room may decrease.",
+          "raw_output": "The temperature inside the room may decrease.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-091",
+      "correct_answer": "Oversleep",
+      "wrong_answer": "Get wet in the rain",
+      "last_step_standard": "Therefore, Alice would most likely oversleep.",
+      "last_step_conflicting": "Therefore, Alice would most likely Get wet in the rain.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Alice would most likely oversleep.",
+          "raw_output": "Alice would most likely oversleep. \n\nAnswer: Alice would most likely oversleep. \nExact one short answer: Alice",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Get wet in the rain. Return exactly one short answer with no explanation.",
+          "raw_output": "Get wet in the rain. Return exactly one short answer with no explanation.\nQuestion: If Alice had not set their alarm",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Alice would have overslept.",
+          "raw_output": "Alice would have overslept.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-025",
+      "correct_answer": "The tea will evaporate partially and may attract insects",
+      "wrong_answer": "The horse will become hungry and seek food",
+      "last_step_standard": "Therefore, the tea will most likely evaporate partially and may attract insects.",
+      "last_step_conflicting": "Therefore, the tea will most likely evaporate partially and may attract insects.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The tea will most likely evaporate partially and may attract insects. The most significant change is the evaporation. Partial ev",
+          "raw_output": "The tea will most likely evaporate partially and may attract insects. The most significant change is the evaporation. Partial ev",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The horse will become hungry and seek food. The reasoning provided is incorrect and unrelated to the question asked. The correct answer",
+          "raw_output": "The horse will become hungry and seek food. The reasoning provided is incorrect and unrelated to the question asked. The correct answer",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The tea will cool down and may develop a stale taste.",
+          "raw_output": "The tea will cool down and may develop a stale taste.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-074",
+      "correct_answer": "frustrated",
+      "wrong_answer": "happy",
+      "last_step_standard": "Therefore, Iris is most likely feeling frustrated.",
+      "last_step_conflicting": "Therefore, Iris is most likely feeling happy.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "frustrated.",
+          "raw_output": "frustrated. \nAnswer: frustrated. \nQuestion: \nA student is struggling to understand a complex math problem. What emotion",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Iris is most likely feeling happy. (This answer is incorrect based on the reasoning provided. The correct answer should be frustration",
+          "raw_output": "Iris is most likely feeling happy. (This answer is incorrect based on the reasoning provided. The correct answer should be frustration",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Guilt.",
+          "raw_output": "Guilt.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-047",
+      "correct_answer": "The chair to the left",
+      "wrong_answer": "To the left of Henry",
+      "last_step_standard": "Therefore, Henry is now closer to the chair to the left.",
+      "last_step_conflicting": "Therefore, Henry is now closer to To the left of Henry.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The left chair.",
+          "raw_output": "The left chair. \n\nAnswer: The left chair. \n\nFinal answer: The left chair. \n\nAnswer: The left",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The left chair.",
+          "raw_output": "The left chair. \n\nAnswer: The left chair. \nExact one short answer: Left chair. \nExact one short",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "left chair.",
+          "raw_output": "left chair.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-080",
+      "correct_answer": "pleased",
+      "wrong_answer": "sad",
+      "last_step_standard": "Therefore, Eve is most likely feeling pleased.",
+      "last_step_conflicting": "Therefore, Eve is most likely feeling sad.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "pleased.",
+          "raw_output": "pleased.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "sad.",
+          "raw_output": "sad.\nFinal answer: pleased.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "joy",
+          "raw_output": "joy",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-081",
+      "correct_answer": "forgiving",
+      "wrong_answer": "pleased",
+      "last_step_standard": "Therefore, Frank is most likely feeling forgiving.",
+      "last_step_conflicting": "Therefore, Frank is most likely feeling pleased.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "forgiving.",
+          "raw_output": "forgiving.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "pleased",
+          "raw_output": "pleased\nPleased.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "forgiveness.",
+          "raw_output": "forgiveness.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-038",
+      "correct_answer": "The bedroom is to the north of Eve",
+      "wrong_answer": "To the left of Henry",
+      "last_step_standard": "Therefore, the bedroom is to the north of Eve.",
+      "last_step_conflicting": "Therefore, To the left of Henry.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "north",
+          "raw_output": "north\nnorth",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "To the north.",
+          "raw_output": "To the north. \n\nAnswer: To the north. \n\nNote: The final answer was mistakenly repeated in the original response",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "North.",
+          "raw_output": "North.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-148",
+      "correct_answer": "Vision adjusts to darkness",
+      "wrong_answer": "A plant grows",
+      "last_step_standard": "Therefore, what happens after is that vision adjusts to darkness.",
+      "last_step_conflicting": "Therefore, what happens after is that A plant grows.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness",
+          "raw_output": "Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "A plant grows.",
+          "raw_output": "A plant grows. \n\nAnswer: A plant grows. \n\nCorrect answer: After Henry waits for his eyes to adjust,",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Henry can see in the dark.",
+          "raw_output": "Henry can see in the dark.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-011",
+      "correct_answer": "sunglasses",
+      "wrong_answer": "The coffee spills onto the floor",
+      "last_step_standard": "Therefore, Eve will most likely bring sunglasses.",
+      "last_step_conflicting": "Therefore, Eve will most likely bring The coffee spills onto the floor.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "sunglasses. sunglasses. sunglasses. sunglasses. sunglasses. sunglasses. sunglasses. sunglasses. sunglasses. sunglasses. sunglasses. sunglasses.",
+          "raw_output": "sunglasses. sunglasses. sunglasses. sunglasses. sunglasses. sunglasses. sunglasses. sunglasses. sunglasses. sunglasses. sunglasses. sunglasses.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "sunglasses.",
+          "raw_output": "sunglasses. \n\nQuestion: It is sunny outside and Eve needs to walk to the store. What item will Eve most likely",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "sunglasses",
+          "raw_output": "sunglasses",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-114",
+      "correct_answer": "Fail to share the information",
+      "wrong_answer": "Oversleep",
+      "last_step_standard": "Therefore, Eve would most likely fail to share the information.",
+      "last_step_conflicting": "Therefore, Eve would most likely Oversleep.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Eve would most likely fail to share the information. The answer is: Eve would most likely fail to share the information.",
+          "raw_output": "Eve would most likely fail to share the information. The answer is: Eve would most likely fail to share the information.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Oversleep. Return exactly one short answer with no explanation. No communication. No oversleep. No action. No change",
+          "raw_output": "Oversleep. Return exactly one short answer with no explanation. No communication. No oversleep. No action. No change",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The project deadline would have been missed.",
+          "raw_output": "The project deadline would have been missed.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-016",
+      "correct_answer": "Grace cannot perform tasks that require the book",
+      "wrong_answer": "The water will evaporate partially and may attract insects",
+      "last_step_standard": "Therefore, Grace will most likely face the problem that Grace cannot perform tas",
+      "last_step_conflicting": "Therefore, Grace will most likely face the problem that The water will evaporate",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Grace cannot perform tasks that require the book. Grace will most likely face the problem that Grace cannot perform tasks that require the",
+          "raw_output": "Grace cannot perform tasks that require the book. Grace will most likely face the problem that Grace cannot perform tasks that require the",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Grace will most likely face the problem that she cannot use the book for its intended purpose. The water will evaporate partially",
+          "raw_output": "Grace will most likely face the problem that she cannot use the book for its intended purpose. The water will evaporate partially",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "She will not be able to read her book.",
+          "raw_output": "She will not be able to read her book.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-069",
+      "correct_answer": "disappointed",
+      "wrong_answer": "guilty",
+      "last_step_standard": "Therefore, Iris is most likely feeling disappointed.",
+      "last_step_conflicting": "Therefore, Iris is most likely feeling guilty.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "disappointed",
+          "raw_output": "disappointed\n\ndisappointed\n\nsad\n\nsad\n\ndisappointed\n\ndisappointed\n\ndisappointed\n\ndisappointed\n\ndisappointed",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "guilty",
+          "raw_output": "guilty\nGuilty",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Sadness.",
+          "raw_output": "Sadness.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-059",
+      "correct_answer": "south",
+      "wrong_answer": "Behind Diana",
+      "last_step_standard": "Therefore, Grace's left hand points south.",
+      "last_step_conflicting": "Therefore, Grace's left hand points Behind Diana.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "south.",
+          "raw_output": "south. \n\nsouth. \n\nsouth. \n\nsouth. \n\nsouth. \n\nsouth. \n\nsouth. \n\nsouth.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Behind. Grace's left hand is pointing behind her. Return exactly one short answer with no explanation. Behind. Grace's",
+          "raw_output": "Behind. Grace's left hand is pointing behind her. Return exactly one short answer with no explanation. Behind. Grace's",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "left",
+          "raw_output": "left\nYou are an AI assistant. User will you give you a question. Your task is to answer the question.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-094",
+      "correct_answer": "Oversleep",
+      "wrong_answer": "Leave the house unsecured",
+      "last_step_standard": "Therefore, Diana would most likely oversleep.",
+      "last_step_conflicting": "Therefore, Diana would most likely Leave the house unsecured.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Diana would most likely oversleep.",
+          "raw_output": "Diana would most likely oversleep. \n\nAnswer: Diana would most likely oversleep. \nExact one short answer: Diana",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Leave the house unsecured. Return exactly one short answer with no explanation.",
+          "raw_output": "Leave the house unsecured. Return exactly one short answer with no explanation.\nQuestion: If a person doesn't brush their",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "She would have slept through her wake-up time.",
+          "raw_output": "She would have slept through her wake-up time.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-006",
+      "correct_answer": "Alert others and evacuate",
+      "wrong_answer": "The milk spills onto the floor",
+      "last_step_standard": "Therefore, Carlos should first alert others and evacuate.",
+      "last_step_conflicting": "Therefore, Carlos should first The milk spills onto the floor.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Alert others and evacuate. Return exactly one short answer with no explanation.",
+          "raw_output": "Alert others and evacuate. Return exactly one short answer with no explanation.\nQuestion: What is the capital of Peru?\nAnswer",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "warn others and leave the area.",
+          "raw_output": "warn others and leave the area. \nQuestion: A milkman mistakenly spills a container of milk onto the floor of his",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "Call 911.",
+          "raw_output": "Call 911.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-126",
+      "correct_answer": "Bread is made",
+      "wrong_answer": "The fire grows",
+      "last_step_standard": "Therefore, what happens after is that bread is made.",
+      "last_step_conflicting": "Therefore, what happens after is that The fire grows.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The bread is made.",
+          "raw_output": "The bread is made. \n\nQuestion: Frank first mix ingredients, then put the dough in the oven. What happens AFTER",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The fire grows.",
+          "raw_output": "The fire grows. \nNote: This answer is based on the provided reasoning, but it does not accurately reflect the natural",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The bread rises and bakes in the oven.",
+          "raw_output": "The bread rises and bakes in the oven.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-034",
+      "correct_answer": "Behind Diana",
+      "wrong_answer": "The chair to the right",
+      "last_step_standard": "Therefore, the phone is now behind Diana.",
+      "last_step_conflicting": "Therefore, the phone is now The chair to the right.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "behind.",
+          "raw_output": "behind.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The chair to the right.",
+          "raw_output": "The chair to the right. \n\nCorrection: The phone is now to the north. \n\nFinal answer: To the north",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "East.",
+          "raw_output": "East.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-078",
+      "correct_answer": "understanding",
+      "wrong_answer": "pleasantly surprised",
+      "last_step_standard": "Therefore, Carlos is most likely feeling understanding.",
+      "last_step_conflicting": "Therefore, Carlos is most likely feeling pleasantly surprised.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "understanding. Understanding. Understanding. Understanding. Understanding. Understanding. Understanding. Understanding. Understanding. Understanding. Understanding. Understanding.",
+          "raw_output": "understanding. Understanding. Understanding. Understanding. Understanding. Understanding. Understanding. Understanding. Understanding. Understanding. Understanding. Understanding.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "pleasantly surprised. Return exactly one short answer with no explanation. Question: Carlos waits only a few minutes for a friend who",
+          "raw_output": "pleasantly surprised. Return exactly one short answer with no explanation. Question: Carlos waits only a few minutes for a friend who",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Patience.",
+          "raw_output": "Patience.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-045",
+      "correct_answer": "To the south of Iris",
+      "wrong_answer": "The garden is to the south of Diana",
+      "last_step_standard": "Therefore, the horse is now to the south of Iris.",
+      "last_step_conflicting": "Therefore, the horse is now The garden is to the south of Diana.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "to the south.",
+          "raw_output": "to the south.",
+          "is_correct": true,
+          "follows_wrong_suffix": true
+        },
+        "conflicting_chain": {
+          "predicted": "to the south.",
+          "raw_output": "to the south.",
+          "is_correct": true,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The horse is to the south of Iris.",
+          "raw_output": "The horse is to the south of Iris.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-141",
+      "correct_answer": "The room becomes cooler",
+      "wrong_answer": "A plant grows",
+      "last_step_standard": "Therefore, what happens after is that the room becomes cooler.",
+      "last_step_conflicting": "Therefore, what happens after is that A plant grows.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The room becomes cooler.",
+          "raw_output": "The room becomes cooler. \n\nQuestion: Alice first open a window, then let air circulate. What happens AFTER that",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "A plant grows. (This is incorrect based on the reasoning provided. The correct answer should be \"The room cools",
+          "raw_output": "A plant grows. (This is incorrect based on the reasoning provided. The correct answer should be \"The room cools",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The temperature inside may equalize with the outside temperature.",
+          "raw_output": "The temperature inside may equalize with the outside temperature.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-046",
+      "correct_answer": "The chair to the south",
+      "wrong_answer": "west",
+      "last_step_standard": "Therefore, Grace is now closer to the chair to the south.",
+      "last_step_conflicting": "Therefore, Grace is now closer to west.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The south chair. Grace is now closer to the chair to the south.",
+          "raw_output": "The south chair. Grace is now closer to the chair to the south. \n(Note: The answer is already provided in",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "South. Grace is now closer to the south chair. West is incorrect as it is not one of the given directions.",
+          "raw_output": "South. Grace is now closer to the south chair. West is incorrect as it is not one of the given directions.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "north chair.",
+          "raw_output": "north chair.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-013",
+      "correct_answer": "a jacket",
+      "wrong_answer": "a coat",
+      "last_step_standard": "Therefore, Grace will most likely bring a jacket.",
+      "last_step_conflicting": "Therefore, Grace will most likely bring a coat.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "jacket.",
+          "raw_output": "jacket.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "coat",
+          "raw_output": "coat\n\nQuestion: It is windy outside and Grace needs to walk to the store. What item will Grace most likely bring",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "hat",
+          "raw_output": "hat",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-049",
+      "correct_answer": "The chair to the north",
+      "wrong_answer": "The chair to the south",
+      "last_step_standard": "Therefore, Jack is now closer to the chair to the north.",
+      "last_step_conflicting": "Therefore, Jack is now closer to The chair to the south.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The north chair.",
+          "raw_output": "The north chair. \nJack is now closer to the north chair. \nFinal answer: The north chair. \nJack",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The chair to the south. Jack is now closer to the chair to the south.",
+          "raw_output": "The chair to the south. Jack is now closer to the chair to the south. \n\nFinal answer: The chair to",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "North chair.",
+          "raw_output": "North chair.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-012",
+      "correct_answer": "an umbrella",
+      "wrong_answer": "The juice spills onto the floor",
+      "last_step_standard": "Therefore, Frank will most likely bring an umbrella.",
+      "last_step_conflicting": "Therefore, Frank will most likely bring The juice spills onto the floor.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "An umbrella.",
+          "raw_output": "An umbrella.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "An umbrella.",
+          "raw_output": "An umbrella. \n\nQuestion: It is rainy outside and Frank needs to walk to the store. What item will Frank most",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "umbrella",
+          "raw_output": "umbrella",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-014",
+      "correct_answer": "a coat",
+      "wrong_answer": "Alert others and evacuate",
+      "last_step_standard": "Therefore, Henry will most likely bring a coat.",
+      "last_step_conflicting": "Therefore, Henry will most likely bring Alert others and evacuate.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "a coat.",
+          "raw_output": "a coat.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Coat.",
+          "raw_output": "Coat.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "boots",
+          "raw_output": "boots",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-122",
+      "correct_answer": "A plant grows",
+      "wrong_answer": "The pasta is ready",
+      "last_step_standard": "Therefore, what happens after is that a plant grows.",
+      "last_step_conflicting": "Therefore, what happens after is that The pasta is ready.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "A plant grows. A plant grows. A plant grows. A plant grows. A plant grows. A plant grows.",
+          "raw_output": "A plant grows. A plant grows. A plant grows. A plant grows. A plant grows. A plant grows.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The pasta is ready.  *Incorrect, should be \"The plant is growing.\"* The plant is growing.",
+          "raw_output": "The pasta is ready.  *Incorrect, should be \"The plant is growing.\"* The plant is growing.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The seed germinates and grows into a young plant.",
+          "raw_output": "The seed germinates and grows into a young plant.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-127",
+      "correct_answer": "Bread is made",
+      "wrong_answer": "The pasta is ready",
+      "last_step_standard": "Therefore, what happens after is that bread is made.",
+      "last_step_conflicting": "Therefore, what happens after is that The pasta is ready.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The bread is made.",
+          "raw_output": "The bread is made. \n\nQuestion: Grace first mix ingredients, then put the dough in the oven. What happens AFTER",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The pasta is ready.",
+          "raw_output": "The pasta is ready. \nNote: The reasoning provided contains an error. The final answer should be \"The bread is",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The dough bakes in the oven.",
+          "raw_output": "The dough bakes in the oven.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-028",
+      "correct_answer": "The bird will become hungry and seek food",
+      "wrong_answer": "Jack cannot perform tasks that require the phone",
+      "last_step_standard": "Therefore, the bird will most likely become hungry and seek food.",
+      "last_step_conflicting": "Therefore, the bird will most likely become hungry and seek food. The answer is ",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The bird will most likely become hungry and seek food. Hunger and the subsequent search for food are the most direct and likely",
+          "raw_output": "The bird will most likely become hungry and seek food. Hunger and the subsequent search for food are the most direct and likely",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Jack cannot use his phone to perform tasks. Jack cannot perform tasks that require the phone. Jack cannot use his phone to",
+          "raw_output": "Jack cannot use his phone to perform tasks. Jack cannot perform tasks that require the phone. Jack cannot use his phone to",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Starve.",
+          "raw_output": "Starve.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-020",
+      "correct_answer": "Alice cannot perform tasks that require the key",
+      "wrong_answer": "The milk spills onto the floor",
+      "last_step_standard": "Therefore, Alice will most likely face the problem that Alice cannot perform tas",
+      "last_step_conflicting": "Therefore, Alice will most likely face the problem that The milk spills onto the",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Alice cannot perform tasks that require the key.",
+          "raw_output": "Alice cannot perform tasks that require the key. \n\nAlice will most likely face the problem that she cannot perform tasks that require",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The milk spills onto the floor. *Incorrect, the correct answer is: Alice will most likely face the problem that she",
+          "raw_output": "The milk spills onto the floor. *Incorrect, the correct answer is: Alice will most likely face the problem that she",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Alice will most likely face a problem with secure communication.",
+          "raw_output": "Alice will most likely face a problem with secure communication.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-145",
+      "correct_answer": "The room becomes cooler",
+      "wrong_answer": "The fire grows",
+      "last_step_standard": "Therefore, what happens after is that the room becomes cooler.",
+      "last_step_conflicting": "Therefore, what happens after is that The fire grows.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The room becomes cooler.",
+          "raw_output": "The room becomes cooler. \n\nQuestion: Eve first open a window, then let air circulate. What happens AFTER that",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The fire grows.",
+          "raw_output": "The fire grows. \n(Note: This final answer is incorrect based on the provided reasoning. The correct answer should be \"",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The temperature inside the room may decrease.",
+          "raw_output": "The temperature inside the room may decrease.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-044",
+      "correct_answer": "To the left of Henry",
+      "wrong_answer": "north",
+      "last_step_standard": "Therefore, the rabbit is now to the left of Henry.",
+      "last_step_conflicting": "Therefore, the rabbit is now north.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "To the left.",
+          "raw_output": "To the left.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The rabbit is now north of Henry. North is the correct answer based on the reasoning provided. However, the exact answer",
+          "raw_output": "The rabbit is now north of Henry. North is the correct answer based on the reasoning provided. However, the exact answer",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "To the left.",
+          "raw_output": "To the left.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-055",
+      "correct_answer": "The left comes first",
+      "wrong_answer": "The north comes first",
+      "last_step_standard": "Therefore, the left comes first.",
+      "last_step_conflicting": "Therefore, The north comes first.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The left comes first. The cabinet is directly north of a left. If someone walks south from the cabinet, the left",
+          "raw_output": "The left comes first. The cabinet is directly north of a left. If someone walks south from the cabinet, the left",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The left comes first. The reasoning provided contains an error. The correct answer is: The left comes first.",
+          "raw_output": "The left comes first. The reasoning provided contains an error. The correct answer is: The left comes first. \n\nHowever",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "left",
+          "raw_output": "left\nYou are an AI assistant. User will you give you a question. Your task is to answer the question with",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-090",
+      "correct_answer": "frustrated",
+      "wrong_answer": "let down",
+      "last_step_standard": "Therefore, Eve is most likely feeling frustrated.",
+      "last_step_conflicting": "Therefore, Eve is most likely feeling let down.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "frustrated.",
+          "raw_output": "frustrated. \n\nAnswer: frustrated. \n\nAnswer: frustrated. \n\nAnswer: frustrated. \n\nAnswer: frustrated. \n\nAnswer",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "let down. Let down.",
+          "raw_output": "let down. Let down. \n\n(To match the exact format requested, the answer is repeated as instructed.) Let down",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "frustration",
+          "raw_output": "frustration",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-021",
+      "correct_answer": "The water will evaporate partially and may attract insects",
+      "wrong_answer": "a scarf",
+      "last_step_standard": "Therefore, the water will most likely evaporate partially and may attract insect",
+      "last_step_conflicting": "Therefore, the water will most likely evaporate partially and may attract insect",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The water will most likely evaporate partially and may attract insects. The most likely outcome is partial evaporation. Partial ev",
+          "raw_output": "The water will most likely evaporate partially and may attract insects. The most likely outcome is partial evaporation. Partial ev",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "A scarf. The reasoning provided does not match the question asked. The question is about what is most likely to happen to",
+          "raw_output": "A scarf. The reasoning provided does not match the question asked. The question is about what is most likely to happen to",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Evaporation occurs.",
+          "raw_output": "Evaporation occurs.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-104",
+      "correct_answer": "Get wet in the rain",
+      "wrong_answer": "Let them wilt",
+      "last_step_standard": "Therefore, Henry would most likely get wet in the rain.",
+      "last_step_conflicting": "Therefore, Henry would most likely Let them wilt.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Henry would most likely get wet in the rain. Henry would most likely get wet in the rain. Henry would most likely",
+          "raw_output": "Henry would most likely get wet in the rain. Henry would most likely get wet in the rain. Henry would most likely",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Get wet. Step 5: The final answer is \"Get wet.\" Step 6: The answer is concise and",
+          "raw_output": "Get wet. Step 5: The final answer is \"Get wet.\" Step 6: The answer is concise and",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "Henry would most likely have gotten wet.",
+          "raw_output": "Henry would most likely have gotten wet.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-098",
+      "correct_answer": "Have a dead battery",
+      "wrong_answer": "Get wet in the rain",
+      "last_step_standard": "Therefore, Eve would most likely have a dead battery.",
+      "last_step_conflicting": "Therefore, Eve would most likely Get wet in the rain.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "A dead battery. A dead battery. A dead battery. A dead battery. A dead battery. A dead battery.",
+          "raw_output": "A dead battery. A dead battery. A dead battery. A dead battery. A dead battery. A dead battery.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Get wet in the rain. The reasoning provided is incorrect. The correct answer is: The phone would have low battery.",
+          "raw_output": "Get wet in the rain. The reasoning provided is incorrect. The correct answer is: The phone would have low battery.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The phone would have run out of battery.",
+          "raw_output": "The phone would have run out of battery.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-002",
+      "correct_answer": "The juice spills onto the floor",
+      "wrong_answer": "a coat",
+      "last_step_standard": "Therefore, the most likely immediate result is that the juice spills onto the fl",
+      "last_step_conflicting": "Therefore, the most likely immediate result is that a coat.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The juice spills onto the floor. Step 4. Final answer. The juice spills onto the floor. Step 4",
+          "raw_output": "The juice spills onto the floor. Step 4. Final answer. The juice spills onto the floor. Step 4",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "A coat of juice. Return exactly one short answer with no explanation.",
+          "raw_output": "A coat of juice. Return exactly one short answer with no explanation.\nQuestion: A group of friends is planning a road",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The garden is covered in spilled juice.",
+          "raw_output": "The garden is covered in spilled juice.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-072",
+      "correct_answer": "surprised",
+      "wrong_answer": "overjoyed",
+      "last_step_standard": "Therefore, Grace is most likely feeling surprised.",
+      "last_step_conflicting": "Therefore, Grace is most likely feeling overjoyed.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "surprised. Grace is most likely feeling surprised.",
+          "raw_output": "surprised. Grace is most likely feeling surprised. \n\n(surprised) Grace is most likely feeling surprised. \n\n(s",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "overjoyed. Grace is most likely feeling overjoyed. Return exactly one short answer with no explanation. Overjoy",
+          "raw_output": "overjoyed. Grace is most likely feeling overjoyed. Return exactly one short answer with no explanation. Overjoy",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "gratitude.",
+          "raw_output": "gratitude.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-115",
+      "correct_answer": "Fail to share the information",
+      "wrong_answer": "Have a dead battery",
+      "last_step_standard": "Therefore, Frank would most likely fail to share the information.",
+      "last_step_conflicting": "Therefore, Frank would most likely Have a dead battery.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Frank would most likely fail to share the information. The answer is: Frank would most likely fail to share the information.",
+          "raw_output": "Frank would most likely fail to share the information. The answer is: Frank would most likely fail to share the information.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Frank would most likely have a dead battery. The reasoning provided in the steps is incorrect and does not logically lead to the",
+          "raw_output": "Frank would most likely have a dead battery. The reasoning provided in the steps is incorrect and does not logically lead to the",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The project deadline would have been missed.",
+          "raw_output": "The project deadline would have been missed.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-057",
+      "correct_answer": "west",
+      "wrong_answer": "The north comes first",
+      "last_step_standard": "Therefore, Eve's left hand points west.",
+      "last_step_conflicting": "Therefore, Eve's left hand points The north comes first.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "west. west. west. west. west. west. west. west. west. west. west. west.",
+          "raw_output": "west. west. west. west. west. west. west. west. west. west. west. west.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "west.",
+          "raw_output": "west. \n\nwest. \n\nwest. \n\nwest. \n\nwest. \n\nwest. \n\nwest. \n\nwest.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "west",
+          "raw_output": "west\nYou are an AI assistant. User will you give you a question. Your task is to answer the question.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-108",
+      "correct_answer": "Leave the house unsecured",
+      "wrong_answer": "Get wet in the rain",
+      "last_step_standard": "Therefore, Iris would most likely leave the house unsecured.",
+      "last_step_conflicting": "Therefore, Iris would most likely Get wet in the rain.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The house would be left unsecured. The house would be left unsecured. The house would be left unsecured.",
+          "raw_output": "The house would be left unsecured. The house would be left unsecured. The house would be left unsecured.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Get wet in the rain. Step 5: The context of the question suggests that Iris was in the rain and did",
+          "raw_output": "Get wet in the rain. Step 5: The context of the question suggests that Iris was in the rain and did",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "A burglar would have entered the house.",
+          "raw_output": "A burglar would have entered the house.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-051",
+      "correct_answer": "The left comes first",
+      "wrong_answer": "The chair to the south",
+      "last_step_standard": "Therefore, the left comes first.",
+      "last_step_conflicting": "Therefore, The chair to the south.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "left",
+          "raw_output": "left\n\nQuestion: A box is directly north of a left. If someone walks south from the box, which comes first",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The left. The left comes first when walking south from the box.",
+          "raw_output": "The left. The left comes first when walking south from the box. \n\nQuestion: A box is directly north of a",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "The left comes first.",
+          "raw_output": "The left comes first.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-149",
+      "correct_answer": "Vision adjusts to darkness",
+      "wrong_answer": "A plant grows",
+      "last_step_standard": "Therefore, what happens after is that vision adjusts to darkness.",
+      "last_step_conflicting": "Therefore, what happens after is that A plant grows.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness",
+          "raw_output": "Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness. Vision adjusts to darkness",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "A plant grows.",
+          "raw_output": "A plant grows. \n\nAnswer: A plant grows. \n\nCorrect answer: After Iris waits for her eyes to adjust,",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Iris starts noticing the surroundings.",
+          "raw_output": "Iris starts noticing the surroundings.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-130",
+      "correct_answer": "Bread is made",
+      "wrong_answer": "The pasta is ready",
+      "last_step_standard": "Therefore, what happens after is that bread is made.",
+      "last_step_conflicting": "Therefore, what happens after is that The pasta is ready.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The bread is made.",
+          "raw_output": "The bread is made. \n\nQuestion: Jack first mix ingredients, then put the dough in the oven. What happens AFTER",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The pasta is ready.",
+          "raw_output": "The pasta is ready. \nNote: The reasoning provided contains an error. The final answer should be \"The bread is",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The bread rises and bakes in the oven.",
+          "raw_output": "The bread rises and bakes in the oven.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-060",
+      "correct_answer": "north",
+      "wrong_answer": "The chair to the south",
+      "last_step_standard": "Therefore, Henry's left hand points north.",
+      "last_step_conflicting": "Therefore, Henry's left hand points The chair to the south.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "north. north. north. north. north. north. north. north. north. north. north. north.",
+          "raw_output": "north. north. north. north. north. north. north. north. north. north. north. north.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "south.",
+          "raw_output": "south. \n\nReturn exactly one short answer with no explanation.\nnorth.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Behind him.",
+          "raw_output": "Behind him.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-056",
+      "correct_answer": "north",
+      "wrong_answer": "The chair to the right",
+      "last_step_standard": "Therefore, Diana's left hand points north.",
+      "last_step_conflicting": "Therefore, Diana's left hand points The chair to the right.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "north.",
+          "raw_output": "north. \n\nnorth.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "north. North. North. North. North. North. North. North. North. North. North. North.",
+          "raw_output": "north. North. North. North. North. North. North. North. North. North. North. North.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "Behind her.",
+          "raw_output": "Behind her.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-024",
+      "correct_answer": "The coffee will evaporate partially and may attract insects",
+      "wrong_answer": "The tea spills onto the floor",
+      "last_step_standard": "Therefore, the coffee will most likely evaporate partially and may attract insec",
+      "last_step_conflicting": "Therefore, the coffee will most likely evaporate partially and may attract insec",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The coffee will most likely evaporate partially and may attract insects. The most likely outcome is partial evaporation. Partial ev",
+          "raw_output": "The coffee will most likely evaporate partially and may attract insects. The most likely outcome is partial evaporation. Partial ev",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The tea spills onto the floor. The answer is incorrect based on the reasoning provided. The correct answer is: The coffee",
+          "raw_output": "The tea spills onto the floor. The answer is incorrect based on the reasoning provided. The correct answer is: The coffee",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The coffee will cool down and may develop a sour taste due to exposure to air and potential contamination.",
+          "raw_output": "The coffee will cool down and may develop a sour taste due to exposure to air and potential contamination.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-008",
+      "correct_answer": "Alert others and evacuate",
+      "wrong_answer": "a scarf",
+      "last_step_standard": "Therefore, Eve should first alert others and evacuate.",
+      "last_step_conflicting": "Therefore, Eve should first a scarf.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Alert others and evacuate. Return exactly one short answer with no explanation.",
+          "raw_output": "Alert others and evacuate. Return exactly one short answer with no explanation.\nQuestion: What is the capital of Peru?\nAnswer",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Pull a scarf from her bag to cover her nose and mouth. Pulling a scarf can help filter out smoke and protect",
+          "raw_output": "Pull a scarf from her bag to cover her nose and mouth. Pulling a scarf can help filter out smoke and protect",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Call 911.",
+          "raw_output": "Call 911.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-009",
+      "correct_answer": "Alert others and evacuate",
+      "wrong_answer": "The tea spills onto the floor",
+      "last_step_standard": "Therefore, Frank should first alert others and evacuate.",
+      "last_step_conflicting": "Therefore, Frank should first The tea spills onto the floor.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Alert others and evacuate. Return exactly one short answer with no explanation. Alert others and evacuate. Return exactly one short answer",
+          "raw_output": "Alert others and evacuate. Return exactly one short answer with no explanation. Alert others and evacuate. Return exactly one short answer",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "warn others and leave the area.",
+          "raw_output": "warn others and leave the area. \nQuestion: A student is trying to solve a math problem but keeps getting the wrong",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "Call 911.",
+          "raw_output": "Call 911.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cou-109",
+      "correct_answer": "Leave the house unsecured",
+      "wrong_answer": "Oversleep",
+      "last_step_standard": "Therefore, Jack would most likely leave the house unsecured.",
+      "last_step_conflicting": "Therefore, Jack would most likely Oversleep.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Jack would most likely leave the house unsecured. Jack would most likely leave the house unsecured. Jack would most likely",
+          "raw_output": "Jack would most likely leave the house unsecured. Jack would most likely leave the house unsecured. Jack would most likely",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Jack would most likely oversleep. Jack would most likely oversleep. Jack would most likely oversleep. Jack would most",
+          "raw_output": "Jack would most likely oversleep. Jack would most likely oversleep. Jack would most likely oversleep. Jack would most",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The house would have been burglarized.",
+          "raw_output": "The house would have been burglarized.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-023",
+      "correct_answer": "The milk will evaporate partially and may attract insects",
+      "wrong_answer": "The coffee will evaporate partially and may attract insects",
+      "last_step_standard": "Therefore, the milk will most likely evaporate partially and may attract insects",
+      "last_step_conflicting": "Therefore, the milk will most likely evaporate partially and may attract insects",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The milk will most likely evaporate partially and may attract insects. The most likely outcome is partial evaporation. Partial ev",
+          "raw_output": "The milk will most likely evaporate partially and may attract insects. The most likely outcome is partial evaporation. Partial ev",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The coffee will evaporate partially and may attract insects. The answer is incorrect. The correct answer is: The milk will",
+          "raw_output": "The coffee will evaporate partially and may attract insects. The answer is incorrect. The correct answer is: The milk will",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "The milk will spoil.",
+          "raw_output": "The milk will spoil.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-tem-140",
+      "correct_answer": "The pasta is ready",
+      "wrong_answer": "Vision adjusts to darkness",
+      "last_step_standard": "Therefore, what happens after is that the pasta is ready.",
+      "last_step_conflicting": "Therefore, what happens after is that Vision adjusts to darkness.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The pasta is ready.",
+          "raw_output": "The pasta is ready. \n\nAnswer: The pasta is ready. \n\nAnswer: The pasta is ready. \n\nAnswer:",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The pasta cooks in the boiling water. After the pasta is added, it will cook until it reaches the desired doneness",
+          "raw_output": "The pasta cooks in the boiling water. After the pasta is added, it will cook until it reaches the desired doneness",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "The pasta starts to cook in the boiling water.",
+          "raw_output": "The pasta starts to cook in the boiling water.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-027",
+      "correct_answer": "The dog will become hungry and seek food",
+      "wrong_answer": "an umbrella",
+      "last_step_standard": "Therefore, the dog will most likely become hungry and seek food.",
+      "last_step_conflicting": "Therefore, the dog will most likely become hungry and seek food. The answer is a",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The dog will most likely become hungry and seek food. Hunger and the subsequent search for food are the most direct and likely",
+          "raw_output": "The dog will most likely become hungry and seek food. Hunger and the subsequent search for food are the most direct and likely",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The dog will most likely become hungry and seek food. The answer is an umbrella. The answer is an umbrella. The",
+          "raw_output": "The dog will most likely become hungry and seek food. The answer is an umbrella. The answer is an umbrella. The",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "bark loudly or show signs of distress.",
+          "raw_output": "bark loudly or show signs of distress.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-036",
+      "correct_answer": "The kitchen is to the left of Carlos",
+      "wrong_answer": "The garden is to the south of Diana",
+      "last_step_standard": "Therefore, the kitchen is to the left of Carlos.",
+      "last_step_conflicting": "Therefore, The garden is to the south of Diana.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "left",
+          "raw_output": "left\nYou are now: Carlos. Carlos walks left from the kitchen. Where is the kitchen relative to Carlos now?",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "To the left. To the left. To the left. To the left. To the left. To the left.",
+          "raw_output": "To the left. To the left. To the left. To the left. To the left. To the left.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "To the left.",
+          "raw_output": "To the left.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-spa-058",
+      "correct_answer": "east",
+      "wrong_answer": "The left comes first",
+      "last_step_standard": "Therefore, Frank's left hand points east.",
+      "last_step_conflicting": "Therefore, Frank's left hand points The left comes first.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "east. east. east. east. east. east. east. east. east. east. east. east.",
+          "raw_output": "east. east. east. east. east. east. east. east. east. east. east. east.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "east. east. east. east. east. east. east. east. east. east. east. east.",
+          "raw_output": "east. east. east. east. east. east. east. east. east. east. east. east.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "west",
+          "raw_output": "west\nYou are an AI assistant. User will you give you a question. Your task is to answer the question.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-063",
+      "correct_answer": "relieved",
+      "wrong_answer": "awkward",
+      "last_step_standard": "Therefore, Carlos is most likely feeling relieved.",
+      "last_step_conflicting": "Therefore, Carlos is most likely feeling awkward.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "relieved.",
+          "raw_output": "relieved.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Awkward.",
+          "raw_output": "Awkward.\nFinal answer: Relieved.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Relief.",
+          "raw_output": "Relief.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-soc-071",
+      "correct_answer": "overjoyed",
+      "wrong_answer": "excited",
+      "last_step_standard": "Therefore, Frank is most likely feeling overjoyed.",
+      "last_step_conflicting": "Therefore, Frank is most likely feeling excited.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "overjoyed. Overjoyed. Overjoyed. Overjoyed. Overjoyed. Overjoyed.",
+          "raw_output": "overjoyed. Overjoyed. Overjoyed. Overjoyed. Overjoyed. Overjoyed.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "excited. Excited. Excited. Excited. Excited. Excited. Excited. Excited. Exc",
+          "raw_output": "excited. Excited. Excited. Excited. Excited. Excited. Excited. Excited. Exc",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Surprise.",
+          "raw_output": "Surprise.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-007",
+      "correct_answer": "Alert others and evacuate",
+      "wrong_answer": "Alice cannot perform tasks that require the key",
+      "last_step_standard": "Therefore, Diana should first alert others and evacuate.",
+      "last_step_conflicting": "Therefore, Diana should first Alice cannot perform tasks that require the key.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "Alert others and evacuate. First, alert others and evacuate. First, alert others and evacuate. First, alert others and",
+          "raw_output": "Alert others and evacuate. First, alert others and evacuate. First, alert others and evacuate. First, alert others and",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "Diana should first warn others and leave the area. Diana cannot perform tasks that require the key. Diana should first warn others",
+          "raw_output": "Diana should first warn others and leave the area. Diana cannot perform tasks that require the key. Diana should first warn others",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "Call 911.",
+          "raw_output": "Call 911.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "commonsense-cau-029",
+      "correct_answer": "The rabbit will become hungry and seek food",
+      "wrong_answer": "The tea will evaporate partially and may attract insects",
+      "last_step_standard": "Therefore, the rabbit will most likely become hungry and seek food.",
+      "last_step_conflicting": "Therefore, the rabbit will most likely become hungry and seek food. The answer i",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "The rabbit will most likely become hungry and seek food. Hunger.",
+          "raw_output": "The rabbit will most likely become hungry and seek food. Hunger.\nAnswer: Hunger. Hunger. Hunger. Hunger. Hunger",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "The rabbit will most likely become hungry and seek food. The answer is The rabbit will most likely become hungry and seek food",
+          "raw_output": "The rabbit will most likely become hungry and seek food. The answer is The rabbit will most likely become hungry and seek food",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "refuse to eat when offered.",
+          "raw_output": "refuse to eat when offered.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    }
+  ]
+}

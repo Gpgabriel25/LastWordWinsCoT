@@ -1,0 +1,2726 @@
+{
+  "summary": {
+    "study_name": "conflicting_gsm8k_qwen3b_v1_n100",
+    "model": "Qwen/Qwen2.5-3B-Instruct",
+    "n_examples": 100,
+    "conditions": {
+      "standard_chain": {
+        "n": 100,
+        "accuracy": 1.0,
+        "followed_wrong_suffix_rate": 0.0
+      },
+      "conflicting_chain": {
+        "n": 100,
+        "accuracy": 0.31,
+        "followed_wrong_suffix_rate": 0.68
+      },
+      "question_only": {
+        "n": 100,
+        "accuracy": 0.05,
+        "followed_wrong_suffix_rate": 0.01
+      }
+    }
+  },
+  "results": [
+    {
+      "example_id": "gsm8k-test-00002",
+      "correct_answer": "70000",
+      "wrong_answer": "70005",
+      "last_step_standard": "Therefore, the answer is 70000.",
+      "last_step_conflicting": "Therefore, the answer is 70005.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "70000",
+          "raw_output": "70000",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "70005",
+          "raw_output": "70005",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "120000",
+          "raw_output": "120000\nTo solve this problem, we need to follow these steps:\n\n1. **Calculate",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00005",
+      "correct_answer": "64",
+      "wrong_answer": "52",
+      "last_step_standard": "Therefore, the answer is 64.",
+      "last_step_conflicting": "Therefore, the answer is 52.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "64",
+          "raw_output": "64",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "52",
+          "raw_output": "52",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "16",
+          "raw_output": "To solve this problem, we need to calculate the total cost for 16 glasses, considering the pricing structure.\n\n1",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00006",
+      "correct_answer": "260",
+      "wrong_answer": "248",
+      "last_step_standard": "Therefore, the answer is 260.",
+      "last_step_conflicting": "Therefore, the answer is 248.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "260",
+          "raw_output": "260",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "260",
+          "raw_output": "260",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "340",
+          "raw_output": "340\nTo solve the problem, we need to determine the number of sheep in Toulouse, Charleston,",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00007",
+      "correct_answer": "160",
+      "wrong_answer": "320",
+      "last_step_standard": "Therefore, the answer is 160.",
+      "last_step_conflicting": "Therefore, the answer is 320.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "160",
+          "raw_output": "160",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "320",
+          "raw_output": "320\nThe reasoning process is as follows:\n\n1. First, we calculate the time it takes to download",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "1200",
+          "raw_output": "1200\nTo solve this problem, we need to calculate the total time Carla spent downloading the file,",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00008",
+      "correct_answer": "45",
+      "wrong_answer": "47",
+      "last_step_standard": "Therefore, the answer is 45.",
+      "last_step_conflicting": "Therefore, the answer is 47.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "45",
+          "raw_output": "45",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "45",
+          "raw_output": "45\nThe reasoning process is as follows:\n\n1. John drives 180 miles away from home.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "220",
+          "raw_output": "220\nTo solve this problem, we need to break down John's journey into segments and calculate the distance",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00009",
+      "correct_answer": "460",
+      "wrong_answer": "470",
+      "last_step_standard": "Therefore, the answer is 460.",
+      "last_step_conflicting": "Therefore, the answer is 470.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "460",
+          "raw_output": "460",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "470",
+          "raw_output": "470",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "495",
+          "raw_output": "495\nTo solve this problem, we need to calculate Eliza's earnings for the week she worked",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00010",
+      "correct_answer": "366",
+      "wrong_answer": "365",
+      "last_step_standard": "Therefore, the answer is 366.",
+      "last_step_conflicting": "Therefore, the answer is 365.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "366",
+          "raw_output": "366",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "365",
+          "raw_output": "365",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "1",
+          "raw_output": "To solve the problem, we need to calculate the number of downloads for each month and then sum them up.\n\n1.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00011",
+      "correct_answer": "694",
+      "wrong_answer": "704",
+      "last_step_standard": "Therefore, the answer is 694.",
+      "last_step_conflicting": "Therefore, the answer is 704.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "694",
+          "raw_output": "694",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "704",
+          "raw_output": "704",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "1013 To solve the problem, we need to calculate the total cost of the pastries Toula bought",
+          "raw_output": "1013 To solve the problem, we need to calculate the total cost of the pastries Toula bought",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00012",
+      "correct_answer": "13",
+      "wrong_answer": "11",
+      "last_step_standard": "Therefore, the answer is 13.",
+      "last_step_conflicting": "Therefore, the answer is 11.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "13",
+          "raw_output": "13",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "11",
+          "raw_output": "11",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "4",
+          "raw_output": "4\nTo solve this problem, we need to determine how many years it will take for Carlos to start earning money",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00013",
+      "correct_answer": "18",
+      "wrong_answer": "17",
+      "last_step_standard": "Therefore, the answer is 18.",
+      "last_step_conflicting": "Therefore, the answer is 17.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "18",
+          "raw_output": "18.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "17",
+          "raw_output": "17",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "27",
+          "raw_output": "27\nTo solve this problem, we need to work backwards from the 5 vacuum cleaners Melanie has left.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00014",
+      "correct_answer": "60",
+      "wrong_answer": "45",
+      "last_step_standard": "Therefore, the answer is 60.",
+      "last_step_conflicting": "Therefore, the answer is 45.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "60",
+          "raw_output": "60",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "45",
+          "raw_output": "45",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "30",
+          "raw_output": "30\nTo solve this problem, we can break it down step by step:\n\n1. **Contemporary Dance",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00015",
+      "correct_answer": "125",
+      "wrong_answer": "500",
+      "last_step_standard": "Therefore, the answer is 125.",
+      "last_step_conflicting": "Therefore, the answer is 500.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "125",
+          "raw_output": "125",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "500",
+          "raw_output": "500",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "2000",
+          "raw_output": "2000\nTo solve this problem, we need to calculate the potential profit for each purchase plan and then",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00016",
+      "correct_answer": "230",
+      "wrong_answer": "231",
+      "last_step_standard": "Therefore, the answer is 230.",
+      "last_step_conflicting": "Therefore, the answer is 231.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "230",
+          "raw_output": "230",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "231",
+          "raw_output": "231",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "230",
+          "raw_output": "230\nTo solve this problem, we need to calculate the total distance covered by each train over the two",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00017",
+      "correct_answer": "57500",
+      "wrong_answer": "57503",
+      "last_step_standard": "Therefore, the answer is 57500.",
+      "last_step_conflicting": "Therefore, the answer is 57503.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "57500",
+          "raw_output": "57500",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "57503",
+          "raw_output": "57503",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "38250",
+          "raw_output": "38250\nTo solve the problem, we need to calculate Jill's annual salary from both her teaching",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00018",
+      "correct_answer": "7",
+      "wrong_answer": "2",
+      "last_step_standard": "Therefore, the answer is 7.",
+      "last_step_conflicting": "Therefore, the answer is 2.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "7",
+          "raw_output": "7",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "2",
+          "raw_output": "2",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "84",
+          "raw_output": "84\nTo solve this problem, we need to follow these steps:\n\n1. **Calculate the number of eggs",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00019",
+      "correct_answer": "6",
+      "wrong_answer": "16",
+      "last_step_standard": "Therefore, the answer is 6.",
+      "last_step_conflicting": "Therefore, the answer is 16.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "6",
+          "raw_output": "6",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "16",
+          "raw_output": "16",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "8",
+          "raw_output": "8\nTo solve this problem, we need to determine the speed Marissa needs to walk the remaining distance of the",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00020",
+      "correct_answer": "15",
+      "wrong_answer": "5",
+      "last_step_standard": "Therefore, the answer is 15.",
+      "last_step_conflicting": "Therefore, the answer is 5.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "15",
+          "raw_output": "15",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "5",
+          "raw_output": "5",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "12",
+          "raw_output": "12\nTo solve this problem, we need to follow these steps:\n\n1. **Calculate the amount of water",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00022",
+      "correct_answer": "7",
+      "wrong_answer": "2",
+      "last_step_standard": "Therefore, the answer is 7.",
+      "last_step_conflicting": "Therefore, the answer is 2.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "7",
+          "raw_output": "7",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "7",
+          "raw_output": "7",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "12",
+          "raw_output": "12\nTo solve the problem, we need to calculate the total number of DVDs sold by Billy on Tuesday.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00024",
+      "correct_answer": "26",
+      "wrong_answer": "27",
+      "last_step_standard": "Therefore, the answer is 26.",
+      "last_step_conflicting": "Therefore, the answer is 27.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "26",
+          "raw_output": "26",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "27",
+          "raw_output": "27",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "25.0 To find the original price of the book, we can use the relationship between the discounted price,",
+          "raw_output": "25.0 To find the original price of the book, we can use the relationship between the discounted price,",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00025",
+      "correct_answer": "2",
+      "wrong_answer": "-3",
+      "last_step_standard": "Therefore, the answer is 2.",
+      "last_step_conflicting": "Therefore, the answer is -3.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "2",
+          "raw_output": "2",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "-3",
+          "raw_output": "-3",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "2",
+          "raw_output": "2\nTo solve this problem, we need to calculate the total cost of the items Marie ordered, excluding the boxes",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00029",
+      "correct_answer": "104",
+      "wrong_answer": "416",
+      "last_step_standard": "Therefore, the answer is 104.",
+      "last_step_conflicting": "Therefore, the answer is 416.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "104",
+          "raw_output": "104",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "416",
+          "raw_output": "416",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "100",
+          "raw_output": "100\nTo solve the problem, let's break it down step by step.\n\n1. **Identify",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00030",
+      "correct_answer": "109",
+      "wrong_answer": "121",
+      "last_step_standard": "Therefore, the answer is 109.",
+      "last_step_conflicting": "Therefore, the answer is 121.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "109",
+          "raw_output": "109",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "121",
+          "raw_output": "121",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "41",
+          "raw_output": "41\nTo solve the problem, we need to follow these steps:\n\n1. **Determine the current ages",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00031",
+      "correct_answer": "80",
+      "wrong_answer": "160",
+      "last_step_standard": "Therefore, the answer is 80.",
+      "last_step_conflicting": "Therefore, the answer is 160.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "80",
+          "raw_output": "80",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "160",
+          "raw_output": "160",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "105",
+          "raw_output": "105\nTo solve the problem, we need to determine the guesses of Gunter's friends and then find",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00033",
+      "correct_answer": "70",
+      "wrong_answer": "80",
+      "last_step_standard": "Therefore, the answer is 70.",
+      "last_step_conflicting": "Therefore, the answer is 80.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "70",
+          "raw_output": "70",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "80",
+          "raw_output": "80",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "55",
+          "raw_output": "55\nTo solve the problem, we can set up a system of equations based on the information given.\n\nLet",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00034",
+      "correct_answer": "23",
+      "wrong_answer": "35",
+      "last_step_standard": "Therefore, the answer is 23.",
+      "last_step_conflicting": "Therefore, the answer is 35.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "23",
+          "raw_output": "23",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "23",
+          "raw_output": "23\nThe provided reasoning contains an error in the final step. Let's correct the reasoning and calculation:\n\nStep",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "18",
+          "raw_output": "18\nTo solve the problem, we need to determine the number of jewels Siobhan has, given the",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00035",
+      "correct_answer": "9",
+      "wrong_answer": "36",
+      "last_step_standard": "Therefore, the answer is 9.",
+      "last_step_conflicting": "Therefore, the answer is 36.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "9",
+          "raw_output": "9",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "36",
+          "raw_output": "36",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "14",
+          "raw_output": "14\nTo solve the problem, we need to determine the total points Mike scored during his 40-minute",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00036",
+      "correct_answer": "75",
+      "wrong_answer": "65",
+      "last_step_standard": "Therefore, the answer is 75.",
+      "last_step_conflicting": "Therefore, the answer is 65.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "75",
+          "raw_output": "75",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "75",
+          "raw_output": "75.00",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "20",
+          "raw_output": "20\nTo solve this problem, we need to follow these steps:\n\n1. **Calculate the total number of",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00037",
+      "correct_answer": "2",
+      "wrong_answer": "-3",
+      "last_step_standard": "Therefore, the answer is 2.",
+      "last_step_conflicting": "Therefore, the answer is -3.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "2",
+          "raw_output": "2",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "-3",
+          "raw_output": "-3",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "9",
+          "raw_output": "9\nTo solve this problem, we need to follow these steps:\n\n1. Calculate the total money John gets from",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00038",
+      "correct_answer": "10",
+      "wrong_answer": "25",
+      "last_step_standard": "Therefore, the answer is 10.",
+      "last_step_conflicting": "Therefore, the answer is 25.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "10",
+          "raw_output": "10",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "25",
+          "raw_output": "25",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "10",
+          "raw_output": "10\nTo solve this problem, we need to determine John's average running speed over the three days he runs",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00039",
+      "correct_answer": "18",
+      "wrong_answer": "17",
+      "last_step_standard": "Therefore, the answer is 18.",
+      "last_step_conflicting": "Therefore, the answer is 17.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "18",
+          "raw_output": "18",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "18",
+          "raw_output": "18\nThe total distance Dana can travel in six hours, given the conditions, is 18 miles.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "12",
+          "raw_output": "12\nTo solve this problem, we need to determine how far Dana can travel in six hours, given her",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00043",
+      "correct_answer": "48",
+      "wrong_answer": "50",
+      "last_step_standard": "Therefore, the answer is 48.",
+      "last_step_conflicting": "Therefore, the answer is 50.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "48",
+          "raw_output": "48",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "50",
+          "raw_output": "50",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "1000",
+          "raw_output": "1000\nTo solve this problem, we need to follow these steps:\n\n1. **Calculate the total",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00044",
+      "correct_answer": "20",
+      "wrong_answer": "17",
+      "last_step_standard": "Therefore, the answer is 20.",
+      "last_step_conflicting": "Therefore, the answer is 17.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "20",
+          "raw_output": "20",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "17",
+          "raw_output": "17",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "20",
+          "raw_output": "20\nTo solve this problem, we need to calculate the net profit Charlie makes from selling 20 candles",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00045",
+      "correct_answer": "104",
+      "wrong_answer": "416",
+      "last_step_standard": "Therefore, the answer is 104.",
+      "last_step_conflicting": "Therefore, the answer is 416.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "104",
+          "raw_output": "104",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "416",
+          "raw_output": "416",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "108",
+          "raw_output": "108\nTo solve the problem, we need to calculate the total number of hours Meredith spent writing articles over",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00046",
+      "correct_answer": "163",
+      "wrong_answer": "161",
+      "last_step_standard": "Therefore, the answer is 163.",
+      "last_step_conflicting": "Therefore, the answer is 161.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "163",
+          "raw_output": "163",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "163",
+          "raw_output": "163",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "243",
+          "raw_output": "220+23=243. She used 220 post-it notes and had",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00047",
+      "correct_answer": "800",
+      "wrong_answer": "798",
+      "last_step_standard": "Therefore, the answer is 800.",
+      "last_step_conflicting": "Therefore, the answer is 798.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "800",
+          "raw_output": "800",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "800",
+          "raw_output": "800",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "200",
+          "raw_output": "200\nThe given problem involves calculating the total amount John spent on ties. The problem provides the following details",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00049",
+      "correct_answer": "30",
+      "wrong_answer": "31",
+      "last_step_standard": "Therefore, the answer is 30.",
+      "last_step_conflicting": "Therefore, the answer is 31.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "30",
+          "raw_output": "30",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "31",
+          "raw_output": "31",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "162",
+          "raw_output": "162\nTo solve this problem, we need to follow these steps:\n\n1. **Calculate the total number",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00050",
+      "correct_answer": "294",
+      "wrong_answer": "287",
+      "last_step_standard": "Therefore, the answer is 294.",
+      "last_step_conflicting": "Therefore, the answer is 287.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "294",
+          "raw_output": "294",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "294",
+          "raw_output": "294",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "420",
+          "raw_output": "420\nTo solve this problem, we need to follow these steps:\n\n1. **Calculate the total number",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00051",
+      "correct_answer": "5",
+      "wrong_answer": "20",
+      "last_step_standard": "Therefore, the answer is 5.",
+      "last_step_conflicting": "Therefore, the answer is 20.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "5",
+          "raw_output": "5",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "20",
+          "raw_output": "20\nStep 4 correction: The total travel time is the sum of the time taken to travel from",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "4",
+          "raw_output": "4\nTo solve this problem, we need to determine the time it takes for Tom to travel back at a rate",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00052",
+      "correct_answer": "15",
+      "wrong_answer": "5",
+      "last_step_standard": "Therefore, the answer is 15.",
+      "last_step_conflicting": "Therefore, the answer is 5.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "15",
+          "raw_output": "15",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "5",
+          "raw_output": "5\nStep-by-step reasoning:\n1. Uriah needs to remove 7.5 pounds of weight from his",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "20",
+          "raw_output": "20\nTo solve this problem, we need to determine how many toys Uriah needs to remove from his book",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00053",
+      "correct_answer": "40",
+      "wrong_answer": "52",
+      "last_step_standard": "Therefore, the answer is 40.",
+      "last_step_conflicting": "Therefore, the answer is 52.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "40",
+          "raw_output": "40",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "52",
+          "raw_output": "52",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "120",
+          "raw_output": "120\nTo solve this problem, we need to calculate the total revenue for both Thursday and Friday, and",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00054",
+      "correct_answer": "40",
+      "wrong_answer": "52",
+      "last_step_standard": "Therefore, the answer is 40.",
+      "last_step_conflicting": "Therefore, the answer is 52.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "40",
+          "raw_output": "40",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "52",
+          "raw_output": "52",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "48",
+          "raw_output": "48\nTo solve the problem, we need to determine the total number of kittens the Doubtfire family now",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00058",
+      "correct_answer": "57",
+      "wrong_answer": "228",
+      "last_step_standard": "Therefore, the answer is 57.",
+      "last_step_conflicting": "Therefore, the answer is 228.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "57",
+          "raw_output": "57.00",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "57",
+          "raw_output": "57.00",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "54",
+          "raw_output": "54.00\nTo solve this problem, we need to account for all the fees and charges that were",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00060",
+      "correct_answer": "17",
+      "wrong_answer": "14",
+      "last_step_standard": "Therefore, the answer is 17.",
+      "last_step_conflicting": "Therefore, the answer is 14.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "17",
+          "raw_output": "17",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "17",
+          "raw_output": "17\nThe reasoning provided seems to have a mistake in the calculation of the number of good oranges. Let's",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "18",
+          "raw_output": "18\nTo solve this problem, we need to determine the number of good oranges in the basket. Here's",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00061",
+      "correct_answer": "1430",
+      "wrong_answer": "2860",
+      "last_step_standard": "Therefore, the answer is 1430.",
+      "last_step_conflicting": "Therefore, the answer is 2860.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "1430",
+          "raw_output": "1430.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "2860",
+          "raw_output": "2860",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "1730",
+          "raw_output": "1730\nTo solve this problem, we need to add up all the costs Janet incurred. Here's",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00062",
+      "correct_answer": "25000",
+      "wrong_answer": "50000",
+      "last_step_standard": "Therefore, the answer is 25000.",
+      "last_step_conflicting": "Therefore, the answer is 50000.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "25000",
+          "raw_output": "25000",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "50000",
+          "raw_output": "50000",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "62500",
+          "raw_output": "62500\nTo solve the problem, we need to calculate Marcy's annual pension after 3",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00063",
+      "correct_answer": "1596",
+      "wrong_answer": "3192",
+      "last_step_standard": "Therefore, the answer is 1596.",
+      "last_step_conflicting": "Therefore, the answer is 3192.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "1596",
+          "raw_output": "1596",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "3192",
+          "raw_output": "3192",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "To solve this problem, we need to break down the payments into two halves of the year and then sum them up.",
+          "raw_output": "To solve this problem, we need to break down the payments into two halves of the year and then sum them up.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00065",
+      "correct_answer": "36",
+      "wrong_answer": "35",
+      "last_step_standard": "Therefore, the answer is 36.",
+      "last_step_conflicting": "Therefore, the answer is 35.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "36",
+          "raw_output": "36",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "36",
+          "raw_output": "36\nThe reasoning shows that Jim spends 3 hours a night on TV and reading. Over 3 nights",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "48",
+          "raw_output": "48\nTo solve the problem, we need to break down the time Jim spends on TV and reading each week",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00066",
+      "correct_answer": "48",
+      "wrong_answer": "50",
+      "last_step_standard": "Therefore, the answer is 48.",
+      "last_step_conflicting": "Therefore, the answer is 50.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "48",
+          "raw_output": "48",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "50",
+          "raw_output": "50",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "80",
+          "raw_output": "80\nTo solve the problem, we need to calculate the total number of people from all four schools.\n\n1",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00067",
+      "correct_answer": "595",
+      "wrong_answer": "607",
+      "last_step_standard": "Therefore, the answer is 595.",
+      "last_step_conflicting": "Therefore, the answer is 607.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "595",
+          "raw_output": "595.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "595",
+          "raw_output": "595",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "1750",
+          "raw_output": "1750\nTo solve this problem, we need to calculate the total number of gems in the treasure chest",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00068",
+      "correct_answer": "36",
+      "wrong_answer": "35",
+      "last_step_standard": "Therefore, the answer is 36.",
+      "last_step_conflicting": "Therefore, the answer is 35.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "36",
+          "raw_output": "36",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "35",
+          "raw_output": "35",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "10",
+          "raw_output": "10\nTo solve the problem, we need to follow these steps:\n\n1. Determine the number of boys at",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00070",
+      "correct_answer": "7425",
+      "wrong_answer": "7432",
+      "last_step_standard": "Therefore, the answer is 7425.",
+      "last_step_conflicting": "Therefore, the answer is 7432.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "7425",
+          "raw_output": "7425",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "7425",
+          "raw_output": "7425",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "2025",
+          "raw_output": "2025\nTo solve the problem, we need to calculate the total number of students Judy teaches in a",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00072",
+      "correct_answer": "221",
+      "wrong_answer": "219",
+      "last_step_standard": "Therefore, the answer is 221.",
+      "last_step_conflicting": "Therefore, the answer is 219.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "221",
+          "raw_output": "221",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "221",
+          "raw_output": "221",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "205 To solve the problem, we need to calculate the total money raised from selling brownies and cheesec",
+          "raw_output": "205 To solve the problem, we need to calculate the total money raised from selling brownies and cheesec",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00073",
+      "correct_answer": "255",
+      "wrong_answer": "240",
+      "last_step_standard": "Therefore, the answer is 255.",
+      "last_step_conflicting": "Therefore, the answer is 240.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "255",
+          "raw_output": "255",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "255",
+          "raw_output": "255\nThe provided reasoning contains a few errors. Let's correct the reasoning and arrive at the correct answer",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "738",
+          "raw_output": "738\nTo solve this problem, we need to consider both the cost of the cell phones and the interest",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00074",
+      "correct_answer": "88",
+      "wrong_answer": "90",
+      "last_step_standard": "Therefore, the answer is 88.",
+      "last_step_conflicting": "Therefore, the answer is 90.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "88",
+          "raw_output": "88",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "90",
+          "raw_output": "90",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "105",
+          "raw_output": "105\nTo solve the problem, we need to follow these steps:\n\n1. **Round the prices to",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00075",
+      "correct_answer": "60",
+      "wrong_answer": "45",
+      "last_step_standard": "Therefore, the answer is 60.",
+      "last_step_conflicting": "Therefore, the answer is 45.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "60",
+          "raw_output": "60",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "60",
+          "raw_output": "60\nThe reasoning provided contains an error. The correct average square footage of a level is 60 square",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "32",
+          "raw_output": "32\nTo solve this problem, we need to determine the square footage of each level of the sandcastle,",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00076",
+      "correct_answer": "5",
+      "wrong_answer": "20",
+      "last_step_standard": "Therefore, the answer is 5.",
+      "last_step_conflicting": "Therefore, the answer is 20.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "5",
+          "raw_output": "5",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "20",
+          "raw_output": "20\nThe reasoning provided seems to have a mistake in the calculation of the number of bags of dog food used",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "10",
+          "raw_output": "10\nTo solve this problem, we need to calculate the total amount of dog food Cecilia will use in",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00077",
+      "correct_answer": "100",
+      "wrong_answer": "400",
+      "last_step_standard": "Therefore, the answer is 100.",
+      "last_step_conflicting": "Therefore, the answer is 400.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "100",
+          "raw_output": "100",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "400",
+          "raw_output": "400",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "300",
+          "raw_output": "300\nLet's break down the problem step by step.\n\n1. **Sarah's Laundry:**",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00078",
+      "correct_answer": "6",
+      "wrong_answer": "16",
+      "last_step_standard": "Therefore, the answer is 6.",
+      "last_step_conflicting": "Therefore, the answer is 16.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "6",
+          "raw_output": "6",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "16",
+          "raw_output": "16",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "1.5",
+          "raw_output": "1.50\nTo solve this problem, we need to determine the better price per flower and then calculate the",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00080",
+      "correct_answer": "10",
+      "wrong_answer": "25",
+      "last_step_standard": "Therefore, the answer is 10.",
+      "last_step_conflicting": "Therefore, the answer is 25.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "10",
+          "raw_output": "10",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "25",
+          "raw_output": "25\nThe reasoning provided contains an error in the final step. Let's correct the reasoning and provide the accurate",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "17",
+          "raw_output": "17\nTo solve the problem, let's break it down step by step.\n\n1. **Calculate the amount",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00081",
+      "correct_answer": "17",
+      "wrong_answer": "14",
+      "last_step_standard": "Therefore, the answer is 17.",
+      "last_step_conflicting": "Therefore, the answer is 14.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "17",
+          "raw_output": "17",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "14",
+          "raw_output": "14",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "17 Charlie had 10 stickers initially. After buying 21 stickers and receiving 23 stickers for",
+          "raw_output": "17 Charlie had 10 stickers initially. After buying 21 stickers and receiving 23 stickers for",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00084",
+      "correct_answer": "15",
+      "wrong_answer": "5",
+      "last_step_standard": "Therefore, the answer is 15.",
+      "last_step_conflicting": "Therefore, the answer is 5.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "15",
+          "raw_output": "15",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "15",
+          "raw_output": "15\nThe team won 15 games. The reasoning provided in the steps led to this conclusion. The",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "10",
+          "raw_output": "10\nTo solve the problem, let's define the variables and set up the equations based on the given information",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00085",
+      "correct_answer": "44",
+      "wrong_answer": "51",
+      "last_step_standard": "Therefore, the answer is 44.",
+      "last_step_conflicting": "Therefore, the answer is 51.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "44",
+          "raw_output": "44",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "51",
+          "raw_output": "51",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "1",
+          "raw_output": "11 To solve this problem, we need to determine the total number of quilt blocks Gene has.\n\n1. **",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00086",
+      "correct_answer": "22",
+      "wrong_answer": "15",
+      "last_step_standard": "Therefore, the answer is 22.",
+      "last_step_conflicting": "Therefore, the answer is 15.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "22",
+          "raw_output": "22",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "15",
+          "raw_output": "15",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "25",
+          "raw_output": "25\nTo solve the problem, we need to determine the total number of times the alarm rang. Let's",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00087",
+      "correct_answer": "9360",
+      "wrong_answer": "9361",
+      "last_step_standard": "Therefore, the answer is 9360.",
+      "last_step_conflicting": "Therefore, the answer is 9361.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "9360",
+          "raw_output": "9360",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "9361",
+          "raw_output": "9361",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "882",
+          "raw_output": "882\nTo solve this problem, we need to follow these steps:\n\n1. **Initial Salary**: Sylv",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00088",
+      "correct_answer": "8000",
+      "wrong_answer": "32000",
+      "last_step_standard": "Therefore, the answer is 8000.",
+      "last_step_conflicting": "Therefore, the answer is 32000.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "8000",
+          "raw_output": "8000",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "1",
+          "raw_output": "32000. To correct the mistake in the reasoning, let's re-evaluate the problem:\n\n1",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "8000",
+          "raw_output": "8000\nTo solve the problem, let's define the variables and set up the equations based on the",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00090",
+      "correct_answer": "225",
+      "wrong_answer": "210",
+      "last_step_standard": "Therefore, the answer is 225.",
+      "last_step_conflicting": "Therefore, the answer is 210.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "225",
+          "raw_output": "225",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "225",
+          "raw_output": "225",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "250",
+          "raw_output": "250\nTo solve this problem, we need to calculate the total amount of potato salad needed for the adults",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00091",
+      "correct_answer": "28",
+      "wrong_answer": "84",
+      "last_step_standard": "Therefore, the answer is 28.",
+      "last_step_conflicting": "Therefore, the answer is 84.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "28",
+          "raw_output": "28",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "84",
+          "raw_output": "84",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "22",
+          "raw_output": "22\nTo solve the problem, we need to determine the number of pets each person has and then sum these",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00092",
+      "correct_answer": "4",
+      "wrong_answer": "20",
+      "last_step_standard": "Therefore, the answer is 4.",
+      "last_step_conflicting": "Therefore, the answer is 20.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "4",
+          "raw_output": "4",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "20",
+          "raw_output": "20\nStep 4 is incorrect. The correct answer is 4. Let's correct the final step.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "10",
+          "raw_output": "10\nTo solve the problem, we need to set up equations based on the information given.\n\nLet's denote",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00093",
+      "correct_answer": "36",
+      "wrong_answer": "35",
+      "last_step_standard": "Therefore, the answer is 36.",
+      "last_step_conflicting": "Therefore, the answer is 35.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "36",
+          "raw_output": "36",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "36",
+          "raw_output": "36\nThe reasoning shows that Gerald's initial time was 40 seconds, and with a 10",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "34.2",
+          "raw_output": "34.2\nTo solve this problem, we need to follow these steps:\n\n1. **Determine Lee",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00094",
+      "correct_answer": "348",
+      "wrong_answer": "336",
+      "last_step_standard": "Therefore, the answer is 348.",
+      "last_step_conflicting": "Therefore, the answer is 336.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "348",
+          "raw_output": "348",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "336",
+          "raw_output": "336",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "240",
+          "raw_output": "240\nTo solve the problem, we need to determine the total number of pets in the neighborhood. We",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00095",
+      "correct_answer": "40",
+      "wrong_answer": "52",
+      "last_step_standard": "Therefore, the answer is 40.",
+      "last_step_conflicting": "Therefore, the answer is 52.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "40",
+          "raw_output": "40",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "40",
+          "raw_output": "40\nThe provided reasoning contains an error in Step 4. The correct calculation should be:\n\n120",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "32",
+          "raw_output": "32\nTo solve this problem, we'll follow these steps:\n\n1. **Calculate the number of boys and",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00097",
+      "correct_answer": "12",
+      "wrong_answer": "19",
+      "last_step_standard": "Therefore, the answer is 12.",
+      "last_step_conflicting": "Therefore, the answer is 19.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "12",
+          "raw_output": "12",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "19",
+          "raw_output": "19",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "24",
+          "raw_output": "24\nTo solve this problem, we need to determine the number of tomatoes Freda used in her last batch",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00099",
+      "correct_answer": "58",
+      "wrong_answer": "53",
+      "last_step_standard": "Therefore, the answer is 58.",
+      "last_step_conflicting": "Therefore, the answer is 53.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "58",
+          "raw_output": "58",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "53",
+          "raw_output": "53",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "151",
+          "raw_output": "151\nTo solve the problem, we need to follow these steps:\n\n1. Calculate the total number of",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00100",
+      "correct_answer": "175",
+      "wrong_answer": "176",
+      "last_step_standard": "Therefore, the answer is 175.",
+      "last_step_conflicting": "Therefore, the answer is 176.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "175",
+          "raw_output": "175",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "176",
+          "raw_output": "176",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "1000",
+          "raw_output": "1000\nTo solve the problem, we need to calculate the total number of doorbell rings pressed by",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00101",
+      "correct_answer": "6",
+      "wrong_answer": "16",
+      "last_step_standard": "Therefore, the answer is 6.",
+      "last_step_conflicting": "Therefore, the answer is 16.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "6",
+          "raw_output": "6",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "16",
+          "raw_output": "16",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "15",
+          "raw_output": "15\nTo solve this problem, we need to determine the total number of pages Solo needs to read and then",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00102",
+      "correct_answer": "26",
+      "wrong_answer": "27",
+      "last_step_standard": "Therefore, the answer is 26.",
+      "last_step_conflicting": "Therefore, the answer is 27.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "26",
+          "raw_output": "26",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "27",
+          "raw_output": "27",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "42",
+          "raw_output": "42\nTo solve this problem, we need to calculate the total number of glasses of water John drinks in a",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00104",
+      "correct_answer": "500",
+      "wrong_answer": "501",
+      "last_step_standard": "Therefore, the answer is 500.",
+      "last_step_conflicting": "Therefore, the answer is 501.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "500",
+          "raw_output": "500",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "501",
+          "raw_output": "501",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "400",
+          "raw_output": "400\nTo solve this problem, we can break it down into steps:\n\n1. **Initial Placement by",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00106",
+      "correct_answer": "72",
+      "wrong_answer": "79",
+      "last_step_standard": "Therefore, the answer is 72.",
+      "last_step_conflicting": "Therefore, the answer is 79.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "72",
+          "raw_output": "72",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "72",
+          "raw_output": "72",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "432",
+          "raw_output": "432\nTo solve this problem, we need to calculate the inner volume of each box, taking into account",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00107",
+      "correct_answer": "3",
+      "wrong_answer": "-2",
+      "last_step_standard": "Therefore, the answer is 3.",
+      "last_step_conflicting": "Therefore, the answer is -2.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "3",
+          "raw_output": "3",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "-2",
+          "raw_output": "-2",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "2",
+          "raw_output": "2\nTo solve the problem, we need to account for the total hours of TV Frankie watched each day, and",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00108",
+      "correct_answer": "50",
+      "wrong_answer": "45",
+      "last_step_standard": "Therefore, the answer is 50.",
+      "last_step_conflicting": "Therefore, the answer is 45.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "50",
+          "raw_output": "50",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "50",
+          "raw_output": "50",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "30",
+          "raw_output": "30\nTo solve this problem, we need to work backwards from the final number of cookies Henry has.\n\n1",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00109",
+      "correct_answer": "28",
+      "wrong_answer": "84",
+      "last_step_standard": "Therefore, the answer is 28.",
+      "last_step_conflicting": "Therefore, the answer is 84.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "28",
+          "raw_output": "28.00",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "84",
+          "raw_output": "84",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "26",
+          "raw_output": "26\nTo solve this problem, we need to calculate the total cost of 10 gallons of gas at",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00110",
+      "correct_answer": "45",
+      "wrong_answer": "47",
+      "last_step_standard": "Therefore, the answer is 45.",
+      "last_step_conflicting": "Therefore, the answer is 47.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "45",
+          "raw_output": "45",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "45",
+          "raw_output": "45",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "17",
+          "raw_output": "17\nTo solve this problem, we need to calculate the total number of fruit roll-ups each person ate,",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00111",
+      "correct_answer": "16",
+      "wrong_answer": "32",
+      "last_step_standard": "Therefore, the answer is 16.",
+      "last_step_conflicting": "Therefore, the answer is 32.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "16",
+          "raw_output": "16",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "32",
+          "raw_output": "32",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "128",
+          "raw_output": "128 liters\nTo solve this problem, we need to determine how much water the boat took on while Julia",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00115",
+      "correct_answer": "90",
+      "wrong_answer": "92",
+      "last_step_standard": "Therefore, the answer is 90.",
+      "last_step_conflicting": "Therefore, the answer is 92.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "90",
+          "raw_output": "90",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "92",
+          "raw_output": "92",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "110",
+          "raw_output": "110\nTo calculate the profit Sasha makes from selling the lumber, we need to follow these steps:\n\n1",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00118",
+      "correct_answer": "4",
+      "wrong_answer": "20",
+      "last_step_standard": "Therefore, the answer is 4.",
+      "last_step_conflicting": "Therefore, the answer is 20.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "4",
+          "raw_output": "4",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "20",
+          "raw_output": "20",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "Let's break down the problem step by step.\n\n1. **Initial Count of Vehicles:**\n   - There are",
+          "raw_output": "Let's break down the problem step by step.\n\n1. **Initial Count of Vehicles:**\n   - There are",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00119",
+      "correct_answer": "95200",
+      "wrong_answer": "95198",
+      "last_step_standard": "Therefore, the answer is 95200.",
+      "last_step_conflicting": "Therefore, the answer is 95198.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "95200",
+          "raw_output": "95200",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "95198",
+          "raw_output": "95198",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "80000",
+          "raw_output": "80000\nTo solve this problem, we need to follow these steps:\n\n1. **Calculate Ad",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00121",
+      "correct_answer": "27",
+      "wrong_answer": "25",
+      "last_step_standard": "Therefore, the answer is 27.",
+      "last_step_conflicting": "Therefore, the answer is 25.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "27",
+          "raw_output": "27",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "27",
+          "raw_output": "27\nThe reasoning provided contains an error in the final step. The correct total number of fruits brought by Mor",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "71",
+          "raw_output": "71\nTo solve the problem, we need to calculate the total number of fruits brought by Morisette and",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00122",
+      "correct_answer": "48",
+      "wrong_answer": "50",
+      "last_step_standard": "Therefore, the answer is 48.",
+      "last_step_conflicting": "Therefore, the answer is 50.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "48",
+          "raw_output": "48",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "50",
+          "raw_output": "50",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "45",
+          "raw_output": "45\nTo solve the problem, we need to calculate the total number of hours Sadie slept over the week",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00123",
+      "correct_answer": "50",
+      "wrong_answer": "45",
+      "last_step_standard": "Therefore, the answer is 50.",
+      "last_step_conflicting": "Therefore, the answer is 45.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "50",
+          "raw_output": "50",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "50",
+          "raw_output": "50\nThe provided reasoning contains an error. Rosie runs 10 miles per hour for 3 hours,",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "45",
+          "raw_output": "45\nTo solve this problem, we need to break down Rosie's running into two segments and calculate the total",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00128",
+      "correct_answer": "880",
+      "wrong_answer": "879",
+      "last_step_standard": "Therefore, the answer is 880.",
+      "last_step_conflicting": "Therefore, the answer is 879.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "880",
+          "raw_output": "880",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "879",
+          "raw_output": "879",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "1300 To solve the problem, we need to determine the cost of each type of fruit and then calculate",
+          "raw_output": "1300 To solve the problem, we need to determine the cost of each type of fruit and then calculate",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00129",
+      "correct_answer": "10000",
+      "wrong_answer": "9990",
+      "last_step_standard": "Therefore, the answer is 10000.",
+      "last_step_conflicting": "Therefore, the answer is 9990.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "10000",
+          "raw_output": "10000",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "9990",
+          "raw_output": "9990",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "150000",
+          "raw_output": "150000\nTo solve this problem, we need to calculate the profit the hospital makes from the",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00130",
+      "correct_answer": "30",
+      "wrong_answer": "31",
+      "last_step_standard": "Therefore, the answer is 30.",
+      "last_step_conflicting": "Therefore, the answer is 31.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "30",
+          "raw_output": "30",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "31",
+          "raw_output": "31",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "20",
+          "raw_output": "20\nTo solve this problem, we need to follow the steps of the elves quitting and calculate the number of",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00132",
+      "correct_answer": "60",
+      "wrong_answer": "45",
+      "last_step_standard": "Therefore, the answer is 60.",
+      "last_step_conflicting": "Therefore, the answer is 45.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "60",
+          "raw_output": "60",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "60",
+          "raw_output": "60",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "144",
+          "raw_output": "144\nTo solve the problem, we need to calculate the total number of tickets Pam and Fred used at",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00133",
+      "correct_answer": "13",
+      "wrong_answer": "11",
+      "last_step_standard": "Therefore, the answer is 13.",
+      "last_step_conflicting": "Therefore, the answer is 11.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "13",
+          "raw_output": "13",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "13",
+          "raw_output": "13\nThe reasoning provided is correct. Let's break it down step-by-step to ensure clarity:\n\n1.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "12",
+          "raw_output": "12\nTo solve the problem, we need to determine the number of miles Walt walked on Wednesday. Let's",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00135",
+      "correct_answer": "40",
+      "wrong_answer": "52",
+      "last_step_standard": "Therefore, the answer is 40.",
+      "last_step_conflicting": "Therefore, the answer is 52.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "40",
+          "raw_output": "40",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "40",
+          "raw_output": "40\nThe mistake in the reasoning was in Step 4, where the answer was incorrectly stated as 5",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "50",
+          "raw_output": "50\nTo solve the problem, we need to follow these steps:\n\n1. Determine the number of video games",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00137",
+      "correct_answer": "29",
+      "wrong_answer": "87",
+      "last_step_standard": "Therefore, the answer is 29.",
+      "last_step_conflicting": "Therefore, the answer is 87.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "29",
+          "raw_output": "29",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "29",
+          "raw_output": "29.00",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "34",
+          "raw_output": "34\nTo solve the problem, we need to calculate the total cost of the items Rory ordered, including the",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00138",
+      "correct_answer": "105",
+      "wrong_answer": "90",
+      "last_step_standard": "Therefore, the answer is 105.",
+      "last_step_conflicting": "Therefore, the answer is 90.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "105",
+          "raw_output": "105",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "90",
+          "raw_output": "90",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "25",
+          "raw_output": "25\nTo solve this problem, we need to calculate the number of questions Mark completed on each test and then",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00140",
+      "correct_answer": "20",
+      "wrong_answer": "17",
+      "last_step_standard": "Therefore, the answer is 20.",
+      "last_step_conflicting": "Therefore, the answer is 17.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "20",
+          "raw_output": "20",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "17",
+          "raw_output": "17",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "20% To solve the problem, we need to determine the percentage of semi-automatic cars out of the total",
+          "raw_output": "20% To solve the problem, we need to determine the percentage of semi-automatic cars out of the total",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00141",
+      "correct_answer": "400",
+      "wrong_answer": "385",
+      "last_step_standard": "Therefore, the answer is 400.",
+      "last_step_conflicting": "Therefore, the answer is 385.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "400",
+          "raw_output": "400",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "400",
+          "raw_output": "400",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "560",
+          "raw_output": "560\nTo solve the problem, we need to set up and solve a system of equations based on the",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "gsm8k-test-00143",
+      "correct_answer": "16",
+      "wrong_answer": "32",
+      "last_step_standard": "Therefore, the answer is 16.",
+      "last_step_conflicting": "Therefore, the answer is 32.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "16",
+          "raw_output": "16",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "32",
+          "raw_output": "32\nThe reasoning provided contains an error in the calculation of the total cost. Let's correct the calculation:",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "46",
+          "raw_output": "46\nTo solve this problem, we need to calculate the total cost of all items, including a 1",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    }
+  ]
+}

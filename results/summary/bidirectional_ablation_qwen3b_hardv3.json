@@ -1,0 +1,2078 @@
+{
+  "summary": {
+    "study_name": "bidirectional_ablation_qwen3b_hardv3",
+    "model": "Qwen/Qwen2.5-3B-Instruct",
+    "n_examples": 60,
+    "conditions": {
+      "standard_chain": {
+        "n": 60,
+        "accuracy": 0.5666666666666667,
+        "followed_wrong_suffix_rate": 0.0
+      },
+      "conflicting_chain": {
+        "n": 60,
+        "accuracy": 0.0,
+        "followed_wrong_suffix_rate": 0.6166666666666667
+      },
+      "question_only": {
+        "n": 60,
+        "accuracy": 0.08333333333333333,
+        "followed_wrong_suffix_rate": 0.06666666666666667
+      },
+      "computation_terminal": {
+        "n": 60,
+        "accuracy": 0.16666666666666666,
+        "followed_wrong_suffix_rate": 0.05
+      }
+    },
+    "total_elapsed_seconds": 90.65430092811584,
+    "batch_size": 64
+  },
+  "experiment_design": {
+    "ct_definition": "steps_standard[:-1] \u2014 strips final \"Therefore, the answer is X\" line",
+    "proof_logic": "CT_acc_high AND CC_fw_high => model CAN compute but DEFERS to wrong answer text",
+    "optimization": "batched inference \u2014 all conditions processed simultaneously"
+  },
+  "results": [
+    {
+      "example_id": "p0-hard3-001",
+      "correct_answer": "73",
+      "wrong_answer": "365",
+      "last_step_standard": "Therefore, the answer is 73.",
+      "last_step_conflicting": "Therefore, the answer is 365.",
+      "ct_last_step": "Report only the counted counted stack.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "73",
+          "raw_output": "73\nThe counted total of sealed cartons is 73.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "365",
+          "raw_output": "365\nThe counted total of sealed cartons is 365.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "82",
+          "raw_output": "82\nTo solve the problem, we start with the initial count of sealed cartons, which is 6",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "77",
+          "raw_output": "77\n\nThe reasoning and calculation are as follows:\na = 69\nb = 12",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-002",
+      "correct_answer": "71",
+      "wrong_answer": "73",
+      "last_step_standard": "Therefore, the answer is 71.",
+      "last_step_conflicting": "Therefore, the answer is 73.",
+      "ct_last_step": "Report only the counted active badges.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "71",
+          "raw_output": "71.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "73",
+          "raw_output": "73.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "63",
+          "raw_output": "63\nTo solve the problem, we need to account for the changes in the number of visitor badges over time",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "73",
+          "raw_output": "73\nStep 2 calculation: 58 - 9 + 22 = 73.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-003",
+      "correct_answer": "47",
+      "wrong_answer": "141",
+      "last_step_standard": "Therefore, the answer is 47.",
+      "last_step_conflicting": "Therefore, the answer is 141.",
+      "ct_last_step": "Report only the counted counted stock.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "-47",
+          "raw_output": "-47\nStep 6: Re-evaluate the final answer.\nStep 7: The expression a - b",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "141",
+          "raw_output": "141\nThe counted total of wrapped pastry trays is 141.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "37",
+          "raw_output": "37\nTo solve the problem, we start with the initial count of wrapped pastry trays, which is 4",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "46",
+          "raw_output": "46\nStep 2 calculation: 48 - 15 + 14 = 46",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-004",
+      "correct_answer": "62",
+      "wrong_answer": "77",
+      "last_step_standard": "Therefore, the answer is 62.",
+      "last_step_conflicting": "Therefore, the answer is 77.",
+      "ct_last_step": "Report only the counted reservation total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "62",
+          "raw_output": "62.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "77",
+          "raw_output": "77.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "71",
+          "raw_output": "71\nTo solve the problem, we start with the initial number of reserved seats, which is 60",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "61",
+          "raw_output": "61",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-005",
+      "correct_answer": "63",
+      "wrong_answer": "48",
+      "last_step_standard": "Therefore, the answer is 63.",
+      "last_step_conflicting": "Therefore, the answer is 48.",
+      "ct_last_step": "Report only the counted shelf total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "-63",
+          "raw_output": "-63\nStep 4: Therefore, the answer is -63. Final answer: -63.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "48",
+          "raw_output": "48\nThe counted shelf total of mystery novels is 48.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "74",
+          "raw_output": "74\nTo solve the problem, we need to adjust the initial shelf count based on the given changes:\n\n1",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "67",
+          "raw_output": "67\nStep 2 calculation: 67 - 16 + 12 = 67",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-006",
+      "correct_answer": "93",
+      "wrong_answer": "279",
+      "last_step_standard": "Therefore, the answer is 93.",
+      "last_step_conflicting": "Therefore, the answer is 279.",
+      "ct_last_step": "Report only the counted active-file total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "93",
+          "raw_output": "93.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "123456789012345678",
+          "raw_output": "279. 123456789012345678",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "94",
+          "raw_output": "94\nTo solve the problem, we start with the initial count of active patient files, which is 7",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "94",
+          "raw_output": "94\nStep 2 calculation: 78 - 9 + 24 = 94.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-007",
+      "correct_answer": "70",
+      "wrong_answer": "80",
+      "last_step_standard": "Therefore, the answer is 70.",
+      "last_step_conflicting": "Therefore, the answer is 80.",
+      "ct_last_step": "Report only the counted good-bolt total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "70",
+          "raw_output": "70. 17 21 8 66 -b+c = 70 7",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "180",
+          "raw_output": "80. 180. 180. 180. 180.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "82",
+          "raw_output": "82\nTo solve the problem, we need to account for the changes in the count of good bolts. Here",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "72",
+          "raw_output": "72\nStep 2 calculation: 66 - 17 + 21 = 72",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-008",
+      "correct_answer": "77",
+      "wrong_answer": "82",
+      "last_step_standard": "Therefore, the answer is 77.",
+      "last_step_conflicting": "Therefore, the answer is 82.",
+      "ct_last_step": "Report only the counted finished-book total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "1",
+          "raw_output": "77 To find the final answer, we follow the steps outlined in the reasoning:\n\n1. Start with the initial",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "1",
+          "raw_output": "82 To find the final answer, we follow the steps outlined in the reasoning:\n\n1. Start with the initial",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "82",
+          "raw_output": "82\nTo solve the problem, we start with the initial count of finished books, which is 74",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "computation_terminal": {
+          "predicted": "77",
+          "raw_output": "77\n\nThe reasoning and calculation are as follows:\n1. Start with the initial count of finished books: a",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-009",
+      "correct_answer": "87",
+      "wrong_answer": "99",
+      "last_step_standard": "Therefore, the answer is 87.",
+      "last_step_conflicting": "Therefore, the answer is 99.",
+      "ct_last_step": "Report only the counted sale stock.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "87",
+          "raw_output": "87\nThe counted total of ripe pears is 87.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "99",
+          "raw_output": "99.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "85",
+          "raw_output": "85\nTo solve the problem, we need to account for the changes in the number of ripe pears in",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "84",
+          "raw_output": "84",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-010",
+      "correct_answer": "79",
+      "wrong_answer": "86",
+      "last_step_standard": "Therefore, the answer is 79.",
+      "last_step_conflicting": "Therefore, the answer is 86.",
+      "ct_last_step": "Report only the counted league total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "79",
+          "raw_output": "79.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "86",
+          "raw_output": "86\nThe counted total of league points is 86.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "72",
+          "raw_output": "72\nTo solve the problem, we start with the initial league total of 68 points. We then",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "84",
+          "raw_output": "84\n\nThe counted total of league points is 84.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-011",
+      "correct_answer": "71",
+      "wrong_answer": "73",
+      "last_step_standard": "Therefore, the answer is 71.",
+      "last_step_conflicting": "Therefore, the answer is 73.",
+      "ct_last_step": "Report only the counted counted stack.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "71",
+          "raw_output": "71\nThe counted total of sealed cartons is 71.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "73",
+          "raw_output": "73\nThe counted total of sealed cartons is 73.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "76",
+          "raw_output": "76\nTo solve the problem, we need to account for the changes in the count of sealed cartons.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "77",
+          "raw_output": "77\n\nQuestion: A rectangular garden has a length that is 3 times its width. If the perimeter of",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-012",
+      "correct_answer": "57",
+      "wrong_answer": "228",
+      "last_step_standard": "Therefore, the answer is 57.",
+      "last_step_conflicting": "Therefore, the answer is 228.",
+      "ct_last_step": "Report only the counted active badges.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "57",
+          "raw_output": "57.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "1",
+          "raw_output": "228 To find the correct answer, we need to follow the steps provided in the reasoning:\n\n1. Start",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "53",
+          "raw_output": "53\nTo solve the problem, we need to account for the changes in the number of visitor badges. Here",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "59",
+          "raw_output": "59\n\nThe counted total of visitor badges is 59.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-013",
+      "correct_answer": "69",
+      "wrong_answer": "67",
+      "last_step_standard": "Therefore, the answer is 69.",
+      "last_step_conflicting": "Therefore, the answer is 67.",
+      "ct_last_step": "Report only the counted counted stock.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "69 To solve the problem, we follow the reasoning step-by-step:\n\n1. **Initial Count**: The bakery",
+          "raw_output": "69 To solve the problem, we follow the reasoning step-by-step:\n\n1. **Initial Count**: The bakery",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "67 To solve the problem, we follow the steps outlined in the reasoning:\n\n1. Start with the initial count",
+          "raw_output": "67 To solve the problem, we follow the steps outlined in the reasoning:\n\n1. Start with the initial count",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "73",
+          "raw_output": "73\nTo solve the problem, we start with the initial count of wrapped pastry trays, which is 6",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "73",
+          "raw_output": "73\n\nThe calculation is as follows:\na - b + c = 63 - 11 +",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-014",
+      "correct_answer": "66",
+      "wrong_answer": "68",
+      "last_step_standard": "Therefore, the answer is 66.",
+      "last_step_conflicting": "Therefore, the answer is 68.",
+      "ct_last_step": "Report only the counted reservation total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "66",
+          "raw_output": "66.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "112",
+          "raw_output": "68. 112. 112. 112. 112.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "60",
+          "raw_output": "60\nTo solve the problem, we need to account for the changes in the number of reserved seats. Here",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "67",
+          "raw_output": "67\nStep 2 calculation: 54 - 11 + 23 = 67",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-015",
+      "correct_answer": "63",
+      "wrong_answer": "48",
+      "last_step_standard": "Therefore, the answer is 63.",
+      "last_step_conflicting": "Therefore, the answer is 48.",
+      "ct_last_step": "Report only the counted shelf total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "1",
+          "raw_output": "63 To find the final answer, we follow the steps outlined in the reasoning:\n\n1. Start with the initial",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "-48",
+          "raw_output": "-48\nStep 4: Therefore, the answer is -48. Final answer: -48.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "48",
+          "raw_output": "48\nTo solve the problem, we need to adjust the initial shelf count based on the given changes:\n\n1",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "computation_terminal": {
+          "predicted": "68",
+          "raw_output": "68\n\nThe reasoning and calculation are as follows:\n1. Start with the initial count of mystery novels: a",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-016",
+      "correct_answer": "67",
+      "wrong_answer": "82",
+      "last_step_standard": "Therefore, the answer is 67.",
+      "last_step_conflicting": "Therefore, the answer is 82.",
+      "ct_last_step": "Report only the counted active-file total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "-67",
+          "raw_output": "-67\nStep 6: Re-evaluate the expression a - b + c.\nStep 7: a",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "82",
+          "raw_output": "82.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "82",
+          "raw_output": "82\nTo solve the problem, we start with the initial count of active patient files, which is 6",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "computation_terminal": {
+          "predicted": "72",
+          "raw_output": "72\nStep 4: The counted active-file total is 72.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-017",
+      "correct_answer": "51",
+      "wrong_answer": "58",
+      "last_step_standard": "Therefore, the answer is 51.",
+      "last_step_conflicting": "Therefore, the answer is 58.",
+      "ct_last_step": "Report only the counted good-bolt total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "-51",
+          "raw_output": "-51\nStep 6: Re-evaluate the expression a - b + c.\nStep 7: a",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "114",
+          "raw_output": "58. 114. 114. 114. 114.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "37",
+          "raw_output": "37\nTo solve the problem, we need to account for the changes in the count of good bolts. Here",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "51",
+          "raw_output": "51\nStep 5: Verify the calculation.\na - b + c = 51 - 1",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-018",
+      "correct_answer": "54",
+      "wrong_answer": "56",
+      "last_step_standard": "Therefore, the answer is 54.",
+      "last_step_conflicting": "Therefore, the answer is 56.",
+      "ct_last_step": "Report only the counted finished-book total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "54",
+          "raw_output": "54.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "56",
+          "raw_output": "56.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "51",
+          "raw_output": "51\nTo solve the problem, we need to account for the changes in the number of finished books. Here",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "54",
+          "raw_output": "54",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-019",
+      "correct_answer": "85",
+      "wrong_answer": "86",
+      "last_step_standard": "Therefore, the answer is 85.",
+      "last_step_conflicting": "Therefore, the answer is 86.",
+      "ct_last_step": "Report only the counted sale stock.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "85",
+          "raw_output": "85.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "86",
+          "raw_output": "86.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "80",
+          "raw_output": "80\nTo solve the problem, we start with the initial count of ripe pears:\n\n\\[ 72",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "88",
+          "raw_output": "88\n\nQuestion: A rectangular garden has a length that is 3 times its width. If the perimeter of",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-020",
+      "correct_answer": "56",
+      "wrong_answer": "55",
+      "last_step_standard": "Therefore, the answer is 56.",
+      "last_step_conflicting": "Therefore, the answer is 55.",
+      "ct_last_step": "Report only the counted league total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "-56",
+          "raw_output": "-56\nStep 4: Therefore, the answer is -56. Final answer: -56.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "-55",
+          "raw_output": "-55\nStep 4: Therefore, the answer is -55. Final answer: -55.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "63",
+          "raw_output": "63\nTo find the counted total of league points, we start with the initial listed total of 62",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "67",
+          "raw_output": "67",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-021",
+      "correct_answer": "84",
+      "wrong_answer": "89",
+      "last_step_standard": "Therefore, the answer is 84.",
+      "last_step_conflicting": "Therefore, the answer is 89.",
+      "ct_last_step": "Report only the counted counted stack.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "84",
+          "raw_output": "84\nThe counted total of sealed cartons is 84.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "89",
+          "raw_output": "89\nThe counted total of sealed cartons is 89.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "84",
+          "raw_output": "84\nTo solve the problem, we start with the initial count of sealed cartons, which is 7",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "88",
+          "raw_output": "88\n\nThe reasoning and calculation are as follows:\na = 77\nb = 16",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-022",
+      "correct_answer": "51",
+      "wrong_answer": "58",
+      "last_step_standard": "Therefore, the answer is 51.",
+      "last_step_conflicting": "Therefore, the answer is 58.",
+      "ct_last_step": "Report only the counted active badges.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "51",
+          "raw_output": "51.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "58 To solve the problem, we follow the steps outlined in the reasoning:\n\n1. Start with the initial number",
+          "raw_output": "58 To solve the problem, we follow the steps outlined in the reasoning:\n\n1. Start with the initial number",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "57",
+          "raw_output": "57\nTo solve the problem, we need to account for the changes in the number of visitor badges. Here",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "50",
+          "raw_output": "50\nStep 2 calculation: 44 - 13 + 20 = 50",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-023",
+      "correct_answer": "47",
+      "wrong_answer": "141",
+      "last_step_standard": "Therefore, the answer is 47.",
+      "last_step_conflicting": "Therefore, the answer is 141.",
+      "ct_last_step": "Report only the counted counted stock.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "47",
+          "raw_output": "47\nThe counted total of wrapped pastry trays is 47.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "1",
+          "raw_output": "141 To find the final answer, we follow the steps outlined in the reasoning:\n\n1. Start with the",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "41",
+          "raw_output": "41\nTo solve the problem, we start with the initial count of wrapped pastry trays, which is 4",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "47",
+          "raw_output": "47",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-024",
+      "correct_answer": "78",
+      "wrong_answer": "81",
+      "last_step_standard": "Therefore, the answer is 78.",
+      "last_step_conflicting": "Therefore, the answer is 81.",
+      "ct_last_step": "Report only the counted reservation total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "111",
+          "raw_output": "78. 111. 111. 111. 111.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "81",
+          "raw_output": "81.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "88",
+          "raw_output": "88\nTo solve the problem, we need to account for the changes in the number of reserved seats. Here",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "78",
+          "raw_output": "78",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-025",
+      "correct_answer": "62",
+      "wrong_answer": "77",
+      "last_step_standard": "Therefore, the answer is 62.",
+      "last_step_conflicting": "Therefore, the answer is 77.",
+      "ct_last_step": "Report only the counted shelf total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "62",
+          "raw_output": "62\nThe counted shelf total of mystery novels is 62.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "77",
+          "raw_output": "77\nTo arrive at the final answer of 77, we follow the steps outlined in the reasoning:",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "66",
+          "raw_output": "66\nTo solve the problem, we start with the initial shelf count of mystery novels, which is 5",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "52",
+          "raw_output": "52\nStep 2 calculation: 54 - 10 + 18 = 52",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-026",
+      "correct_answer": "56",
+      "wrong_answer": "55",
+      "last_step_standard": "Therefore, the answer is 56.",
+      "last_step_conflicting": "Therefore, the answer is 55.",
+      "ct_last_step": "Report only the counted active-file total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "56",
+          "raw_output": "56.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "111",
+          "raw_output": "55. 111. 111. 111. 111.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "45",
+          "raw_output": "45\nTo solve the problem, we start with the initial count of active patient files, which is 5",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "57",
+          "raw_output": "57",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-027",
+      "correct_answer": "56",
+      "wrong_answer": "55",
+      "last_step_standard": "Therefore, the answer is 56.",
+      "last_step_conflicting": "Therefore, the answer is 55.",
+      "ct_last_step": "Report only the counted good-bolt total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "56",
+          "raw_output": "56.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "1111111111111111111",
+          "raw_output": "55. 1111111111111111111",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "55",
+          "raw_output": "55\nTo solve the problem, we need to account for the changes in the count of good bolts. Here",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "computation_terminal": {
+          "predicted": "55",
+          "raw_output": "55\nStep 2 calculation: 45 - 9 + 20 = 55.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-028",
+      "correct_answer": "62",
+      "wrong_answer": "77",
+      "last_step_standard": "Therefore, the answer is 62.",
+      "last_step_conflicting": "Therefore, the answer is 77.",
+      "ct_last_step": "Report only the counted finished-book total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "1",
+          "raw_output": "62 To find the final answer, we follow the steps outlined in the reasoning:\n\n1. Start with the initial",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "1",
+          "raw_output": "77 To find the final answer, we follow the steps outlined in the reasoning:\n\n1. Start with the initial",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "62",
+          "raw_output": "62\nTo solve the problem, we need to adjust the initial count of finished books based on the given changes",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "62",
+          "raw_output": "62\n\nThe reasoning and calculation are as follows:\n1. Start with the initial count of finished books: a",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-029",
+      "correct_answer": "62",
+      "wrong_answer": "77",
+      "last_step_standard": "Therefore, the answer is 62.",
+      "last_step_conflicting": "Therefore, the answer is 77.",
+      "ct_last_step": "Report only the counted sale stock.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "62",
+          "raw_output": "62\nThe counted total of ripe pears is 62.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "77",
+          "raw_output": "77\nThe counted total of ripe pears is 77.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "61",
+          "raw_output": "61\nTo solve the problem, we start with the initial count of ripe pears:\n\n\\[ 58",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "65",
+          "raw_output": "65\n\nThe counted total of ripe pears in the sale stock is 65.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-030",
+      "correct_answer": "78",
+      "wrong_answer": "81",
+      "last_step_standard": "Therefore, the answer is 78.",
+      "last_step_conflicting": "Therefore, the answer is 81.",
+      "ct_last_step": "Report only the counted league total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "1111111111111111111",
+          "raw_output": "78. 1111111111111111111",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "81",
+          "raw_output": "81.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "87",
+          "raw_output": "87",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "76",
+          "raw_output": "76\nStep 2 calculation: 77 - 16 + 17 = 77",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-031",
+      "correct_answer": "60",
+      "wrong_answer": "45",
+      "last_step_standard": "Therefore, the answer is 60.",
+      "last_step_conflicting": "Therefore, the answer is 45.",
+      "ct_last_step": "Report only the counted counted stack.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "60",
+          "raw_output": "60\nThe counted total of sealed cartons is 60.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "-45",
+          "raw_output": "-45\nThe counted total of sealed cartons is -45. However, since the count cannot be negative",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "62",
+          "raw_output": "62\nTo solve the problem, we start with the initial count of sealed cartons, which is 5",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "64",
+          "raw_output": "64",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-032",
+      "correct_answer": "83",
+      "wrong_answer": "76",
+      "last_step_standard": "Therefore, the answer is 83.",
+      "last_step_conflicting": "Therefore, the answer is 76.",
+      "ct_last_step": "Report only the counted active badges.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "83",
+          "raw_output": "83.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "-76",
+          "raw_output": "-76\nThe counted total of visitor badges, considering the removal and addition of badges, is -76.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "84",
+          "raw_output": "84\nTo solve the problem, we need to account for the changes in the number of visitor badges over time",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "86",
+          "raw_output": "86\n\nThe counted total of visitor badges is 86.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-033",
+      "correct_answer": "70",
+      "wrong_answer": "80",
+      "last_step_standard": "Therefore, the answer is 70.",
+      "last_step_conflicting": "Therefore, the answer is 80.",
+      "ct_last_step": "Report only the counted counted stock.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "-70",
+          "raw_output": "-70\nStep 6: Re-evaluate the expression a - b + c.\nStep 7: a",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "80",
+          "raw_output": "80\nTo arrive at the final answer of 80, we follow these steps:\n\n1. Start with",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "70",
+          "raw_output": "70\nTo solve the problem, we start with the initial count of wrapped pastry trays, which is 7",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "77",
+          "raw_output": "77\nStep 2 calculation: 70 - 17 + 17 = 70",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-034",
+      "correct_answer": "75",
+      "wrong_answer": "65",
+      "last_step_standard": "Therefore, the answer is 75.",
+      "last_step_conflicting": "Therefore, the answer is 65.",
+      "ct_last_step": "Report only the counted reservation total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "75. To solve the problem, we follow these steps:\n\n1. Start with the initial number of reserved seats",
+          "raw_output": "75. To solve the problem, we follow these steps:\n\n1. Start with the initial number of reserved seats",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "65",
+          "raw_output": "65.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "85",
+          "raw_output": "85\nTo solve the problem, we need to account for the changes in the number of reserved seats. Here",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "79",
+          "raw_output": "79\n\nThe reasoning and calculation are as follows:\n1. Start with 71 reserved seats.\n2.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-035",
+      "correct_answer": "64",
+      "wrong_answer": "52",
+      "last_step_standard": "Therefore, the answer is 64.",
+      "last_step_conflicting": "Therefore, the answer is 52.",
+      "ct_last_step": "Report only the counted shelf total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "64",
+          "raw_output": "64\nTo arrive at the final answer of 64, we follow the steps outlined in the reasoning:",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "52",
+          "raw_output": "52\nTo arrive at the final answer of 52, we follow the steps outlined in the reasoning:",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "45",
+          "raw_output": "45\nTo solve the problem, we start with the initial shelf total of 55 mystery novels.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "63",
+          "raw_output": "63\n\nThe counted shelf total of mystery novels is 63.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-036",
+      "correct_answer": "74",
+      "wrong_answer": "89",
+      "last_step_standard": "Therefore, the answer is 74.",
+      "last_step_conflicting": "Therefore, the answer is 89.",
+      "ct_last_step": "Report only the counted active-file total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "-74",
+          "raw_output": "-74\nStep 6: Re-evaluate the final answer.\nStep 7: The expression a - b",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "89",
+          "raw_output": "89.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "83",
+          "raw_output": "83\nTo solve the problem, we start with the initial count of active patient files, which is 7",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "74",
+          "raw_output": "74\nStep 4: The counted active-file total is 74.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-037",
+      "correct_answer": "57",
+      "wrong_answer": "228",
+      "last_step_standard": "Therefore, the answer is 57.",
+      "last_step_conflicting": "Therefore, the answer is 228.",
+      "ct_last_step": "Report only the counted good-bolt total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "113",
+          "raw_output": "57. 113. 113. 113. 113.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "228",
+          "raw_output": "228\nStep 6: Verify the calculation:\n- Start with 46 good bolts.\n- Subtract",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "57",
+          "raw_output": "57\nTo solve the problem, we need to account for the changes in the count of good bolts. Here",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "52",
+          "raw_output": "52\nStep 2 calculation: 46 - 9 + 20 = 52.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-038",
+      "correct_answer": "51",
+      "wrong_answer": "58",
+      "last_step_standard": "Therefore, the answer is 51.",
+      "last_step_conflicting": "Therefore, the answer is 58.",
+      "ct_last_step": "Report only the counted finished-book total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "51",
+          "raw_output": "51.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "115",
+          "raw_output": "58. 115. 115. 115. 115.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "48",
+          "raw_output": "48\nTo solve the problem, we need to adjust the initial count of finished books based on the given changes",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "54",
+          "raw_output": "54\n\nThe reasoning and calculation are as follows:\n1. Start with the initial count of finished books: a",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-039",
+      "correct_answer": "60",
+      "wrong_answer": "45",
+      "last_step_standard": "Therefore, the answer is 60.",
+      "last_step_conflicting": "Therefore, the answer is 45.",
+      "ct_last_step": "Report only the counted sale stock.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "60",
+          "raw_output": "60\nTo arrive at the final answer, we follow these steps:\n\n1. Start with the initial count of",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "45",
+          "raw_output": "45\nTo arrive at the final answer, we follow these steps:\n\n1. Start with the initial count of",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "66",
+          "raw_output": "66\nTo solve the problem, we start with the initial count of ripe pears:\n\n\\[ 55",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "64",
+          "raw_output": "64",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-040",
+      "correct_answer": "63",
+      "wrong_answer": "48",
+      "last_step_standard": "Therefore, the answer is 63.",
+      "last_step_conflicting": "Therefore, the answer is 48.",
+      "ct_last_step": "Report only the counted league total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "1",
+          "raw_output": "63 To find the final answer, we follow the steps outlined in the reasoning:\n\n1. Start with the initial",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "-48",
+          "raw_output": "-48\nStep 4: Therefore, the answer is -48. Final answer: -48.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "58",
+          "raw_output": "58",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "67",
+          "raw_output": "67",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-041",
+      "correct_answer": "63",
+      "wrong_answer": "48",
+      "last_step_standard": "Therefore, the answer is 63.",
+      "last_step_conflicting": "Therefore, the answer is 48.",
+      "ct_last_step": "Report only the counted counted stack.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "63",
+          "raw_output": "63\nThe counted total of sealed cartons is 63.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "48",
+          "raw_output": "48\nTo arrive at the final answer of 48, we follow these steps:\n\n1. Start with",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "63",
+          "raw_output": "63\nTo solve the problem, we start with the initial count of sealed cartons, which is 5",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "62",
+          "raw_output": "62\n\nThe reasoning and calculation are as follows:\na = 56\nb = 12",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-042",
+      "correct_answer": "65",
+      "wrong_answer": "67",
+      "last_step_standard": "Therefore, the answer is 65.",
+      "last_step_conflicting": "Therefore, the answer is 67.",
+      "ct_last_step": "Report only the counted active badges.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "65",
+          "raw_output": "65.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "67",
+          "raw_output": "67.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "72",
+          "raw_output": "72\nTo solve the problem, we need to account for the changes in the number of visitor badges. Here",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "69",
+          "raw_output": "69\n\nThe counted total of visitor badges is 69.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-043",
+      "correct_answer": "56",
+      "wrong_answer": "55",
+      "last_step_standard": "Therefore, the answer is 56.",
+      "last_step_conflicting": "Therefore, the answer is 55.",
+      "ct_last_step": "Report only the counted counted stock.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "56",
+          "raw_output": "56\nTo arrive at the final answer, we follow these steps:\n\n1. Start with the initial count of",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "55",
+          "raw_output": "55\nThe counted total of wrapped pastry trays is 55.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "58",
+          "raw_output": "58\nTo solve the problem, we start with the initial count of wrapped pastry trays, which is 5",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "58",
+          "raw_output": "58\n\nThe calculation is as follows:\na - b + c = 52 - 17 +",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-044",
+      "correct_answer": "49",
+      "wrong_answer": "34",
+      "last_step_standard": "Therefore, the answer is 49.",
+      "last_step_conflicting": "Therefore, the answer is 34.",
+      "ct_last_step": "Report only the counted reservation total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "49",
+          "raw_output": "49.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "-34",
+          "raw_output": "-34\nStep 5: Therefore, the answer is -34. Final answer: -34.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "40",
+          "raw_output": "40\nTo solve the problem, we need to account for the changes in the number of reserved seats. Here",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "40",
+          "raw_output": "40\nStep 2 calculation: 46 - 9 + 12 = 40.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-045",
+      "correct_answer": "48",
+      "wrong_answer": "50",
+      "last_step_standard": "Therefore, the answer is 48.",
+      "last_step_conflicting": "Therefore, the answer is 50.",
+      "ct_last_step": "Report only the counted shelf total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "111",
+          "raw_output": "48. 111. 111. 111. 111.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "50",
+          "raw_output": "50.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "47",
+          "raw_output": "47\nTo solve the problem, we need to account for the changes in the number of mystery novels on the",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "55",
+          "raw_output": "55\n\nThe counted shelf total of mystery novels is 55.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-046",
+      "correct_answer": "58",
+      "wrong_answer": "53",
+      "last_step_standard": "Therefore, the answer is 58.",
+      "last_step_conflicting": "Therefore, the answer is 53.",
+      "ct_last_step": "Report only the counted active-file total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "115",
+          "raw_output": "58. 115. 115. 115. 115.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "53",
+          "raw_output": "53.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "61",
+          "raw_output": "61\nTo solve the problem, we start with the initial count of active patient files, which is 4",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "53",
+          "raw_output": "53\nStep 2 calculation: 48 - 13 + 23 = 53",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-047",
+      "correct_answer": "76",
+      "wrong_answer": "83",
+      "last_step_standard": "Therefore, the answer is 76.",
+      "last_step_conflicting": "Therefore, the answer is 83.",
+      "ct_last_step": "Report only the counted good-bolt total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "76 To solve the problem, we follow the steps outlined in the reasoning:\n\n1. **Identify the given",
+          "raw_output": "76 To solve the problem, we follow the steps outlined in the reasoning:\n\n1. **Identify the given",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "83",
+          "raw_output": "83. 11 20 8 67 - = 83 83.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "78",
+          "raw_output": "78\nTo solve the problem, we need to account for the changes in the count of good bolts. Here",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "74",
+          "raw_output": "74\n\nThe counted total of good bolts is 74.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-048",
+      "correct_answer": "67",
+      "wrong_answer": "82",
+      "last_step_standard": "Therefore, the answer is 67.",
+      "last_step_conflicting": "Therefore, the answer is 82.",
+      "ct_last_step": "Report only the counted finished-book total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "112",
+          "raw_output": "67. 112. 112. 112. 112.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "82",
+          "raw_output": "82.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "78",
+          "raw_output": "78\nTo solve the problem, we need to adjust the initial count of finished books based on the given changes",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "70",
+          "raw_output": "70\nStep 2 calculation: 63 - 18 + 22 = 70",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-049",
+      "correct_answer": "68",
+      "wrong_answer": "67",
+      "last_step_standard": "Therefore, the answer is 68.",
+      "last_step_conflicting": "Therefore, the answer is 67.",
+      "ct_last_step": "Report only the counted sale stock.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "68",
+          "raw_output": "68\nThe counted total of ripe pears is 68.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "67",
+          "raw_output": "67\nThe counted total of ripe pears is 67.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "86",
+          "raw_output": "86\nTo solve the problem, we need to account for the changes in the number of ripe pears in",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "74",
+          "raw_output": "74\n\nThe counted total of ripe pears is 74.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-050",
+      "correct_answer": "57",
+      "wrong_answer": "228",
+      "last_step_standard": "Therefore, the answer is 57.",
+      "last_step_conflicting": "Therefore, the answer is 228.",
+      "ct_last_step": "Report only the counted league total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "111",
+          "raw_output": "57. 111. 111. 111. 111.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "228 To find the correct counted total of league points, we need to follow the steps provided in the reasoning",
+          "raw_output": "228 To find the correct counted total of league points, we need to follow the steps provided in the reasoning",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "68",
+          "raw_output": "68",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "75",
+          "raw_output": "75\n\nThe counted total of league points is 75.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-051",
+      "correct_answer": "51",
+      "wrong_answer": "58",
+      "last_step_standard": "Therefore, the answer is 51.",
+      "last_step_conflicting": "Therefore, the answer is 58.",
+      "ct_last_step": "Report only the counted counted stack.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "51",
+          "raw_output": "51.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "58",
+          "raw_output": "58\nThe counted total of sealed cartons is 58.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "54",
+          "raw_output": "54\nTo solve the problem, we start with the initial count of sealed cartons, which is 5",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "57",
+          "raw_output": "57",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-052",
+      "correct_answer": "75",
+      "wrong_answer": "65",
+      "last_step_standard": "Therefore, the answer is 75.",
+      "last_step_conflicting": "Therefore, the answer is 65.",
+      "ct_last_step": "Report only the counted active badges.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "75",
+          "raw_output": "75.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "-65",
+          "raw_output": "-65\nStep 5: Therefore, the answer is -65. Final answer: -65.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "85",
+          "raw_output": "85\nTo solve the problem, we need to account for the changes in the number of visitor badges over time",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "75",
+          "raw_output": "71-17+21 = 75. 75.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-053",
+      "correct_answer": "68",
+      "wrong_answer": "67",
+      "last_step_standard": "Therefore, the answer is 68.",
+      "last_step_conflicting": "Therefore, the answer is 67.",
+      "ct_last_step": "Report only the counted counted stock.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "68",
+          "raw_output": "68\nThe counted total of wrapped pastry trays is 68.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "67 To solve the problem, we follow the steps outlined in the reasoning:\n\n1. Start with the initial count",
+          "raw_output": "67 To solve the problem, we follow the steps outlined in the reasoning:\n\n1. Start with the initial count",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "73",
+          "raw_output": "73\nTo solve the problem, we start with the initial count of wrapped pastry trays, which is 6",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "73",
+          "raw_output": "73\n\nThe calculation is as follows:\na - b + c = 63 - 17 +",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-054",
+      "correct_answer": "39",
+      "wrong_answer": "54",
+      "last_step_standard": "Therefore, the answer is 39.",
+      "last_step_conflicting": "Therefore, the answer is 54.",
+      "ct_last_step": "Report only the counted reservation total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "-39",
+          "raw_output": "-39\nStep 4: Therefore, the answer is -39. Final answer: -39.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "54",
+          "raw_output": "54.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "53",
+          "raw_output": "53\nTo solve the problem, we start with the initial number of reserved seats, which is 43",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "37",
+          "raw_output": "37\n\nThe reasoning and calculation are as follows:\nStep 1: a = 43, b =",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-055",
+      "correct_answer": "47",
+      "wrong_answer": "141",
+      "last_step_standard": "Therefore, the answer is 47.",
+      "last_step_conflicting": "Therefore, the answer is 141.",
+      "ct_last_step": "Report only the counted shelf total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "-47",
+          "raw_output": "-47\nStep 6: Re-evaluate the steps to ensure accuracy.\nStep 7: Correcting the",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "141",
+          "raw_output": "141\nThe counted shelf total of mystery novels is 141.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "36",
+          "raw_output": "36\nTo solve the problem, we need to adjust the initial shelf total based on the changes mentioned:\n\n1",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "48",
+          "raw_output": "48\nStep 2 calculation: 48 - 13 + 12 = 47",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-056",
+      "correct_answer": "56",
+      "wrong_answer": "55",
+      "last_step_standard": "Therefore, the answer is 56.",
+      "last_step_conflicting": "Therefore, the answer is 55.",
+      "ct_last_step": "Report only the counted active-file total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "56",
+          "raw_output": "56.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "55",
+          "raw_output": "55.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "50",
+          "raw_output": "50\nTo solve the problem, we start with the initial count of active patient files, which is 5",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "52",
+          "raw_output": "52\nStep 4: The counted active-file total is 52.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-057",
+      "correct_answer": "50",
+      "wrong_answer": "45",
+      "last_step_standard": "Therefore, the answer is 50.",
+      "last_step_conflicting": "Therefore, the answer is 45.",
+      "ct_last_step": "Report only the counted good-bolt total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "50",
+          "raw_output": "50.",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "-45",
+          "raw_output": "-45\nStep 6: Re-evaluate the steps to ensure accuracy.\nStep 7: Correcting the",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "question_only": {
+          "predicted": "51",
+          "raw_output": "51\nTo solve the problem, we need to account for the changes in the count of good bolts. Here",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "50",
+          "raw_output": "50\nStep 2 calculation: 47 - 15 + 18 = 50",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-058",
+      "correct_answer": "44",
+      "wrong_answer": "51",
+      "last_step_standard": "Therefore, the answer is 44.",
+      "last_step_conflicting": "Therefore, the answer is 51.",
+      "ct_last_step": "Report only the counted finished-book total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "-44",
+          "raw_output": "-44\nStep 6: Re-evaluate the steps to ensure accuracy.\nStep 7: Correcting the",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "51",
+          "raw_output": "51.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "53",
+          "raw_output": "53\nTo solve the problem, we need to adjust the initial count of finished books based on the given changes",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "44",
+          "raw_output": "44\nStep 2 calculation: 45 - 13 + 12 = 44",
+          "is_correct": true,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-059",
+      "correct_answer": "52",
+      "wrong_answer": "260",
+      "last_step_standard": "Therefore, the answer is 52.",
+      "last_step_conflicting": "Therefore, the answer is 260.",
+      "ct_last_step": "Report only the counted sale stock.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "1234567890123456789",
+          "raw_output": "52. 1234567890123456789",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "260",
+          "raw_output": "260\nStep 5: Therefore, the answer is 260. Final answer: 2",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "64",
+          "raw_output": "64\nTo solve the problem, we need to account for the changes in the number of ripe pears in",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "51",
+          "raw_output": "51",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    },
+    {
+      "example_id": "p0-hard3-060",
+      "correct_answer": "58",
+      "wrong_answer": "53",
+      "last_step_standard": "Therefore, the answer is 58.",
+      "last_step_conflicting": "Therefore, the answer is 53.",
+      "ct_last_step": "Report only the counted league total.",
+      "conditions": {
+        "standard_chain": {
+          "predicted": "268",
+          "raw_output": "58. 114. 172. 220. 268.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "conflicting_chain": {
+          "predicted": "53",
+          "raw_output": "53.",
+          "is_correct": false,
+          "follows_wrong_suffix": true
+        },
+        "question_only": {
+          "predicted": "63",
+          "raw_output": "63\nTo solve the problem, we start with the initial total of league points, which is 62",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        },
+        "computation_terminal": {
+          "predicted": "51",
+          "raw_output": "51\n\nThe counted total of league points is 51.",
+          "is_correct": false,
+          "follows_wrong_suffix": false
+        }
+      }
+    }
+  ]
+}

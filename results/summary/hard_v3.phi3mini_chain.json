@@ -1,0 +1,5768 @@
+{
+  "config": {
+    "model": "microsoft/Phi-3-mini-4k-instruct",
+    "study_name": "hard_v3.phi3mini_chain",
+    "corruption_mode": "semantic",
+    "corruption_fraction": 1.0,
+    "protected_prefix_steps": 1,
+    "protected_suffix_steps": 1,
+    "trials_per_example": 1,
+    "seed": 0,
+    "question_only": false
+  },
+  "study": {
+    "name": "hard_v3.phi3mini_chain"
+  },
+  "summary": {
+    "example_count": 60,
+    "trial_count": 180,
+    "baseline_accuracy": 0.8,
+    "corrupted_accuracy": {
+      "middle": 0.7166666666666667,
+      "prefix": 0.03333333333333333,
+      "suffix": 0.7
+    },
+    "survival_rate": {
+      "middle": 0.65,
+      "prefix": 0.03333333333333333,
+      "suffix": 0.65
+    },
+    "corruption_mode": "semantic",
+    "corruption_targets": [
+      "middle",
+      "prefix",
+      "suffix"
+    ],
+    "model": "microsoft/Phi-3-mini-4k-instruct",
+    "study_name": "hard_v3.phi3mini_chain",
+    "question_only": false
+  },
+  "summary_by_target": {
+    "middle": {
+      "example_count": 60,
+      "trial_count": 60,
+      "baseline_accuracy": 0.8,
+      "corrupted_accuracy": 0.7166666666666667,
+      "survival_rate": 0.65,
+      "corruption_mode": "semantic",
+      "corruption_target": "middle",
+      "model": "microsoft/Phi-3-mini-4k-instruct",
+      "study_name": "hard_v3.phi3mini_chain",
+      "question_only": false
+    },
+    "prefix": {
+      "example_count": 60,
+      "trial_count": 60,
+      "baseline_accuracy": 0.8,
+      "corrupted_accuracy": 0.03333333333333333,
+      "survival_rate": 0.03333333333333333,
+      "corruption_mode": "semantic",
+      "corruption_target": "prefix",
+      "model": "microsoft/Phi-3-mini-4k-instruct",
+      "study_name": "hard_v3.phi3mini_chain",
+      "question_only": false
+    },
+    "suffix": {
+      "example_count": 60,
+      "trial_count": 60,
+      "baseline_accuracy": 0.8,
+      "corrupted_accuracy": 0.7,
+      "survival_rate": 0.65,
+      "corruption_mode": "semantic",
+      "corruption_target": "suffix",
+      "model": "microsoft/Phi-3-mini-4k-instruct",
+      "study_name": "hard_v3.phi3mini_chain",
+      "question_only": false
+    }
+  },
+  "runs": [
+    {
+      "summary": {
+        "example_count": 60,
+        "trial_count": 60,
+        "baseline_accuracy": 0.8,
+        "corrupted_accuracy": 0.7166666666666667,
+        "survival_rate": 0.65,
+        "corruption_mode": "semantic",
+        "corruption_target": "middle",
+        "model": "microsoft/Phi-3-mini-4k-instruct",
+        "study_name": "hard_v3.phi3mini_chain",
+        "question_only": false
+      },
+      "trials": [
+        {
+          "example_id": "p0-hard3-001",
+          "trial_index": 0,
+          "baseline_answer": "63",
+          "baseline_correct": false,
+          "corrupted_answer": "63",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "73"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "warehouse count",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-002",
+          "trial_index": 0,
+          "baseline_answer": "71",
+          "baseline_correct": true,
+          "corrupted_answer": "71",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "71"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "museum desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-003",
+          "trial_index": 0,
+          "baseline_answer": "47",
+          "baseline_correct": true,
+          "corrupted_answer": "47",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "47"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "bakery inventory",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-004",
+          "trial_index": 0,
+          "baseline_answer": "62",
+          "baseline_correct": true,
+          "corrupted_answer": "62",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "62"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "travel desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-005",
+          "trial_index": 0,
+          "baseline_answer": "53",
+          "baseline_correct": false,
+          "corrupted_answer": "64",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "63"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "library ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-006",
+          "trial_index": 0,
+          "baseline_answer": "93",
+          "baseline_correct": true,
+          "corrupted_answer": "111",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "93"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "clinic desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-007",
+          "trial_index": 0,
+          "baseline_answer": "70",
+          "baseline_correct": true,
+          "corrupted_answer": "70",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "70"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "factory ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-008",
+          "trial_index": 0,
+          "baseline_answer": "77",
+          "baseline_correct": true,
+          "corrupted_answer": "77",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "77"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "reading club log",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-009",
+          "trial_index": 0,
+          "baseline_answer": "87",
+          "baseline_correct": true,
+          "corrupted_answer": "87",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "87"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "market cart",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-010",
+          "trial_index": 0,
+          "baseline_answer": "89",
+          "baseline_correct": false,
+          "corrupted_answer": "89",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "79"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "scoreboard audit",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-011",
+          "trial_index": 0,
+          "baseline_answer": "71",
+          "baseline_correct": true,
+          "corrupted_answer": "71",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "71"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "warehouse count",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-012",
+          "trial_index": 0,
+          "baseline_answer": "57",
+          "baseline_correct": true,
+          "corrupted_answer": "57",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "57"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "museum desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-013",
+          "trial_index": 0,
+          "baseline_answer": "69",
+          "baseline_correct": true,
+          "corrupted_answer": "69",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "69"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "bakery inventory",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-014",
+          "trial_index": 0,
+          "baseline_answer": "66",
+          "baseline_correct": true,
+          "corrupted_answer": "66",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "66"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "travel desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-015",
+          "trial_index": 0,
+          "baseline_answer": "63",
+          "baseline_correct": true,
+          "corrupted_answer": "63",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "63"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "library ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-016",
+          "trial_index": 0,
+          "baseline_answer": "67",
+          "baseline_correct": true,
+          "corrupted_answer": "67",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "67"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "clinic desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-017",
+          "trial_index": 0,
+          "baseline_answer": "51",
+          "baseline_correct": true,
+          "corrupted_answer": "51",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "51"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "factory ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-018",
+          "trial_index": 0,
+          "baseline_answer": "54",
+          "baseline_correct": true,
+          "corrupted_answer": "54",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "54"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "reading club log",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-019",
+          "trial_index": 0,
+          "baseline_answer": "85",
+          "baseline_correct": true,
+          "corrupted_answer": "85",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "85"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "market cart",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-020",
+          "trial_index": 0,
+          "baseline_answer": "46",
+          "baseline_correct": false,
+          "corrupted_answer": "56",
+          "corrupted_correct": true,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "56"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "scoreboard audit",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-021",
+          "trial_index": 0,
+          "baseline_answer": "84",
+          "baseline_correct": true,
+          "corrupted_answer": "84",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "84"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "warehouse count",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-022",
+          "trial_index": 0,
+          "baseline_answer": "51",
+          "baseline_correct": true,
+          "corrupted_answer": "51",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "51"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "museum desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-023",
+          "trial_index": 0,
+          "baseline_answer": "47",
+          "baseline_correct": true,
+          "corrupted_answer": "47",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "47"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "bakery inventory",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-024",
+          "trial_index": 0,
+          "baseline_answer": "78",
+          "baseline_correct": true,
+          "corrupted_answer": "78",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "78"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "travel desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-025",
+          "trial_index": 0,
+          "baseline_answer": "62",
+          "baseline_correct": true,
+          "corrupted_answer": "56",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "62"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "library ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-026",
+          "trial_index": 0,
+          "baseline_answer": "56",
+          "baseline_correct": true,
+          "corrupted_answer": "92",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "56"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "clinic desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-027",
+          "trial_index": 0,
+          "baseline_answer": "56",
+          "baseline_correct": true,
+          "corrupted_answer": "56",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "56"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "factory ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-028",
+          "trial_index": 0,
+          "baseline_answer": "62",
+          "baseline_correct": true,
+          "corrupted_answer": "62",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "62"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "reading club log",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-029",
+          "trial_index": 0,
+          "baseline_answer": "62",
+          "baseline_correct": true,
+          "corrupted_answer": "62",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "62"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "market cart",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-030",
+          "trial_index": 0,
+          "baseline_answer": "78",
+          "baseline_correct": true,
+          "corrupted_answer": "100",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "78"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "scoreboard audit",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-031",
+          "trial_index": 0,
+          "baseline_answer": "60",
+          "baseline_correct": true,
+          "corrupted_answer": "60",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "60"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "warehouse count",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-032",
+          "trial_index": 0,
+          "baseline_answer": "83",
+          "baseline_correct": true,
+          "corrupted_answer": "79",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "83"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "museum desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-033",
+          "trial_index": 0,
+          "baseline_answer": "60",
+          "baseline_correct": false,
+          "corrupted_answer": "70",
+          "corrupted_correct": true,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "70"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "bakery inventory",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-034",
+          "trial_index": 0,
+          "baseline_answer": "75",
+          "baseline_correct": true,
+          "corrupted_answer": "75",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "75"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "travel desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-035",
+          "trial_index": 0,
+          "baseline_answer": "64",
+          "baseline_correct": true,
+          "corrupted_answer": "64",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "64"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "library ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-036",
+          "trial_index": 0,
+          "baseline_answer": "74",
+          "baseline_correct": true,
+          "corrupted_answer": "74",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "74"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "clinic desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-037",
+          "trial_index": 0,
+          "baseline_answer": "57",
+          "baseline_correct": true,
+          "corrupted_answer": "57",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "57"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "factory ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-038",
+          "trial_index": 0,
+          "baseline_answer": "51",
+          "baseline_correct": true,
+          "corrupted_answer": "51",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "51"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "reading club log",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-039",
+          "trial_index": 0,
+          "baseline_answer": "60",
+          "baseline_correct": true,
+          "corrupted_answer": "60",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "60"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "market cart",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-040",
+          "trial_index": 0,
+          "baseline_answer": "63",
+          "baseline_correct": true,
+          "corrupted_answer": "63",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "63"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "scoreboard audit",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-041",
+          "trial_index": 0,
+          "baseline_answer": "63",
+          "baseline_correct": true,
+          "corrupted_answer": "63",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "63"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "warehouse count",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-042",
+          "trial_index": 0,
+          "baseline_answer": "65",
+          "baseline_correct": true,
+          "corrupted_answer": "65",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "65"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "museum desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-043",
+          "trial_index": 0,
+          "baseline_answer": "56",
+          "baseline_correct": true,
+          "corrupted_answer": "56",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "56"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "bakery inventory",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-044",
+          "trial_index": 0,
+          "baseline_answer": "59",
+          "baseline_correct": false,
+          "corrupted_answer": "59",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "49"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "travel desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-045",
+          "trial_index": 0,
+          "baseline_answer": "58",
+          "baseline_correct": false,
+          "corrupted_answer": "48",
+          "corrupted_correct": true,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "48"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "library ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-046",
+          "trial_index": 0,
+          "baseline_answer": "58",
+          "baseline_correct": true,
+          "corrupted_answer": "58",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "58"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "clinic desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-047",
+          "trial_index": 0,
+          "baseline_answer": "76",
+          "baseline_correct": true,
+          "corrupted_answer": "76",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "76"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "factory ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-048",
+          "trial_index": 0,
+          "baseline_answer": "75",
+          "baseline_correct": false,
+          "corrupted_answer": "67",
+          "corrupted_correct": true,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "67"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "reading club log",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-049",
+          "trial_index": 0,
+          "baseline_answer": "78",
+          "baseline_correct": false,
+          "corrupted_answer": "104",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "68"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "market cart",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-050",
+          "trial_index": 0,
+          "baseline_answer": "47",
+          "baseline_correct": false,
+          "corrupted_answer": "91",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "57"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "scoreboard audit",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-051",
+          "trial_index": 0,
+          "baseline_answer": "51",
+          "baseline_correct": true,
+          "corrupted_answer": "81",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "51"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "warehouse count",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-052",
+          "trial_index": 0,
+          "baseline_answer": "75",
+          "baseline_correct": true,
+          "corrupted_answer": "75",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "75"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "museum desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-053",
+          "trial_index": 0,
+          "baseline_answer": "68",
+          "baseline_correct": true,
+          "corrupted_answer": "-18",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "68"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "bakery inventory",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-054",
+          "trial_index": 0,
+          "baseline_answer": "49",
+          "baseline_correct": false,
+          "corrupted_answer": "49",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "39"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "travel desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-055",
+          "trial_index": 0,
+          "baseline_answer": "47",
+          "baseline_correct": true,
+          "corrupted_answer": "47",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "47"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "library ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-056",
+          "trial_index": 0,
+          "baseline_answer": "56",
+          "baseline_correct": true,
+          "corrupted_answer": "56",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "56"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "clinic desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-057",
+          "trial_index": 0,
+          "baseline_answer": "40",
+          "baseline_correct": false,
+          "corrupted_answer": "42",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "50"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "factory ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-058",
+          "trial_index": 0,
+          "baseline_answer": "44",
+          "baseline_correct": true,
+          "corrupted_answer": "44",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "44"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "reading club log",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-059",
+          "trial_index": 0,
+          "baseline_answer": "52",
+          "baseline_correct": true,
+          "corrupted_answer": "86",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "52"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "market cart",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-060",
+          "trial_index": 0,
+          "baseline_answer": "58",
+          "baseline_correct": true,
+          "corrupted_answer": "68",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "middle",
+          "corrupted_indices": [
+            1,
+            2
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "58"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "scoreboard audit",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        }
+      ]
+    },
+    {
+      "summary": {
+        "example_count": 60,
+        "trial_count": 60,
+        "baseline_accuracy": 0.8,
+        "corrupted_accuracy": 0.03333333333333333,
+        "survival_rate": 0.03333333333333333,
+        "corruption_mode": "semantic",
+        "corruption_target": "prefix",
+        "model": "microsoft/Phi-3-mini-4k-instruct",
+        "study_name": "hard_v3.phi3mini_chain",
+        "question_only": false
+      },
+      "trials": [
+        {
+          "example_id": "p0-hard3-001",
+          "trial_index": 0,
+          "baseline_answer": "63",
+          "baseline_correct": false,
+          "corrupted_answer": "74",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "73"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "warehouse count",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-002",
+          "trial_index": 0,
+          "baseline_answer": "71",
+          "baseline_correct": true,
+          "corrupted_answer": "70",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "71"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "museum desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-003",
+          "trial_index": 0,
+          "baseline_answer": "47",
+          "baseline_correct": true,
+          "corrupted_answer": "48",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "47"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "bakery inventory",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-004",
+          "trial_index": 0,
+          "baseline_answer": "62",
+          "baseline_correct": true,
+          "corrupted_answer": "63",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "62"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "travel desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-005",
+          "trial_index": 0,
+          "baseline_answer": "53",
+          "baseline_correct": false,
+          "corrupted_answer": "60",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "63"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "library ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-006",
+          "trial_index": 0,
+          "baseline_answer": "93",
+          "baseline_correct": true,
+          "corrupted_answer": "94",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "93"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "clinic desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-007",
+          "trial_index": 0,
+          "baseline_answer": "70",
+          "baseline_correct": true,
+          "corrupted_answer": "70",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "70"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "factory ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-008",
+          "trial_index": 0,
+          "baseline_answer": "77",
+          "baseline_correct": true,
+          "corrupted_answer": "78",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "77"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "reading club log",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-009",
+          "trial_index": 0,
+          "baseline_answer": "87",
+          "baseline_correct": true,
+          "corrupted_answer": "88",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "87"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "market cart",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-010",
+          "trial_index": 0,
+          "baseline_answer": "89",
+          "baseline_correct": false,
+          "corrupted_answer": "80",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "79"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "scoreboard audit",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-011",
+          "trial_index": 0,
+          "baseline_answer": "71",
+          "baseline_correct": true,
+          "corrupted_answer": "72",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "71"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "warehouse count",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-012",
+          "trial_index": 0,
+          "baseline_answer": "57",
+          "baseline_correct": true,
+          "corrupted_answer": "58",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "57"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "museum desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-013",
+          "trial_index": 0,
+          "baseline_answer": "69",
+          "baseline_correct": true,
+          "corrupted_answer": "60",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "69"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "bakery inventory",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-014",
+          "trial_index": 0,
+          "baseline_answer": "66",
+          "baseline_correct": true,
+          "corrupted_answer": "67",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "66"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "travel desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-015",
+          "trial_index": 0,
+          "baseline_answer": "63",
+          "baseline_correct": true,
+          "corrupted_answer": "64",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "63"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "library ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-016",
+          "trial_index": 0,
+          "baseline_answer": "67",
+          "baseline_correct": true,
+          "corrupted_answer": "68",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "67"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "clinic desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-017",
+          "trial_index": 0,
+          "baseline_answer": "51",
+          "baseline_correct": true,
+          "corrupted_answer": "52",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "51"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "factory ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-018",
+          "trial_index": 0,
+          "baseline_answer": "54",
+          "baseline_correct": true,
+          "corrupted_answer": "55",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "54"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "reading club log",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-019",
+          "trial_index": 0,
+          "baseline_answer": "85",
+          "baseline_correct": true,
+          "corrupted_answer": "86",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "85"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "market cart",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-020",
+          "trial_index": 0,
+          "baseline_answer": "46",
+          "baseline_correct": false,
+          "corrupted_answer": "47",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "56"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "scoreboard audit",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-021",
+          "trial_index": 0,
+          "baseline_answer": "84",
+          "baseline_correct": true,
+          "corrupted_answer": "89",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "84"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "warehouse count",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-022",
+          "trial_index": 0,
+          "baseline_answer": "51",
+          "baseline_correct": true,
+          "corrupted_answer": "52",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "51"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "museum desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-023",
+          "trial_index": 0,
+          "baseline_answer": "47",
+          "baseline_correct": true,
+          "corrupted_answer": "48",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "47"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "bakery inventory",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-024",
+          "trial_index": 0,
+          "baseline_answer": "78",
+          "baseline_correct": true,
+          "corrupted_answer": "75",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "78"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "travel desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-025",
+          "trial_index": 0,
+          "baseline_answer": "62",
+          "baseline_correct": true,
+          "corrupted_answer": "53",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "62"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "library ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-026",
+          "trial_index": 0,
+          "baseline_answer": "56",
+          "baseline_correct": true,
+          "corrupted_answer": "57",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "56"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "clinic desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-027",
+          "trial_index": 0,
+          "baseline_answer": "56",
+          "baseline_correct": true,
+          "corrupted_answer": "57",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "56"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "factory ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-028",
+          "trial_index": 0,
+          "baseline_answer": "62",
+          "baseline_correct": true,
+          "corrupted_answer": "63",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "62"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "reading club log",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-029",
+          "trial_index": 0,
+          "baseline_answer": "62",
+          "baseline_correct": true,
+          "corrupted_answer": "62",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "62"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "market cart",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-030",
+          "trial_index": 0,
+          "baseline_answer": "78",
+          "baseline_correct": true,
+          "corrupted_answer": "79",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "78"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "scoreboard audit",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-031",
+          "trial_index": 0,
+          "baseline_answer": "60",
+          "baseline_correct": true,
+          "corrupted_answer": "61",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "60"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "warehouse count",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-032",
+          "trial_index": 0,
+          "baseline_answer": "83",
+          "baseline_correct": true,
+          "corrupted_answer": "84",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "83"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "museum desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-033",
+          "trial_index": 0,
+          "baseline_answer": "60",
+          "baseline_correct": false,
+          "corrupted_answer": "71",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "70"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "bakery inventory",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-034",
+          "trial_index": 0,
+          "baseline_answer": "75",
+          "baseline_correct": true,
+          "corrupted_answer": "76",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "75"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "travel desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-035",
+          "trial_index": 0,
+          "baseline_answer": "64",
+          "baseline_correct": true,
+          "corrupted_answer": "65",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "64"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "library ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-036",
+          "trial_index": 0,
+          "baseline_answer": "74",
+          "baseline_correct": true,
+          "corrupted_answer": "75",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "74"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "clinic desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-037",
+          "trial_index": 0,
+          "baseline_answer": "57",
+          "baseline_correct": true,
+          "corrupted_answer": "64",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "57"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "factory ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-038",
+          "trial_index": 0,
+          "baseline_answer": "51",
+          "baseline_correct": true,
+          "corrupted_answer": "52",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "51"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "reading club log",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-039",
+          "trial_index": 0,
+          "baseline_answer": "60",
+          "baseline_correct": true,
+          "corrupted_answer": "61",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "60"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "market cart",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-040",
+          "trial_index": 0,
+          "baseline_answer": "63",
+          "baseline_correct": true,
+          "corrupted_answer": "64",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "63"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "scoreboard audit",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-041",
+          "trial_index": 0,
+          "baseline_answer": "63",
+          "baseline_correct": true,
+          "corrupted_answer": "54",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "63"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "warehouse count",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-042",
+          "trial_index": 0,
+          "baseline_answer": "65",
+          "baseline_correct": true,
+          "corrupted_answer": "68",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "65"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "museum desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-043",
+          "trial_index": 0,
+          "baseline_answer": "56",
+          "baseline_correct": true,
+          "corrupted_answer": "57",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "56"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "bakery inventory",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-044",
+          "trial_index": 0,
+          "baseline_answer": "59",
+          "baseline_correct": false,
+          "corrupted_answer": "50",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "49"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "travel desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-045",
+          "trial_index": 0,
+          "baseline_answer": "58",
+          "baseline_correct": false,
+          "corrupted_answer": "59",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "48"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "library ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-046",
+          "trial_index": 0,
+          "baseline_answer": "58",
+          "baseline_correct": true,
+          "corrupted_answer": "59",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "58"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "clinic desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-047",
+          "trial_index": 0,
+          "baseline_answer": "76",
+          "baseline_correct": true,
+          "corrupted_answer": "77",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "76"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "factory ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-048",
+          "trial_index": 0,
+          "baseline_answer": "75",
+          "baseline_correct": false,
+          "corrupted_answer": "68",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "67"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "reading club log",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-049",
+          "trial_index": 0,
+          "baseline_answer": "78",
+          "baseline_correct": false,
+          "corrupted_answer": "79",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "68"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "market cart",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-050",
+          "trial_index": 0,
+          "baseline_answer": "47",
+          "baseline_correct": false,
+          "corrupted_answer": "44",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "57"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "scoreboard audit",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-051",
+          "trial_index": 0,
+          "baseline_answer": "51",
+          "baseline_correct": true,
+          "corrupted_answer": "52",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "51"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "warehouse count",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-052",
+          "trial_index": 0,
+          "baseline_answer": "75",
+          "baseline_correct": true,
+          "corrupted_answer": "76",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "75"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "museum desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-053",
+          "trial_index": 0,
+          "baseline_answer": "68",
+          "baseline_correct": true,
+          "corrupted_answer": "79",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "68"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "bakery inventory",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-054",
+          "trial_index": 0,
+          "baseline_answer": "49",
+          "baseline_correct": false,
+          "corrupted_answer": "40",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "39"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "travel desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-055",
+          "trial_index": 0,
+          "baseline_answer": "47",
+          "baseline_correct": true,
+          "corrupted_answer": "48",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "47"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "library ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-056",
+          "trial_index": 0,
+          "baseline_answer": "56",
+          "baseline_correct": true,
+          "corrupted_answer": "57",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "56"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "clinic desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-057",
+          "trial_index": 0,
+          "baseline_answer": "40",
+          "baseline_correct": false,
+          "corrupted_answer": "51",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "50"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "factory ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-058",
+          "trial_index": 0,
+          "baseline_answer": "44",
+          "baseline_correct": true,
+          "corrupted_answer": "45",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "44"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "reading club log",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-059",
+          "trial_index": 0,
+          "baseline_answer": "52",
+          "baseline_correct": true,
+          "corrupted_answer": "53",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "52"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "market cart",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-060",
+          "trial_index": 0,
+          "baseline_answer": "58",
+          "baseline_correct": true,
+          "corrupted_answer": "49",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "prefix",
+          "corrupted_indices": [
+            0
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "58"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "scoreboard audit",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        }
+      ]
+    },
+    {
+      "summary": {
+        "example_count": 60,
+        "trial_count": 60,
+        "baseline_accuracy": 0.8,
+        "corrupted_accuracy": 0.7,
+        "survival_rate": 0.65,
+        "corruption_mode": "semantic",
+        "corruption_target": "suffix",
+        "model": "microsoft/Phi-3-mini-4k-instruct",
+        "study_name": "hard_v3.phi3mini_chain",
+        "question_only": false
+      },
+      "trials": [
+        {
+          "example_id": "p0-hard3-001",
+          "trial_index": 0,
+          "baseline_answer": "63",
+          "baseline_correct": false,
+          "corrupted_answer": "63",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "73"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "warehouse count",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-002",
+          "trial_index": 0,
+          "baseline_answer": "71",
+          "baseline_correct": true,
+          "corrupted_answer": "71",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "71"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "museum desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-003",
+          "trial_index": 0,
+          "baseline_answer": "47",
+          "baseline_correct": true,
+          "corrupted_answer": "-1",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "47"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "bakery inventory",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-004",
+          "trial_index": 0,
+          "baseline_answer": "62",
+          "baseline_correct": true,
+          "corrupted_answer": "62",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "62"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "travel desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-005",
+          "trial_index": 0,
+          "baseline_answer": "53",
+          "baseline_correct": false,
+          "corrupted_answer": "53",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "63"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "library ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-006",
+          "trial_index": 0,
+          "baseline_answer": "93",
+          "baseline_correct": true,
+          "corrupted_answer": "93",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "93"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "clinic desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-007",
+          "trial_index": 0,
+          "baseline_answer": "70",
+          "baseline_correct": true,
+          "corrupted_answer": "79",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "70"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "factory ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-008",
+          "trial_index": 0,
+          "baseline_answer": "77",
+          "baseline_correct": true,
+          "corrupted_answer": "79",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "77"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "reading club log",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-009",
+          "trial_index": 0,
+          "baseline_answer": "87",
+          "baseline_correct": true,
+          "corrupted_answer": "87",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "87"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "market cart",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-010",
+          "trial_index": 0,
+          "baseline_answer": "89",
+          "baseline_correct": false,
+          "corrupted_answer": "89",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "79"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "scoreboard audit",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-011",
+          "trial_index": 0,
+          "baseline_answer": "71",
+          "baseline_correct": true,
+          "corrupted_answer": "71",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "71"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "warehouse count",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-012",
+          "trial_index": 0,
+          "baseline_answer": "57",
+          "baseline_correct": true,
+          "corrupted_answer": "57",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "57"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "museum desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-013",
+          "trial_index": 0,
+          "baseline_answer": "69",
+          "baseline_correct": true,
+          "corrupted_answer": "-59",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "69"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "bakery inventory",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-014",
+          "trial_index": 0,
+          "baseline_answer": "66",
+          "baseline_correct": true,
+          "corrupted_answer": "66",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "66"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "travel desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-015",
+          "trial_index": 0,
+          "baseline_answer": "63",
+          "baseline_correct": true,
+          "corrupted_answer": "63",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "63"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "library ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-016",
+          "trial_index": 0,
+          "baseline_answer": "67",
+          "baseline_correct": true,
+          "corrupted_answer": "67",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "67"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "clinic desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-017",
+          "trial_index": 0,
+          "baseline_answer": "51",
+          "baseline_correct": true,
+          "corrupted_answer": "51",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "51"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "factory ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-018",
+          "trial_index": 0,
+          "baseline_answer": "54",
+          "baseline_correct": true,
+          "corrupted_answer": "54",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "54"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "reading club log",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-019",
+          "trial_index": 0,
+          "baseline_answer": "85",
+          "baseline_correct": true,
+          "corrupted_answer": "85",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "85"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "market cart",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-020",
+          "trial_index": 0,
+          "baseline_answer": "46",
+          "baseline_correct": false,
+          "corrupted_answer": "52",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "56"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "scoreboard audit",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-021",
+          "trial_index": 0,
+          "baseline_answer": "84",
+          "baseline_correct": true,
+          "corrupted_answer": "84",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "84"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "warehouse count",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-022",
+          "trial_index": 0,
+          "baseline_answer": "51",
+          "baseline_correct": true,
+          "corrupted_answer": "51",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "51"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "museum desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-023",
+          "trial_index": 0,
+          "baseline_answer": "47",
+          "baseline_correct": true,
+          "corrupted_answer": "-13",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "47"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "bakery inventory",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-024",
+          "trial_index": 0,
+          "baseline_answer": "78",
+          "baseline_correct": true,
+          "corrupted_answer": "78",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "78"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "travel desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-025",
+          "trial_index": 0,
+          "baseline_answer": "62",
+          "baseline_correct": true,
+          "corrupted_answer": "62",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "62"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "library ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-026",
+          "trial_index": 0,
+          "baseline_answer": "56",
+          "baseline_correct": true,
+          "corrupted_answer": "56",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "56"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "clinic desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-027",
+          "trial_index": 0,
+          "baseline_answer": "56",
+          "baseline_correct": true,
+          "corrupted_answer": "56",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "56"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "factory ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-028",
+          "trial_index": 0,
+          "baseline_answer": "62",
+          "baseline_correct": true,
+          "corrupted_answer": "62",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "62"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "reading club log",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-029",
+          "trial_index": 0,
+          "baseline_answer": "62",
+          "baseline_correct": true,
+          "corrupted_answer": "62",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "62"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "market cart",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-030",
+          "trial_index": 0,
+          "baseline_answer": "78",
+          "baseline_correct": true,
+          "corrupted_answer": "78",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "78"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "scoreboard audit",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-031",
+          "trial_index": 0,
+          "baseline_answer": "60",
+          "baseline_correct": true,
+          "corrupted_answer": "60",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "60"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "warehouse count",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-032",
+          "trial_index": 0,
+          "baseline_answer": "83",
+          "baseline_correct": true,
+          "corrupted_answer": "73",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "83"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "museum desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-033",
+          "trial_index": 0,
+          "baseline_answer": "60",
+          "baseline_correct": false,
+          "corrupted_answer": "60",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "70"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "bakery inventory",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-034",
+          "trial_index": 0,
+          "baseline_answer": "75",
+          "baseline_correct": true,
+          "corrupted_answer": "75",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "75"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "travel desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-035",
+          "trial_index": 0,
+          "baseline_answer": "64",
+          "baseline_correct": true,
+          "corrupted_answer": "64",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "64"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "library ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-036",
+          "trial_index": 0,
+          "baseline_answer": "74",
+          "baseline_correct": true,
+          "corrupted_answer": "74",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "74"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "clinic desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-037",
+          "trial_index": 0,
+          "baseline_answer": "57",
+          "baseline_correct": true,
+          "corrupted_answer": "57",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "57"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "factory ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-038",
+          "trial_index": 0,
+          "baseline_answer": "51",
+          "baseline_correct": true,
+          "corrupted_answer": "51",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "51"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "reading club log",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-039",
+          "trial_index": 0,
+          "baseline_answer": "60",
+          "baseline_correct": true,
+          "corrupted_answer": "60",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "60"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "market cart",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-040",
+          "trial_index": 0,
+          "baseline_answer": "63",
+          "baseline_correct": true,
+          "corrupted_answer": "63",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "63"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "scoreboard audit",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-041",
+          "trial_index": 0,
+          "baseline_answer": "63",
+          "baseline_correct": true,
+          "corrupted_answer": "53",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "63"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "warehouse count",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-042",
+          "trial_index": 0,
+          "baseline_answer": "65",
+          "baseline_correct": true,
+          "corrupted_answer": "65",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "65"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "museum desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-043",
+          "trial_index": 0,
+          "baseline_answer": "56",
+          "baseline_correct": true,
+          "corrupted_answer": "-30",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "56"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "bakery inventory",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-044",
+          "trial_index": 0,
+          "baseline_answer": "59",
+          "baseline_correct": false,
+          "corrupted_answer": "59",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "49"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "travel desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-045",
+          "trial_index": 0,
+          "baseline_answer": "58",
+          "baseline_correct": false,
+          "corrupted_answer": "48",
+          "corrupted_correct": true,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "48"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "library ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-046",
+          "trial_index": 0,
+          "baseline_answer": "58",
+          "baseline_correct": true,
+          "corrupted_answer": "58",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "58"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "clinic desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-047",
+          "trial_index": 0,
+          "baseline_answer": "76",
+          "baseline_correct": true,
+          "corrupted_answer": "76",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "76"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "factory ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-048",
+          "trial_index": 0,
+          "baseline_answer": "75",
+          "baseline_correct": false,
+          "corrupted_answer": "67",
+          "corrupted_correct": true,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "67"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "reading club log",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-049",
+          "trial_index": 0,
+          "baseline_answer": "78",
+          "baseline_correct": false,
+          "corrupted_answer": "78",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "68"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "market cart",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-050",
+          "trial_index": 0,
+          "baseline_answer": "47",
+          "baseline_correct": false,
+          "corrupted_answer": "57",
+          "corrupted_correct": true,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "57"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "scoreboard audit",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-051",
+          "trial_index": 0,
+          "baseline_answer": "51",
+          "baseline_correct": true,
+          "corrupted_answer": "51",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "51"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "warehouse count",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-052",
+          "trial_index": 0,
+          "baseline_answer": "75",
+          "baseline_correct": true,
+          "corrupted_answer": "75",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "75"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "museum desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-053",
+          "trial_index": 0,
+          "baseline_answer": "68",
+          "baseline_correct": true,
+          "corrupted_answer": "-38",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "68"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "bakery inventory",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-054",
+          "trial_index": 0,
+          "baseline_answer": "49",
+          "baseline_correct": false,
+          "corrupted_answer": "49",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "39"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "travel desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-055",
+          "trial_index": 0,
+          "baseline_answer": "47",
+          "baseline_correct": true,
+          "corrupted_answer": "47",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "47"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "library ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-056",
+          "trial_index": 0,
+          "baseline_answer": "56",
+          "baseline_correct": true,
+          "corrupted_answer": "56",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "56"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "clinic desk",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-057",
+          "trial_index": 0,
+          "baseline_answer": "40",
+          "baseline_correct": false,
+          "corrupted_answer": "40",
+          "corrupted_correct": false,
+          "survived": false,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "50"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "factory ledger",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-058",
+          "trial_index": 0,
+          "baseline_answer": "44",
+          "baseline_correct": true,
+          "corrupted_answer": "44",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "44"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "reading club log",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-059",
+          "trial_index": 0,
+          "baseline_answer": "52",
+          "baseline_correct": true,
+          "corrupted_answer": "52",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "52"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "market cart",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        },
+        {
+          "example_id": "p0-hard3-060",
+          "trial_index": 0,
+          "baseline_answer": "58",
+          "baseline_correct": true,
+          "corrupted_answer": "58",
+          "corrupted_correct": true,
+          "survived": true,
+          "corruption_mode": "semantic",
+          "corruption_target": "suffix",
+          "corrupted_indices": [
+            3
+          ],
+          "example_metadata": {
+            "benchmark": "phase0-position-control-hard-v3",
+            "answer_format": "integer",
+            "answer_extraction": {
+              "strategy": "numeric",
+              "expected_normalized": "58"
+            },
+            "deciding_steps": [
+              0
+            ],
+            "chain_length": 4,
+            "template_domain": "scoreboard audit",
+            "dataset": "toy-gsm8k-hard",
+            "split": "study",
+            "difficulty": "medium",
+            "source": "generated"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "analysis": "sign_flip_bias",
+  "model": "Phi-3-mini",
+  "format": "gsm8k_stripped",
+  "findings": {
+    "middle": {
+      "n_trials": 100,
+      "baseline_negative": 58,
+      "all_expected_positive": true,
+      "corrected_by_corruption": 6,
+      "correction_rate": 0.10344827586206896,
+      "still_negative_after_corruption": 52,
+      "baseline_accuracy": 0.41,
+      "corrupted_accuracy": 0.45,
+      "delta": 0.040000000000000036
+    },
+    "prefix": {
+      "n_trials": 100,
+      "baseline_negative": 58,
+      "all_expected_positive": true,
+      "corrected_by_corruption": 4,
+      "correction_rate": 0.06896551724137931,
+      "still_negative_after_corruption": 54,
+      "baseline_accuracy": 0.41,
+      "corrupted_accuracy": 0.43,
+      "delta": 0.020000000000000018
+    },
+    "suffix": {
+      "n_trials": 100,
+      "baseline_negative": 58,
+      "all_expected_positive": true,
+      "corrected_by_corruption": 16,
+      "correction_rate": 0.27586206896551724,
+      "still_negative_after_corruption": 42,
+      "baseline_accuracy": 0.41,
+      "corrupted_accuracy": 0.53,
+      "delta": 0.12000000000000005
+    }
+  },
+  "conclusion": "Positive suffix delta (\u0394=+0.120) is caused by sign-flip bias in baseline. The synthetic placeholder suffix step triggers phi-3-mini to negate its calculation. Corruption of this step partially corrects the bias, increasing accuracy. This is CONSISTENT with format-determination hypothesis, not a contradiction."
+}
